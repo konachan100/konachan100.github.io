@@ -12,17 +12,18 @@
             padding-bottom: 5%;
         }
 
-        img {
+        .post_img {
             width: 95%;
+            margin: 0 auto;
         }
     </style>
 </head>
 <body>
-<img src="http://konachan.net/images/logo_small.png" style="width: 40%">
+<img src="http://konachan.net/images/logo_small.png" style="width: 70%; padding-bottom: 10%">
 {% for p in posts %}
     <div class="img_frame">
         <a href="{{ 'https:'+p['file_url'] }}" target="_blank">
-            <img src="{{ p['preview_url'] }}">
+            <img class="post_img" src="{{ p['preview_url'] }}">
         </a>
     </div>
 {% endfor %}
