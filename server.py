@@ -1,4 +1,4 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, request
 import konachan
 app = Flask(__name__)
 
@@ -16,7 +16,11 @@ def hello_world():
     if len(col)>0:
         row.append(col)
 
+    agent=request.headers.get('User-Agent')
+    print(agent)
+    #for s in ['android']
     return render_template('postlist.html', postrow=row)
+
 
 
 if __name__ == '__main__':

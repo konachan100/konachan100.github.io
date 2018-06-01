@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        body{
+            background: #222222;
+        }
+        .img_frame {
+            width: 100%;
+            padding-bottom: 5%;
+        }
+
+        img {
+            width: 95%;
+        }
+    </style>
+</head>
+<body>
+<img src="http://konachan.net/images/logo_small.png" style="width: 40%">
+{% for row in postrow %}
+    <div class="img_frame">
+        <a href="{{ 'https:'+col['file_url'] }}" target="_blank">
+            <img src="{{ col['preview_url'] }}">
+        </a>
+    </div>
+{% endfor %}
+
+
+</body>
+</html>
