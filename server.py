@@ -18,7 +18,8 @@ def hello_world():
 
     agent=request.headers.get('User-Agent')
     print(agent)
-    #for s in ['android']
+    if 'Mobile' in agent:
+        return render_template('postlist_mobile.html', posts=konachan.postlist)
     return render_template('postlist.html', postrow=row)
 
 
