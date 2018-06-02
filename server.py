@@ -10,7 +10,7 @@ def _index(postlist):
     agent=request.headers.get('User-Agent')
     #print(agent)
     if 'Mobile' in agent:
-        return render_template('postlist_mobile.html', posts=konachan.postlist)
+        return render_template('postlist_mobile.html', posts=postlist)
 
     row=[]
     col=[]
