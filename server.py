@@ -28,11 +28,11 @@ def _index(postlist):
 
 
 @app.route('/')
-def index()
+def index():
     return _index(filt_post_list(['s']))
 
 @app.route('/18x')
-def index()
+def index_18x():
     return _index(filt_post_list(['s','q','e']))
 
 # @app.route('/view/<id>')
