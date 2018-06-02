@@ -19,11 +19,14 @@ def webread(url, readtimeout=10):
 
 def update():
     global postlist
-    postlist = json.loads(webread('http://www.konachan.net/post.json?limit=100').decode())
-    for p in postlist:
-        #print(p)
-        p['file_url'] = p['file_url'].replace('konachan.net', 'konachan.com')
-        p['jpeg_url'] = p['jpeg_url'].replace('konachan.net', 'konachan.com')
+    try:
+        postlist = json.loads(webread('http://www.konachan.net/post.json?limit=100').decode())
+        for p in postlist:
+            #print(p)
+            p['file_url'] = p['file_url'].replace('konachan.net', 'konachan.com')
+            p['jpeg_url'] = p['jpeg_url'].replace('konachan.net', 'konachan.com')
+    except Exception as e:
+        print('Failed to get post list')
 
 
 def update_loop():
