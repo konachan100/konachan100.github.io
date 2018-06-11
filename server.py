@@ -3,13 +3,18 @@ import konachan
 app = Flask(__name__)
 
 def filt_post_list(ratings):
-    return [p for p in konachan.postlist if p['rating'] in ratings]
+    try:
+        return [p for p in konachan.postlist if p['rating'] in ratings]
+    except Exception as e:
+        print('ERROR \\')
+        print(konachan.postlist)
+        return []
 
 def _index(postlist):
     
     agent=request.headers.get('User-Agent')
     #print(agent)
-    if 'Mobile' in agent:
+    if agent is not None and 'Mobile' in agent:
         return render_template('postlist_mobile.html', posts=postlist)
 
     row=[]
