@@ -34,15 +34,15 @@ class DataSource:
 
 class DataSourceS(DataSource):
     def URL(self):
-        return "http://www.konachan.net/post.json?limit=100&rating:safe"
+        return "http://www.konachan.net/post.json?limit=100&tags=rating:safe"
 
 class DataSourceQ(DataSource):
     def URL(self):
-        return "http://www.konachan.net/post.json?limit=100&rating:questionable"
+        return "http://www.konachan.net/post.json?limit=100&tags=rating:questionable"
 
 class DataSourceE(DataSource):
     def URL(self):
-        return "http://www.konachan.net/post.json?limit=100&rating:explicit"
+        return "http://www.konachan.net/post.json?limit=100&tags=rating:explicit"
 
 class DataSourceTest(DataSource):
     def Get(self):
