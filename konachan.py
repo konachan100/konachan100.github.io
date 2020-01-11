@@ -29,7 +29,7 @@ class DataSource:
             print("Success, decoding JSON")
             return json.loads(webread(self.URL()).decode())
         except Exception as e:
-            print("Failed, "+e)
+            print("Failed, "+str(e))
             return None
 
 class DataSourceS(DataSource):
