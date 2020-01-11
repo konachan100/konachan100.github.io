@@ -24,7 +24,7 @@
     <div style="clear: both">
         {% for col in row %}
             <div class="img_frame">
-                <a href="{{ 'https:'+col['file_url'] }}" target="_blank">
+                <a href="{{ col['file_url'] }}" target="_blank">
                     <img src="{{ col['preview_url'] }}">
                 </a>
             </div>

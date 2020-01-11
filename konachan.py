@@ -7,6 +7,9 @@ import time
 
 postlist = []
 
+test_post_list = json.loads(open('testdata.json', 'r').read())
+
+
 
 def webread(url, readtimeout=10):
     """read page"""
@@ -15,6 +18,31 @@ def webread(url, readtimeout=10):
                           'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.11 (KHTML, like Gecko) Chrome/23.0.1271.64 Safari/537.11'),
                          ('Accept', 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8')]
     return opener.open(url, None, readtimeout).read()
+
+class DataSource:
+    def URL(self):
+        return None
+    def Get(self):
+        try:
+            return json.loads(webread(self.URL()).decode())
+        except Exception as e:
+            return None
+
+class DataSoruceS(DataSource):
+    def URL(self):
+        return "http://www.konachan.net/post.json?limit=100&rating:safe"
+
+class DataSoruceQ(DataSource):
+    def URL(self):
+        return "http://www.konachan.net/post.json?limit=100&rating:questionable"
+
+class DataSoruceE(DataSource):
+    def URL(self):
+        return "http://www.konachan.net/post.json?limit=100&rating:explicit"
+
+class DataSourceTest(DataSource):
+    def Get(self):
+        return test_post_list
 
 
 def update():

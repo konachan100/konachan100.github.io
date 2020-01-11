@@ -21,7 +21,7 @@
 <img src="http://konachan.net/images/logo_small.png" style="width: 70%; padding-bottom: 5%">
 {% for p in posts %}
     <div class="img_frame">
-        <a href="{{ 'https:'+p['file_url'] }}" target="_blank">
+        <a href="{{ p['file_url'] }}" target="_blank">
             <img class="post_img" src="{{ p['preview_url'] }}">
         </a>
     </div>
