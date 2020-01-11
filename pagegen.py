@@ -37,13 +37,13 @@ def gen_all_post_list_page(pl_s, pl_q, pl_e):
     gen_post_list_page(pl_q, template_mobile, "mq/index.html")
     gen_post_list_page(pl_e, template_mobile, "me/index.html")
 
-def gentest():
+def gen():
     pl_s = DataSourceS().Get()
     pl_q = DataSourceQ().Get()
     pl_e = DataSourceE().Get()
     gen_all_post_list_page(pl_s, pl_q, pl_e)
 
-def gen():
+def gentest():
     pl = DataSourceTest().Get()
     gen_all_post_list_page(pl, pl, pl)
 
