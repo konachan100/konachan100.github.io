@@ -11,7 +11,7 @@ test_post_list = json.loads(open('testdata.json', 'r').read())
 
 
 
-def webread(url, readtimeout=10):
+def webread(url, readtimeout=20):
     """read page"""
     opener = urllib.request.build_opener()
     opener.addheaders = [('User-Agent',
