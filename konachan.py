@@ -24,8 +24,12 @@ class DataSource:
         return None
     def Get(self):
         try:
+            print("Loading URL: "+ self.URL())
+            result = webread(self.URL()).decode()
+            print("Success, decoding JSON")
             return json.loads(webread(self.URL()).decode())
         except Exception as e:
+            print("Failed, "+e)
             return None
 
 class DataSourceS(DataSource):
