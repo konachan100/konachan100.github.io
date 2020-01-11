@@ -1,5 +1,5 @@
 :loop
-python pageen.py
+python pagegen.py
 git add *
 git commit -m "update content"
 git push origin master
