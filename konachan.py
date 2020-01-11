@@ -28,15 +28,15 @@ class DataSource:
         except Exception as e:
             return None
 
-class DataSoruceS(DataSource):
+class DataSourceS(DataSource):
     def URL(self):
         return "http://www.konachan.net/post.json?limit=100&rating:safe"
 
-class DataSoruceQ(DataSource):
+class DataSourceQ(DataSource):
     def URL(self):
         return "http://www.konachan.net/post.json?limit=100&rating:questionable"
 
-class DataSoruceE(DataSource):
+class DataSourceE(DataSource):
     def URL(self):
         return "http://www.konachan.net/post.json?limit=100&rating:explicit"
 
