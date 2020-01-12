@@ -30,8 +30,21 @@
             position: fixed;
             top: 0%;
             left: 0%;
+            width: 95%;
+        }
+        #bigimg_mask{
+            position: fixed;
+            top: 0%;
+            left: 0%;
             width: 100%;
-            padding-left: -50%;
+            height: 100%;
+            background-color: #22222280;
+        }
+
+        #bigimg_close{
+            position: absolute;
+            top: 0%;
+            left: 0%;
         }
     </style>
     <script>
@@ -42,12 +55,16 @@
         var showBigImage = function (url) {
             let bigimg = document.getElementById("bigimg")
             bigimg.innerHTML = ""
+            let mask = document.createElement("div")
+            mask.id = "bigimg_mask"
+            bigimg.appendChild(mask)
             let img = document.createElement("img")
             img.src = url
             bigimg.appendChild(img)
             let btn = document.createElement("button")
+            btn.id = "bigimg_close"
             btn.onclick = closeBigImage
-            btn.value = "X"
+            btn.innerText = "close"
             bigimg.appendChild(btn)
         }
 
