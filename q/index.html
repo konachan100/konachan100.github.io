@@ -27,7 +27,11 @@
     </style>
     <script>
         var showBigImage = function (url) {
-            window.location = url
+            let bigimg = document.getElementById("bigimg")
+            bigimg.innerHTML = ""
+            let img = document.createElement("img")
+            img.src = url
+            bigimg.appendChild(img)
         }
     </script>
 </head>
@@ -735,7 +739,9 @@
         
     </div>
     
+    <div id = "bigimg">
 
+    </div>
 
 </body>
 
