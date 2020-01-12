@@ -25,9 +25,17 @@
         img {
             width: 100%;
         }
+
+        #bigimg {
+            position: fixed;
+            top: 0%;
+            left: 0%;
+            width: 100%;
+            padding-left: -50%;
+        }
     </style>
     <script>
-        var closeBigImage = function (){
+        var closeBigImage = function () {
             let bigimg = document.getElementById("bigimg")
             bigimg.innerHTML = ""
         }
@@ -42,7 +50,7 @@
             btn.value = "X"
             bigimg.appendChild(btn)
         }
-       
+
     </script>
 </head>
 
@@ -749,7 +757,7 @@
         
     </div>
     
-    <div id = "bigimg">
+    <div id="bigimg">
 
     </div>
 
