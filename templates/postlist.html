@@ -26,50 +26,29 @@
             width: 100%;
         }
 
-        #bigimg {
-            position: fixed;
-            top: 0%;
-            left: 0%;
+        .rowbigimg {
             width: 100%;
-            height: 100%;           
-        }    
-        #bigimg_mask{
-            width: 100%;
-            height: 100%;
-        }
-        #bigimg_img{
-            margin: 20px auto;
         }
 
-        #bigimg_close{
-            position: absolute;
-            top: 0%;
-            left: 0%;
+        .bigimg {
+            width: 80%;
+            margin-left: 10%;
         }
     </style>
     <script>
         var closeBigImage = function () {
-            let bigimg = document.getElementById("bigimg")
-            bigimg.innerHTML = ""
+            var items = document.getElementsByClassName("rowbigimg")
+            for (let i in items) {
+                items[i].innerHTML = ""
+            }
         }
-        var showBigImage = function (url) {
-            let bigimg = document.getElementById("bigimg")
-            bigimg.innerHTML = ""
-           
-            let mask = document.createElement("div")
-            mask.id = "bigimg_mask"
-            bigimg.appendChild(mask)
-           
+        var showBigImage = function (url, btn) {
+            closeBigImage()
+            var e = btn.parentElement.parentElement.getElementsByClassName("rowbigimg")[0]
             let img = document.createElement("img")
-            img.id = "bigimg_img"
             img.src = url
-            mask.appendChild(img)
-           
-            let btn = document.createElement("button")
-            btn.id = "bigimg_close"
-            btn.onclick = closeBigImage
-            btn.innerText = "close"
-            bigimg.appendChild(btn)
+            img.className = "bigimg"
+            e.appendChild(img)
         }
 
     </script>
@@ -78,19 +57,18 @@
 <body>
     <img src="https://konachan.net/images/logo_small.png" style="width: 40%">
     {% for row in postrow %}
-    <div style="clear: both">
+    <div style="clear: both; padding-bottom: 10%;">
         {% for col in row %}
         <div class="img_frame">
-            <button class="img_btn" onclick="{{ 'showBigImage(\'' +col['file_url'] + '\')' }}">
+            <button class="img_btn" onclick="{{ 'showBigImage(\'' +col['file_url'] + '\', this)' }}">
                 <img src="{{ col['preview_url'] }}">
             </button>
         </div>
         {% endfor %}
+        <div class="rowbigimg"></div>
+    </div>
     </div>
     {% endfor %}
-    <div id="bigimg">
-
-    </div>
 
 </body>
 
