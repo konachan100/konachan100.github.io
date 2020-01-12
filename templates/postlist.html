@@ -27,7 +27,9 @@
     </style>
     <script>
         var showBigImage = function (url) {
-            window.location = url
+            let img = document.createElement("img")
+            img.src = url
+            document.body.appendChild(img)
         }
     </script>
 </head>
