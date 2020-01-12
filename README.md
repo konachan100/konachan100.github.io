@@ -12,7 +12,7 @@ and generate static web pages, and git-push to this repo
 **Warning:** Do not try to build a konachan mirror site on your cloud server, 
 your server instance will be blocked for political-right reason.
 
-## Requirement
+## Dev Requirement
 - Python 3.x
 - Python Library
   - Jinja2
