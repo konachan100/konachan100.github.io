@@ -1,4 +1,4 @@
-#from flask import Flask, render_template, request
+import sys
 from jinja2 import Environment, FileSystemLoader
 import os.path
 from konachan import *
@@ -57,5 +57,13 @@ def gentest():
     gen_all_post_list_page(pl, pl, pl)
 
 if __name__ == "__main__":
-    gen()
+    isTest = False
+    for arg in sys.argv:
+        if arg.strip() == '-t':
+            isTest = True
+            break
+    if isTest:
+        gentest()
+    else:
+        gen()
 
