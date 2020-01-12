@@ -42,9 +42,8 @@
                 items[i].innerHTML = ""
             }
         }
-        var showBigImage = function (url, btn) {
-            closeBigImage()
-            var e = btn.parentElement.parentElement.getElementsByClassName("rowbigimg")[0]
+        var showBigImage = function (url, e) {
+            closeBigImage()           
             let img = document.createElement("img")
             img.src = url
             img.className = "bigimg"
@@ -60,7 +59,7 @@
     <div style="clear: both; padding-bottom: 10%;">
         {% for col in row %}
         <div class="img_frame">
-            <button class="img_btn" onclick="{{ 'showBigImage(\'' +col['file_url'] + '\', this)' }}">
+            <button class="img_btn" onclick="showBigImage('{{col['file_url']}}', this.parentElement.parentElement.getElementsByClassName('rowbigimg')[0])">
                 <img src="{{ col['preview_url'] }}">
             </button>
         </div>
