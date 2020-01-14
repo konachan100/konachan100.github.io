@@ -110,7 +110,7 @@
         {% for col in row %}
         <div class="img_frame">
             <button class="img_btn"
-                onclick="showBigImage('{{col['file_url']}}', this.parentElement.parentElement.getElementsByClassName('rowbigimg')[0], {'file_url':'{{col['file_url']}}','author':'{{col['author']}}','tags':'{{col['tags']}}','id':'{{col['id']}}'})">
+                onclick="showBigImage('{{col['file_url']}}', this.parentElement.parentElement.getElementsByClassName('rowbigimg')[0], {'file_url':'{{col['file_url']}}','author':'{{col['author']}}','tags':'{{col['tags'].replace("'", "\'")}}','id':'{{col['id']}}'})">
                 <img src="{{ col['preview_url'] }}">
             </button>
         </div>
