@@ -3,7 +3,7 @@ from jinja2 import Environment, FileSystemLoader
 import os.path
 from konachan import *
 
-output_pages = ['s', 'ms', 'q', 'mq', 'e', 'me']
+output_pages = ['s', 'ms', 'q', 'mq']
 
 loader = FileSystemLoader('./templates')
 env = Environment(loader = loader)
