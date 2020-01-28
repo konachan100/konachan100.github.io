@@ -2,7 +2,7 @@
 git pull
 git pull --recurse-submodules
 cd src
-gen.bat
+call gen.bat
 cd ..
 git add *
 git commit -m "update content"
