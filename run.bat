@@ -1,6 +1,8 @@
 :loop
 git pull
-src/gen.bat
+cd src
+gen.bat
+cd ..
 git add *
 git commit -m "update content"
 git push
