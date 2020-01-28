@@ -1,5 +1,6 @@
 :loop
 git pull
+git pull --recurse-submodules
 cd src
 gen.bat
 cd ..
