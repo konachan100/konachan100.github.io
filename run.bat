@@ -1,6 +1,6 @@
 :loop
 git pull
-python pagegen.py
+src/gen.bat
 git add *
 git commit -m "update content"
 git push
