@@ -3,6 +3,7 @@ git pull
 cd src
 call gen.bat
 cd ..
+git diff --stat
 git add *
 git commit -m "update content"
 git push
