@@ -8,5 +8,5 @@ git diff --stat
 git add *
 git commit -m "update content"
 git push
-timeout /t 300
+timeout /t 3600
 goto :loop
