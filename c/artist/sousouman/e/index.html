@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="referrer" content="no-referrer">
+    <title>Konachan100</title>
+    <style>
+        body {
+            background: #222222;
+        }
+
+        .img_frame {
+            width: 25%;
+            padding-bottom: 5%;
+            float: left;
+        }
+
+        .img_btn {
+            width: 100%;
+            background-color: transparent;
+            border: transparent;
+        }
+
+        img {
+            width: 100%;
+        }
+
+        .rowbigimg {
+            clear: both;
+            width: 100%;
+        }
+
+        .bigimg {
+            width: 80%;
+            margin-left: 10%;
+        }
+
+        .postinfo {
+            padding-left: 10%;
+            color: #f1d3ff;
+            padding-right: 10%;
+        }
+
+        .info_table {
+            background-color: #29285d;
+            table-layout: fixed;
+            width: 100%;
+        }
+
+        .info_name {
+            padding-right: 20px;
+            text-align: right;
+            width: 80px;
+        }
+
+        td {
+            word-break: break-all;
+        }
+
+        #footer {
+            clear: both;
+            padding: 5%;
+        }
+
+        #links {
+            position: fixed;
+            bottom: 5%;
+            right: 5%;
+            padding: 1%;
+        }
+
+        .linkitem {
+            background-color: wheat;
+            margin: -10%;
+            text-align: center;
+        }
+
+        .linkspace {
+            padding: 60%;
+        }
+        .linkbtn{
+            width: 100%;
+            height: 100%;
+            background-color: transparent;
+            border: none;
+            font-size: 2rem;
+        }
+        audio{
+            position: fixed;
+            top: 0px;
+            right: 0px;
+        }
+    </style>
+    <script>
+        var sUserAgent = navigator.userAgent.toLowerCase();
+        var bIsIpad = sUserAgent.match(/ipad/i) == "ipad";
+        var bIsIphoneOs = sUserAgent.match(/iphone os/i) == "iphone os";
+        var bIsMidp = sUserAgent.match(/midp/i) == "midp";
+        var bIsUc7 = sUserAgent.match(/rv:1.2.3.4/i) == "rv:1.2.3.4";
+        var bIsUc = sUserAgent.match(/ucweb/i) == "ucweb";
+        var bIsAndroid = sUserAgent.match(/android/i) == "android";
+        var bIsCE = sUserAgent.match(/windows ce/i) == "windows ce";
+        var bIsWM = sUserAgent.match(/windows mobile/i) == "windows mobile";
+
+        if (bIsIpad || bIsIphoneOs || bIsMidp || bIsUc7 || bIsUc || bIsAndroid || bIsCE || bIsWM) {
+            window.location = "./m"
+        }
+
+        var closeBigImage = function () {
+            var items = document.getElementsByClassName("rowbigimg")
+            for (let i in items) {
+                items[i].innerHTML = ""
+            }
+        }
+        var showBigImage = function (url, e, info) {
+            e.innerHTML = ""
+            let img = document.createElement("img")
+            img.src = url
+            img.className = "bigimg"
+            let div = document.createElement("div")
+            div.className = "postinfo"
+            let infotable = document.createElement("table")
+            infotable.className = "info_table"
+            div.appendChild(infotable)
+
+
+            let tablestr = '\
+            <tr>\
+                <td class = "info_name">ID</td><td>%ID%</td>\
+            </tr>\
+            <tr>\
+                <td class = "info_name">URL</td><td>%URL%</td>\
+            </tr>\
+            <tr>\
+                <td class = "info_name">Author</td><td>%Author%</td>\
+            </tr>\
+            <tr>\
+                <td class = "info_name">Tags</td><td>%Tags%</td>\
+            </tr>\
+            '.replace('%ID%', info.id).replace('%Author%', info.author).replace('%Tags%', info.tags).replace('%URL%', info.file_url)
+            infotable.innerHTML = tablestr
+
+
+            e.appendChild(div)
+            e.appendChild(img)
+
+        }
+
+    </script>
+</head>
+
+<body>
+    <img src="https://konachan.net/images/konachan_net_sm_std.png" style="width: 40%; margin-left: -3%">
+    
+    <div style="clear: both; padding-bottom: 2%;">
+        
+        <div class="img_frame">
+            <button class="img_btn"
+                onclick="showBigImage('https://konachan.net/image/f859b700a96c654f83ab1571f0d90acb/Konachan.com%20-%20298966%20anthropomorphism%20azur_lane%20censored%20elbow_gloves%20gloves%20illustrious_%28azur_lane%29%20long_hair%20pussy%20pussy_juice%20scan%20sousouman%20white_hair.png', this.parentElement.parentElement.getElementsByClassName('rowbigimg')[0], {'file_url':'https://konachan.net/image/f859b700a96c654f83ab1571f0d90acb/Konachan.com%20-%20298966%20anthropomorphism%20azur_lane%20censored%20elbow_gloves%20gloves%20illustrious_%28azur_lane%29%20long_hair%20pussy%20pussy_juice%20scan%20sousouman%20white_hair.png','author':'BattlequeenYume','tags':'anthropomorphism azur_lane censored elbow_gloves gloves illustrious_(azur_lane) long_hair pussy pussy_juice scan sousouman white_hair','id':'298966'})">
+                <img src="https://konachan.net/data/preview/f8/59/f859b700a96c654f83ab1571f0d90acb.jpg">
+            </button>
+        </div>
+        
+        <div class="img_frame">
+            <button class="img_btn"
+                onclick="showBigImage('https://konachan.net/image/1b6cec50d86e65f1206650097008e48d/Konachan.com%20-%20288410%20azur_lane%20blush%20braids%20breasts%20chain%20collar%20gloves%20headband%20long_hair%20navel%20nipples%20panties%20panty_pull%20scan%20sousouman%20stockings%20underwear%20white_hair.png', this.parentElement.parentElement.getElementsByClassName('rowbigimg')[0], {'file_url':'https://konachan.net/image/1b6cec50d86e65f1206650097008e48d/Konachan.com%20-%20288410%20azur_lane%20blush%20braids%20breasts%20chain%20collar%20gloves%20headband%20long_hair%20navel%20nipples%20panties%20panty_pull%20scan%20sousouman%20stockings%20underwear%20white_hair.png','author':'BattlequeenYume','tags':'anthropomorphism azur_lane belfast_(azur_lane) blush braids breasts chain collar elbow_gloves garter_belt gloves headband long_hair navel nipples panties panty_pull purple_eyes pussy_juice scan sousouman stockings underwear white_hair','id':'288410'})">
+                <img src="https://konachan.net/data/preview/1b/6c/1b6cec50d86e65f1206650097008e48d.jpg">
+            </button>
+        </div>
+        
+        <div class="img_frame">
+            <button class="img_btn"
+                onclick="showBigImage('https://konachan.net/image/f2b9752297e8343938265ae615036130/Konachan.com%20-%20288259%20bed%20brown_eyes%20cameltoe%20candy%20collar%20lollipop%20long_hair%20maid%20nipples%20no_bra%20original%20panties%20ribbons%20scan%20sousouman%20thighhighs%20underwear%20upskirt.png', this.parentElement.parentElement.getElementsByClassName('rowbigimg')[0], {'file_url':'https://konachan.net/image/f2b9752297e8343938265ae615036130/Konachan.com%20-%20288259%20bed%20brown_eyes%20cameltoe%20candy%20collar%20lollipop%20long_hair%20maid%20nipples%20no_bra%20original%20panties%20ribbons%20scan%20sousouman%20thighhighs%20underwear%20upskirt.png','author':'BattlequeenYume','tags':'bed brown_eyes cameltoe candy collar lollipop long_hair maid masturbation nanami_yuuno nipples no_bra original panties purple_hair pussy_juice ribbons scan sousouman thighhighs underwear upskirt','id':'288259'})">
+                <img src="https://konachan.net/data/preview/f2/b9/f2b9752297e8343938265ae615036130.jpg">
+            </button>
+        </div>
+        
+        <div class="img_frame">
+            <button class="img_btn"
+                onclick="showBigImage('https://konachan.net/image/311835379aad59ba182c69372d599f1f/Konachan.com%20-%20284780%20barefoot%20blonde_hair%20blush%20bow%20breasts%20dress%20long_hair%20navel%20nipples%20nude%20original%20panties%20photoshop%20pussy%20skirt_lift%20sousouman%20uncensored%20underwear.png', this.parentElement.parentElement.getElementsByClassName('rowbigimg')[0], {'file_url':'https://konachan.net/image/311835379aad59ba182c69372d599f1f/Konachan.com%20-%20284780%20barefoot%20blonde_hair%20blush%20bow%20breasts%20dress%20long_hair%20navel%20nipples%20nude%20original%20panties%20photoshop%20pussy%20skirt_lift%20sousouman%20uncensored%20underwear.png','author':'BattlequeenYume','tags':'barefoot blonde_hair blush bow breasts dress long_hair navel nipples nude original panties photoshop pussy skirt_lift sousouman uncensored underwear','id':'284780'})">
+                <img src="https://konachan.net/data/preview/31/18/311835379aad59ba182c69372d599f1f.jpg">
+            </button>
+        </div>
+        
+        <div class="rowbigimg">
+        </div>
+    </div>
+    </div>
+    
+    <div style="clear: both; padding-bottom: 2%;">
+        
+        <div class="img_frame">
+            <button class="img_btn"
+                onclick="showBigImage('https://konachan.net/image/d0dd1e7326558931b532f1a05f58ad1e/Konachan.com%20-%20260117%202girls%20anus%20ass%20ass_grab%20azur_lane%20black_hair%20blush%20bra%20breasts%20brown_eyes%20censored%20foxgirl%20long_hair%20nipples%20nude%20pussy%20signed%20sousouman%20underwear.png', this.parentElement.parentElement.getElementsByClassName('rowbigimg')[0], {'file_url':'https://konachan.net/image/d0dd1e7326558931b532f1a05f58ad1e/Konachan.com%20-%20260117%202girls%20anus%20ass%20ass_grab%20azur_lane%20black_hair%20blush%20bra%20breasts%20brown_eyes%20censored%20foxgirl%20long_hair%20nipples%20nude%20pussy%20signed%20sousouman%20underwear.png','author':'RyuZU','tags':'2girls anthropomorphism anus ass ass_grab atago_(azur_lane) azur_lane black_hair blush bra breasts brown_eyes censored foxgirl long_hair nipples nude pussy signed sousouman takao_(azur_lane) underwear','id':'260117'})">
+                <img src="https://konachan.net/data/preview/d0/dd/d0dd1e7326558931b532f1a05f58ad1e.jpg">
+            </button>
+        </div>
+        
+        <div class="img_frame">
+            <button class="img_btn"
+                onclick="showBigImage('https://konachan.net/image/d1c48bf7c74dcd352632b2115c808cf1/Konachan.com%20-%20250506%20breasts%20foxgirl%20nipples%20no_bra%20open_shirt%20panties%20panty_pull%20photoshop%20pink_hair%20pussy%20sousouman%20tail%20thighhighs%20underwear%20wet%20white%20yellow_eyes.png', this.parentElement.parentElement.getElementsByClassName('rowbigimg')[0], {'file_url':'https://konachan.net/image/d1c48bf7c74dcd352632b2115c808cf1/Konachan.com%20-%20250506%20breasts%20foxgirl%20nipples%20no_bra%20open_shirt%20panties%20panty_pull%20photoshop%20pink_hair%20pussy%20sousouman%20tail%20thighhighs%20underwear%20wet%20white%20yellow_eyes.png','author':'kamenitza','tags':'animal_ears breasts fate/grand_order fate_(series) foxgirl nipples no_bra open_shirt panties panty_pull photoshop pink_hair pussy sousouman tail tamamo_no_mae_(fate) thighhighs underwear wet white yellow_eyes','id':'250506'})">
+                <img src="https://konachan.net/data/preview/d1/c4/d1c48bf7c74dcd352632b2115c808cf1.jpg">
+            </button>
+        </div>
+        
+        <div class="img_frame">
+            <button class="img_btn"
+                onclick="showBigImage('https://konachan.net/image/5c24e86354bf9424d088bd7a5c90aadb/Konachan.com%20-%20236006%20anthropomorphism%20ass%20blue_eyes%20blush%20brown_hair%20food%20headband%20japanese_clothes%20long_hair%20panties%20see_through%20sousouman%20thighhighs%20underwear%20waifu2x.png', this.parentElement.parentElement.getElementsByClassName('rowbigimg')[0], {'file_url':'https://konachan.net/image/5c24e86354bf9424d088bd7a5c90aadb/Konachan.com%20-%20236006%20anthropomorphism%20ass%20blue_eyes%20blush%20brown_hair%20food%20headband%20japanese_clothes%20long_hair%20panties%20see_through%20sousouman%20thighhighs%20underwear%20waifu2x.png','author':'RyuZU','tags':'anthropomorphism ass blue_eyes blush brown_hair food headband japanese_clothes kantai_collection kongou_(kancolle) long_hair panties see_through sousouman thighhighs underwear waifu2x','id':'236006'})">
+                <img src="https://konachan.net/data/preview/5c/24/5c24e86354bf9424d088bd7a5c90aadb.jpg">
+            </button>
+        </div>
+        
+        <div class="rowbigimg">
+        </div>
+    </div>
+    </div>
+    
+    <script>
+        var onClickLinks = function(url){
+            window.location = url
+        }
+        var onClickS = function(){
+            onClickLinks("//konachan100.github.io")
+        }
+        var onClickQ = function(){
+            onClickLinks("//konachan100.github.io/q")
+        }
+        var onClickE = function(){
+            onClickLinks("//konachan100.github.io/e")
+        }
+
+    </script>
+    
+    <div id="footer">
+        <div id="links">
+            
+            
+            
+        </div>
+    </div>
+    
+
+    
+
+</body>
+
+</html>
