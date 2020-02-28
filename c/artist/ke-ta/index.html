@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="referrer" content="no-referrer">
+    <title>Konachan100</title>
+    <style>
+        body {
+            background: #222222;
+        }
+
+        .img_frame {
+            width: 25%;
+            padding-bottom: 5%;
+            float: left;
+        }
+
+        .img_btn {
+            width: 100%;
+            background-color: transparent;
+            border: transparent;
+        }
+
+        img {
+            width: 100%;
+        }
+
+        .rowbigimg {
+            clear: both;
+            width: 100%;
+        }
+
+        .bigimg {
+            width: 80%;
+            margin-left: 10%;
+        }
+
+        .postinfo {
+            padding-left: 10%;
+            color: #f1d3ff;
+            padding-right: 10%;
+        }
+
+        .info_table {
+            background-color: #29285d;
+            table-layout: fixed;
+            width: 100%;
+        }
+
+        .info_name {
+            padding-right: 20px;
+            text-align: right;
+            width: 80px;
+        }
+
+        td {
+            word-break: break-all;
+        }
+
+        #footer {
+            clear: both;
+            padding: 5%;
+        }
+
+        #links {
+            position: fixed;
+            bottom: 5%;
+            right: 5%;
+            padding: 1%;
+        }
+
+        .linkitem {
+            background-color: wheat;
+            margin: -10%;
+            text-align: center;
+        }
+
+        .linkspace {
+            padding: 60%;
+        }
+        .linkbtn{
+            width: 100%;
+            height: 100%;
+            background-color: transparent;
+            border: none;
+            font-size: 2rem;
+        }
+        audio{
+            position: fixed;
+            top: 0px;
+            right: 0px;
+        }
+    </style>
+    <script>
+        var sUserAgent = navigator.userAgent.toLowerCase();
+        var bIsIpad = sUserAgent.match(/ipad/i) == "ipad";
+        var bIsIphoneOs = sUserAgent.match(/iphone os/i) == "iphone os";
+        var bIsMidp = sUserAgent.match(/midp/i) == "midp";
+        var bIsUc7 = sUserAgent.match(/rv:1.2.3.4/i) == "rv:1.2.3.4";
+        var bIsUc = sUserAgent.match(/ucweb/i) == "ucweb";
+        var bIsAndroid = sUserAgent.match(/android/i) == "android";
+        var bIsCE = sUserAgent.match(/windows ce/i) == "windows ce";
+        var bIsWM = sUserAgent.match(/windows mobile/i) == "windows mobile";
+
+        if (bIsIpad || bIsIphoneOs || bIsMidp || bIsUc7 || bIsUc || bIsAndroid || bIsCE || bIsWM) {
+            window.location = "./m"
+        }
+
+        var closeBigImage = function () {
+            var items = document.getElementsByClassName("rowbigimg")
+            for (let i in items) {
+                items[i].innerHTML = ""
+            }
+        }
+        var showBigImage = function (url, e, info) {
+            e.innerHTML = ""
+            let img = document.createElement("img")
+            img.src = url
+            img.className = "bigimg"
+            let div = document.createElement("div")
+            div.className = "postinfo"
+            let infotable = document.createElement("table")
+            infotable.className = "info_table"
+            div.appendChild(infotable)
+
+
+            let tablestr = '\
+            <tr>\
+                <td class = "info_name">ID</td><td>%ID%</td>\
+            </tr>\
+            <tr>\
+                <td class = "info_name">URL</td><td>%URL%</td>\
+            </tr>\
+            <tr>\
+                <td class = "info_name">Author</td><td>%Author%</td>\
+            </tr>\
+            <tr>\
+                <td class = "info_name">Tags</td><td>%Tags%</td>\
+            </tr>\
+            '.replace('%ID%', info.id).replace('%Author%', info.author).replace('%Tags%', info.tags).replace('%URL%', info.file_url)
+            infotable.innerHTML = tablestr
+
+
+            e.appendChild(div)
+            e.appendChild(img)
+
+        }
+
+    </script>
+</head>
+
+<body>
+    <img src="https://konachan.net/images/konachan_net_sm_std.png" style="width: 40%; margin-left: -3%">
+    
+    <div style="clear: both; padding-bottom: 2%;">
+        
+        <div class="img_frame">
+            <button class="img_btn"
+                onclick="showBigImage('https://konachan.net/image/93eb550c0622355d13786afd9103b015/Konachan.com%20-%20300445%20bow%20flowers%20gray_hair%20green_eyes%20hat%20ke-ta%20komeiji_koishi%20loli%20short_hair%20touhou.jpg', this.parentElement.parentElement.getElementsByClassName('rowbigimg')[0], {'file_url':'https://konachan.net/image/93eb550c0622355d13786afd9103b015/Konachan.com%20-%20300445%20bow%20flowers%20gray_hair%20green_eyes%20hat%20ke-ta%20komeiji_koishi%20loli%20short_hair%20touhou.jpg','author':'RyuZU','tags':'bow flowers gray_hair green_eyes hat ke-ta komeiji_koishi loli short_hair touhou','id':'300445'})">
+                <img src="https://konachan.net/data/preview/93/eb/93eb550c0622355d13786afd9103b015.jpg">
+            </button>
+        </div>
+        
+        <div class="img_frame">
+            <button class="img_btn"
+                onclick="showBigImage('https://konachan.net/image/345e3263da716ae5dcef211a040a8560/Konachan.com%20-%20298883%202girls%20dress%20gray_hair%20japanese_clothes%20ke-ta%20mononobe_no_futo%20purple_eyes%20scan%20short_hair%20soga_no_tojiko%20touhou.png', this.parentElement.parentElement.getElementsByClassName('rowbigimg')[0], {'file_url':'https://konachan.net/image/345e3263da716ae5dcef211a040a8560/Konachan.com%20-%20298883%202girls%20dress%20gray_hair%20japanese_clothes%20ke-ta%20mononobe_no_futo%20purple_eyes%20scan%20short_hair%20soga_no_tojiko%20touhou.png','author':'BattlequeenYume','tags':'2girls dress gray_hair japanese_clothes ke-ta mononobe_no_futo purple_eyes scan short_hair soga_no_tojiko touhou','id':'298883'})">
+                <img src="https://konachan.net/data/preview/34/5e/345e3263da716ae5dcef211a040a8560.jpg">
+            </button>
+        </div>
+        
+        <div class="img_frame">
+            <button class="img_btn"
+                onclick="showBigImage('https://konachan.net/image/125464d32249311ecf21ee3c397cea1a/Konachan.com%20-%20273473%20animal%20book%20cat%20flowers%20headband%20ke-ta%20komeiji_satori%20petals%20pink_eyes%20pink_hair%20rose%20scan%20short_hair%20touhou%20white.png', this.parentElement.parentElement.getElementsByClassName('rowbigimg')[0], {'file_url':'https://konachan.net/image/125464d32249311ecf21ee3c397cea1a/Konachan.com%20-%20273473%20animal%20book%20cat%20flowers%20headband%20ke-ta%20komeiji_satori%20petals%20pink_eyes%20pink_hair%20rose%20scan%20short_hair%20touhou%20white.png','author':'RyuZU','tags':'animal book cat flowers headband ke-ta komeiji_satori petals pink_eyes pink_hair rose scan short_hair touhou white','id':'273473'})">
+                <img src="https://konachan.net/data/preview/12/54/125464d32249311ecf21ee3c397cea1a.jpg">
+            </button>
+        </div>
+        
+        <div class="img_frame">
+            <button class="img_btn"
+                onclick="showBigImage('https://konachan.net/image/dd66986b028c7a219e6cae6b650eb190/Konachan.com%20-%20273472%20bow%20flowers%20gray_hair%20green_eyes%20hat%20ke-ta%20komeiji_koishi%20loli%20scan%20short_hair%20touhou.png', this.parentElement.parentElement.getElementsByClassName('rowbigimg')[0], {'file_url':'https://konachan.net/image/dd66986b028c7a219e6cae6b650eb190/Konachan.com%20-%20273472%20bow%20flowers%20gray_hair%20green_eyes%20hat%20ke-ta%20komeiji_koishi%20loli%20scan%20short_hair%20touhou.png','author':'RyuZU','tags':'bow flowers gray_hair green_eyes hat ke-ta komeiji_koishi loli scan short_hair touhou','id':'273472'})">
+                <img src="https://konachan.net/data/preview/dd/66/dd66986b028c7a219e6cae6b650eb190.jpg">
+            </button>
+        </div>
+        
+        <div class="rowbigimg">
+        </div>
+    </div>
+    </div>
+    
+    <div style="clear: both; padding-bottom: 2%;">
+        
+        <div class="img_frame">
+            <button class="img_btn"
+                onclick="showBigImage('https://konachan.net/image/8345b75078f713a4915ce0b12811a509/Konachan.com%20-%20264003%20alice_margatroid%20clouds%20group%20kawashiro_nitori%20ke-ta%20kirisame_marisa%20landscape%20mage%20night%20patchouli_knowledge%20scenic%20sky%20stars%20touhou%20waifu2x%20witch.png', this.parentElement.parentElement.getElementsByClassName('rowbigimg')[0], {'file_url':'https://konachan.net/image/8345b75078f713a4915ce0b12811a509/Konachan.com%20-%20264003%20alice_margatroid%20clouds%20group%20kawashiro_nitori%20ke-ta%20kirisame_marisa%20landscape%20mage%20night%20patchouli_knowledge%20scenic%20sky%20stars%20touhou%20waifu2x%20witch.png','author':'RyuZU','tags':'alice_margatroid clouds group kawashiro_nitori ke-ta kirisame_marisa landscape mage night patchouli_knowledge scenic sky stars touhou waifu2x witch','id':'264003'})">
+                <img src="https://konachan.net/data/preview/83/45/8345b75078f713a4915ce0b12811a509.jpg">
+            </button>
+        </div>
+        
+        <div class="img_frame">
+            <button class="img_btn"
+                onclick="showBigImage('https://konachan.net/image/efbbfa3e87052bfb8a525c6925681941/Konachan.com%20-%20249925%20drink%20flowers%20food%20fruit%20green_eyes%20hat%20ke-ta%20komeiji_koishi%20scan%20short_hair%20touhou%20white_hair.png', this.parentElement.parentElement.getElementsByClassName('rowbigimg')[0], {'file_url':'https://konachan.net/image/efbbfa3e87052bfb8a525c6925681941/Konachan.com%20-%20249925%20drink%20flowers%20food%20fruit%20green_eyes%20hat%20ke-ta%20komeiji_koishi%20scan%20short_hair%20touhou%20white_hair.png','author':'RyuZU','tags':'drink flowers food fruit green_eyes hat ke-ta komeiji_koishi scan short_hair touhou white_hair','id':'249925'})">
+                <img src="https://konachan.net/data/preview/ef/bb/efbbfa3e87052bfb8a525c6925681941.jpg">
+            </button>
+        </div>
+        
+        <div class="img_frame">
+            <button class="img_btn"
+                onclick="showBigImage('https://konachan.net/image/a200f9c663a5b643c4a6acee25831c05/Konachan.com%20-%20249921%20drink%20flowers%20food%20fruit%20green_eyes%20hat%20ke-ta%20komeiji_koishi%20loli%20scan%20short_hair%20touhou%20white_hair.png', this.parentElement.parentElement.getElementsByClassName('rowbigimg')[0], {'file_url':'https://konachan.net/image/a200f9c663a5b643c4a6acee25831c05/Konachan.com%20-%20249921%20drink%20flowers%20food%20fruit%20green_eyes%20hat%20ke-ta%20komeiji_koishi%20loli%20scan%20short_hair%20touhou%20white_hair.png','author':'RyuZU','tags':'drink flowers food fruit green_eyes hat ke-ta komeiji_koishi loli scan short_hair touhou white_hair','id':'249921'})">
+                <img src="https://konachan.net/data/preview/a2/00/a200f9c663a5b643c4a6acee25831c05.jpg">
+            </button>
+        </div>
+        
+        <div class="img_frame">
+            <button class="img_btn"
+                onclick="showBigImage('https://konachan.net/image/b970b192580bace0da45ed71626ef7a0/Konachan.com%20-%20249919%20gray_hair%20green_eyes%20hat%20ke-ta%20komeiji_koishi%20pantyhose%20scan%20short_hair%20touhou%20witch_hat.png', this.parentElement.parentElement.getElementsByClassName('rowbigimg')[0], {'file_url':'https://konachan.net/image/b970b192580bace0da45ed71626ef7a0/Konachan.com%20-%20249919%20gray_hair%20green_eyes%20hat%20ke-ta%20komeiji_koishi%20pantyhose%20scan%20short_hair%20touhou%20witch_hat.png','author':'RyuZU','tags':'gray_hair green_eyes hat ke-ta komeiji_koishi pantyhose scan short_hair touhou witch_hat','id':'249919'})">
+                <img src="https://konachan.net/data/preview/b9/70/b970b192580bace0da45ed71626ef7a0.jpg">
+            </button>
+        </div>
+        
+        <div class="rowbigimg">
+        </div>
+    </div>
+    </div>
+    
+    <div style="clear: both; padding-bottom: 2%;">
+        
+        <div class="img_frame">
+            <button class="img_btn"
+                onclick="showBigImage('https://konachan.net/image/09e562950edb4bce5f68c9c0834b4ed7/Konachan.com%20-%20248141%20gray_hair%20green_eyes%20hat%20ke-ta%20komeiji_koishi%20pantyhose%20short_hair%20touhou%20witch_hat.jpg', this.parentElement.parentElement.getElementsByClassName('rowbigimg')[0], {'file_url':'https://konachan.net/image/09e562950edb4bce5f68c9c0834b4ed7/Konachan.com%20-%20248141%20gray_hair%20green_eyes%20hat%20ke-ta%20komeiji_koishi%20pantyhose%20short_hair%20touhou%20witch_hat.jpg','author':'RyuZU','tags':'gray_hair green_eyes hat ke-ta komeiji_koishi pantyhose short_hair touhou witch_hat','id':'248141'})">
+                <img src="https://konachan.net/data/preview/09/e5/09e562950edb4bce5f68c9c0834b4ed7.jpg">
+            </button>
+        </div>
+        
+        <div class="img_frame">
+            <button class="img_btn"
+                onclick="showBigImage('https://konachan.net/image/8e055d09bdf1210552fcebecb7a0fd06/Konachan.com%20-%20232899%20animal%20cat%20cropped%20headband%20kaenbyou_rin%20ke-ta%20komeiji_satori%20purple_hair%20red_eyes%20short_hair%20touhou%20waifu2x.png', this.parentElement.parentElement.getElementsByClassName('rowbigimg')[0], {'file_url':'https://konachan.net/image/8e055d09bdf1210552fcebecb7a0fd06/Konachan.com%20-%20232899%20animal%20cat%20cropped%20headband%20kaenbyou_rin%20ke-ta%20komeiji_satori%20purple_hair%20red_eyes%20short_hair%20touhou%20waifu2x.png','author':'RyuZU','tags':'animal cat cropped headband kaenbyou_rin ke-ta komeiji_satori purple_hair red_eyes short_hair touhou waifu2x','id':'232899'})">
+                <img src="https://konachan.net/data/preview/8e/05/8e055d09bdf1210552fcebecb7a0fd06.jpg">
+            </button>
+        </div>
+        
+        <div class="img_frame">
+            <button class="img_btn"
+                onclick="showBigImage('https://konachan.net/image/e49d3d87e1add8461ba8ac1b37824733/Konachan.com%20-%20221880%20brown_eyes%20brown_hair%20drink%20ke-ta%20scan%20shameimaru_aya%20short_hair%20touhou%20water%20wet%20white%20wings.png', this.parentElement.parentElement.getElementsByClassName('rowbigimg')[0], {'file_url':'https://konachan.net/image/e49d3d87e1add8461ba8ac1b37824733/Konachan.com%20-%20221880%20brown_eyes%20brown_hair%20drink%20ke-ta%20scan%20shameimaru_aya%20short_hair%20touhou%20water%20wet%20white%20wings.png','author':'Dummy','tags':'brown_eyes brown_hair drink ke-ta scan shameimaru_aya short_hair touhou water wet white wings','id':'221880'})">
+                <img src="https://konachan.net/data/preview/e4/9d/e49d3d87e1add8461ba8ac1b37824733.jpg">
+            </button>
+        </div>
+        
+        <div class="img_frame">
+            <button class="img_btn"
+                onclick="showBigImage('https://konachan.net/image/6f6387323771495172d985308f95d502/Konachan.com%20-%20220944%202girls%20bloomers%20blush%20flat_chest%20green_hair%20ke-ta%20komeiji_koishi%20komeiji_satori%20loli%20pink_hair%20short_hair%20sleeping%20touhou%20underwear.jpg', this.parentElement.parentElement.getElementsByClassName('rowbigimg')[0], {'file_url':'https://konachan.net/image/6f6387323771495172d985308f95d502/Konachan.com%20-%20220944%202girls%20bloomers%20blush%20flat_chest%20green_hair%20ke-ta%20komeiji_koishi%20komeiji_satori%20loli%20pink_hair%20short_hair%20sleeping%20touhou%20underwear.jpg','author':'luckyluna','tags':'2girls bloomers blush flat_chest green_hair ke-ta komeiji_koishi komeiji_satori loli pink_hair short_hair sleeping touhou underwear','id':'220944'})">
+                <img src="https://konachan.net/data/preview/6f/63/6f6387323771495172d985308f95d502.jpg">
+            </button>
+        </div>
+        
+        <div class="rowbigimg">
+        </div>
+    </div>
+    </div>
+    
+    <div style="clear: both; padding-bottom: 2%;">
+        
+        <div class="img_frame">
+            <button class="img_btn"
+                onclick="showBigImage('https://konachan.net/image/11dd3ffcfa5e48788d443bc8c793d47a/Konachan.com%20-%20220714%20animal%20blue_eyes%20close%20fish%20green_hair%20japanese_clothes%20ke-ta%20kochiya_sanae%20miko%20touhou%20water.jpg', this.parentElement.parentElement.getElementsByClassName('rowbigimg')[0], {'file_url':'https://konachan.net/image/11dd3ffcfa5e48788d443bc8c793d47a/Konachan.com%20-%20220714%20animal%20blue_eyes%20close%20fish%20green_hair%20japanese_clothes%20ke-ta%20kochiya_sanae%20miko%20touhou%20water.jpg','author':'FormX','tags':'animal blue_eyes close fish green_hair japanese_clothes ke-ta kochiya_sanae miko touhou water','id':'220714'})">
+                <img src="https://konachan.net/data/preview/11/dd/11dd3ffcfa5e48788d443bc8c793d47a.jpg">
+            </button>
+        </div>
+        
+        <div class="img_frame">
+            <button class="img_btn"
+                onclick="showBigImage('https://konachan.net/image/371b45503675c2d7d63403c4d6883cfe/Konachan.com%20-%20220609%20bloomers%20clouds%20hat%20ke-ta%20leaves%20shameimaru_aya%20short_hair%20skirt%20sky%20touhou%20umbrella.jpg', this.parentElement.parentElement.getElementsByClassName('rowbigimg')[0], {'file_url':'https://konachan.net/image/371b45503675c2d7d63403c4d6883cfe/Konachan.com%20-%20220609%20bloomers%20clouds%20hat%20ke-ta%20leaves%20shameimaru_aya%20short_hair%20skirt%20sky%20touhou%20umbrella.jpg','author':'FormX','tags':'bloomers clouds hat ke-ta leaves shameimaru_aya short_hair skirt sky touhou umbrella','id':'220609'})">
+                <img src="https://konachan.net/data/preview/37/1b/371b45503675c2d7d63403c4d6883cfe.jpg">
+            </button>
+        </div>
+        
+        <div class="img_frame">
+            <button class="img_btn"
+                onclick="showBigImage('https://konachan.net/image/125e210ae0f9915f5519279e1ef12b16/Konachan.com%20-%20220421%20bloomers%20bow%20brown_eyes%20brown_hair%20couch%20ke-ta%20loli%20lolita_fashion%20long_hair%20necklace%20ribbons%20star_sapphire%20touhou%20underwear.jpg', this.parentElement.parentElement.getElementsByClassName('rowbigimg')[0], {'file_url':'https://konachan.net/image/125e210ae0f9915f5519279e1ef12b16/Konachan.com%20-%20220421%20bloomers%20bow%20brown_eyes%20brown_hair%20couch%20ke-ta%20loli%20lolita_fashion%20long_hair%20necklace%20ribbons%20star_sapphire%20touhou%20underwear.jpg','author':'gnarf1975','tags':'bloomers bow brown_eyes brown_hair couch ke-ta loli lolita_fashion long_hair necklace ribbons star_sapphire touhou underwear','id':'220421'})">
+                <img src="https://konachan.net/data/preview/12/5e/125e210ae0f9915f5519279e1ef12b16.jpg">
+            </button>
+        </div>
+        
+        <div class="img_frame">
+            <button class="img_btn"
+                onclick="showBigImage('https://konachan.net/image/de121b8dc5b7970a71e0c96e8a75584b/Konachan.com%20-%20220276%20apple%20bloomers%20bow%20brown_eyes%20brown_hair%20cropped%20dress%20fairy%20food%20fruit%20hat%20ke-ta%20long_hair%20luna_child%20red_eyes%20sunny_milk%20touhou%20tree%20twintails%20wings.jpg', this.parentElement.parentElement.getElementsByClassName('rowbigimg')[0], {'file_url':'https://konachan.net/image/de121b8dc5b7970a71e0c96e8a75584b/Konachan.com%20-%20220276%20apple%20bloomers%20bow%20brown_eyes%20brown_hair%20cropped%20dress%20fairy%20food%20fruit%20hat%20ke-ta%20long_hair%20luna_child%20red_eyes%20sunny_milk%20touhou%20tree%20twintails%20wings.jpg','author':'mattiasc02','tags':'apple blonde_hair bloomers bow brown_eyes brown_hair cropped dress fairy food fruit hat ke-ta long_hair luna_child red_eyes star_sapphire sunny_milk touhou tree twintails wings','id':'220276'})">
+                <img src="https://konachan.net/data/preview/de/12/de121b8dc5b7970a71e0c96e8a75584b.jpg">
+            </button>
+        </div>
+        
+        <div class="rowbigimg">
+        </div>
+    </div>
+    </div>
+    
+    <div style="clear: both; padding-bottom: 2%;">
+        
+        <div class="img_frame">
+            <button class="img_btn"
+                onclick="showBigImage('https://konachan.net/image/6ddb5a32c6064f18b12619b4cced9e24/Konachan.com%20-%20213198%20dress%20gray_hair%20hat%20ke-ta%20komeiji_koishi%20scan%20touhou.png', this.parentElement.parentElement.getElementsByClassName('rowbigimg')[0], {'file_url':'https://konachan.net/image/6ddb5a32c6064f18b12619b4cced9e24/Konachan.com%20-%20213198%20dress%20gray_hair%20hat%20ke-ta%20komeiji_koishi%20scan%20touhou.png','author':'mattiasc02','tags':'dress gray_hair hat ke-ta komeiji_koishi scan touhou','id':'213198'})">
+                <img src="https://konachan.net/data/preview/6d/db/6ddb5a32c6064f18b12619b4cced9e24.jpg">
+            </button>
+        </div>
+        
+        <div class="img_frame">
+            <button class="img_btn"
+                onclick="showBigImage('https://konachan.net/image/145cdd4138e00532f5de22dcd5052039/Konachan.com%20-%20213126%20bunnygirl%20ke-ta%20reisen_udongein_inaba%20touhou%20waifu2x%20winter.png', this.parentElement.parentElement.getElementsByClassName('rowbigimg')[0], {'file_url':'https://konachan.net/image/145cdd4138e00532f5de22dcd5052039/Konachan.com%20-%20213126%20bunnygirl%20ke-ta%20reisen_udongein_inaba%20touhou%20waifu2x%20winter.png','author':'mattiasc02','tags':'bunnygirl ke-ta reisen_udongein_inaba touhou waifu2x winter','id':'213126'})">
+                <img src="https://konachan.net/data/preview/14/5c/145cdd4138e00532f5de22dcd5052039.jpg">
+            </button>
+        </div>
+        
+        <div class="img_frame">
+            <button class="img_btn"
+                onclick="showBigImage('https://konachan.net/image/84da36cb638c84866c2754cc14971dd8/Konachan.com%20-%20213112%20apple%20barefoot%20brown_eyes%20brown_hair%20clouds%20dualscreen%20food%20fruit%20hakurei_reimu%20japanese_clothes%20ke-ta%20miko%20touhou%20waifu2x.png', this.parentElement.parentElement.getElementsByClassName('rowbigimg')[0], {'file_url':'https://konachan.net/image/84da36cb638c84866c2754cc14971dd8/Konachan.com%20-%20213112%20apple%20barefoot%20brown_eyes%20brown_hair%20clouds%20dualscreen%20food%20fruit%20hakurei_reimu%20japanese_clothes%20ke-ta%20miko%20touhou%20waifu2x.png','author':'mattiasc02','tags':'apple barefoot brown_eyes brown_hair clouds dualscreen food fruit hakurei_reimu japanese_clothes ke-ta miko touhou waifu2x','id':'213112'})">
+                <img src="https://konachan.net/data/preview/84/da/84da36cb638c84866c2754cc14971dd8.jpg">
+            </button>
+        </div>
+        
+        <div class="img_frame">
+            <button class="img_btn"
+                onclick="showBigImage('https://konachan.net/image/3951003c3ae80c61438ab6f1b5631be8/Konachan.com%20-%20213085%202girls%20bloomers%20blush%20flat_chest%20green_hair%20ke-ta%20komeiji_koishi%20komeiji_satori%20loli%20pink_hair%20scan%20short_hair%20sleeping%20touhou%20underwear.png', this.parentElement.parentElement.getElementsByClassName('rowbigimg')[0], {'file_url':'https://konachan.net/image/3951003c3ae80c61438ab6f1b5631be8/Konachan.com%20-%20213085%202girls%20bloomers%20blush%20flat_chest%20green_hair%20ke-ta%20komeiji_koishi%20komeiji_satori%20loli%20pink_hair%20scan%20short_hair%20sleeping%20touhou%20underwear.png','author':'Flandre93','tags':'2girls bloomers blush flat_chest green_hair ke-ta komeiji_koishi komeiji_satori loli pink_hair scan short_hair sleeping touhou underwear','id':'213085'})">
+                <img src="https://konachan.net/data/preview/39/51/3951003c3ae80c61438ab6f1b5631be8.jpg">
+            </button>
+        </div>
+        
+        <div class="rowbigimg">
+        </div>
+    </div>
+    </div>
+    
+    <script>
+        var onClickLinks = function(url){
+            window.location = url
+        }
+        var onClickS = function(){
+            onClickLinks("//konachan100.github.io")
+        }
+        var onClickQ = function(){
+            onClickLinks("//konachan100.github.io/q")
+        }
+        var onClickE = function(){
+            onClickLinks("//konachan100.github.io/e")
+        }
+
+    </script>
+    
+    <div id="footer">
+        <div id="links">
+            
+            
+            
+        </div>
+    </div>
+    
+
+    
+
+</body>
+
+</html>
