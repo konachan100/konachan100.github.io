@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="referrer" content="no-referrer">
+    <title>Konachan100</title>
+    <style>
+        body {
+            background: #222222;
+        }
+
+        .img_frame {
+            width: 25%;
+            padding-bottom: 5%;
+            float: left;
+        }
+
+        .img_btn {
+            width: 100%;
+            background-color: transparent;
+            border: transparent;
+        }
+
+        img {
+            width: 100%;
+        }
+
+        .rowbigimg {
+            clear: both;
+            width: 100%;
+        }
+
+        .bigimg {
+            width: 80%;
+            margin-left: 10%;
+        }
+
+        .postinfo {
+            padding-left: 10%;
+            color: #f1d3ff;
+            padding-right: 10%;
+        }
+
+        .info_table {
+            background-color: #29285d;
+            table-layout: fixed;
+            width: 100%;
+        }
+
+        .info_name {
+            padding-right: 20px;
+            text-align: right;
+            width: 80px;
+        }
+
+        td {
+            word-break: break-all;
+        }
+
+        #footer {
+            clear: both;
+            padding: 5%;
+        }
+
+        #links {
+            position: fixed;
+            bottom: 5%;
+            right: 5%;
+            padding: 1%;
+        }
+
+        .linkitem {
+            background-color: wheat;
+            margin: -10%;
+            text-align: center;
+        }
+
+        .linkspace {
+            padding: 60%;
+        }
+        .linkbtn{
+            width: 100%;
+            height: 100%;
+            background-color: transparent;
+            border: none;
+            font-size: 2rem;
+        }
+        audio{
+            position: fixed;
+            top: 0px;
+            right: 0px;
+        }
+    </style>
+    <script>
+        var sUserAgent = navigator.userAgent.toLowerCase();
+        var bIsIpad = sUserAgent.match(/ipad/i) == "ipad";
+        var bIsIphoneOs = sUserAgent.match(/iphone os/i) == "iphone os";
+        var bIsMidp = sUserAgent.match(/midp/i) == "midp";
+        var bIsUc7 = sUserAgent.match(/rv:1.2.3.4/i) == "rv:1.2.3.4";
+        var bIsUc = sUserAgent.match(/ucweb/i) == "ucweb";
+        var bIsAndroid = sUserAgent.match(/android/i) == "android";
+        var bIsCE = sUserAgent.match(/windows ce/i) == "windows ce";
+        var bIsWM = sUserAgent.match(/windows mobile/i) == "windows mobile";
+
+        if (bIsIpad || bIsIphoneOs || bIsMidp || bIsUc7 || bIsUc || bIsAndroid || bIsCE || bIsWM) {
+            window.location = "./m"
+        }
+
+        var closeBigImage = function () {
+            var items = document.getElementsByClassName("rowbigimg")
+            for (let i in items) {
+                items[i].innerHTML = ""
+            }
+        }
+        var showBigImage = function (url, e, info) {
+            e.innerHTML = ""
+            let img = document.createElement("img")
+            img.src = url
+            img.className = "bigimg"
+            let div = document.createElement("div")
+            div.className = "postinfo"
+            let infotable = document.createElement("table")
+            infotable.className = "info_table"
+            div.appendChild(infotable)
+
+
+            let tablestr = '\
+            <tr>\
+                <td class = "info_name">ID</td><td>%ID%</td>\
+            </tr>\
+            <tr>\
+                <td class = "info_name">URL</td><td>%URL%</td>\
+            </tr>\
+            <tr>\
+                <td class = "info_name">Author</td><td>%Author%</td>\
+            </tr>\
+            <tr>\
+                <td class = "info_name">Tags</td><td>%Tags%</td>\
+            </tr>\
+            '.replace('%ID%', info.id).replace('%Author%', info.author).replace('%Tags%', info.tags).replace('%URL%', info.file_url)
+            infotable.innerHTML = tablestr
+
+
+            e.appendChild(div)
+            e.appendChild(img)
+
+        }
+
+    </script>
+</head>
+
+<body>
+    <img src="https://konachan.net/images/konachan_net_sm_std.png" style="width: 40%; margin-left: -3%">
+    
+    <div style="clear: both; padding-bottom: 2%;">
+        
+        <div class="img_frame">
+            <button class="img_btn"
+                onclick="showBigImage('https://konachan.net/image/1ec9aff856f39adbd64ec62e5d539096/Konachan.com%20-%20295169%20blush%20bow%20bra%20brown_hair%20long_hair%20nopan%20open_shirt%20original%20pantyhose%20pussy_juice%20ryo%20school_uniform%20underwear%20yellow_eyes.jpg', this.parentElement.parentElement.getElementsByClassName('rowbigimg')[0], {'file_url':'https://konachan.net/image/1ec9aff856f39adbd64ec62e5d539096/Konachan.com%20-%20295169%20blush%20bow%20bra%20brown_hair%20long_hair%20nopan%20open_shirt%20original%20pantyhose%20pussy_juice%20ryo%20school_uniform%20underwear%20yellow_eyes.jpg','author':'BattlequeenYume','tags':'blush bow bra brown_hair long_hair nopan open_shirt original pantyhose pussy_juice ryo school_uniform underwear yellow_eyes','id':'295169'})">
+                <img src="https://konachan.net/data/preview/1e/c9/1ec9aff856f39adbd64ec62e5d539096.jpg">
+            </button>
+        </div>
+        
+        <div class="img_frame">
+            <button class="img_btn"
+                onclick="showBigImage('https://konachan.net/image/fdfe70f1992a39c2734680b595e00c96/Konachan.com%20-%20266303%20ass%20black_hair%20bloomers%20blue_eyes%20blush%20breasts%20fingering%20kneehighs%20nipples%20no_bra%20original%20panties%20ryo%20shirt_lift%20short_hair%20tree%20underwear.png', this.parentElement.parentElement.getElementsByClassName('rowbigimg')[0], {'file_url':'https://konachan.net/image/fdfe70f1992a39c2734680b595e00c96/Konachan.com%20-%20266303%20ass%20black_hair%20bloomers%20blue_eyes%20blush%20breasts%20fingering%20kneehighs%20nipples%20no_bra%20original%20panties%20ryo%20shirt_lift%20short_hair%20tree%20underwear.png','author':'RyuZU','tags':'ass black_hair bloomers blue_eyes blush breasts fingering gym_uniform kneehighs masturbation nipples no_bra original panties pussy_juice ryo shirt_lift short_hair tree underwear','id':'266303'})">
+                <img src="https://konachan.net/data/preview/fd/fe/fdfe70f1992a39c2734680b595e00c96.jpg">
+            </button>
+        </div>
+        
+        <div class="img_frame">
+            <button class="img_btn"
+                onclick="showBigImage('https://konachan.net/image/78a1754711391a521328533abac0f1e2/Konachan.com%20-%20247270%20blush%20gray_hair%20navel%20original%20panties%20purple_eyes%20pussy_juice%20ryo%20school_uniform%20short_hair%20skirt_lift%20underwear.jpg', this.parentElement.parentElement.getElementsByClassName('rowbigimg')[0], {'file_url':'https://konachan.net/image/78a1754711391a521328533abac0f1e2/Konachan.com%20-%20247270%20blush%20gray_hair%20navel%20original%20panties%20purple_eyes%20pussy_juice%20ryo%20school_uniform%20short_hair%20skirt_lift%20underwear.jpg','author':'luckyluna','tags':'blush gray_hair navel original panties purple_eyes pussy_juice ryo school_uniform short_hair skirt_lift underwear','id':'247270'})">
+                <img src="https://konachan.net/data/preview/78/a1/78a1754711391a521328533abac0f1e2.jpg">
+            </button>
+        </div>
+        
+        <div class="img_frame">
+            <button class="img_btn"
+                onclick="showBigImage('https://konachan.net/image/b85e56417bbd3141ffd78ef020dad118/Konachan.com%20-%20241293%20barefoot%20blush%20bow%20breasts%20bunny_ears%20hoodie%20long_hair%20navel%20nipples%20original%20panties%20pink_eyes%20pink_hair%20pussy_juice%20ryo%20spread_legs%20underwear%20wet.jpg', this.parentElement.parentElement.getElementsByClassName('rowbigimg')[0], {'file_url':'https://konachan.net/image/b85e56417bbd3141ffd78ef020dad118/Konachan.com%20-%20241293%20barefoot%20blush%20bow%20breasts%20bunny_ears%20hoodie%20long_hair%20navel%20nipples%20original%20panties%20pink_eyes%20pink_hair%20pussy_juice%20ryo%20spread_legs%20underwear%20wet.jpg','author':'FormX','tags':'animal_ears barefoot blush bow breasts bunny_ears hoodie long_hair navel nipples original panties pink_eyes pink_hair pussy_juice ryo spread_legs underwear wet','id':'241293'})">
+                <img src="https://konachan.net/data/preview/b8/5e/b85e56417bbd3141ffd78ef020dad118.jpg">
+            </button>
+        </div>
+        
+        <div class="rowbigimg">
+        </div>
+    </div>
+    </div>
+    
+    <div style="clear: both; padding-bottom: 2%;">
+        
+        <div class="img_frame">
+            <button class="img_btn"
+                onclick="showBigImage('https://konachan.net/image/49ccae1a5b12873b6dc59893a359f4ff/Konachan.com%20-%20217318%20black_hair%20blush%20cameltoe%20grass%20loli%20original%20panties%20purple_eyes%20ryo%20skirt%20socks%20underwear.jpg', this.parentElement.parentElement.getElementsByClassName('rowbigimg')[0], {'file_url':'https://konachan.net/image/49ccae1a5b12873b6dc59893a359f4ff/Konachan.com%20-%20217318%20black_hair%20blush%20cameltoe%20grass%20loli%20original%20panties%20purple_eyes%20ryo%20skirt%20socks%20underwear.jpg','author':'Flandre93','tags':'black_hair blush cameltoe grass loli original panties purple_eyes ryo skirt socks underwear','id':'217318'})">
+                <img src="https://konachan.net/data/preview/49/cc/49ccae1a5b12873b6dc59893a359f4ff.jpg">
+            </button>
+        </div>
+        
+        <div class="img_frame">
+            <button class="img_btn"
+                onclick="showBigImage('https://konachan.net/image/b7550a87b7b797ade3dbf581ff92b329/Konachan.com%20-%20195647%20amatsukaze_%28kancolle%29%20anthropomorphism%20ass%20blush%20brown_eyes%20cum%20gray_hair%20kantai_collection%20long_hair%20panties%20ryo%20thighhighs%20twintails%20underwear.jpg', this.parentElement.parentElement.getElementsByClassName('rowbigimg')[0], {'file_url':'https://konachan.net/image/b7550a87b7b797ade3dbf581ff92b329/Konachan.com%20-%20195647%20amatsukaze_%28kancolle%29%20anthropomorphism%20ass%20blush%20brown_eyes%20cum%20gray_hair%20kantai_collection%20long_hair%20panties%20ryo%20thighhighs%20twintails%20underwear.jpg','author':'Flandre93','tags':'amatsukaze_(kancolle) anthropomorphism ass blush brown_eyes cum gray_hair kantai_collection long_hair panties ryo thighhighs twintails underwear','id':'195647'})">
+                <img src="https://konachan.net/data/preview/b7/55/b7550a87b7b797ade3dbf581ff92b329.jpg">
+            </button>
+        </div>
+        
+        <div class="img_frame">
+            <button class="img_btn"
+                onclick="showBigImage('https://konachan.net/image/df8faa3640f250b21daaa21d87aefc2b/Konachan.com%20-%2076135%20beatmania%20beatmania_iidx%20censored%20nipples%20panties%20panty_pull%20pussy%20ryo%20school_uniform%20striped_panties%20thighhighs%20underwear.jpg', this.parentElement.parentElement.getElementsByClassName('rowbigimg')[0], {'file_url':'https://konachan.net/image/df8faa3640f250b21daaa21d87aefc2b/Konachan.com%20-%2076135%20beatmania%20beatmania_iidx%20censored%20nipples%20panties%20panty_pull%20pussy%20ryo%20school_uniform%20striped_panties%20thighhighs%20underwear.jpg','author':'HawthorneKitty','tags':'beatmania beatmania_iidx censored nipples panties panty_pull pussy ryo school_uniform striped_panties thighhighs underwear','id':'76135'})">
+                <img src="https://konachan.net/data/preview/df/8f/df8faa3640f250b21daaa21d87aefc2b.jpg">
+            </button>
+        </div>
+        
+        <div class="rowbigimg">
+        </div>
+    </div>
+    </div>
+    
+    <script>
+        var onClickLinks = function(url){
+            window.location = url
+        }
+        var onClickS = function(){
+            onClickLinks("//konachan100.github.io")
+        }
+        var onClickQ = function(){
+            onClickLinks("//konachan100.github.io/q")
+        }
+        var onClickE = function(){
+            onClickLinks("//konachan100.github.io/e")
+        }
+
+    </script>
+    
+    <div id="footer">
+        <div id="links">
+            
+            
+            
+        </div>
+    </div>
+    
+
+    
+
+</body>
+
+</html>
