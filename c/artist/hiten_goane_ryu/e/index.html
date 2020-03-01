@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="referrer" content="no-referrer">
+    <title>Konachan100</title>
+    
+    <style>
+        body {
+            background: #222222;
+        }
+
+        .img_frame {
+            width: 25%;
+            padding-bottom: 5%;
+            float: left;
+        }
+
+        .img_btn {
+            width: 100%;
+            background-color: transparent;
+            border: transparent;
+        }
+
+        img {
+            width: 100%;
+        }
+
+        .rowbigimg {
+            clear: both;
+            width: 100%;
+        }
+
+        .bigimg {
+            width: 80%;
+            margin-left: 10%;
+        }
+
+        .postinfo {
+            padding-left: 10%;
+            color: #f1d3ff;
+            padding-right: 10%;
+        }
+
+        .info_table {
+            background-color: #29285d;
+            table-layout: fixed;
+            width: 100%;
+        }
+
+        .info_name {
+            padding-right: 20px;
+            text-align: right;
+            width: 80px;
+        }
+
+        td {
+            word-break: break-all;
+        }
+
+        #footer {
+            clear: both;
+            padding: 5%;
+        }
+
+        #links {
+            position: fixed;
+            bottom: 5%;
+            right: 5%;
+            padding: 1%;
+        }
+
+        .linkitem {
+            background-color: wheat;
+            margin: -10%;
+            text-align: center;
+        }
+
+        .linkspace {
+            padding: 60%;
+        }
+        .linkbtn{
+            width: 100%;
+            height: 100%;
+            background-color: transparent;
+            border: none;
+            font-size: 2rem;
+        }
+        audio{
+            position: fixed;
+            top: 0px;
+            right: 0px;
+        }
+    </style>
+    <script>
+        var sUserAgent = navigator.userAgent.toLowerCase();
+        var bIsIpad = sUserAgent.match(/ipad/i) == "ipad";
+        var bIsIphoneOs = sUserAgent.match(/iphone os/i) == "iphone os";
+        var bIsMidp = sUserAgent.match(/midp/i) == "midp";
+        var bIsUc7 = sUserAgent.match(/rv:1.2.3.4/i) == "rv:1.2.3.4";
+        var bIsUc = sUserAgent.match(/ucweb/i) == "ucweb";
+        var bIsAndroid = sUserAgent.match(/android/i) == "android";
+        var bIsCE = sUserAgent.match(/windows ce/i) == "windows ce";
+        var bIsWM = sUserAgent.match(/windows mobile/i) == "windows mobile";
+
+        if (bIsIpad || bIsIphoneOs || bIsMidp || bIsUc7 || bIsUc || bIsAndroid || bIsCE || bIsWM) {
+            window.location = "./m"
+        }
+
+        var closeBigImage = function () {
+            var items = document.getElementsByClassName("rowbigimg")
+            for (let i in items) {
+                items[i].innerHTML = ""
+            }
+        }
+        var showBigImage = function (url, e, info) {
+            e.innerHTML = ""
+            let img = document.createElement("img")
+            img.src = url
+            img.className = "bigimg"
+            let div = document.createElement("div")
+            div.className = "postinfo"
+            let infotable = document.createElement("table")
+            infotable.className = "info_table"
+            div.appendChild(infotable)
+
+
+            let tablestr = '\
+            <tr>\
+                <td class = "info_name">ID</td><td>%ID%</td>\
+            </tr>\
+            <tr>\
+                <td class = "info_name">URL</td><td>%URL%</td>\
+            </tr>\
+            <tr>\
+                <td class = "info_name">Author</td><td>%Author%</td>\
+            </tr>\
+            <tr>\
+                <td class = "info_name">Tags</td><td>%Tags%</td>\
+            </tr>\
+            '.replace('%ID%', info.id).replace('%Author%', info.author).replace('%Tags%', info.tags).replace('%URL%', info.file_url)
+            infotable.innerHTML = tablestr
+
+
+            e.appendChild(div)
+            e.appendChild(img)
+
+        }
+
+    </script>
+</head>
+
+<body>
+    <img src="https://konachan.net/images/konachan_net_sm_std.png" style="width: 40%; margin-left: -3%">
+
+    
+
+    
+    <div style="clear: both; padding-bottom: 2%;">
+        
+        <div class="img_frame">
+            <button class="img_btn"
+                onclick="showBigImage('https://konachan.net/image/0c497a1888fe2b09bec3bdef55ab2c65/Konachan.com%20-%20260107%20blonde_hair%20blush%20breasts%20censored%20dress%20garter_belt%20green_eyes%20long_hair%20nipples%20no_bra%20nopan%20petals%20pussy%20skirt_lift%20thighhighs%20tiara%20wedding_attire.png', this.parentElement.parentElement.getElementsByClassName('rowbigimg')[0], {'file_url':'https://konachan.net/image/0c497a1888fe2b09bec3bdef55ab2c65/Konachan.com%20-%20260107%20blonde_hair%20blush%20breasts%20censored%20dress%20garter_belt%20green_eyes%20long_hair%20nipples%20no_bra%20nopan%20petals%20pussy%20skirt_lift%20thighhighs%20tiara%20wedding_attire.png','author':'RyuZU','tags':'blonde_hair blush breasts censored dress garter_belt green_eyes hiten_goane_ryu long_hair nipples no_bra nopan petals pussy skirt_lift thighhighs tiara wedding_attire','id':'260107'})">
+                <img src="https://konachan.net/data/preview/0c/49/0c497a1888fe2b09bec3bdef55ab2c65.jpg">
+            </button>
+        </div>
+        
+        <div class="img_frame">
+            <button class="img_btn"
+                onclick="showBigImage('https://konachan.net/image/a5f9e85ce00a8027842c96ed8c79aef2/Konachan.com%20-%20260106%20anus%20ass%20blue_eyes%20bow%20braids%20breasts%20brown_hair%20cum%20hiten_goane_ryu%20japanese_clothes%20kimono%20long_hair%20nipples%20ponytail%20pussy%20scan.png', this.parentElement.parentElement.getElementsByClassName('rowbigimg')[0], {'file_url':'https://konachan.net/image/a5f9e85ce00a8027842c96ed8c79aef2/Konachan.com%20-%20260106%20anus%20ass%20blue_eyes%20bow%20braids%20breasts%20brown_hair%20cum%20hiten_goane_ryu%20japanese_clothes%20kimono%20long_hair%20nipples%20ponytail%20pussy%20scan.png','author':'BattlequeenYume','tags':'anus ass blue_eyes bow braids breasts brown_hair cum hiten_goane_ryu japanese_clothes kimono long_hair nipples ponytail pussy scan','id':'260106'})">
+                <img src="https://konachan.net/data/preview/a5/f9/a5f9e85ce00a8027842c96ed8c79aef2.jpg">
+            </button>
+        </div>
+        
+        <div class="img_frame">
+            <button class="img_btn"
+                onclick="showBigImage('https://konachan.net/image/4073dbc89ed52f9c18cfeeb257af3e31/Konachan.com%20-%20259869%20akizuki_mizuho%20bed%20blush%20breast_hold%20censored%20dress%20fingering%20hiten_goane_ryu%20long_hair%20masturbation%20panties%20purple_hair%20pussy%20spread_legs%20underwear.png', this.parentElement.parentElement.getElementsByClassName('rowbigimg')[0], {'file_url':'https://konachan.net/image/4073dbc89ed52f9c18cfeeb257af3e31/Konachan.com%20-%20259869%20akizuki_mizuho%20bed%20blush%20breast_hold%20censored%20dress%20fingering%20hiten_goane_ryu%20long_hair%20masturbation%20panties%20purple_hair%20pussy%20spread_legs%20underwear.png','author':'BattlequeenYume','tags':'akizuki_mizuho bed blush breast_hold censored dress ensemble_(company) fingering hiten_goane_ryu long_hair masturbation omoi_o_sasageru_otome_no_melody panties purple_hair pussy spread_legs underwear','id':'259869'})">
+                <img src="https://konachan.net/data/preview/40/73/4073dbc89ed52f9c18cfeeb257af3e31.jpg">
+            </button>
+        </div>
+        
+        <div class="img_frame">
+            <button class="img_btn"
+                onclick="showBigImage('https://konachan.net/image/f09f1bad51b89dc557b76aaf1b5af5de/Konachan.com%20-%20247541%20blonde_hair%20blush%20breasts%20dress%20garter_belt%20green_eyes%20long_hair%20nipples%20no_bra%20nopan%20petals%20pussy%20skirt_lift%20thighhighs%20tiara%20uncensored%20watermark.jpg', this.parentElement.parentElement.getElementsByClassName('rowbigimg')[0], {'file_url':'https://konachan.net/image/f09f1bad51b89dc557b76aaf1b5af5de/Konachan.com%20-%20247541%20blonde_hair%20blush%20breasts%20dress%20garter_belt%20green_eyes%20long_hair%20nipples%20no_bra%20nopan%20petals%20pussy%20skirt_lift%20thighhighs%20tiara%20uncensored%20watermark.jpg','author':'RyuZU','tags':'blonde_hair blush breasts dress garter_belt green_eyes hiten_goane_ryu long_hair nipples no_bra nopan petals pussy skirt_lift thighhighs tiara uncensored watermark wedding_attire','id':'247541'})">
+                <img src="https://konachan.net/data/preview/f0/9f/f09f1bad51b89dc557b76aaf1b5af5de.jpg">
+            </button>
+        </div>
+        
+        <div class="rowbigimg">
+        </div>
+    </div>
+    </div>
+    
+    <div style="clear: both; padding-bottom: 2%;">
+        
+        <div class="img_frame">
+            <button class="img_btn"
+                onclick="showBigImage('https://konachan.net/image/b54a7ac3d5137db50cd8731714861305/Konachan.com%20-%20200402%20ass%20blush%20brown_hair%20censored%20game_cg%20headband%20juunin_kanri%21%20kino_shizuku%20material_mel%20nude%20penis%20pussy%20pussy_juice%20red_eyes%20sex%20short_hair%20wet.png', this.parentElement.parentElement.getElementsByClassName('rowbigimg')[0], {'file_url':'https://konachan.net/image/b54a7ac3d5137db50cd8731714861305/Konachan.com%20-%20200402%20ass%20blush%20brown_hair%20censored%20game_cg%20headband%20juunin_kanri%21%20kino_shizuku%20material_mel%20nude%20penis%20pussy%20pussy_juice%20red_eyes%20sex%20short_hair%20wet.png','author':'Jodavi','tags':'ass blush brown_hair censored game_cg headband hiten_goane_ryu juunin_kanri! kino_shizuku material_mel nude penis pussy pussy_juice red_eyes sex short_hair wet','id':'200402'})">
+                <img src="https://konachan.net/data/preview/b5/4a/b54a7ac3d5137db50cd8731714861305.jpg">
+            </button>
+        </div>
+        
+        <div class="img_frame">
+            <button class="img_btn"
+                onclick="showBigImage('https://konachan.net/image/41a19f04c2d4271fe426071a8772e3b4/Konachan.com%20-%20200401%20blush%20breasts%20brown_hair%20censored%20game_cg%20juunin_kanri%21%20kino_shizuku%20material_mel%20navel%20nipples%20nude%20penis%20red_eyes%20sex%20short_hair%20spread_legs%20wet.png', this.parentElement.parentElement.getElementsByClassName('rowbigimg')[0], {'file_url':'https://konachan.net/image/41a19f04c2d4271fe426071a8772e3b4/Konachan.com%20-%20200401%20blush%20breasts%20brown_hair%20censored%20game_cg%20juunin_kanri%21%20kino_shizuku%20material_mel%20navel%20nipples%20nude%20penis%20red_eyes%20sex%20short_hair%20spread_legs%20wet.png','author':'Jodavi','tags':'blush breasts brown_hair censored game_cg hiten_goane_ryu juunin_kanri! kino_shizuku material_mel navel nipples nude penis red_eyes sex short_hair spread_legs wet','id':'200401'})">
+                <img src="https://konachan.net/data/preview/41/a1/41a19f04c2d4271fe426071a8772e3b4.jpg">
+            </button>
+        </div>
+        
+        <div class="img_frame">
+            <button class="img_btn"
+                onclick="showBigImage('https://konachan.net/image/13daefc9cf5f4406aa60837b1e3fccd2/Konachan.com%20-%20200400%20blush%20brown_hair%20censored%20game_cg%20headband%20juunin_kanri%21%20kino_shizuku%20material_mel%20panties%20red_eyes%20school_uniform%20sex%20short_hair%20sunset%20tie%20underwear.png', this.parentElement.parentElement.getElementsByClassName('rowbigimg')[0], {'file_url':'https://konachan.net/image/13daefc9cf5f4406aa60837b1e3fccd2/Konachan.com%20-%20200400%20blush%20brown_hair%20censored%20game_cg%20headband%20juunin_kanri%21%20kino_shizuku%20material_mel%20panties%20red_eyes%20school_uniform%20sex%20short_hair%20sunset%20tie%20underwear.png','author':'Jodavi','tags':'blush brown_hair censored game_cg headband hiten_goane_ryu juunin_kanri! kino_shizuku material_mel panties red_eyes school_uniform sex short_hair sunset tie underwear','id':'200400'})">
+                <img src="https://konachan.net/data/preview/13/da/13daefc9cf5f4406aa60837b1e3fccd2.jpg">
+            </button>
+        </div>
+        
+        <div class="img_frame">
+            <button class="img_btn"
+                onclick="showBigImage('https://konachan.net/image/dce5158fb2ffe30483ec07d340ffc7f6/Konachan.com%20-%20200399%20blush%20breasts%20brown_hair%20censored%20game_cg%20headband%20kino_shizuku%20material_mel%20navel%20nipples%20panties%20penis%20red_eyes%20sex%20short_hair%20underwear.png', this.parentElement.parentElement.getElementsByClassName('rowbigimg')[0], {'file_url':'https://konachan.net/image/dce5158fb2ffe30483ec07d340ffc7f6/Konachan.com%20-%20200399%20blush%20breasts%20brown_hair%20censored%20game_cg%20headband%20kino_shizuku%20material_mel%20navel%20nipples%20panties%20penis%20red_eyes%20sex%20short_hair%20underwear.png','author':'Jodavi','tags':'blush breasts brown_hair censored game_cg headband hiten_goane_ryu juunin_kanri! kino_shizuku material_mel navel nipples panties penis red_eyes sex short_hair underwear','id':'200399'})">
+                <img src="https://konachan.net/data/preview/dc/e5/dce5158fb2ffe30483ec07d340ffc7f6.jpg">
+            </button>
+        </div>
+        
+        <div class="rowbigimg">
+        </div>
+    </div>
+    </div>
+    
+    <div style="clear: both; padding-bottom: 2%;">
+        
+        <div class="img_frame">
+            <button class="img_btn"
+                onclick="showBigImage('https://konachan.net/image/a71eed358155996c283ea0abe3773c64/Konachan.com%20-%20193958%20aqua_eyes%20bra%20breasts%20brown_hair%20hat%20long_hair%20nipples%20open_shirt%20panties%20photoshop%20pussy%20skirt%20skirt_lift%20thighhighs%20uncensored%20underwear%20white.png', this.parentElement.parentElement.getElementsByClassName('rowbigimg')[0], {'file_url':'https://konachan.net/image/a71eed358155996c283ea0abe3773c64/Konachan.com%20-%20193958%20aqua_eyes%20bra%20breasts%20brown_hair%20hat%20long_hair%20nipples%20open_shirt%20panties%20photoshop%20pussy%20skirt%20skirt_lift%20thighhighs%20uncensored%20underwear%20white.png','author':'kamenitza','tags':'aqua_eyes bra breasts brown_hair hat hiten_goane_ryu long_hair nipples open_shirt panties photoshop pussy school_uniform skirt skirt_lift thighhighs uncensored underwear white','id':'193958'})">
+                <img src="https://konachan.net/data/preview/a7/1e/a71eed358155996c283ea0abe3773c64.jpg">
+            </button>
+        </div>
+        
+        <div class="img_frame">
+            <button class="img_btn"
+                onclick="showBigImage('https://konachan.net/image/56fad72f32b5080b0f161aad4ab42f36/Konachan.com%20-%20172409%20blue_eyes%20breasts%20brown_hair%20dress%20hiten_goane_ryu%20nipples%20nopan%20photoshop%20pussy%20soryu_asuka_langley%20twintails%20uncensored%20white.png', this.parentElement.parentElement.getElementsByClassName('rowbigimg')[0], {'file_url':'https://konachan.net/image/56fad72f32b5080b0f161aad4ab42f36/Konachan.com%20-%20172409%20blue_eyes%20breasts%20brown_hair%20dress%20hiten_goane_ryu%20nipples%20nopan%20photoshop%20pussy%20soryu_asuka_langley%20twintails%20uncensored%20white.png','author':'kamenitza','tags':'blue_eyes breasts brown_hair dress hiten_goane_ryu neon_genesis_evangelion nipples nopan photoshop pussy soryu_asuka_langley twintails uncensored white','id':'172409'})">
+                <img src="https://konachan.net/data/preview/56/fa/56fad72f32b5080b0f161aad4ab42f36.jpg">
+            </button>
+        </div>
+        
+        <div class="img_frame">
+            <button class="img_btn"
+                onclick="showBigImage('https://konachan.net/image/de2c510503d184ab70dbf00a8221cad7/Konachan.com%20-%20172378%20aqua_eyes%20breasts%20hiten_goane_ryu%20monster_hunter%20nipples%20nude%20photoshop%20pink_hair%20pussy%20twintails%20uncensored%20white.png', this.parentElement.parentElement.getElementsByClassName('rowbigimg')[0], {'file_url':'https://konachan.net/image/de2c510503d184ab70dbf00a8221cad7/Konachan.com%20-%20172378%20aqua_eyes%20breasts%20hiten_goane_ryu%20monster_hunter%20nipples%20nude%20photoshop%20pink_hair%20pussy%20twintails%20uncensored%20white.png','author':'kamenitza','tags':'aqua_eyes breasts hiten_goane_ryu monster_hunter nipples nude photoshop pink_hair pussy twintails uncensored white','id':'172378'})">
+                <img src="https://konachan.net/data/preview/de/2c/de2c510503d184ab70dbf00a8221cad7.jpg">
+            </button>
+        </div>
+        
+        <div class="img_frame">
+            <button class="img_btn"
+                onclick="showBigImage('https://konachan.net/image/73a31aacfaad341be52f128ffa50189b/Konachan.com%20-%20163293%20aqua_eyes%20breasts%20hiten_goane_ryu%20monster_hunter%20nipples%20nude%20pink_hair%20pussy%20twintails%20uncensored%20weapon%20white.png', this.parentElement.parentElement.getElementsByClassName('rowbigimg')[0], {'file_url':'https://konachan.net/image/73a31aacfaad341be52f128ffa50189b/Konachan.com%20-%20163293%20aqua_eyes%20breasts%20hiten_goane_ryu%20monster_hunter%20nipples%20nude%20pink_hair%20pussy%20twintails%20uncensored%20weapon%20white.png','author':'Wiresetc','tags':'aqua_eyes breasts hiten_goane_ryu monster_hunter nipples nude pink_hair pussy twintails uncensored weapon white','id':'163293'})">
+                <img src="https://konachan.net/data/preview/73/a3/73a31aacfaad341be52f128ffa50189b.jpg">
+            </button>
+        </div>
+        
+        <div class="rowbigimg">
+        </div>
+    </div>
+    </div>
+    
+    <div style="clear: both; padding-bottom: 2%;">
+        
+        <div class="img_frame">
+            <button class="img_btn"
+                onclick="showBigImage('https://konachan.net/image/c2a57adec3a478edb11ba1f4ae374815/Konachan.com%20-%20141083%20blonde_hair%20blue_eyes%20blush%20hiten_goane_ryu%20masturbation%20monster_hunter%20pussy_juice%20skirt%20thighhighs%20wet%20white%20wink.png', this.parentElement.parentElement.getElementsByClassName('rowbigimg')[0], {'file_url':'https://konachan.net/image/c2a57adec3a478edb11ba1f4ae374815/Konachan.com%20-%20141083%20blonde_hair%20blue_eyes%20blush%20hiten_goane_ryu%20masturbation%20monster_hunter%20pussy_juice%20skirt%20thighhighs%20wet%20white%20wink.png','author':'opai','tags':'blonde_hair blue_eyes blush hiten_goane_ryu masturbation monster_hunter pussy_juice skirt thighhighs wet white wink','id':'141083'})">
+                <img src="https://konachan.net/data/preview/c2/a5/c2a57adec3a478edb11ba1f4ae374815.jpg">
+            </button>
+        </div>
+        
+        <div class="img_frame">
+            <button class="img_btn"
+                onclick="showBigImage('https://konachan.net/image/3bf9fc8570d29c9fd7696a3b9a782b66/Konachan.com%20-%2080146%20amane_%28dream_c_club%29%20breasts%20cum%20dream_c_club%20hiten_goane_ryu%20maid%20nipples%20sex%20thighhighs%20waitress.png', this.parentElement.parentElement.getElementsByClassName('rowbigimg')[0], {'file_url':'https://konachan.net/image/3bf9fc8570d29c9fd7696a3b9a782b66/Konachan.com%20-%2080146%20amane_%28dream_c_club%29%20breasts%20cum%20dream_c_club%20hiten_goane_ryu%20maid%20nipples%20sex%20thighhighs%20waitress.png','author':'Wiresetc','tags':'amane_(dream_c_club) breasts cum dream_c_club hiten_goane_ryu maid nipples sex thighhighs waitress','id':'80146'})">
+                <img src="https://konachan.net/data/preview/3b/f9/3bf9fc8570d29c9fd7696a3b9a782b66.jpg">
+            </button>
+        </div>
+        
+        <div class="rowbigimg">
+        </div>
+    </div>
+    </div>
+    
+    <script>
+        var onClickLinks = function(url){
+            window.location = url
+        }
+        var onClickS = function(){
+            onClickLinks("//konachan100.github.io")
+        }
+        var onClickQ = function(){
+            onClickLinks("//konachan100.github.io/q")
+        }
+        var onClickE = function(){
+            onClickLinks("//konachan100.github.io/e")
+        }
+
+    </script>
+    
+    <div id="footer">
+        <div id="links">
+            
+            
+            
+        </div>
+    </div>
+    
+
+   
+
+</body>
+
+</html>
