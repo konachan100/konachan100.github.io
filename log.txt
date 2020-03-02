@@ -1,51 +1,6 @@
 
 C:\Users\Administrator\proj\konachan100.github.io\src>python konachan100.py 
 build targets:  ['s', 'q', 'e']
-Build count:  232
-Current build: Home[1], Categoary[2]
-Loading URL: http://www.konachan.net/post.json?limit=100&tags=rating:questionable
-Success, decoding JSON
-Rendering to ../q/index.html
-Page refreshed
-Rendering to ../q/m/index.html
-Page refreshed
-Loading URL: http://www.konachan.net/post.json?limit=100&tags=rating:explicit
-Success, decoding JSON
-update cache file  ../c/hot/cache.json
-new cache size  619
-
-C:\Users\Administrator\proj\konachan100.github.io\src>cd .. 
-
-C:\Users\Administrator\proj\konachan100.github.io>git diff --stat 
- log.txt | 90 ++++++++++++++++++++++++++++++++---------------------------------
- 1 file changed, 45 insertions(+), 45 deletions(-)
-
-C:\Users\Administrator\proj\konachan100.github.io>git add * 
-
-C:\Users\Administrator\proj\konachan100.github.io>git commit -m "update content" 
-[master 3c046405] update content
- 1 file changed, 45 insertions(+), 45 deletions(-)
-
-C:\Users\Administrator\proj\konachan100.github.io>git push 
-
-
-================================================================================
-2020/03/02 周一 17:42:25.17
-
-C:\Users\Administrator\proj\konachan100.github.io>git pull 
-Already up to date.
-
-C:\Users\Administrator\proj\konachan100.github.io>if not exist "src" git clone git@github.com:konachan100/konachan100-src.git src 
-
-C:\Users\Administrator\proj\konachan100.github.io>cd src 
-
-C:\Users\Administrator\proj\konachan100.github.io\src>call gen.bat 
-
-C:\Users\Administrator\proj\konachan100.github.io\src>git pull 
-Already up to date.
-
-C:\Users\Administrator\proj\konachan100.github.io\src>python konachan100.py 
-build targets:  ['s', 'q', 'e']
 Build count:  233
 Current build: Home[2], Categoary[3]
 Loading URL: http://www.konachan.net/post.json?limit=100&tags=rating:explicit
@@ -526,6 +481,51 @@ Page refreshed
 Rendering to ../q/m/index.html
 Page refreshed
 Loading URL: http://www.konachan.net/post.json?limit=100&tags=rating:questionable
+Success, decoding JSON
+update cache file  ../c/hot/cache.json
+new cache size  619
+
+C:\Users\Administrator\proj\konachan100.github.io\src>cd .. 
+
+C:\Users\Administrator\proj\konachan100.github.io>git diff --stat 
+ log.txt | 90 ++++++++++++++++++++++++++++++++---------------------------------
+ 1 file changed, 45 insertions(+), 45 deletions(-)
+
+C:\Users\Administrator\proj\konachan100.github.io>git add * 
+
+C:\Users\Administrator\proj\konachan100.github.io>git commit -m "update content" 
+[master 1a83df62] update content
+ 1 file changed, 45 insertions(+), 45 deletions(-)
+
+C:\Users\Administrator\proj\konachan100.github.io>git push 
+
+
+================================================================================
+2020/03/02 周一 18:30:34.16
+
+C:\Users\Administrator\proj\konachan100.github.io>git pull 
+Already up to date.
+
+C:\Users\Administrator\proj\konachan100.github.io>if not exist "src" git clone git@github.com:konachan100/konachan100-src.git src 
+
+C:\Users\Administrator\proj\konachan100.github.io>cd src 
+
+C:\Users\Administrator\proj\konachan100.github.io\src>call gen.bat 
+
+C:\Users\Administrator\proj\konachan100.github.io\src>git pull 
+Already up to date.
+
+C:\Users\Administrator\proj\konachan100.github.io\src>python konachan100.py 
+build targets:  ['s', 'q', 'e']
+Build count:  242
+Current build: Home[2], Categoary[2]
+Loading URL: http://www.konachan.net/post.json?limit=100&tags=rating:explicit
+Success, decoding JSON
+Rendering to ../e/index.html
+Page refreshed
+Rendering to ../e/m/index.html
+Page refreshed
+Loading URL: http://www.konachan.net/post.json?limit=100&tags=rating:explicit
 Success, decoding JSON
 update cache file  ../c/hot/cache.json
 new cache size  619
