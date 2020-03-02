@@ -1,42 +1,4 @@
 Already up to date.
-build targets:  ['s', 'q', 'e']
-Build count:  333
-Current build: Home[0], Categoary[8]
-Loading URL: http://www.konachan.net/post.json?limit=100&tags=rating:safe
-Success, decoding JSON
-Rendering to ../index.html
-Page refreshed
-Rendering to ../m/index.html
-Page refreshed
-Loading URL: http://www.konachan.net/post.json?limit=100&tags=annin_doufu
-Success, decoding JSON
-update cache file  ../c/artist/annin_doufu/cache.json
-new cache size  200
-show posts order by time, reverse
-Rendering to ../c/artist/annin_doufu/index.html
-Page refreshed
-Rendering to ../c/artist/annin_doufu/m/index.html
-Page refreshed
-Rendering to ../c/artist/annin_doufu/q/index.html
-Page refreshed
-Rendering to ../c/artist/annin_doufu/q/m/index.html
-Page refreshed
-Rendering to ../c/artist/annin_doufu/e/index.html
-Page refreshed
-Rendering to ../c/artist/annin_doufu/e/m/index.html
-Page refreshed
- c/artist/annin_doufu/post.json |  6 ++--
- index.html                     |  4 +--
- log.txt                        | 80 +++++++++++++++++++++---------------------
- m/index.html                   |  4 +--
- 4 files changed, 47 insertions(+), 47 deletions(-)
-[master 911bf75d] update content
- 4 files changed, 47 insertions(+), 47 deletions(-)
-
-
-================================================================================
-2020-03-03 04:06:16
-Already up to date.
 Already up to date.
 build targets:  ['s', 'q', 'e']
 Build count:  334
@@ -529,4 +491,42 @@ Page refreshed
 Rendering to ../c/artist/higandgk/e/index.html
 Page refreshed
 Rendering to ../c/artist/higandgk/e/m/index.html
+Page refreshed
+ log.txt        | 76 +++++++++++++++++++++++++++++-----------------------------
+ q/index.html   |  6 ++---
+ q/m/index.html |  6 ++---
+ 3 files changed, 44 insertions(+), 44 deletions(-)
+[master 85de33e1] update content
+ 3 files changed, 44 insertions(+), 44 deletions(-)
+
+
+================================================================================
+2020-03-03 05:15:16
+Already up to date.
+Already up to date.
+build targets:  ['s', 'q', 'e']
+Build count:  347
+Current build: Home[2], Categoary[22]
+Loading URL: http://www.konachan.net/post.json?limit=100&tags=rating:explicit
+Success, decoding JSON
+Rendering to ../e/index.html
+Page refreshed
+Rendering to ../e/m/index.html
+Page refreshed
+Loading URL: http://www.konachan.net/post.json?limit=100&tags=lium
+Success, decoding JSON
+update cache file  ../c/artist/lium/cache.json
+new cache size  11
+show posts order by time, reverse
+Rendering to ../c/artist/lium/index.html
+Page refreshed
+Rendering to ../c/artist/lium/m/index.html
+Page refreshed
+Rendering to ../c/artist/lium/q/index.html
+Page refreshed
+Rendering to ../c/artist/lium/q/m/index.html
+Page refreshed
+Rendering to ../c/artist/lium/e/index.html
+Page refreshed
+Rendering to ../c/artist/lium/e/m/index.html
 Page refreshed
