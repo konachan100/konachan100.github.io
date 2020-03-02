@@ -1,20 +1,3 @@
- log.txt | 53 ++++++++++++++++++++++++++++++++---------------------
- 1 file changed, 32 insertions(+), 21 deletions(-)
-[master 6a74a4fd] update content
- 1 file changed, 32 insertions(+), 21 deletions(-)
-
-
-================================================================================
-2020-03-02 23:41:34
-Already up to date.
-Already up to date.
-build targets:  ['s', 'q', 'e']
-Build count:  292
-Current build: Home[1], Categoary[17]
-Loading URL: http://www.konachan.net/post.json?limit=100&tags=rating:questionable
-Success, decoding JSON
-Rendering to ../q/index.html
-Page refreshed
 Rendering to ../q/m/index.html
 Page refreshed
 Loading URL: http://www.konachan.net/post.json?limit=100&tags=ryo
@@ -510,4 +493,21 @@ Current build: Home[0], Categoary[18]
 Loading URL: http://www.konachan.net/post.json?limit=100&tags=rating:safe
 Failed, timed out
 Loading URL: http://www.konachan.net/post.json?limit=100&tags=mivit
+Failed, <urlopen error [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。>
+ log.txt | 34 +++++++++++++++++-----------------
+ 1 file changed, 17 insertions(+), 17 deletions(-)
+[master eab0b7d6] update content
+ 1 file changed, 17 insertions(+), 17 deletions(-)
+
+
+================================================================================
+2020-03-03 02:38:08
+Already up to date.
+Already up to date.
+build targets:  ['s', 'q', 'e']
+Build count:  319
+Current build: Home[1], Categoary[19]
+Loading URL: http://www.konachan.net/post.json?limit=100&tags=rating:questionable
+Failed, timed out
+Loading URL: http://www.konachan.net/post.json?limit=100&tags=hiten_goane_ryu
 Failed, <urlopen error [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。>
