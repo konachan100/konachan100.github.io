@@ -278,3 +278,57 @@ Page refreshed
 C:\Users\Administrator\proj\konachan100.github.io\src>cd .. 
 
 C:\Users\Administrator\proj\konachan100.github.io>git diff --stat 
+ log.txt | 112 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ 1 file changed, 112 insertions(+)
+
+C:\Users\Administrator\proj\konachan100.github.io>git add * 
+
+C:\Users\Administrator\proj\konachan100.github.io>git commit -m "update content" 
+[master 0e9a634c] update content
+ 10 files changed, 2228 insertions(+)
+ create mode 100644 c/artist/higandgk/e/index.html
+ create mode 100644 c/artist/higandgk/e/m/index.html
+ create mode 100644 c/artist/higandgk/e/post.json
+ create mode 100644 c/artist/higandgk/index.html
+ create mode 100644 c/artist/higandgk/m/index.html
+ create mode 100644 c/artist/higandgk/post.json
+ create mode 100644 c/artist/higandgk/q/index.html
+ create mode 100644 c/artist/higandgk/q/m/index.html
+ create mode 100644 c/artist/higandgk/q/post.json
+
+C:\Users\Administrator\proj\konachan100.github.io>git push 
+
+
+================================================================================
+2020/03/02 ÖÜÒ» 12:26:19.20
+
+C:\Users\Administrator\proj\konachan100.github.io>git pull 
+Already up to date.
+
+C:\Users\Administrator\proj\konachan100.github.io>if not exist "src" git clone git@github.com:konachan100/konachan100-src.git src 
+
+C:\Users\Administrator\proj\konachan100.github.io>cd src 
+
+C:\Users\Administrator\proj\konachan100.github.io\src>call gen.bat 
+
+C:\Users\Administrator\proj\konachan100.github.io\src>git pull 
+Already up to date.
+
+C:\Users\Administrator\proj\konachan100.github.io\src>python konachan100.py 
+build targets:  ['s', 'q', 'e']
+Build count:  176
+Current build: Home[2], Categoary[0]
+Loading URL: http://www.konachan.net/post.json?limit=100&tags=rating:explicit
+Success, decoding JSON
+Rendering to ../e/index.html
+Page refreshed
+Rendering to ../e/m/index.html
+Page refreshed
+Loading URL: http://www.konachan.net/post.json?limit=100&tags=rating:safe
+Success, decoding JSON
+update cache file  ../c/hot/cache.json
+new cache size  618
+
+C:\Users\Administrator\proj\konachan100.github.io\src>cd .. 
+
+C:\Users\Administrator\proj\konachan100.github.io>git diff --stat 
