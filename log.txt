@@ -1,41 +1,3 @@
-Loading URL: http://www.konachan.net/post.json?limit=100&tags=touhou
-Success, decoding JSON
-update cache file  ../c/touhou/cache.json
-new cache size  109
-show posts order by time, reverse
-Rendering to ../c/touhou/index.html
-Page refreshed
-Rendering to ../c/touhou/m/index.html
-Page refreshed
-Rendering to ../c/touhou/q/index.html
-Page refreshed
-Rendering to ../c/touhou/q/m/index.html
-Page refreshed
-Rendering to ../c/touhou/e/index.html
-Page refreshed
-Rendering to ../c/touhou/e/m/index.html
-Page refreshed
- c/touhou/index.html     | 245 +++++++++++++++++++++++++-----------------------
- c/touhou/m/index.html   |   6 ++
- c/touhou/post.json      |  42 ++++++++-
- c/touhou/q/index.html   |  77 ++++++++-------
- c/touhou/q/m/index.html |   6 ++
- c/touhou/q/post.json    |  44 ++++++++-
- log.txt                 |  93 +++++++++---------
- 7 files changed, 308 insertions(+), 205 deletions(-)
-[master a13c9962] update content
- 7 files changed, 308 insertions(+), 205 deletions(-)
-
-
-================================================================================
-2020-03-03 03:44:58
-Already up to date.
-Already up to date.
-build targets:  ['s', 'q', 'e']
-Build count:  330
-Current build: Home[0], Categoary[5]
-Loading URL: http://www.konachan.net/post.json?limit=100&tags=rating:safe
-Success, decoding JSON
 Rendering to ../index.html
 Page refreshed
 Rendering to ../m/index.html
@@ -529,4 +491,42 @@ Page refreshed
 Rendering to ../c/artist/ryo/e/index.html
 Page refreshed
 Rendering to ../c/artist/ryo/e/m/index.html
+Page refreshed
+ index.html   | 10 ++++----
+ log.txt      | 76 ++++++++++++++++++++++++++++++------------------------------
+ m/index.html | 10 ++++----
+ 3 files changed, 48 insertions(+), 48 deletions(-)
+[master 674eb1c2] update content
+ 3 files changed, 48 insertions(+), 48 deletions(-)
+
+
+================================================================================
+2020-03-03 04:54:01
+Already up to date.
+Already up to date.
+build targets:  ['s', 'q', 'e']
+Build count:  343
+Current build: Home[1], Categoary[18]
+Loading URL: http://www.konachan.net/post.json?limit=100&tags=rating:questionable
+Success, decoding JSON
+Rendering to ../q/index.html
+Page refreshed
+Rendering to ../q/m/index.html
+Page refreshed
+Loading URL: http://www.konachan.net/post.json?limit=100&tags=mivit
+Success, decoding JSON
+update cache file  ../c/artist/mivit/cache.json
+new cache size  90
+show posts order by time, reverse
+Rendering to ../c/artist/mivit/index.html
+Page refreshed
+Rendering to ../c/artist/mivit/m/index.html
+Page refreshed
+Rendering to ../c/artist/mivit/q/index.html
+Page refreshed
+Rendering to ../c/artist/mivit/q/m/index.html
+Page refreshed
+Rendering to ../c/artist/mivit/e/index.html
+Page refreshed
+Rendering to ../c/artist/mivit/e/m/index.html
 Page refreshed
