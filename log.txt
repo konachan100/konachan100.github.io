@@ -1,42 +1,3 @@
-Current build: Home[0], Categoary[12]
-Loading URL: http://www.konachan.net/post.json?limit=100&tags=rating:safe
-Failed, <urlopen error [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。>
-Loading URL: http://www.konachan.net/post.json?limit=100&tags=ke-ta
-Failed, <urlopen error [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。>
- log.txt | 34 +++++++++++++++++-----------------
- 1 file changed, 17 insertions(+), 17 deletions(-)
-[master cc3bf85e] update content
- 1 file changed, 17 insertions(+), 17 deletions(-)
-
-
-================================================================================
-2020-03-03 01:57:47
-Already up to date.
-Already up to date.
-build targets:  ['s', 'q', 'e']
-Build count:  313
-Current build: Home[1], Categoary[13]
-Loading URL: http://www.konachan.net/post.json?limit=100&tags=rating:questionable
-Failed, <urlopen error [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。>
-Loading URL: http://www.konachan.net/post.json?limit=100&tags=mauve
-Failed, <urlopen error [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。>
- log.txt | 34 +++++++++++++++++-----------------
- 1 file changed, 17 insertions(+), 17 deletions(-)
-[master 9791ed5b] update content
- 1 file changed, 17 insertions(+), 17 deletions(-)
-
-
-================================================================================
-2020-03-03 02:04:28
-Already up to date.
-Already up to date.
-build targets:  ['s', 'q', 'e']
-Build count:  314
-Current build: Home[2], Categoary[14]
-Loading URL: http://www.konachan.net/post.json?limit=100&tags=rating:explicit
-Failed, <urlopen error [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。>
-Loading URL: http://www.konachan.net/post.json?limit=100&tags=onineko
-Failed, <urlopen error [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。>
  log.txt | 34 +++++++++++++++++-----------------
  1 file changed, 17 insertions(+), 17 deletions(-)
 [master 20ac66e1] update content
@@ -529,4 +490,43 @@ Page refreshed
 Rendering to ../c/artist/annin_doufu/e/index.html
 Page refreshed
 Rendering to ../c/artist/annin_doufu/e/m/index.html
+Page refreshed
+ c/artist/annin_doufu/post.json |  6 ++--
+ index.html                     |  4 +--
+ log.txt                        | 80 +++++++++++++++++++++---------------------
+ m/index.html                   |  4 +--
+ 4 files changed, 47 insertions(+), 47 deletions(-)
+[master 911bf75d] update content
+ 4 files changed, 47 insertions(+), 47 deletions(-)
+
+
+================================================================================
+2020-03-03 04:06:16
+Already up to date.
+Already up to date.
+build targets:  ['s', 'q', 'e']
+Build count:  334
+Current build: Home[1], Categoary[9]
+Loading URL: http://www.konachan.net/post.json?limit=100&tags=rating:questionable
+Success, decoding JSON
+Rendering to ../q/index.html
+Page refreshed
+Rendering to ../q/m/index.html
+Page refreshed
+Loading URL: http://www.konachan.net/post.json?limit=100&tags=miwabe_sakura
+Success, decoding JSON
+update cache file  ../c/artist/miwabe_sakura/cache.json
+new cache size  22
+show posts order by time, reverse
+Rendering to ../c/artist/miwabe_sakura/index.html
+Page refreshed
+Rendering to ../c/artist/miwabe_sakura/m/index.html
+Page refreshed
+Rendering to ../c/artist/miwabe_sakura/q/index.html
+Page refreshed
+Rendering to ../c/artist/miwabe_sakura/q/m/index.html
+Page refreshed
+Rendering to ../c/artist/miwabe_sakura/e/index.html
+Page refreshed
+Rendering to ../c/artist/miwabe_sakura/e/m/index.html
 Page refreshed
