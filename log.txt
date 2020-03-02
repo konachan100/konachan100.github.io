@@ -1,78 +1,3 @@
-C:\Users\Administrator\proj\konachan100.github.io\src>python konachan100.py 
-build targets:  ['s', 'q', 'e']
-Build count:  280
-Current build: Home[1], Categoary[5]
-Loading URL: http://www.konachan.net/post.json?limit=100&tags=rating:questionable
-Success, decoding JSON
-Rendering to ../q/index.html
-Page refreshed
-Rendering to ../q/m/index.html
-Page refreshed
-Loading URL: <host>/post.json?limit=100&tags=scenic
-Failed, unknown url type: '<host>/post.json?limit=100&tags=scenic'
-
-C:\Users\Administrator\proj\konachan100.github.io\src>cd .. 
-
-C:\Users\Administrator\proj\konachan100.github.io>git diff --stat 
- log.txt | 86 ++++++++++++++++++++++++++++++++++-------------------------------
- run.sh  |  7 ++++++
- 2 files changed, 52 insertions(+), 41 deletions(-)
-
-C:\Users\Administrator\proj\konachan100.github.io>git add * 
-
-C:\Users\Administrator\proj\konachan100.github.io>git commit -m "update content" 
-[master acc5e6e9] update content
- 2 files changed, 52 insertions(+), 41 deletions(-)
-
-C:\Users\Administrator\proj\konachan100.github.io>git push 
-
-
-================================================================================
-2020/03/02 ÖÜÒ» 22:17:18.18
-
-C:\Users\Administrator\proj\konachan100.github.io>git pull 
-Already up to date.
-
-C:\Users\Administrator\proj\konachan100.github.io>if not exist "src" git clone git@github.com:konachan100/konachan100-src.git src 
-
-C:\Users\Administrator\proj\konachan100.github.io>cd src 
-
-C:\Users\Administrator\proj\konachan100.github.io\src>call gen.bat 
-
-C:\Users\Administrator\proj\konachan100.github.io\src>git pull 
-Already up to date.
-
-C:\Users\Administrator\proj\konachan100.github.io\src>python konachan100.py 
-build targets:  ['s', 'q', 'e']
-Build count:  281
-Current build: Home[2], Categoary[6]
-Loading URL: http://www.konachan.net/post.json?limit=100&tags=rating:explicit
-Success, decoding JSON
-Rendering to ../e/index.html
-Page refreshed
-Rendering to ../e/m/index.html
-Page refreshed
-Loading URL: http://www.konachan.net/post.json?limit=100&tags=natsumoka
-Success, decoding JSON
-update cache file  ../c/artist/natsumoka/cache.json
-new cache size  20
-show posts order by time, reverse
-Rendering to ../c/artist/natsumoka/index.html
-Page refreshed
-Rendering to ../c/artist/natsumoka/m/index.html
-Page refreshed
-Rendering to ../c/artist/natsumoka/q/index.html
-Page refreshed
-Rendering to ../c/artist/natsumoka/q/m/index.html
-Page refreshed
-Rendering to ../c/artist/natsumoka/e/index.html
-Page refreshed
-Rendering to ../c/artist/natsumoka/e/m/index.html
-Page refreshed
-
-C:\Users\Administrator\proj\konachan100.github.io\src>cd .. 
-
-C:\Users\Administrator\proj\konachan100.github.io>git diff --stat 
  log.txt | 103 +++++++++++++++++++++++++++++++++++++---------------------------
  1 file changed, 59 insertions(+), 44 deletions(-)
 
@@ -546,3 +471,36 @@ Page refreshed
 C:\Users\Administrator\proj\konachan100.github.io\src>cd .. 
 
 C:\Users\Administrator\proj\konachan100.github.io>git diff --stat 
+ log.txt        | 116 +++++++++---------
+ q/index.html   | 364 ++++++++++++++++++++++++++++-----------------------------
+ q/m/index.html |  24 ++--
+ 3 files changed, 252 insertions(+), 252 deletions(-)
+
+C:\Users\Administrator\proj\konachan100.github.io>git add * 
+
+C:\Users\Administrator\proj\konachan100.github.io>git commit -m "update content" 
+[master 9b45669f] update content
+ 3 files changed, 252 insertions(+), 252 deletions(-)
+
+C:\Users\Administrator\proj\konachan100.github.io>git push 
+
+
+================================================================================
+2020-03-02 23:07:25
+Already up to date.
+
+
+================================================================================
+2020-03-02 23:07:57
+Already up to date.
+
+
+================================================================================
+2020-03-02 23:11:38
+Already up to date.
+
+
+================================================================================
+2020-03-02 23:24:02
+Already up to date.
+Already up to date.

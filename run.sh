@@ -1,7 +1,8 @@
 #!/bin/bash
-while [1]
+while true
 do
-    call update.bat >> log.txt
+    bash update.sh >> log.txt
     python trimlog.py
     sleep 300s
 done
+
