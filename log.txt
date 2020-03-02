@@ -3,64 +3,6 @@
 C:\Users\Administrator\proj\konachan100.github.io>git add * 
 
 C:\Users\Administrator\proj\konachan100.github.io>git commit -m "update content" 
-[master 93556649] update content
- 1 file changed, 58 insertions(+), 58 deletions(-)
-
-C:\Users\Administrator\proj\konachan100.github.io>git push 
-
-
-================================================================================
-2020/03/02 周一 15:04:14.12
-
-C:\Users\Administrator\proj\konachan100.github.io>git pull 
-Already up to date.
-
-C:\Users\Administrator\proj\konachan100.github.io>if not exist "src" git clone git@github.com:konachan100/konachan100-src.git src 
-
-C:\Users\Administrator\proj\konachan100.github.io>cd src 
-
-C:\Users\Administrator\proj\konachan100.github.io\src>call gen.bat 
-
-C:\Users\Administrator\proj\konachan100.github.io\src>git pull 
-Already up to date.
-
-C:\Users\Administrator\proj\konachan100.github.io\src>python konachan100.py 
-build targets:  ['s', 'q', 'e']
-Build count:  204
-Current build: Home[0], Categoary[20]
-Loading URL: http://www.konachan.net/post.json?limit=100&tags=rating:safe
-Success, decoding JSON
-Rendering to ../index.html
-Page refreshed
-Rendering to ../m/index.html
-Page refreshed
-Loading URL: http://www.konachan.net/post.json?limit=100&tags=fujisaki_hikari
-Success, decoding JSON
-update cache file  ../c/artist/fujisaki_hikari/cache.json
-new cache size  31
-show posts order by time, reverse
-Rendering to ../c/artist/fujisaki_hikari/index.html
-Page refreshed
-Rendering to ../c/artist/fujisaki_hikari/m/index.html
-Page refreshed
-Rendering to ../c/artist/fujisaki_hikari/q/index.html
-Page refreshed
-Rendering to ../c/artist/fujisaki_hikari/q/m/index.html
-Page refreshed
-Rendering to ../c/artist/fujisaki_hikari/e/index.html
-Page refreshed
-Rendering to ../c/artist/fujisaki_hikari/e/m/index.html
-Page refreshed
-
-C:\Users\Administrator\proj\konachan100.github.io\src>cd .. 
-
-C:\Users\Administrator\proj\konachan100.github.io>git diff --stat 
- log.txt | 116 ++++++++++++++++++++++++++++++++--------------------------------
- 1 file changed, 58 insertions(+), 58 deletions(-)
-
-C:\Users\Administrator\proj\konachan100.github.io>git add * 
-
-C:\Users\Administrator\proj\konachan100.github.io>git commit -m "update content" 
 [master 2906728e] update content
  1 file changed, 58 insertions(+), 58 deletions(-)
 
@@ -541,6 +483,64 @@ Page refreshed
 Rendering to ../c/artist/natsumoka/e/index.html
 Page refreshed
 Rendering to ../c/artist/natsumoka/e/m/index.html
+Page refreshed
+
+C:\Users\Administrator\proj\konachan100.github.io\src>cd .. 
+
+C:\Users\Administrator\proj\konachan100.github.io>git diff --stat 
+ log.txt | 118 ++++++++++++++++++++++++++++++++--------------------------------
+ 1 file changed, 59 insertions(+), 59 deletions(-)
+
+C:\Users\Administrator\proj\konachan100.github.io>git add * 
+
+C:\Users\Administrator\proj\konachan100.github.io>git commit -m "update content" 
+[master 29630858] update content
+ 1 file changed, 59 insertions(+), 59 deletions(-)
+
+C:\Users\Administrator\proj\konachan100.github.io>git push 
+
+
+================================================================================
+2020/03/02 周一 15:58:21.19
+
+C:\Users\Administrator\proj\konachan100.github.io>git pull 
+Already up to date.
+
+C:\Users\Administrator\proj\konachan100.github.io>if not exist "src" git clone git@github.com:konachan100/konachan100-src.git src 
+
+C:\Users\Administrator\proj\konachan100.github.io>cd src 
+
+C:\Users\Administrator\proj\konachan100.github.io\src>call gen.bat 
+
+C:\Users\Administrator\proj\konachan100.github.io\src>git pull 
+Already up to date.
+
+C:\Users\Administrator\proj\konachan100.github.io\src>python konachan100.py 
+build targets:  ['s', 'q', 'e']
+Build count:  214
+Current build: Home[1], Categoary[7]
+Loading URL: http://www.konachan.net/post.json?limit=100&tags=rating:questionable
+Success, decoding JSON
+Rendering to ../q/index.html
+Page refreshed
+Rendering to ../q/m/index.html
+Page refreshed
+Loading URL: http://www.konachan.net/post.json?limit=100&tags=anmi
+Success, decoding JSON
+update cache file  ../c/artist/anmi/cache.json
+new cache size  183
+show posts order by time, reverse
+Rendering to ../c/artist/anmi/index.html
+Page refreshed
+Rendering to ../c/artist/anmi/m/index.html
+Page refreshed
+Rendering to ../c/artist/anmi/q/index.html
+Page refreshed
+Rendering to ../c/artist/anmi/q/m/index.html
+Page refreshed
+Rendering to ../c/artist/anmi/e/index.html
+Page refreshed
+Rendering to ../c/artist/anmi/e/m/index.html
 Page refreshed
 
 C:\Users\Administrator\proj\konachan100.github.io\src>cd .. 
