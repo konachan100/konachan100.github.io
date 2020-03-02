@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="referrer" content="no-referrer">
+    <title>Konachan100</title>
+    
+    <style>
+        body {
+            background: #222222;
+        }
+
+        .img_frame {
+            width: 25%;
+            padding-bottom: 5%;
+            float: left;
+        }
+
+        .img_btn {
+            width: 100%;
+            background-color: transparent;
+            border: transparent;
+        }
+
+        img {
+            width: 100%;
+        }
+
+        .rowbigimg {
+            clear: both;
+            width: 100%;
+        }
+
+        .bigimg {
+            width: 80%;
+            margin-left: 10%;
+        }
+
+        .postinfo {
+            padding-left: 10%;
+            color: #f1d3ff;
+            padding-right: 10%;
+        }
+
+        .info_table {
+            background-color: #29285d;
+            table-layout: fixed;
+            width: 100%;
+        }
+
+        .info_name {
+            padding-right: 20px;
+            text-align: right;
+            width: 80px;
+        }
+
+        td {
+            word-break: break-all;
+        }
+
+        #footer {
+            clear: both;
+            padding: 5%;
+        }
+
+        #links {
+            position: fixed;
+            bottom: 5%;
+            right: 5%;
+            padding: 1%;
+        }
+
+        .linkitem {
+            background-color: wheat;
+            margin: -10%;
+            text-align: center;
+        }
+
+        .linkspace {
+            padding: 60%;
+        }
+        .linkbtn{
+            width: 100%;
+            height: 100%;
+            background-color: transparent;
+            border: none;
+            font-size: 2rem;
+        }
+        audio{
+            position: fixed;
+            top: 0px;
+            right: 0px;
+        }
+    </style>
+    <script>
+        var sUserAgent = navigator.userAgent.toLowerCase();
+        var bIsIpad = sUserAgent.match(/ipad/i) == "ipad";
+        var bIsIphoneOs = sUserAgent.match(/iphone os/i) == "iphone os";
+        var bIsMidp = sUserAgent.match(/midp/i) == "midp";
+        var bIsUc7 = sUserAgent.match(/rv:1.2.3.4/i) == "rv:1.2.3.4";
+        var bIsUc = sUserAgent.match(/ucweb/i) == "ucweb";
+        var bIsAndroid = sUserAgent.match(/android/i) == "android";
+        var bIsCE = sUserAgent.match(/windows ce/i) == "windows ce";
+        var bIsWM = sUserAgent.match(/windows mobile/i) == "windows mobile";
+
+        if (bIsIpad || bIsIphoneOs || bIsMidp || bIsUc7 || bIsUc || bIsAndroid || bIsCE || bIsWM) {
+            window.location = "./m"
+        }
+
+        var closeBigImage = function () {
+            var items = document.getElementsByClassName("rowbigimg")
+            for (let i in items) {
+                items[i].innerHTML = ""
+            }
+        }
+        var showBigImage = function (url, e, info) {
+            e.innerHTML = ""
+            let img = document.createElement("img")
+            img.src = url
+            img.className = "bigimg"
+            let div = document.createElement("div")
+            div.className = "postinfo"
+            let infotable = document.createElement("table")
+            infotable.className = "info_table"
+            div.appendChild(infotable)
+
+
+            let tablestr = '\
+            <tr>\
+                <td class = "info_name">ID</td><td>%ID%</td>\
+            </tr>\
+            <tr>\
+                <td class = "info_name">URL</td><td>%URL%</td>\
+            </tr>\
+            <tr>\
+                <td class = "info_name">Author</td><td>%Author%</td>\
+            </tr>\
+            <tr>\
+                <td class = "info_name">Tags</td><td>%Tags%</td>\
+            </tr>\
+            '.replace('%ID%', info.id).replace('%Author%', info.author).replace('%Tags%', info.tags).replace('%URL%', info.file_url)
+            infotable.innerHTML = tablestr
+
+
+            e.appendChild(div)
+            e.appendChild(img)
+
+        }
+
+    </script>
+</head>
+
+<body>
+    <img src="https://konachan.net/images/konachan_net_sm_std.png" style="width: 40%; margin-left: -3%">
+
+    
+
+    
+    <div style="clear: both; padding-bottom: 2%;">
+        
+        <div class="img_frame">
+            <button class="img_btn"
+                onclick="showBigImage('https://konachan.net/image/e942dc9ebbe08a7878cd1ff57d96761e/Konachan.com%20-%20292067%20anthropomorphism%20aqua_eyes%20bikini%20blush%20bow%20braids%20clouds%20fujisaki_hikari%20gray_hair%20kantai_collection%20long_hair%20nipples%20ponytail%20sky%20swimsuit%20water.png', this.parentElement.parentElement.getElementsByClassName('rowbigimg')[0], {'file_url':'https://konachan.net/image/e942dc9ebbe08a7878cd1ff57d96761e/Konachan.com%20-%20292067%20anthropomorphism%20aqua_eyes%20bikini%20blush%20bow%20braids%20clouds%20fujisaki_hikari%20gray_hair%20kantai_collection%20long_hair%20nipples%20ponytail%20sky%20swimsuit%20water.png','author':'BattlequeenYume','tags':'anthropomorphism aqua_eyes bikini blush bow braids clouds fujisaki_hikari gray_hair kantai_collection long_hair nipples ponytail shigure_(kancolle) sky swimsuit water','id':'292067'})">
+                <img src="https://konachan.net/data/preview/e9/42/e942dc9ebbe08a7878cd1ff57d96761e.jpg">
+            </button>
+        </div>
+        
+        <div class="img_frame">
+            <button class="img_btn"
+                onclick="showBigImage('https://konachan.net/image/62b7c5949f7f2649c800247e3f757813/Konachan.com%20-%20275919%20animal_ears%20bell%20blue_eyes%20bra%20breasts%20brown_eyes%20brown_hair%20catgirl%20close%20collar%20dark_skin%20long_hair%20ribbons%20tail%20underwear%20white_hair%20yellow.png', this.parentElement.parentElement.getElementsByClassName('rowbigimg')[0], {'file_url':'https://konachan.net/image/62b7c5949f7f2649c800247e3f757813/Konachan.com%20-%20275919%20animal_ears%20bell%20blue_eyes%20bra%20breasts%20brown_eyes%20brown_hair%20catgirl%20close%20collar%20dark_skin%20long_hair%20ribbons%20tail%20underwear%20white_hair%20yellow.png','author':'RyuZU','tags':'animal_ears anthropomorphism bell blue_eyes bra breasts brown_eyes brown_hair catgirl close collar dark_skin fujisaki_hikari i-401_(kancolle) kantai_collection long_hair ribbons ro-500_(kancolle) tail underwear white_hair yellow','id':'275919'})">
+                <img src="https://konachan.net/data/preview/62/b7/62b7c5949f7f2649c800247e3f757813.jpg">
+            </button>
+        </div>
+        
+        <div class="img_frame">
+            <button class="img_btn"
+                onclick="showBigImage('https://konachan.net/image/88faa760060f187c55b55b516c4b64b8/Konachan.com%20-%20275291%202girls%20akatsuki_yuni%20blonde_hair%20blush%20close%20food%20gray_hair%20kiss%20long_hair%20natori_sana%20pocky%20purple_eyes%20red_eyes%20sana_channel%20shoujo_ai%20uni_channel.jpg', this.parentElement.parentElement.getElementsByClassName('rowbigimg')[0], {'file_url':'https://konachan.net/image/88faa760060f187c55b55b516c4b64b8/Konachan.com%20-%20275291%202girls%20akatsuki_yuni%20blonde_hair%20blush%20close%20food%20gray_hair%20kiss%20long_hair%20natori_sana%20pocky%20purple_eyes%20red_eyes%20sana_channel%20shoujo_ai%20uni_channel.jpg','author':'RyuZU','tags':'2girls akatsuki_yuni blonde_hair blush close food fujisaki_hikari gray_hair kiss long_hair natori_sana pocky purple_eyes red_eyes sana_channel shoujo_ai uni_channel','id':'275291'})">
+                <img src="https://konachan.net/data/preview/88/fa/88faa760060f187c55b55b516c4b64b8.jpg">
+            </button>
+        </div>
+        
+        <div class="img_frame">
+            <button class="img_btn"
+                onclick="showBigImage('https://konachan.net/image/4146e2871a78c0adae6b921308221ae5/Konachan.com%20-%20262261%202girls%20a.i._channel%20blue_eyes%20blush%20brown_eyes%20brown_hair%20close%20crossover%20kaguya_luna%20kizuna_ai%20long_hair%20shoujo_ai%20twintails%20white_hair.png', this.parentElement.parentElement.getElementsByClassName('rowbigimg')[0], {'file_url':'https://konachan.net/image/4146e2871a78c0adae6b921308221ae5/Konachan.com%20-%20262261%202girls%20a.i._channel%20blue_eyes%20blush%20brown_eyes%20brown_hair%20close%20crossover%20kaguya_luna%20kizuna_ai%20long_hair%20shoujo_ai%20twintails%20white_hair.png','author':'FormX','tags':'2girls a.i._channel blue_eyes blush brown_eyes brown_hair close crossover fujisaki_hikari kaguya_luna kizuna_ai long_hair shoujo_ai the_moon_studio twintails white_hair','id':'262261'})">
+                <img src="https://konachan.net/data/preview/41/46/4146e2871a78c0adae6b921308221ae5.jpg">
+            </button>
+        </div>
+        
+        <div class="rowbigimg">
+        </div>
+    </div>
+    </div>
+    
+    <div style="clear: both; padding-bottom: 2%;">
+        
+        <div class="img_frame">
+            <button class="img_btn"
+                onclick="showBigImage('https://konachan.net/image/e93d19a7eccd4e4c45163393e6d6d2d3/Konachan.com%20-%20238892%202girls%20animal_ears%20black_hair%20bow%20brown_eyes%20brown_hair%20catgirl%20elbow_gloves%20gloves%20kaban%20kemono_friends%20petals%20serval%20short_hair%20tears.png', this.parentElement.parentElement.getElementsByClassName('rowbigimg')[0], {'file_url':'https://konachan.net/image/e93d19a7eccd4e4c45163393e6d6d2d3/Konachan.com%20-%20238892%202girls%20animal_ears%20black_hair%20bow%20brown_eyes%20brown_hair%20catgirl%20elbow_gloves%20gloves%20kaban%20kemono_friends%20petals%20serval%20short_hair%20tears.png','author':'RyuZU','tags':'2girls animal_ears anthropomorphism black_hair bow brown_eyes brown_hair catgirl elbow_gloves fujisaki_hikari gloves kaban kemono_friends petals serval short_hair tears','id':'238892'})">
+                <img src="https://konachan.net/data/preview/e9/3d/e93d19a7eccd4e4c45163393e6d6d2d3.jpg">
+            </button>
+        </div>
+        
+        <div class="img_frame">
+            <button class="img_btn"
+                onclick="showBigImage('https://konachan.net/image/2a3d4e3d7fcf48169250322eede25986/Konachan.com%20-%20149921%20brown_eyes%20fujisaki_hikari%20hat%20purple_hair%20remilia_scarlet%20short_hair%20touhou%20vampire%20wings.jpg', this.parentElement.parentElement.getElementsByClassName('rowbigimg')[0], {'file_url':'https://konachan.net/image/2a3d4e3d7fcf48169250322eede25986/Konachan.com%20-%20149921%20brown_eyes%20fujisaki_hikari%20hat%20purple_hair%20remilia_scarlet%20short_hair%20touhou%20vampire%20wings.jpg','author':'Zolxys','tags':'brown_eyes fujisaki_hikari hat purple_hair remilia_scarlet short_hair touhou vampire wings','id':'149921'})">
+                <img src="https://konachan.net/data/preview/2a/3d/2a3d4e3d7fcf48169250322eede25986.jpg">
+            </button>
+        </div>
+        
+        <div class="img_frame">
+            <button class="img_btn"
+                onclick="showBigImage('https://konachan.net/image/ec8e6d0dcd74a5982aa2eafa98c06369/Konachan.com%20-%20110251%20cape%20charlotte_%28mahou_shoujo_madoka_magica%29%20fujisaki_hikari%20long_hair%20mahou_shoujo_madoka_magica%20red_eyes%20red_hair%20sakura_kyouko%20shorts.jpg', this.parentElement.parentElement.getElementsByClassName('rowbigimg')[0], {'file_url':'https://konachan.net/image/ec8e6d0dcd74a5982aa2eafa98c06369/Konachan.com%20-%20110251%20cape%20charlotte_%28mahou_shoujo_madoka_magica%29%20fujisaki_hikari%20long_hair%20mahou_shoujo_madoka_magica%20red_eyes%20red_hair%20sakura_kyouko%20shorts.jpg','author':'opai','tags':'cape charlotte_(mahou_shoujo_madoka_magica) fujisaki_hikari long_hair mahou_shoujo_madoka_magica red_eyes red_hair sakura_kyouko shorts','id':'110251'})">
+                <img src="https://konachan.net/data/preview/ec/8e/ec8e6d0dcd74a5982aa2eafa98c06369.jpg">
+            </button>
+        </div>
+        
+        <div class="img_frame">
+            <button class="img_btn"
+                onclick="showBigImage('https://konachan.net/image/6f6b6753282c3c69ddd080bf2b59bbd0/Konachan.com%20-%20103305%20blonde_hair%20flandre_scarlet%20fujisaki_hikari%20red_eyes%20touhou.jpg', this.parentElement.parentElement.getElementsByClassName('rowbigimg')[0], {'file_url':'https://konachan.net/image/6f6b6753282c3c69ddd080bf2b59bbd0/Konachan.com%20-%20103305%20blonde_hair%20flandre_scarlet%20fujisaki_hikari%20red_eyes%20touhou.jpg','author':'Chihiru','tags':'blonde_hair flandre_scarlet fujisaki_hikari red_eyes touhou','id':'103305'})">
+                <img src="https://konachan.net/data/preview/6f/6b/6f6b6753282c3c69ddd080bf2b59bbd0.jpg">
+            </button>
+        </div>
+        
+        <div class="rowbigimg">
+        </div>
+    </div>
+    </div>
+    
+    <div style="clear: both; padding-bottom: 2%;">
+        
+        <div class="img_frame">
+            <button class="img_btn"
+                onclick="showBigImage('https://konachan.net/image/6880519a428df4689ac3334be2f6db59/Konachan.com%20-%20102745%20fujisaki_hikari%20mahou_shoujo_madoka_magica%20miki_sayaka%20sakura_kyouko.jpg', this.parentElement.parentElement.getElementsByClassName('rowbigimg')[0], {'file_url':'https://konachan.net/image/6880519a428df4689ac3334be2f6db59/Konachan.com%20-%20102745%20fujisaki_hikari%20mahou_shoujo_madoka_magica%20miki_sayaka%20sakura_kyouko.jpg','author':'Fenel','tags':'fujisaki_hikari mahou_shoujo_madoka_magica miki_sayaka sakura_kyouko','id':'102745'})">
+                <img src="https://konachan.net/data/preview/68/80/6880519a428df4689ac3334be2f6db59.jpg">
+            </button>
+        </div>
+        
+        <div class="img_frame">
+            <button class="img_btn"
+                onclick="showBigImage('https://konachan.net/image/701a37a6d6336bd8fca5b462a1997083/Konachan.com%20-%20102744%20fujisaki_hikari%20mahou_shoujo_madoka_magica%20miki_sayaka%20sakura_kyouko.jpg', this.parentElement.parentElement.getElementsByClassName('rowbigimg')[0], {'file_url':'https://konachan.net/image/701a37a6d6336bd8fca5b462a1997083/Konachan.com%20-%20102744%20fujisaki_hikari%20mahou_shoujo_madoka_magica%20miki_sayaka%20sakura_kyouko.jpg','author':'Fenel','tags':'fujisaki_hikari mahou_shoujo_madoka_magica miki_sayaka sakura_kyouko','id':'102744'})">
+                <img src="https://konachan.net/data/preview/70/1a/701a37a6d6336bd8fca5b462a1997083.jpg">
+            </button>
+        </div>
+        
+        <div class="img_frame">
+            <button class="img_btn"
+                onclick="showBigImage('https://konachan.net/image/628a02f85e530ca3fb9d0aa161cac69a/Konachan.com%20-%2099125%20close%20fujisaki_hikari%20kaname_madoka%20mahou_shoujo_madoka_magica%20pink_hair%20short_hair%20twintails.jpg', this.parentElement.parentElement.getElementsByClassName('rowbigimg')[0], {'file_url':'https://konachan.net/image/628a02f85e530ca3fb9d0aa161cac69a/Konachan.com%20-%2099125%20close%20fujisaki_hikari%20kaname_madoka%20mahou_shoujo_madoka_magica%20pink_hair%20short_hair%20twintails.jpg','author':'SciFi','tags':'close fujisaki_hikari kaname_madoka mahou_shoujo_madoka_magica pink_hair short_hair twintails','id':'99125'})">
+                <img src="https://konachan.net/data/preview/62/8a/628a02f85e530ca3fb9d0aa161cac69a.jpg">
+            </button>
+        </div>
+        
+        <div class="img_frame">
+            <button class="img_btn"
+                onclick="showBigImage('https://konachan.net/image/20895f8be3b5d7b751d50a340f0b5eb0/Konachan.com%20-%2099124%20fujisaki_hikari%20long_hair%20mahou_shoujo_madoka_magica%20ponytail%20red_eyes%20red_hair%20sakura_kyouko.jpg', this.parentElement.parentElement.getElementsByClassName('rowbigimg')[0], {'file_url':'https://konachan.net/image/20895f8be3b5d7b751d50a340f0b5eb0/Konachan.com%20-%2099124%20fujisaki_hikari%20long_hair%20mahou_shoujo_madoka_magica%20ponytail%20red_eyes%20red_hair%20sakura_kyouko.jpg','author':'SciFi','tags':'fujisaki_hikari long_hair mahou_shoujo_madoka_magica ponytail red_eyes red_hair sakura_kyouko','id':'99124'})">
+                <img src="https://konachan.net/data/preview/20/89/20895f8be3b5d7b751d50a340f0b5eb0.jpg">
+            </button>
+        </div>
+        
+        <div class="rowbigimg">
+        </div>
+    </div>
+    </div>
+    
+    <div style="clear: both; padding-bottom: 2%;">
+        
+        <div class="img_frame">
+            <button class="img_btn"
+                onclick="showBigImage('https://konachan.net/image/b3f5bf8db4636e46400d685f700b9aa9/Konachan.com%20-%2099123%20blue_hair%20fujisaki_hikari%20mahou_shoujo_madoka_magica%20miki_sayaka%20short_hair.jpg', this.parentElement.parentElement.getElementsByClassName('rowbigimg')[0], {'file_url':'https://konachan.net/image/b3f5bf8db4636e46400d685f700b9aa9/Konachan.com%20-%2099123%20blue_hair%20fujisaki_hikari%20mahou_shoujo_madoka_magica%20miki_sayaka%20short_hair.jpg','author':'SciFi','tags':'blue_hair fujisaki_hikari mahou_shoujo_madoka_magica miki_sayaka short_hair','id':'99123'})">
+                <img src="https://konachan.net/data/preview/b3/f5/b3f5bf8db4636e46400d685f700b9aa9.jpg">
+            </button>
+        </div>
+        
+        <div class="img_frame">
+            <button class="img_btn"
+                onclick="showBigImage('https://konachan.net/image/3a8913ac4863f4b33de70de3eae16f10/Konachan.com%20-%2099122%20blonde_hair%20fujisaki_hikari%20gloves%20hat%20mahou_shoujo_madoka_magica%20tomoe_mami%20twintails.jpg', this.parentElement.parentElement.getElementsByClassName('rowbigimg')[0], {'file_url':'https://konachan.net/image/3a8913ac4863f4b33de70de3eae16f10/Konachan.com%20-%2099122%20blonde_hair%20fujisaki_hikari%20gloves%20hat%20mahou_shoujo_madoka_magica%20tomoe_mami%20twintails.jpg','author':'SciFi','tags':'blonde_hair fujisaki_hikari gloves hat mahou_shoujo_madoka_magica tomoe_mami twintails','id':'99122'})">
+                <img src="https://konachan.net/data/preview/3a/89/3a8913ac4863f4b33de70de3eae16f10.jpg">
+            </button>
+        </div>
+        
+        <div class="img_frame">
+            <button class="img_btn"
+                onclick="showBigImage('https://konachan.net/image/a66207b5355f213d0736eb7692727831/Konachan.com%20-%2099121%20akemi_homura%20black_hair%20fujisaki_hikari%20long_hair%20mahou_shoujo_madoka_magica.jpg', this.parentElement.parentElement.getElementsByClassName('rowbigimg')[0], {'file_url':'https://konachan.net/image/a66207b5355f213d0736eb7692727831/Konachan.com%20-%2099121%20akemi_homura%20black_hair%20fujisaki_hikari%20long_hair%20mahou_shoujo_madoka_magica.jpg','author':'SciFi','tags':'akemi_homura black_hair fujisaki_hikari long_hair mahou_shoujo_madoka_magica','id':'99121'})">
+                <img src="https://konachan.net/data/preview/a6/62/a66207b5355f213d0736eb7692727831.jpg">
+            </button>
+        </div>
+        
+        <div class="img_frame">
+            <button class="img_btn"
+                onclick="showBigImage('https://konachan.net/image/237ddb9e3cb8a1c0b4ba84fc1db67263/Konachan.com%20-%2078478%20blonde_hair%20blush%20flandre_scarlet%20fujisaki_hikari%20hat%20loli%20red_eyes%20ribbons%20short_hair%20touhou%20vampire%20wings.jpg', this.parentElement.parentElement.getElementsByClassName('rowbigimg')[0], {'file_url':'https://konachan.net/image/237ddb9e3cb8a1c0b4ba84fc1db67263/Konachan.com%20-%2078478%20blonde_hair%20blush%20flandre_scarlet%20fujisaki_hikari%20hat%20loli%20red_eyes%20ribbons%20short_hair%20touhou%20vampire%20wings.jpg','author':'Tensa','tags':'blonde_hair blush flandre_scarlet fujisaki_hikari hat loli red_eyes ribbons short_hair touhou vampire wings','id':'78478'})">
+                <img src="https://konachan.net/data/preview/23/7d/237ddb9e3cb8a1c0b4ba84fc1db67263.jpg">
+            </button>
+        </div>
+        
+        <div class="rowbigimg">
+        </div>
+    </div>
+    </div>
+    
+    <div style="clear: both; padding-bottom: 2%;">
+        
+        <div class="img_frame">
+            <button class="img_btn"
+                onclick="showBigImage('https://konachan.net/image/d56c1bb49076584c0edf80974f4e5c8c/Konachan.com%20-%2071803%202girls%20blonde_hair%20blue_hair%20blush%20dress%20flandre_scarlet%20fujisaki_hikari%20hat%20remilia_scarlet%20ribbons%20short_hair%20skirt%20sleeping%20touhou%20vampire%20wings.jpg', this.parentElement.parentElement.getElementsByClassName('rowbigimg')[0], {'file_url':'https://konachan.net/image/d56c1bb49076584c0edf80974f4e5c8c/Konachan.com%20-%2071803%202girls%20blonde_hair%20blue_hair%20blush%20dress%20flandre_scarlet%20fujisaki_hikari%20hat%20remilia_scarlet%20ribbons%20short_hair%20skirt%20sleeping%20touhou%20vampire%20wings.jpg','author':'Tensa','tags':'2girls blonde_hair blue_hair blush dress flandre_scarlet fujisaki_hikari hat remilia_scarlet ribbons short_hair skirt sleeping touhou vampire wings','id':'71803'})">
+                <img src="https://konachan.net/data/preview/d5/6c/d56c1bb49076584c0edf80974f4e5c8c.jpg">
+            </button>
+        </div>
+        
+        <div class="img_frame">
+            <button class="img_btn"
+                onclick="showBigImage('https://konachan.net/image/0c29a9fccd65123f87e4262255d53efd/Konachan.com%20-%2050706%20close%20fujisaki_hikari%20remilia_scarlet%20touhou%20vampire.jpg', this.parentElement.parentElement.getElementsByClassName('rowbigimg')[0], {'file_url':'https://konachan.net/image/0c29a9fccd65123f87e4262255d53efd/Konachan.com%20-%2050706%20close%20fujisaki_hikari%20remilia_scarlet%20touhou%20vampire.jpg','author':'pantu','tags':'close fujisaki_hikari remilia_scarlet touhou vampire','id':'50706'})">
+                <img src="https://konachan.net/data/preview/0c/29/0c29a9fccd65123f87e4262255d53efd.jpg">
+            </button>
+        </div>
+        
+        <div class="rowbigimg">
+        </div>
+    </div>
+    </div>
+    
+    <script>
+        var onClickLinks = function(url){
+            window.location = url
+        }
+        var onClickS = function(){
+            onClickLinks("//konachan100.github.io")
+        }
+        var onClickQ = function(){
+            onClickLinks("//konachan100.github.io/q")
+        }
+        var onClickE = function(){
+            onClickLinks("//konachan100.github.io/e")
+        }
+
+    </script>
+    
+    <div id="footer">
+        <div id="links">
+            
+            
+            
+        </div>
+    </div>
+    
+
+   
+
+</body>
+
+</html>
