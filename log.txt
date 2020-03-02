@@ -1,34 +1,3 @@
-Page refreshed
-Rendering to ../c/artist/sousouman/e/m/index.html
-Page refreshed
-
-C:\Users\Administrator\proj\konachan100.github.io\src>cd .. 
-
-C:\Users\Administrator\proj\konachan100.github.io>git diff --stat 
- log.txt | 120 ++++++++++++++++++++++++++++++++--------------------------------
- 1 file changed, 60 insertions(+), 60 deletions(-)
-
-C:\Users\Administrator\proj\konachan100.github.io>git add * 
-
-C:\Users\Administrator\proj\konachan100.github.io>git commit -m "update content" 
-[master 7d027a94] update content
- 1 file changed, 60 insertions(+), 60 deletions(-)
-
-C:\Users\Administrator\proj\konachan100.github.io>git push 
-
-
-================================================================================
-2020/03/02 ÖÜÒ» 22:50:52.17
-
-C:\Users\Administrator\proj\konachan100.github.io>git pull 
-Already up to date.
-
-C:\Users\Administrator\proj\konachan100.github.io>if not exist "src" git clone git@github.com:konachan100/konachan100-src.git src 
-
-C:\Users\Administrator\proj\konachan100.github.io>cd src 
-
-C:\Users\Administrator\proj\konachan100.github.io\src>call gen.bat 
-
 C:\Users\Administrator\proj\konachan100.github.io\src>git pull 
 Already up to date.
 
@@ -525,3 +494,20 @@ Rendering to ../c/hot/e/index.html
 Page refreshed
 Rendering to ../c/hot/e/m/index.html
 Page refreshed
+ log.txt | 48 +++++++++++++++++++++++++++++++-----------------
+ 1 file changed, 31 insertions(+), 17 deletions(-)
+[master d0b0168e] update content
+ 1 file changed, 31 insertions(+), 17 deletions(-)
+
+
+================================================================================
+2020-03-03 00:56:21
+Already up to date.
+Already up to date.
+build targets:  ['s', 'q', 'e']
+Build count:  304
+Current build: Home[1], Categoary[4]
+Loading URL: http://www.konachan.net/post.json?limit=100&tags=rating:questionable
+Failed, timed out
+Loading URL: http://www.konachan.net/post.json?limit=100&tags=touhou
+Failed, timed out
