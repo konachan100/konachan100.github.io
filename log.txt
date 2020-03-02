@@ -1,62 +1,4 @@
 
-C:\Users\Administrator\proj\konachan100.github.io>git pull 
-Already up to date.
-
-C:\Users\Administrator\proj\konachan100.github.io>if not exist "src" git clone git@github.com:konachan100/konachan100-src.git src 
-
-C:\Users\Administrator\proj\konachan100.github.io>cd src 
-
-C:\Users\Administrator\proj\konachan100.github.io\src>call gen.bat 
-
-C:\Users\Administrator\proj\konachan100.github.io\src>git pull 
-Updating 77ec1c8..f184632
-Fast-forward
- content.json | 3 ++-
- 1 file changed, 2 insertions(+), 1 deletion(-)
-
-C:\Users\Administrator\proj\konachan100.github.io\src>python konachan100.py 
-build targets:  ['s', 'q', 'e']
-Build count:  237
-Current build: Home[0], Categoary[21]
-Loading URL: http://www.konachan.net/post.json?limit=100&tags=rating:safe
-Success, decoding JSON
-Rendering to ../index.html
-Page refreshed
-Rendering to ../m/index.html
-Page refreshed
-Loading URL: http://www.konachan.net/post.json?limit=100&tags=higandgk
-Success, decoding JSON
-update cache file  ../c/artist/higandgk/cache.json
-new cache size  23
-show posts order by time, reverse
-Rendering to ../c/artist/higandgk/index.html
-Page refreshed
-Rendering to ../c/artist/higandgk/m/index.html
-Page refreshed
-Rendering to ../c/artist/higandgk/q/index.html
-Page refreshed
-Rendering to ../c/artist/higandgk/q/m/index.html
-Page refreshed
-Rendering to ../c/artist/higandgk/e/index.html
-Page refreshed
-Rendering to ../c/artist/higandgk/e/m/index.html
-Page refreshed
-
-C:\Users\Administrator\proj\konachan100.github.io\src>cd .. 
-
-C:\Users\Administrator\proj\konachan100.github.io>git diff --stat 
- c/index.html |   4 ++
- log.txt      | 121 ++++++++++++++++++++++++++++++-----------------------------
- 2 files changed, 66 insertions(+), 59 deletions(-)
-
-C:\Users\Administrator\proj\konachan100.github.io>git add * 
-
-C:\Users\Administrator\proj\konachan100.github.io>git commit -m "update content" 
-[master b4a07e4b] update content
- 2 files changed, 66 insertions(+), 59 deletions(-)
-
-C:\Users\Administrator\proj\konachan100.github.io>git push 
-
 
 ================================================================================
 2020/03/02 周一 18:09:12.21
@@ -542,6 +484,49 @@ Rendering to ../c/artist/natsumoka/e/index.html
 Page refreshed
 Rendering to ../c/artist/natsumoka/e/m/index.html
 Page refreshed
+
+C:\Users\Administrator\proj\konachan100.github.io\src>cd .. 
+
+C:\Users\Administrator\proj\konachan100.github.io>git diff --stat 
+ log.txt | 116 ++++++++++++++++++++++++++++++++--------------------------------
+ 1 file changed, 58 insertions(+), 58 deletions(-)
+
+C:\Users\Administrator\proj\konachan100.github.io>git add * 
+
+C:\Users\Administrator\proj\konachan100.github.io>git commit -m "update content" 
+[master f0da1f6e] update content
+ 1 file changed, 58 insertions(+), 58 deletions(-)
+
+C:\Users\Administrator\proj\konachan100.github.io>git push 
+
+
+================================================================================
+2020/03/02 周一 18:57:15.14
+
+C:\Users\Administrator\proj\konachan100.github.io>git pull 
+Already up to date.
+
+C:\Users\Administrator\proj\konachan100.github.io>if not exist "src" git clone git@github.com:konachan100/konachan100-src.git src 
+
+C:\Users\Administrator\proj\konachan100.github.io>cd src 
+
+C:\Users\Administrator\proj\konachan100.github.io\src>call gen.bat 
+
+C:\Users\Administrator\proj\konachan100.github.io\src>git pull 
+Already up to date.
+
+C:\Users\Administrator\proj\konachan100.github.io\src>python konachan100.py 
+build targets:  ['s', 'q', 'e']
+Build count:  247
+Current build: Home[1], Categoary[7]
+Loading URL: http://www.konachan.net/post.json?limit=100&tags=rating:questionable
+Success, decoding JSON
+Rendering to ../q/index.html
+Page refreshed
+Rendering to ../q/m/index.html
+Page refreshed
+Loading URL: http://www.konachan.net/post.json?limit=100&tags=anmi
+Failed, timed out
 
 C:\Users\Administrator\proj\konachan100.github.io\src>cd .. 
 
