@@ -1,40 +1,4 @@
 
-C:\Users\Administrator\proj\konachan100.github.io\src>python konachan100.py 
-build targets:  ['s', 'q', 'e']
-Build count:  283
-Current build: Home[1], Categoary[8]
-Loading URL: http://www.konachan.net/post.json?limit=100&tags=rating:questionable
-Success, decoding JSON
-Rendering to ../q/index.html
-Page refreshed
-Rendering to ../q/m/index.html
-Page refreshed
-Loading URL: http://www.konachan.net/post.json?limit=100&tags=annin_doufu
-Success, decoding JSON
-update cache file  ../c/artist/annin_doufu/cache.json
-new cache size  200
-show posts order by time, reverse
-Rendering to ../c/artist/annin_doufu/index.html
-Page refreshed
-Rendering to ../c/artist/annin_doufu/m/index.html
-Page refreshed
-Rendering to ../c/artist/annin_doufu/q/index.html
-Page refreshed
-Rendering to ../c/artist/annin_doufu/q/m/index.html
-Page refreshed
-Rendering to ../c/artist/annin_doufu/e/index.html
-Page refreshed
-Rendering to ../c/artist/annin_doufu/e/m/index.html
-Page refreshed
-
-C:\Users\Administrator\proj\konachan100.github.io\src>cd .. 
-
-C:\Users\Administrator\proj\konachan100.github.io>git diff --stat 
- log.txt | 124 ++++++++++++++++++++++++++++++++--------------------------------
- 1 file changed, 62 insertions(+), 62 deletions(-)
-
-C:\Users\Administrator\proj\konachan100.github.io>git add * 
-
 C:\Users\Administrator\proj\konachan100.github.io>git commit -m "update content" 
 [master 9e4d7133] update content
  1 file changed, 62 insertions(+), 62 deletions(-)
@@ -530,3 +494,20 @@ Rendering to ../c/artist/mivit/e/index.html
 Page refreshed
 Rendering to ../c/artist/mivit/e/m/index.html
 Page refreshed
+ log.txt | 61 ++++++++++++++++++++++++++++++++++++++-----------------------
+ 1 file changed, 38 insertions(+), 23 deletions(-)
+[master 6846be4a] update content
+ 1 file changed, 38 insertions(+), 23 deletions(-)
+
+
+================================================================================
+2020-03-02 23:53:20
+Already up to date.
+Already up to date.
+build targets:  ['s', 'q', 'e']
+Build count:  294
+Current build: Home[0], Categoary[19]
+Loading URL: http://www.konachan.net/post.json?limit=100&tags=rating:safe
+Failed, timed out
+Loading URL: http://www.konachan.net/post.json?limit=100&tags=hiten_goane_ryu
+Failed, timed out
