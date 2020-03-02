@@ -1,20 +1,3 @@
-show posts order by time, reverse
-Rendering to ../c/artist/ke-ta/index.html
-Page refreshed
-Rendering to ../c/artist/ke-ta/m/index.html
-Page refreshed
-Rendering to ../c/artist/ke-ta/q/index.html
-Page refreshed
-Rendering to ../c/artist/ke-ta/q/m/index.html
-Page refreshed
-Rendering to ../c/artist/ke-ta/e/index.html
-Page refreshed
-Rendering to ../c/artist/ke-ta/e/m/index.html
-Page refreshed
-
-C:\Users\Administrator\proj\konachan100.github.io\src>cd .. 
-
-C:\Users\Administrator\proj\konachan100.github.io>git diff --stat 
  log.txt | 116 ++++++++++++++++++++++++++++++++--------------------------------
  1 file changed, 58 insertions(+), 58 deletions(-)
 
@@ -511,3 +494,20 @@ Loading URL: http://www.konachan.net/post.json?limit=100&tags=rating:explicit
 Failed, <urlopen error [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。>
 Loading URL: http://www.konachan.net/post.json?limit=100&tags=scenic
 Failed, timed out
+ log.txt | 34 +++++++++++++++++-----------------
+ 1 file changed, 17 insertions(+), 17 deletions(-)
+[master f4c3bac0] update content
+ 1 file changed, 17 insertions(+), 17 deletions(-)
+
+
+================================================================================
+2020-03-03 01:10:27
+Already up to date.
+Already up to date.
+build targets:  ['s', 'q', 'e']
+Build count:  306
+Current build: Home[0], Categoary[6]
+Loading URL: http://www.konachan.net/post.json?limit=100&tags=rating:safe
+Failed, timed out
+Loading URL: http://www.konachan.net/post.json?limit=100&tags=natsumoka
+Failed, <urlopen error [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。>
