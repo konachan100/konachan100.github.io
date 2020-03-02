@@ -1,21 +1,4 @@
 
-C:\Users\Administrator\proj\konachan100.github.io>git commit -m "update content" 
-[master 9e4d7133] update content
- 1 file changed, 62 insertions(+), 62 deletions(-)
-
-C:\Users\Administrator\proj\konachan100.github.io>git push 
-
-
-================================================================================
-2020/03/02 周一 22:34:10.11
-
-C:\Users\Administrator\proj\konachan100.github.io>git pull 
-Already up to date.
-
-C:\Users\Administrator\proj\konachan100.github.io>if not exist "src" git clone git@github.com:konachan100/konachan100-src.git src 
-
-C:\Users\Administrator\proj\konachan100.github.io>cd src 
-
 C:\Users\Administrator\proj\konachan100.github.io\src>call gen.bat 
 
 C:\Users\Administrator\proj\konachan100.github.io\src>git pull 
@@ -511,3 +494,20 @@ Loading URL: http://www.konachan.net/post.json?limit=100&tags=rating:safe
 Failed, timed out
 Loading URL: http://www.konachan.net/post.json?limit=100&tags=hiten_goane_ryu
 Failed, timed out
+ log.txt | 53 +++++++++++++++++------------------------------------
+ 1 file changed, 17 insertions(+), 36 deletions(-)
+[master f2a20207] update content
+ 1 file changed, 17 insertions(+), 36 deletions(-)
+
+
+================================================================================
+2020-03-02 23:59:39
+Already up to date.
+Already up to date.
+build targets:  ['s', 'q', 'e']
+Build count:  295
+Current build: Home[1], Categoary[20]
+Loading URL: http://www.konachan.net/post.json?limit=100&tags=rating:questionable
+Failed, timed out
+Loading URL: http://www.konachan.net/post.json?limit=100&tags=fujisaki_hikari
+Failed, [WinError 10054] 远程主机强迫关闭了一个现有的连接。
