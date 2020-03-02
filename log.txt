@@ -1,48 +1,3 @@
-Already up to date.
-
-C:\Users\Administrator\proj\konachan100.github.io>if not exist "src" git clone git@github.com:konachan100/konachan100-src.git src 
-
-C:\Users\Administrator\proj\konachan100.github.io>cd src 
-
-C:\Users\Administrator\proj\konachan100.github.io\src>call gen.bat 
-
-C:\Users\Administrator\proj\konachan100.github.io\src>git pull 
-Already up to date.
-
-C:\Users\Administrator\proj\konachan100.github.io\src>python konachan100.py 
-build targets:  ['s', 'q', 'e']
-Build count:  255
-Current build: Home[0], Categoary[15]
-Loading URL: http://www.konachan.net/post.json?limit=100&tags=rating:safe
-Success, decoding JSON
-Rendering to ../index.html
-Page refreshed
-Rendering to ../m/index.html
-Page refreshed
-Loading URL: http://www.konachan.net/post.json?limit=100&tags=miyase_mahiro
-Success, decoding JSON
-update cache file  ../c/artist/miyase_mahiro/cache.json
-new cache size  41
-show posts order by time, reverse
-Rendering to ../c/artist/miyase_mahiro/index.html
-Page refreshed
-Rendering to ../c/artist/miyase_mahiro/m/index.html
-Page refreshed
-Rendering to ../c/artist/miyase_mahiro/q/index.html
-Page refreshed
-Rendering to ../c/artist/miyase_mahiro/q/m/index.html
-Page refreshed
-Rendering to ../c/artist/miyase_mahiro/e/index.html
-Page refreshed
-Rendering to ../c/artist/miyase_mahiro/e/m/index.html
-Page refreshed
-
-C:\Users\Administrator\proj\konachan100.github.io\src>cd .. 
-
-C:\Users\Administrator\proj\konachan100.github.io>git diff --stat 
- c/artist/miyase_mahiro/q/post.json |   2 +-
- log.txt                            | 116 ++++++++++++++++++-------------------
- 2 files changed, 59 insertions(+), 59 deletions(-)
 
 C:\Users\Administrator\proj\konachan100.github.io>git add * 
 
@@ -529,6 +484,67 @@ Loading URL: http://www.konachan.net/post.json?limit=100&tags=rating:safe
 Success, decoding JSON
 update cache file  ../c/hot/cache.json
 new cache size  620
+
+C:\Users\Administrator\proj\konachan100.github.io\src>cd .. 
+
+C:\Users\Administrator\proj\konachan100.github.io>git diff --stat 
+ log.txt | 103 ++++++++++++++++++++++++++++------------------------------------
+ 1 file changed, 45 insertions(+), 58 deletions(-)
+
+C:\Users\Administrator\proj\konachan100.github.io>git add * 
+
+C:\Users\Administrator\proj\konachan100.github.io>git commit -m "update content" 
+[master 0d8645f4] update content
+ 1 file changed, 45 insertions(+), 58 deletions(-)
+
+C:\Users\Administrator\proj\konachan100.github.io>git push 
+
+
+================================================================================
+2020/03/02 ÖÜÒ» 20:36:21.11
+
+C:\Users\Administrator\proj\konachan100.github.io>git pull 
+Already up to date.
+
+C:\Users\Administrator\proj\konachan100.github.io>if not exist "src" git clone git@github.com:konachan100/konachan100-src.git src 
+
+C:\Users\Administrator\proj\konachan100.github.io>cd src 
+
+C:\Users\Administrator\proj\konachan100.github.io\src>call gen.bat 
+
+C:\Users\Administrator\proj\konachan100.github.io\src>git pull 
+Updating f184632..de14bb1
+Fast-forward
+ content.json | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+C:\Users\Administrator\proj\konachan100.github.io\src>python konachan100.py 
+build targets:  ['s', 'q', 'e']
+Build count:  265
+Current build: Home[1], Categoary[15]
+Loading URL: http://www.konachan.net/post.json?limit=100&tags=rating:questionable
+Success, decoding JSON
+Rendering to ../q/index.html
+Page refreshed
+Rendering to ../q/m/index.html
+Page refreshed
+Loading URL: http://www.konachan.net/post.json?limit=100&tags=miyase_mahiro
+Success, decoding JSON
+update cache file  ../c/artist/miyase_mahiro/cache.json
+new cache size  41
+show posts order by time, reverse
+Rendering to ../c/artist/miyase_mahiro/index.html
+Page refreshed
+Rendering to ../c/artist/miyase_mahiro/m/index.html
+Page refreshed
+Rendering to ../c/artist/miyase_mahiro/q/index.html
+Page refreshed
+Rendering to ../c/artist/miyase_mahiro/q/m/index.html
+Page refreshed
+Rendering to ../c/artist/miyase_mahiro/e/index.html
+Page refreshed
+Rendering to ../c/artist/miyase_mahiro/e/m/index.html
+Page refreshed
 
 C:\Users\Administrator\proj\konachan100.github.io\src>cd .. 
 
