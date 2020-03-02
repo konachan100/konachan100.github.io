@@ -1,3 +1,6 @@
+@echo[
+@echo[
+@echo ================================================================================
 @set cur_build_time=%date% %time%
 @echo %cur_build_time%
 git pull
