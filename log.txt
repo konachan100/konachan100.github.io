@@ -1,22 +1,3 @@
-Already up to date.
-Already up to date.
-build targets:  ['s', 'q', 'e']
-Build count:  298
-Current build: Home[1], Categoary[23]
-Loading URL: http://www.konachan.net/post.json?limit=100&tags=rating:questionable
-Failed, <urlopen error [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。>
-Loading URL: http://www.konachan.net/post.json?limit=100&tags=dead_line
-Success, decoding JSON
-update cache file  ../c/artist/dead_line/cache.json
-new cache size  8
-show posts order by time, reverse
-Rendering to ../c/artist/dead_line/index.html
-Page refreshed
-Rendering to ../c/artist/dead_line/m/index.html
-Page refreshed
-Rendering to ../c/artist/dead_line/q/index.html
-Page refreshed
-Rendering to ../c/artist/dead_line/q/m/index.html
 Page refreshed
 Rendering to ../c/artist/dead_line/e/index.html
 Page refreshed
@@ -513,3 +494,26 @@ Loading URL: http://www.konachan.net/post.json?limit=100&tags=rating:safe
 Success, decoding JSON
 update cache file  ../c/hot/cache.json
 new cache size  646
+ log.txt | 53 ++++++++++++++++++++---------------------------------
+ 1 file changed, 20 insertions(+), 33 deletions(-)
+[master c2b5cfb6] update content
+ 1 file changed, 20 insertions(+), 33 deletions(-)
+
+
+================================================================================
+2020-03-03 03:23:10
+Already up to date.
+Already up to date.
+build targets:  ['s', 'q', 'e']
+Build count:  326
+Current build: Home[2], Categoary[1]
+Loading URL: http://www.konachan.net/post.json?limit=100&tags=rating:explicit
+Success, decoding JSON
+Rendering to ../e/index.html
+Page refreshed
+Rendering to ../e/m/index.html
+Page refreshed
+Loading URL: http://www.konachan.net/post.json?limit=100&tags=rating:questionable
+Success, decoding JSON
+update cache file  ../c/hot/cache.json
+new cache size  660
