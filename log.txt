@@ -1,40 +1,4 @@
 Page refreshed
-Rendering to ../c/artist/dead_line/q/index.html
-Page refreshed
-Rendering to ../c/artist/dead_line/q/m/index.html
-Page refreshed
-Rendering to ../c/artist/dead_line/e/index.html
-Page refreshed
-Rendering to ../c/artist/dead_line/e/m/index.html
-Page refreshed
- log.txt | 74 ++++++++++++++++++++++++++++++++---------------------------------
- 1 file changed, 37 insertions(+), 37 deletions(-)
-[master 50a51dfb] update content
- 1 file changed, 37 insertions(+), 37 deletions(-)
-
-
-================================================================================
-2020-03-03 05:25:52
-Already up to date.
-Already up to date.
-build targets:  ['s', 'q', 'e']
-Build count:  349
-Current build: Home[1], Categoary[24]
-Loading URL: http://www.konachan.net/post.json?limit=100&tags=rating:questionable
-Success, decoding JSON
-Rendering to ../q/index.html
-Page refreshed
-Rendering to ../q/m/index.html
-Page refreshed
-Loading URL: http://www.konachan.net/post.json?limit=100&tags=mayogii
-Success, decoding JSON
-update cache file  ../c/artist/mayogii/cache.json
-new cache size  9
-show posts order by time, reverse
-Rendering to ../c/artist/mayogii/index.html
-Page refreshed
-Rendering to ../c/artist/mayogii/m/index.html
-Page refreshed
 Rendering to ../c/artist/mayogii/q/index.html
 Page refreshed
 Rendering to ../c/artist/mayogii/q/m/index.html
@@ -529,4 +493,40 @@ Page refreshed
 Rendering to ../c/artist/mauve/e/index.html
 Page refreshed
 Rendering to ../c/artist/mauve/e/m/index.html
+Page refreshed
+ log.txt | 72 ++++++++++++++++++++++++++++++++---------------------------------
+ 1 file changed, 36 insertions(+), 36 deletions(-)
+[master 923c00e2] update content
+ 1 file changed, 36 insertions(+), 36 deletions(-)
+
+
+================================================================================
+2020-03-03 06:45:35
+Already up to date.
+Already up to date.
+build targets:  ['s', 'q', 'e']
+Build count:  364
+Current build: Home[1], Categoary[14]
+Loading URL: http://www.konachan.net/post.json?limit=100&tags=rating:questionable
+Success, decoding JSON
+Rendering to ../q/index.html
+Page refreshed
+Rendering to ../q/m/index.html
+Page refreshed
+Loading URL: http://www.konachan.net/post.json?limit=100&tags=onineko
+Success, decoding JSON
+update cache file  ../c/artist/onineko/cache.json
+new cache size  56
+show posts order by time, reverse
+Rendering to ../c/artist/onineko/index.html
+Page refreshed
+Rendering to ../c/artist/onineko/m/index.html
+Page refreshed
+Rendering to ../c/artist/onineko/q/index.html
+Page refreshed
+Rendering to ../c/artist/onineko/q/m/index.html
+Page refreshed
+Rendering to ../c/artist/onineko/e/index.html
+Page refreshed
+Rendering to ../c/artist/onineko/e/m/index.html
 Page refreshed
