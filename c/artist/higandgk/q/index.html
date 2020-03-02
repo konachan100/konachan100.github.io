@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="referrer" content="no-referrer">
+    <title>Konachan100</title>
+    
+    <style>
+        body {
+            background: #222222;
+        }
+
+        .img_frame {
+            width: 25%;
+            padding-bottom: 5%;
+            float: left;
+        }
+
+        .img_btn {
+            width: 100%;
+            background-color: transparent;
+            border: transparent;
+        }
+
+        img {
+            width: 100%;
+        }
+
+        .rowbigimg {
+            clear: both;
+            width: 100%;
+        }
+
+        .bigimg {
+            width: 80%;
+            margin-left: 10%;
+        }
+
+        .postinfo {
+            padding-left: 10%;
+            color: #f1d3ff;
+            padding-right: 10%;
+        }
+
+        .info_table {
+            background-color: #29285d;
+            table-layout: fixed;
+            width: 100%;
+        }
+
+        .info_name {
+            padding-right: 20px;
+            text-align: right;
+            width: 80px;
+        }
+
+        td {
+            word-break: break-all;
+        }
+
+        #footer {
+            clear: both;
+            padding: 5%;
+        }
+
+        #links {
+            position: fixed;
+            bottom: 5%;
+            right: 5%;
+            padding: 1%;
+        }
+
+        .linkitem {
+            background-color: wheat;
+            margin: -10%;
+            text-align: center;
+        }
+
+        .linkspace {
+            padding: 60%;
+        }
+        .linkbtn{
+            width: 100%;
+            height: 100%;
+            background-color: transparent;
+            border: none;
+            font-size: 2rem;
+        }
+        audio{
+            position: fixed;
+            top: 0px;
+            right: 0px;
+        }
+    </style>
+    <script>
+        var sUserAgent = navigator.userAgent.toLowerCase();
+        var bIsIpad = sUserAgent.match(/ipad/i) == "ipad";
+        var bIsIphoneOs = sUserAgent.match(/iphone os/i) == "iphone os";
+        var bIsMidp = sUserAgent.match(/midp/i) == "midp";
+        var bIsUc7 = sUserAgent.match(/rv:1.2.3.4/i) == "rv:1.2.3.4";
+        var bIsUc = sUserAgent.match(/ucweb/i) == "ucweb";
+        var bIsAndroid = sUserAgent.match(/android/i) == "android";
+        var bIsCE = sUserAgent.match(/windows ce/i) == "windows ce";
+        var bIsWM = sUserAgent.match(/windows mobile/i) == "windows mobile";
+
+        if (bIsIpad || bIsIphoneOs || bIsMidp || bIsUc7 || bIsUc || bIsAndroid || bIsCE || bIsWM) {
+            window.location = "./m"
+        }
+
+        var closeBigImage = function () {
+            var items = document.getElementsByClassName("rowbigimg")
+            for (let i in items) {
+                items[i].innerHTML = ""
+            }
+        }
+        var showBigImage = function (url, e, info) {
+            e.innerHTML = ""
+            let img = document.createElement("img")
+            img.src = url
+            img.className = "bigimg"
+            let div = document.createElement("div")
+            div.className = "postinfo"
+            let infotable = document.createElement("table")
+            infotable.className = "info_table"
+            div.appendChild(infotable)
+
+
+            let tablestr = '\
+            <tr>\
+                <td class = "info_name">ID</td><td>%ID%</td>\
+            </tr>\
+            <tr>\
+                <td class = "info_name">URL</td><td>%URL%</td>\
+            </tr>\
+            <tr>\
+                <td class = "info_name">Author</td><td>%Author%</td>\
+            </tr>\
+            <tr>\
+                <td class = "info_name">Tags</td><td>%Tags%</td>\
+            </tr>\
+            '.replace('%ID%', info.id).replace('%Author%', info.author).replace('%Tags%', info.tags).replace('%URL%', info.file_url)
+            infotable.innerHTML = tablestr
+
+
+            e.appendChild(div)
+            e.appendChild(img)
+
+        }
+
+    </script>
+</head>
+
+<body>
+    <img src="https://konachan.net/images/konachan_net_sm_std.png" style="width: 40%; margin-left: -3%">
+
+    
+
+    
+    <div style="clear: both; padding-bottom: 2%;">
+        
+        <div class="img_frame">
+            <button class="img_btn"
+                onclick="showBigImage('https://konachan.net/image/a61a6bf1be712fa99d9eba17237bc701/Konachan.com%20-%20295550%20anthropomorphism%20bed%20blush%20breasts%20brown_hair%20close%20dsr-50_%28girls_frontline%29%20girls_frontline%20higandgk%20long_hair%20nipples%20nude%20red_eyes.jpg', this.parentElement.parentElement.getElementsByClassName('rowbigimg')[0], {'file_url':'https://konachan.net/image/a61a6bf1be712fa99d9eba17237bc701/Konachan.com%20-%20295550%20anthropomorphism%20bed%20blush%20breasts%20brown_hair%20close%20dsr-50_%28girls_frontline%29%20girls_frontline%20higandgk%20long_hair%20nipples%20nude%20red_eyes.jpg','author':'BattlequeenYume','tags':'anthropomorphism bed blush breasts brown_hair close dsr-50_(girls_frontline) girls_frontline higandgk long_hair nipples nude red_eyes','id':'295550'})">
+                <img src="https://konachan.net/data/preview/a6/1a/a61a6bf1be712fa99d9eba17237bc701.jpg">
+            </button>
+        </div>
+        
+        <div class="img_frame">
+            <button class="img_btn"
+                onclick="showBigImage('https://konachan.net/image/ffc0f6342bb2be91c6d1e126aefe4e39/Konachan.com%20-%20290267%20anthropomorphism%20ass%20azur_lane%20breasts%20erect_nipples%20gloves%20higandgk%20long_hair%20orange_eyes%20prinz_eugen_%28azur_lane%29%20sideboob%20white_hair.jpg', this.parentElement.parentElement.getElementsByClassName('rowbigimg')[0], {'file_url':'https://konachan.net/image/ffc0f6342bb2be91c6d1e126aefe4e39/Konachan.com%20-%20290267%20anthropomorphism%20ass%20azur_lane%20breasts%20erect_nipples%20gloves%20higandgk%20long_hair%20orange_eyes%20prinz_eugen_%28azur_lane%29%20sideboob%20white_hair.jpg','author':'Fepple','tags':'anthropomorphism ass azur_lane breasts erect_nipples gloves higandgk long_hair orange_eyes prinz_eugen_(azur_lane) sideboob white_hair','id':'290267'})">
+                <img src="https://konachan.net/data/preview/ff/c0/ffc0f6342bb2be91c6d1e126aefe4e39.jpg">
+            </button>
+        </div>
+        
+        <div class="img_frame">
+            <button class="img_btn"
+                onclick="showBigImage('https://konachan.net/image/0044667c68c78cb52db5e419213c0d10/Konachan.com%20-%20290007%202girls%20anthropomorphism%20ass%20azur_lane%20brown_hair%20clouds%20higandgk%20long_hair%20navel%20red_eyes%20sky%20swimsuit%20thighhighs%20white_hair%20zuikaku_%28azur_lane%29.jpg', this.parentElement.parentElement.getElementsByClassName('rowbigimg')[0], {'file_url':'https://konachan.net/image/0044667c68c78cb52db5e419213c0d10/Konachan.com%20-%20290007%202girls%20anthropomorphism%20ass%20azur_lane%20brown_hair%20clouds%20higandgk%20long_hair%20navel%20red_eyes%20sky%20swimsuit%20thighhighs%20white_hair%20zuikaku_%28azur_lane%29.jpg','author':'BattlequeenYume','tags':'2girls anthropomorphism ass azur_lane brown_hair clouds higandgk long_hair navel red_eyes shoukaku_(azur_lane) sky swimsuit thighhighs white_hair zuikaku_(azur_lane)','id':'290007'})">
+                <img src="https://konachan.net/data/preview/00/44/0044667c68c78cb52db5e419213c0d10.jpg">
+            </button>
+        </div>
+        
+        <div class="img_frame">
+            <button class="img_btn"
+                onclick="showBigImage('https://konachan.net/image/0a83cce776a6e3c656ecd7a54662e864/Konachan.com%20-%20279994%20animal_ears%20anthropomorphism%20azur_lane%20brown_hair%20close%20foxgirl%20higandgk%20japanese_clothes%20long_hair%20multiple_tails%20nopan%20red_eyes%20tail.jpg', this.parentElement.parentElement.getElementsByClassName('rowbigimg')[0], {'file_url':'https://konachan.net/image/0a83cce776a6e3c656ecd7a54662e864/Konachan.com%20-%20279994%20animal_ears%20anthropomorphism%20azur_lane%20brown_hair%20close%20foxgirl%20higandgk%20japanese_clothes%20long_hair%20multiple_tails%20nopan%20red_eyes%20tail.jpg','author':'BattlequeenYume','tags':'akagi_(azur_lane) animal_ears anthropomorphism azur_lane brown_hair close foxgirl higandgk japanese_clothes long_hair multiple_tails nopan red_eyes tail','id':'279994'})">
+                <img src="https://konachan.net/data/preview/0a/83/0a83cce776a6e3c656ecd7a54662e864.jpg">
+            </button>
+        </div>
+        
+        <div class="rowbigimg">
+        </div>
+    </div>
+    </div>
+    
+    <div style="clear: both; padding-bottom: 2%;">
+        
+        <div class="img_frame">
+            <button class="img_btn"
+                onclick="showBigImage('https://konachan.net/image/3caf1386ae5d459ba7759ca41316160a/Konachan.com%20-%20279981%20animal_ears%20anthropomorphism%20azur_lane%20brown_hair%20close%20foxgirl%20higandgk%20japanese_clothes%20long_hair%20multiple_tails%20nopan%20red_eyes%20tail.jpg', this.parentElement.parentElement.getElementsByClassName('rowbigimg')[0], {'file_url':'https://konachan.net/image/3caf1386ae5d459ba7759ca41316160a/Konachan.com%20-%20279981%20animal_ears%20anthropomorphism%20azur_lane%20brown_hair%20close%20foxgirl%20higandgk%20japanese_clothes%20long_hair%20multiple_tails%20nopan%20red_eyes%20tail.jpg','author':'BattlequeenYume','tags':'akagi_(azur_lane) animal_ears anthropomorphism azur_lane brown_hair close foxgirl higandgk japanese_clothes long_hair multiple_tails nopan red_eyes tail','id':'279981'})">
+                <img src="https://konachan.net/data/preview/3c/af/3caf1386ae5d459ba7759ca41316160a.jpg">
+            </button>
+        </div>
+        
+        <div class="img_frame">
+            <button class="img_btn"
+                onclick="showBigImage('https://konachan.net/image/8316d8ca35a899089ea01b30b468a75f/Konachan.com%20-%20265788%20anthropomorphism%20brown_hair%20dress%20drink%20flowers%20girls_frontline%20gun%20higandgk%20long_hair%20necklace%20no_bra%20red_eyes%20rose%20see_through%20weapon.jpg', this.parentElement.parentElement.getElementsByClassName('rowbigimg')[0], {'file_url':'https://konachan.net/image/8316d8ca35a899089ea01b30b468a75f/Konachan.com%20-%20265788%20anthropomorphism%20brown_hair%20dress%20drink%20flowers%20girls_frontline%20gun%20higandgk%20long_hair%20necklace%20no_bra%20red_eyes%20rose%20see_through%20weapon.jpg','author':'BattlequeenYume','tags':'anthropomorphism brown_hair dress drink dsr-50_(girls_frontline) flowers girls_frontline gun higandgk long_hair necklace no_bra red_eyes rose see_through weapon','id':'265788'})">
+                <img src="https://konachan.net/data/preview/83/16/8316d8ca35a899089ea01b30b468a75f.jpg">
+            </button>
+        </div>
+        
+        <div class="img_frame">
+            <button class="img_btn"
+                onclick="showBigImage('https://konachan.net/image/25d0291f808f62b774538524b64af82a/Konachan.com%20-%20265782%20anthropomorphism%20brown_hair%20dress%20drink%20dsr-50_%28girls_frontline%29%20flowers%20girls_frontline%20gun%20higandgk%20long_hair%20necklace%20no_bra%20red_eyes%20rose%20weapon.jpg', this.parentElement.parentElement.getElementsByClassName('rowbigimg')[0], {'file_url':'https://konachan.net/image/25d0291f808f62b774538524b64af82a/Konachan.com%20-%20265782%20anthropomorphism%20brown_hair%20dress%20drink%20dsr-50_%28girls_frontline%29%20flowers%20girls_frontline%20gun%20higandgk%20long_hair%20necklace%20no_bra%20red_eyes%20rose%20weapon.jpg','author':'BattlequeenYume','tags':'anthropomorphism brown_hair dress drink dsr-50_(girls_frontline) flowers girls_frontline gun higandgk long_hair necklace no_bra red_eyes rose weapon','id':'265782'})">
+                <img src="https://konachan.net/data/preview/25/d0/25d0291f808f62b774538524b64af82a.jpg">
+            </button>
+        </div>
+        
+        <div class="rowbigimg">
+        </div>
+    </div>
+    </div>
+    
+    <script>
+        var onClickLinks = function(url){
+            window.location = url
+        }
+        var onClickS = function(){
+            onClickLinks("//konachan100.github.io")
+        }
+        var onClickQ = function(){
+            onClickLinks("//konachan100.github.io/q")
+        }
+        var onClickE = function(){
+            onClickLinks("//konachan100.github.io/e")
+        }
+
+    </script>
+    
+    <div id="footer">
+        <div id="links">
+            
+            
+            
+        </div>
+    </div>
+    
+
+   
+
+</body>
+
+</html>
