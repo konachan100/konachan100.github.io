@@ -1,61 +1,3 @@
-Rendering to ../e/m/index.html
-Page refreshed
-Loading URL: http://www.konachan.net/post.json?limit=100&tags=annin_doufu
-Success, decoding JSON
-update cache file  ../c/artist/annin_doufu/cache.json
-new cache size  200
-show posts order by time, reverse
-Rendering to ../c/artist/annin_doufu/index.html
-Page refreshed
-Rendering to ../c/artist/annin_doufu/m/index.html
-Page refreshed
-Rendering to ../c/artist/annin_doufu/q/index.html
-Page refreshed
-Rendering to ../c/artist/annin_doufu/q/m/index.html
-Page refreshed
-Rendering to ../c/artist/annin_doufu/e/index.html
-Page refreshed
-Rendering to ../c/artist/annin_doufu/e/m/index.html
-Page refreshed
-
-C:\Users\Administrator\proj\konachan100.github.io\src>cd .. 
-
-C:\Users\Administrator\proj\konachan100.github.io>git diff --stat 
- log.txt | 101 +++++++++++++++++++++++++++++++++++++---------------------------
- 1 file changed, 58 insertions(+), 43 deletions(-)
-
-C:\Users\Administrator\proj\konachan100.github.io>git add * 
-
-C:\Users\Administrator\proj\konachan100.github.io>git commit -m "update content" 
-[master 01b2660a] update content
- 1 file changed, 58 insertions(+), 43 deletions(-)
-
-C:\Users\Administrator\proj\konachan100.github.io>git push 
-
-
-================================================================================
-2020/03/02 周一 19:08:28.12
-
-C:\Users\Administrator\proj\konachan100.github.io>git pull 
-Already up to date.
-
-C:\Users\Administrator\proj\konachan100.github.io>if not exist "src" git clone git@github.com:konachan100/konachan100-src.git src 
-
-C:\Users\Administrator\proj\konachan100.github.io>cd src 
-
-C:\Users\Administrator\proj\konachan100.github.io\src>call gen.bat 
-
-C:\Users\Administrator\proj\konachan100.github.io\src>git pull 
-Already up to date.
-
-C:\Users\Administrator\proj\konachan100.github.io\src>python konachan100.py 
-build targets:  ['s', 'q', 'e']
-Build count:  249
-Current build: Home[0], Categoary[9]
-Loading URL: http://www.konachan.net/post.json?limit=100&tags=rating:safe
-Success, decoding JSON
-Rendering to ../index.html
-Page refreshed
 Rendering to ../m/index.html
 Page refreshed
 Loading URL: http://www.konachan.net/post.json?limit=100&tags=miwabe_sakura
@@ -542,6 +484,45 @@ Rendering to ../c/artist/ryo/e/index.html
 Page refreshed
 Rendering to ../c/artist/ryo/e/m/index.html
 Page refreshed
+
+C:\Users\Administrator\proj\konachan100.github.io\src>cd .. 
+
+C:\Users\Administrator\proj\konachan100.github.io>git diff --stat 
+ log.txt | 116 ++++++++++++++++++++++++++++++++--------------------------------
+ 1 file changed, 58 insertions(+), 58 deletions(-)
+
+C:\Users\Administrator\proj\konachan100.github.io>git add * 
+
+C:\Users\Administrator\proj\konachan100.github.io>git commit -m "update content" 
+[master eaa3d2f0] update content
+ 1 file changed, 58 insertions(+), 58 deletions(-)
+
+C:\Users\Administrator\proj\konachan100.github.io>git push 
+
+
+================================================================================
+2020/03/02 周一 19:57:13.17
+
+C:\Users\Administrator\proj\konachan100.github.io>git pull 
+Already up to date.
+
+C:\Users\Administrator\proj\konachan100.github.io>if not exist "src" git clone git@github.com:konachan100/konachan100-src.git src 
+
+C:\Users\Administrator\proj\konachan100.github.io>cd src 
+
+C:\Users\Administrator\proj\konachan100.github.io\src>call gen.bat 
+
+C:\Users\Administrator\proj\konachan100.github.io\src>git pull 
+Already up to date.
+
+C:\Users\Administrator\proj\konachan100.github.io\src>python konachan100.py 
+build targets:  ['s', 'q', 'e']
+Build count:  258
+Current build: Home[0], Categoary[18]
+Loading URL: http://www.konachan.net/post.json?limit=100&tags=rating:safe
+Failed, timed out
+Loading URL: http://www.konachan.net/post.json?limit=100&tags=mivit
+Failed, timed out
 
 C:\Users\Administrator\proj\konachan100.github.io\src>cd .. 
 
