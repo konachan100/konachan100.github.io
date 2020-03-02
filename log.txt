@@ -1,41 +1,3 @@
-Loading URL: http://www.konachan.net/post.json?limit=100&tags=higandgk
-Failed, timed out
- log.txt | 34 +++++++++++++++++-----------------
- 1 file changed, 17 insertions(+), 17 deletions(-)
-[master c3a82ebf] update content
- 1 file changed, 17 insertions(+), 17 deletions(-)
-
-
-================================================================================
-2020-03-03 02:58:26
-Already up to date.
-Already up to date.
-build targets:  ['s', 'q', 'e']
-Build count:  322
-Current build: Home[1], Categoary[22]
-Loading URL: http://www.konachan.net/post.json?limit=100&tags=rating:questionable
-Failed, timed out
-Loading URL: http://www.konachan.net/post.json?limit=100&tags=lium
-Failed, timed out
- log.txt | 34 +++++++++++++++++-----------------
- 1 file changed, 17 insertions(+), 17 deletions(-)
-[master 1b9f6338] update content
- 1 file changed, 17 insertions(+), 17 deletions(-)
-
-
-================================================================================
-2020-03-03 03:04:41
-Already up to date.
-Already up to date.
-build targets:  ['s', 'q', 'e']
-Build count:  323
-Current build: Home[2], Categoary[23]
-Loading URL: http://www.konachan.net/post.json?limit=100&tags=rating:explicit
-Failed, timed out
-Loading URL: http://www.konachan.net/post.json?limit=100&tags=dead_line
-Failed, timed out
- log.txt | 34 +++++++++++++++++-----------------
- 1 file changed, 17 insertions(+), 17 deletions(-)
 [master 8aca4235] update content
  1 file changed, 17 insertions(+), 17 deletions(-)
 
@@ -529,4 +491,42 @@ Page refreshed
 Rendering to ../c/artist/ke-ta/e/index.html
 Page refreshed
 Rendering to ../c/artist/ke-ta/e/m/index.html
+Page refreshed
+ log.txt        | 80 +++++++++++++++++++++++++++++-----------------------------
+ q/index.html   |  4 +--
+ q/m/index.html |  4 +--
+ 3 files changed, 44 insertions(+), 44 deletions(-)
+[master ccd60f1d] update content
+ 3 files changed, 44 insertions(+), 44 deletions(-)
+
+
+================================================================================
+2020-03-03 04:27:31
+Already up to date.
+Already up to date.
+build targets:  ['s', 'q', 'e']
+Build count:  338
+Current build: Home[2], Categoary[13]
+Loading URL: http://www.konachan.net/post.json?limit=100&tags=rating:explicit
+Success, decoding JSON
+Rendering to ../e/index.html
+Page refreshed
+Rendering to ../e/m/index.html
+Page refreshed
+Loading URL: http://www.konachan.net/post.json?limit=100&tags=mauve
+Success, decoding JSON
+update cache file  ../c/artist/mauve/cache.json
+new cache size  33
+show posts order by time, reverse
+Rendering to ../c/artist/mauve/index.html
+Page refreshed
+Rendering to ../c/artist/mauve/m/index.html
+Page refreshed
+Rendering to ../c/artist/mauve/q/index.html
+Page refreshed
+Rendering to ../c/artist/mauve/q/m/index.html
+Page refreshed
+Rendering to ../c/artist/mauve/e/index.html
+Page refreshed
+Rendering to ../c/artist/mauve/e/m/index.html
 Page refreshed
