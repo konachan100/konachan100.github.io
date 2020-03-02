@@ -3,66 +3,6 @@ C:\Users\Administrator\proj\konachan100.github.io>git push
 
 
 ================================================================================
-2020/03/02 周一 20:14:48.18
-
-C:\Users\Administrator\proj\konachan100.github.io>git pull 
-Already up to date.
-
-C:\Users\Administrator\proj\konachan100.github.io>if not exist "src" git clone git@github.com:konachan100/konachan100-src.git src 
-
-C:\Users\Administrator\proj\konachan100.github.io>cd src 
-
-C:\Users\Administrator\proj\konachan100.github.io\src>call gen.bat 
-
-C:\Users\Administrator\proj\konachan100.github.io\src>git pull 
-Already up to date.
-
-C:\Users\Administrator\proj\konachan100.github.io\src>python konachan100.py 
-build targets:  ['s', 'q', 'e']
-Build count:  261
-Current build: Home[0], Categoary[21]
-Loading URL: http://www.konachan.net/post.json?limit=100&tags=rating:safe
-Success, decoding JSON
-Rendering to ../index.html
-Page refreshed
-Rendering to ../m/index.html
-Page refreshed
-Loading URL: http://www.konachan.net/post.json?limit=100&tags=higandgk
-Success, decoding JSON
-update cache file  ../c/artist/higandgk/cache.json
-new cache size  23
-show posts order by time, reverse
-Rendering to ../c/artist/higandgk/index.html
-Page refreshed
-Rendering to ../c/artist/higandgk/m/index.html
-Page refreshed
-Rendering to ../c/artist/higandgk/q/index.html
-Page refreshed
-Rendering to ../c/artist/higandgk/q/m/index.html
-Page refreshed
-Rendering to ../c/artist/higandgk/e/index.html
-Page refreshed
-Rendering to ../c/artist/higandgk/e/m/index.html
-Page refreshed
-
-C:\Users\Administrator\proj\konachan100.github.io\src>cd .. 
-
-C:\Users\Administrator\proj\konachan100.github.io>git diff --stat 
- index.html   | 350 +++++++++++++++++++++++++++++------------------------------
- log.txt      | 116 ++++++++++----------
- m/index.html |  12 +-
- 3 files changed, 239 insertions(+), 239 deletions(-)
-
-C:\Users\Administrator\proj\konachan100.github.io>git add * 
-
-C:\Users\Administrator\proj\konachan100.github.io>git commit -m "update content" 
-[master ccc24762] update content
- 3 files changed, 239 insertions(+), 239 deletions(-)
-
-C:\Users\Administrator\proj\konachan100.github.io>git push 
-
-
-================================================================================
 2020/03/02 周一 20:20:10.11
 
 C:\Users\Administrator\proj\konachan100.github.io>git pull 
@@ -542,6 +482,51 @@ Rendering to ../c/artist/fujisaki_hikari/e/index.html
 Page refreshed
 Rendering to ../c/artist/fujisaki_hikari/e/m/index.html
 Page refreshed
+
+C:\Users\Administrator\proj\konachan100.github.io\src>cd .. 
+
+C:\Users\Administrator\proj\konachan100.github.io>git diff --stat 
+ index.html   | 350 +++++++++++++++++++++++++++++------------------------------
+ log.txt      |  97 ++++++++++-------
+ m/index.html |  12 +-
+ 3 files changed, 239 insertions(+), 220 deletions(-)
+
+C:\Users\Administrator\proj\konachan100.github.io>git add * 
+
+C:\Users\Administrator\proj\konachan100.github.io>git commit -m "update content" 
+[master e7ae9aa8] update content
+ 3 files changed, 239 insertions(+), 220 deletions(-)
+
+C:\Users\Administrator\proj\konachan100.github.io>git push 
+
+
+================================================================================
+2020/03/02 周一 21:10:39.16
+
+C:\Users\Administrator\proj\konachan100.github.io>git pull 
+Already up to date.
+
+C:\Users\Administrator\proj\konachan100.github.io>if not exist "src" git clone git@github.com:konachan100/konachan100-src.git src 
+
+C:\Users\Administrator\proj\konachan100.github.io>cd src 
+
+C:\Users\Administrator\proj\konachan100.github.io\src>call gen.bat 
+
+C:\Users\Administrator\proj\konachan100.github.io\src>git pull 
+Already up to date.
+
+C:\Users\Administrator\proj\konachan100.github.io\src>python konachan100.py 
+build targets:  ['s', 'q', 'e']
+Build count:  271
+Current build: Home[1], Categoary[21]
+Loading URL: http://www.konachan.net/post.json?limit=100&tags=rating:questionable
+Success, decoding JSON
+Rendering to ../q/index.html
+Page refreshed
+Rendering to ../q/m/index.html
+Page refreshed
+Loading URL: http://www.konachan.net/post.json?limit=100&tags=higandgk
+Failed, timed out
 
 C:\Users\Administrator\proj\konachan100.github.io\src>cd .. 
 
