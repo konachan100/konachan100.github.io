@@ -1,61 +1,3 @@
-
-
-================================================================================
-2020/03/02 周一 22:05:55.18
-
-C:\Users\Administrator\proj\konachan100.github.io>git pull 
-Already up to date.
-
-C:\Users\Administrator\proj\konachan100.github.io>if not exist "src" git clone git@github.com:konachan100/konachan100-src.git src 
-
-C:\Users\Administrator\proj\konachan100.github.io>cd src 
-
-C:\Users\Administrator\proj\konachan100.github.io\src>call gen.bat 
-
-C:\Users\Administrator\proj\konachan100.github.io\src>git pull 
-Already up to date.
-
-C:\Users\Administrator\proj\konachan100.github.io\src>python konachan100.py 
-build targets:  ['s', 'q', 'e']
-Build count:  279
-Current build: Home[0], Categoary[4]
-Loading URL: http://www.konachan.net/post.json?limit=100&tags=rating:safe
-Failed, timed out
-Loading URL: <host>/post.json?limit=100&tags=touhou
-Failed, unknown url type: '<host>/post.json?limit=100&tags=touhou'
-
-C:\Users\Administrator\proj\konachan100.github.io\src>cd .. 
-
-C:\Users\Administrator\proj\konachan100.github.io>git diff --stat 
- log.txt   | 110 ++++++++++++++++++++++++++------------------------------------
- update.sh |  14 ++++++++
- 2 files changed, 60 insertions(+), 64 deletions(-)
-
-C:\Users\Administrator\proj\konachan100.github.io>git add * 
-
-C:\Users\Administrator\proj\konachan100.github.io>git commit -m "update content" 
-[master a63a7f88] update content
- 3 files changed, 60 insertions(+), 64 deletions(-)
- create mode 100644 run.sh
-
-C:\Users\Administrator\proj\konachan100.github.io>git push 
-
-
-================================================================================
-2020/03/02 周一 22:11:54.17
-
-C:\Users\Administrator\proj\konachan100.github.io>git pull 
-Already up to date.
-
-C:\Users\Administrator\proj\konachan100.github.io>if not exist "src" git clone git@github.com:konachan100/konachan100-src.git src 
-
-C:\Users\Administrator\proj\konachan100.github.io>cd src 
-
-C:\Users\Administrator\proj\konachan100.github.io\src>call gen.bat 
-
-C:\Users\Administrator\proj\konachan100.github.io\src>git pull 
-Already up to date.
-
 C:\Users\Administrator\proj\konachan100.github.io\src>python konachan100.py 
 build targets:  ['s', 'q', 'e']
 Build count:  280
@@ -541,6 +483,64 @@ Page refreshed
 Rendering to ../c/artist/mauve/e/index.html
 Page refreshed
 Rendering to ../c/artist/mauve/e/m/index.html
+Page refreshed
+
+C:\Users\Administrator\proj\konachan100.github.io\src>cd .. 
+
+C:\Users\Administrator\proj\konachan100.github.io>git diff --stat 
+ log.txt | 116 ++++++++++++++++++++++++++++++++--------------------------------
+ 1 file changed, 58 insertions(+), 58 deletions(-)
+
+C:\Users\Administrator\proj\konachan100.github.io>git add * 
+
+C:\Users\Administrator\proj\konachan100.github.io>git commit -m "update content" 
+[master f435c577] update content
+ 1 file changed, 58 insertions(+), 58 deletions(-)
+
+C:\Users\Administrator\proj\konachan100.github.io>git push 
+
+
+================================================================================
+2020/03/02 周一 23:01:50.12
+
+C:\Users\Administrator\proj\konachan100.github.io>git pull 
+Already up to date.
+
+C:\Users\Administrator\proj\konachan100.github.io>if not exist "src" git clone git@github.com:konachan100/konachan100-src.git src 
+
+C:\Users\Administrator\proj\konachan100.github.io>cd src 
+
+C:\Users\Administrator\proj\konachan100.github.io\src>call gen.bat 
+
+C:\Users\Administrator\proj\konachan100.github.io\src>git pull 
+Already up to date.
+
+C:\Users\Administrator\proj\konachan100.github.io\src>python konachan100.py 
+build targets:  ['s', 'q', 'e']
+Build count:  289
+Current build: Home[1], Categoary[14]
+Loading URL: http://www.konachan.net/post.json?limit=100&tags=rating:questionable
+Success, decoding JSON
+Rendering to ../q/index.html
+Page refreshed
+Rendering to ../q/m/index.html
+Page refreshed
+Loading URL: http://www.konachan.net/post.json?limit=100&tags=onineko
+Success, decoding JSON
+update cache file  ../c/artist/onineko/cache.json
+new cache size  56
+show posts order by time, reverse
+Rendering to ../c/artist/onineko/index.html
+Page refreshed
+Rendering to ../c/artist/onineko/m/index.html
+Page refreshed
+Rendering to ../c/artist/onineko/q/index.html
+Page refreshed
+Rendering to ../c/artist/onineko/q/m/index.html
+Page refreshed
+Rendering to ../c/artist/onineko/e/index.html
+Page refreshed
+Rendering to ../c/artist/onineko/e/m/index.html
 Page refreshed
 
 C:\Users\Administrator\proj\konachan100.github.io\src>cd .. 
