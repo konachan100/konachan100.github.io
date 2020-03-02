@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="referrer" content="no-referrer">
+    <title>Konachan100</title>
+    
+    <style>
+        body {
+            background: #222222;
+        }
+
+        .img_frame {
+            width: 25%;
+            padding-bottom: 5%;
+            float: left;
+        }
+
+        .img_btn {
+            width: 100%;
+            background-color: transparent;
+            border: transparent;
+        }
+
+        img {
+            width: 100%;
+        }
+
+        .rowbigimg {
+            clear: both;
+            width: 100%;
+        }
+
+        .bigimg {
+            width: 80%;
+            margin-left: 10%;
+        }
+
+        .postinfo {
+            padding-left: 10%;
+            color: #f1d3ff;
+            padding-right: 10%;
+        }
+
+        .info_table {
+            background-color: #29285d;
+            table-layout: fixed;
+            width: 100%;
+        }
+
+        .info_name {
+            padding-right: 20px;
+            text-align: right;
+            width: 80px;
+        }
+
+        td {
+            word-break: break-all;
+        }
+
+        #footer {
+            clear: both;
+            padding: 5%;
+        }
+
+        #links {
+            position: fixed;
+            bottom: 5%;
+            right: 5%;
+            padding: 1%;
+        }
+
+        .linkitem {
+            background-color: wheat;
+            margin: -10%;
+            text-align: center;
+        }
+
+        .linkspace {
+            padding: 60%;
+        }
+        .linkbtn{
+            width: 100%;
+            height: 100%;
+            background-color: transparent;
+            border: none;
+            font-size: 2rem;
+        }
+        audio{
+            position: fixed;
+            top: 0px;
+            right: 0px;
+        }
+    </style>
+    <script>
+        var sUserAgent = navigator.userAgent.toLowerCase();
+        var bIsIpad = sUserAgent.match(/ipad/i) == "ipad";
+        var bIsIphoneOs = sUserAgent.match(/iphone os/i) == "iphone os";
+        var bIsMidp = sUserAgent.match(/midp/i) == "midp";
+        var bIsUc7 = sUserAgent.match(/rv:1.2.3.4/i) == "rv:1.2.3.4";
+        var bIsUc = sUserAgent.match(/ucweb/i) == "ucweb";
+        var bIsAndroid = sUserAgent.match(/android/i) == "android";
+        var bIsCE = sUserAgent.match(/windows ce/i) == "windows ce";
+        var bIsWM = sUserAgent.match(/windows mobile/i) == "windows mobile";
+
+        if (bIsIpad || bIsIphoneOs || bIsMidp || bIsUc7 || bIsUc || bIsAndroid || bIsCE || bIsWM) {
+            window.location = "./m"
+        }
+
+        var closeBigImage = function () {
+            var items = document.getElementsByClassName("rowbigimg")
+            for (let i in items) {
+                items[i].innerHTML = ""
+            }
+        }
+        var showBigImage = function (url, e, info) {
+            e.innerHTML = ""
+            let img = document.createElement("img")
+            img.src = url
+            img.className = "bigimg"
+            let div = document.createElement("div")
+            div.className = "postinfo"
+            let infotable = document.createElement("table")
+            infotable.className = "info_table"
+            div.appendChild(infotable)
+
+
+            let tablestr = '\
+            <tr>\
+                <td class = "info_name">ID</td><td>%ID%</td>\
+            </tr>\
+            <tr>\
+                <td class = "info_name">URL</td><td>%URL%</td>\
+            </tr>\
+            <tr>\
+                <td class = "info_name">Author</td><td>%Author%</td>\
+            </tr>\
+            <tr>\
+                <td class = "info_name">Tags</td><td>%Tags%</td>\
+            </tr>\
+            '.replace('%ID%', info.id).replace('%Author%', info.author).replace('%Tags%', info.tags).replace('%URL%', info.file_url)
+            infotable.innerHTML = tablestr
+
+
+            e.appendChild(div)
+            e.appendChild(img)
+
+        }
+
+    </script>
+</head>
+
+<body>
+    <img src="https://konachan.net/images/konachan_net_sm_std.png" style="width: 40%; margin-left: -3%">
+
+    
+
+    
+    <div style="clear: both; padding-bottom: 2%;">
+        
+        <div class="img_frame">
+            <button class="img_btn"
+                onclick="showBigImage('https://konachan.net/image/1b6aedca2210bc5efd32bcc3c1720446/Konachan.com%20-%20281071%20animal_ears%20bed%20blush%20breasts%20brown_hair%20close%20mayogii%20no_bra%20open_shirt%20original%20purple_eyes%20shirt%20short_hair.png', this.parentElement.parentElement.getElementsByClassName('rowbigimg')[0], {'file_url':'https://konachan.net/image/1b6aedca2210bc5efd32bcc3c1720446/Konachan.com%20-%20281071%20animal_ears%20bed%20blush%20breasts%20brown_hair%20close%20mayogii%20no_bra%20open_shirt%20original%20purple_eyes%20shirt%20short_hair.png','author':'BattlequeenYume','tags':'animal_ears bed blush breasts brown_hair close mayogii no_bra open_shirt original purple_eyes shirt short_hair','id':'281071'})">
+                <img src="https://konachan.net/data/preview/1b/6a/1b6aedca2210bc5efd32bcc3c1720446.jpg">
+            </button>
+        </div>
+        
+        <div class="img_frame">
+            <button class="img_btn"
+                onclick="showBigImage('https://konachan.net/image/8bfb3e5f9abf694c01a78b82226a35d1/Konachan.com%20-%20276439%20ass%20bed%20blue_eyes%20blush%20breasts%20hoodie%20mask%20mayogii%20nipples%20no_bra%20open_shirt%20original%20panties%20phone%20short_hair%20signed%20tail%20underwear%20white_hair.png', this.parentElement.parentElement.getElementsByClassName('rowbigimg')[0], {'file_url':'https://konachan.net/image/8bfb3e5f9abf694c01a78b82226a35d1/Konachan.com%20-%20276439%20ass%20bed%20blue_eyes%20blush%20breasts%20hoodie%20mask%20mayogii%20nipples%20no_bra%20open_shirt%20original%20panties%20phone%20short_hair%20signed%20tail%20underwear%20white_hair.png','author':'otaku_emmy','tags':'animal_ears ass bed blue_eyes blush breasts game_console hoodie mask mayogii nipples no_bra open_shirt original panties phone short_hair signed tail underwear white_hair','id':'276439'})">
+                <img src="https://konachan.net/data/preview/8b/fb/8bfb3e5f9abf694c01a78b82226a35d1.jpg">
+            </button>
+        </div>
+        
+        <div class="img_frame">
+            <button class="img_btn"
+                onclick="showBigImage('https://konachan.net/image/997cf4c36530e2a954b7c07258e73deb/Konachan.com%20-%20267345%20ass%20barefoot%20dress%20fate_%28series%29%20glasses%20mayogii%20panties%20pink_hair%20purple_eyes%20short_hair%20signed%20skirt_lift%20summer_dress%20underwear%20wink.png', this.parentElement.parentElement.getElementsByClassName('rowbigimg')[0], {'file_url':'https://konachan.net/image/997cf4c36530e2a954b7c07258e73deb/Konachan.com%20-%20267345%20ass%20barefoot%20dress%20fate_%28series%29%20glasses%20mayogii%20panties%20pink_hair%20purple_eyes%20short_hair%20signed%20skirt_lift%20summer_dress%20underwear%20wink.png','author':'BattlequeenYume','tags':'ass barefoot dress fate/grand_order fate_(series) glasses mash_kyrielight mayogii panties pink_hair purple_eyes short_hair signed skirt_lift summer_dress underwear wink','id':'267345'})">
+                <img src="https://konachan.net/data/preview/99/7c/997cf4c36530e2a954b7c07258e73deb.jpg">
+            </button>
+        </div>
+        
+        <div class="rowbigimg">
+        </div>
+    </div>
+    </div>
+    
+    <script>
+        var onClickLinks = function(url){
+            window.location = url
+        }
+        var onClickS = function(){
+            onClickLinks("//konachan100.github.io")
+        }
+        var onClickQ = function(){
+            onClickLinks("//konachan100.github.io/q")
+        }
+        var onClickE = function(){
+            onClickLinks("//konachan100.github.io/e")
+        }
+
+    </script>
+    
+    <div id="footer">
+        <div id="links">
+            
+            
+            
+        </div>
+    </div>
+    
+
+   
+
+</body>
+
+</html>
