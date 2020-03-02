@@ -1,61 +1,3 @@
-C:\Users\Administrator\proj\konachan100.github.io\src>python konachan100.py 
-build targets:  ['s', 'q', 'e']
-Build count:  243
-Current build: Home[0], Categoary[3]
-Loading URL: http://www.konachan.net/post.json?limit=100&tags=rating:safe
-Success, decoding JSON
-Rendering to ../index.html
-Page refreshed
-Rendering to ../m/index.html
-Page refreshed
-Skip Loading for build path  ../c/hot/
-update cache file  ../c/hot/cache.json
-new cache size  619
-show posts order by score, reverse
-Rendering to ../c/hot/index.html
-Page refreshed
-Rendering to ../c/hot/m/index.html
-Page refreshed
-Rendering to ../c/hot/q/index.html
-Page refreshed
-Rendering to ../c/hot/q/m/index.html
-Page refreshed
-Rendering to ../c/hot/e/index.html
-Page refreshed
-Rendering to ../c/hot/e/m/index.html
-Page refreshed
-
-C:\Users\Administrator\proj\konachan100.github.io\src>cd .. 
-
-C:\Users\Administrator\proj\konachan100.github.io>git diff --stat 
- c/hot/e/index.html   |  174 ++++----
- c/hot/e/m/index.html |  124 +++---
- c/hot/e/post.json    |  974 +++++++++++++++++++++---------------------
- c/hot/index.html     |  194 ++++-----
- c/hot/m/index.html   |   68 +--
- c/hot/post.json      |  504 +++++++++++-----------
- c/hot/q/index.html   |  212 +++++-----
- c/hot/q/m/index.html |  152 +++----
- c/hot/q/post.json    | 1148 +++++++++++++++++++++++++-------------------------
- log.txt              |  102 +++--
- 10 files changed, 1832 insertions(+), 1820 deletions(-)
-
-C:\Users\Administrator\proj\konachan100.github.io>git add * 
-
-C:\Users\Administrator\proj\konachan100.github.io>git commit -m "update content" 
-[master f2065c95] update content
- 10 files changed, 1832 insertions(+), 1820 deletions(-)
-
-C:\Users\Administrator\proj\konachan100.github.io>git push 
-
-
-================================================================================
-2020/03/02 周一 18:41:17.20
-
-C:\Users\Administrator\proj\konachan100.github.io>git pull 
-Already up to date.
-
-C:\Users\Administrator\proj\konachan100.github.io>if not exist "src" git clone git@github.com:konachan100/konachan100-src.git src 
 
 C:\Users\Administrator\proj\konachan100.github.io>cd src 
 
@@ -541,6 +483,64 @@ Page refreshed
 Rendering to ../c/artist/ke-ta/e/index.html
 Page refreshed
 Rendering to ../c/artist/ke-ta/e/m/index.html
+Page refreshed
+
+C:\Users\Administrator\proj\konachan100.github.io\src>cd .. 
+
+C:\Users\Administrator\proj\konachan100.github.io>git diff --stat 
+ log.txt | 118 ++++++++++++++++++++++++++++++++--------------------------------
+ 1 file changed, 59 insertions(+), 59 deletions(-)
+
+C:\Users\Administrator\proj\konachan100.github.io>git add * 
+
+C:\Users\Administrator\proj\konachan100.github.io>git commit -m "update content" 
+[master 8e095241] update content
+ 1 file changed, 59 insertions(+), 59 deletions(-)
+
+C:\Users\Administrator\proj\konachan100.github.io>git push 
+
+
+================================================================================
+2020/03/02 周一 19:30:00.21
+
+C:\Users\Administrator\proj\konachan100.github.io>git pull 
+Already up to date.
+
+C:\Users\Administrator\proj\konachan100.github.io>if not exist "src" git clone git@github.com:konachan100/konachan100-src.git src 
+
+C:\Users\Administrator\proj\konachan100.github.io>cd src 
+
+C:\Users\Administrator\proj\konachan100.github.io\src>call gen.bat 
+
+C:\Users\Administrator\proj\konachan100.github.io\src>git pull 
+Already up to date.
+
+C:\Users\Administrator\proj\konachan100.github.io\src>python konachan100.py 
+build targets:  ['s', 'q', 'e']
+Build count:  253
+Current build: Home[1], Categoary[13]
+Loading URL: http://www.konachan.net/post.json?limit=100&tags=rating:questionable
+Success, decoding JSON
+Rendering to ../q/index.html
+Page refreshed
+Rendering to ../q/m/index.html
+Page refreshed
+Loading URL: http://www.konachan.net/post.json?limit=100&tags=mauve
+Success, decoding JSON
+update cache file  ../c/artist/mauve/cache.json
+new cache size  33
+show posts order by time, reverse
+Rendering to ../c/artist/mauve/index.html
+Page refreshed
+Rendering to ../c/artist/mauve/m/index.html
+Page refreshed
+Rendering to ../c/artist/mauve/q/index.html
+Page refreshed
+Rendering to ../c/artist/mauve/q/m/index.html
+Page refreshed
+Rendering to ../c/artist/mauve/e/index.html
+Page refreshed
+Rendering to ../c/artist/mauve/e/m/index.html
 Page refreshed
 
 C:\Users\Administrator\proj\konachan100.github.io\src>cd .. 
