@@ -1,42 +1,4 @@
 Page refreshed
-Rendering to ../e/m/index.html
-Page refreshed
-Loading URL: http://www.konachan.net/post.json?limit=100&tags=onineko
-Success, decoding JSON
-update cache file  ../c/artist/onineko/cache.json
-new cache size  56
-show posts order by time, reverse
-Rendering to ../c/artist/onineko/index.html
-Page refreshed
-Rendering to ../c/artist/onineko/m/index.html
-Page refreshed
-Rendering to ../c/artist/onineko/q/index.html
-Page refreshed
-Rendering to ../c/artist/onineko/q/m/index.html
-Page refreshed
-Rendering to ../c/artist/onineko/e/index.html
-Page refreshed
-Rendering to ../c/artist/onineko/e/m/index.html
-Page refreshed
- log.txt | 72 ++++++++++++++++++++++++++++++++---------------------------------
- 1 file changed, 36 insertions(+), 36 deletions(-)
-[master cea09bca] update content
- 1 file changed, 36 insertions(+), 36 deletions(-)
-
-
-================================================================================
-2020-03-03 09:03:26
-Already up to date.
-Already up to date.
-build targets:  ['s', 'q', 'e']
-Build count:  390
-Current build: Home[0], Categoary[15]
-Loading URL: http://www.konachan.net/post.json?limit=100&tags=rating:safe
-Success, decoding JSON
-Rendering to ../index.html
-Page refreshed
-Rendering to ../m/index.html
-Page refreshed
 Loading URL: http://www.konachan.net/post.json?limit=100&tags=miyase_mahiro
 Success, decoding JSON
 update cache file  ../c/artist/miyase_mahiro/cache.json
@@ -529,4 +491,42 @@ Page refreshed
 Rendering to ../c/touhou/e/index.html
 Page refreshed
 Rendering to ../c/touhou/e/m/index.html
+Page refreshed
+ c/touhou/post.json   |  2 +-
+ c/touhou/q/post.json |  2 +-
+ log.txt              | 89 ++++++++++++++++++++++++++--------------------------
+ 3 files changed, 47 insertions(+), 46 deletions(-)
+[master c773424a] update content
+ 3 files changed, 47 insertions(+), 46 deletions(-)
+
+
+================================================================================
+2020-03-03 10:23:39
+Already up to date.
+Already up to date.
+build targets:  ['s', 'q', 'e']
+Build count:  405
+Current build: Home[0], Categoary[5]
+Loading URL: http://www.konachan.net/post.json?limit=100&tags=rating:safe
+Success, decoding JSON
+Rendering to ../index.html
+Page refreshed
+Rendering to ../m/index.html
+Page refreshed
+Loading URL: http://www.konachan.net/post.json?limit=100&tags=scenic
+Success, decoding JSON
+update cache file  ../c/scenic/cache.json
+new cache size  103
+show posts order by time, reverse
+Rendering to ../c/scenic/index.html
+Page refreshed
+Rendering to ../c/scenic/m/index.html
+Page refreshed
+Rendering to ../c/scenic/q/index.html
+Page refreshed
+Rendering to ../c/scenic/q/m/index.html
+Page refreshed
+Rendering to ../c/scenic/e/index.html
+Page refreshed
+Rendering to ../c/scenic/e/m/index.html
 Page refreshed
