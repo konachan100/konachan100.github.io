@@ -120,7 +120,7 @@
         function readCookieCfg() {
             var sp = document.cookie.split(';')
             for (let i = 0; i < sp.length; i++) {
-                var sp2 = sp[i].split('=')
+                var sp2 = sp[i].trim().split('=')
                 if (sp2.length > 1) {
                     if (sp2[0] == 'url_visited') {
                         try {
