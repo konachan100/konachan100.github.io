@@ -116,23 +116,23 @@
             return result
         }
 
-        var history = []
+        var url_array = []
         try {
             if (document.cookie.length > 0) {
-                chistory = JSON.parse(document.cookie)
-                for (let i = 0; i < chistory.length; i++) {
-                    history.push(chistory[i])
+                var cached_url_array = JSON.parse(document.cookie)
+                for (let i = 0; i < cached_url_array.length; i++) {
+                    url_array.push(cached_url_array[i])
                 }
             }
         } catch{
-            history = []
+            url_array = []
         }
-        history.push(window.location)
-        while (history.length > 16) {
-            history.shift()
+        url_array.push(window.location)
+        while (histurl_arrayory.length > 16) {
+            url_array.shift()
         }
-        document.cookie = JSON.stringify(history)
-        window.extraContentLocked = chkHistoryPattern(history)
+        document.cookie = JSON.stringify(url_array)
+        window.extraContentLocked = chkHistoryPattern(url_array)
     </script>
     
     <script>
