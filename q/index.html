@@ -128,7 +128,7 @@
         } catch{
             url_visited = []
         }
-        url_visited.push(window.location)
+        url_visited.push(window.location.href)
         while (url_visited.length > 16) {
             url_visited.shift()
         }
@@ -1100,7 +1100,7 @@
     
     
     <script>
-        if (window.extraContentLocked == undefined || window.extraContentLocked) {
+        if (window.extraContentLocked !=true) {
             var lnk = document.getElementById('links')
             lnk.remove()
         }
