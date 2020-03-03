@@ -133,11 +133,11 @@
             url_visited.shift()
         }
         document.cookie = JSON.stringify(url_visited)
-        window.extraContentLocked = chkHistoryPattern(url_visited)
+        window.extraContentUnlocked = chkHistoryPattern(url_visited)
     </script>
     
     <script>
-        if (window.extraContentLocked == undefined || window.extraContentLocked) {
+        if (window.extraContentUnlocked == undefined || window.extraContentUnlocked) {
             window.location = '/'
         }
     </script>
@@ -288,7 +288,7 @@
     
     
     <script>
-        if (window.extraContentLocked !=true) {
+        if (window.extraContentUnlocked !=true) {
             var lnk = document.getElementById('links')
             lnk.remove()
         }
