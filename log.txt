@@ -1,47 +1,3 @@
-Build count:  363
-Current build: Home[0], Categoary[13]
-Loading URL: http://www.konachan.net/post.json?limit=100&tags=rating:safe
-Success, decoding JSON
-Rendering to ../index.html
-Page refreshed
-Rendering to ../m/index.html
-Page refreshed
-Loading URL: http://www.konachan.net/post.json?limit=100&tags=mauve
-Success, decoding JSON
-update cache file  ../c/artist/mauve/cache.json
-new cache size  33
-show posts order by time, reverse
-Rendering to ../c/artist/mauve/index.html
-Page refreshed
-Rendering to ../c/artist/mauve/m/index.html
-Page refreshed
-Rendering to ../c/artist/mauve/q/index.html
-Page refreshed
-Rendering to ../c/artist/mauve/q/m/index.html
-Page refreshed
-Rendering to ../c/artist/mauve/e/index.html
-Page refreshed
-Rendering to ../c/artist/mauve/e/m/index.html
-Page refreshed
- log.txt | 72 ++++++++++++++++++++++++++++++++---------------------------------
- 1 file changed, 36 insertions(+), 36 deletions(-)
-[master 923c00e2] update content
- 1 file changed, 36 insertions(+), 36 deletions(-)
-
-
-================================================================================
-2020-03-03 06:45:35
-Already up to date.
-Already up to date.
-build targets:  ['s', 'q', 'e']
-Build count:  364
-Current build: Home[1], Categoary[14]
-Loading URL: http://www.konachan.net/post.json?limit=100&tags=rating:questionable
-Success, decoding JSON
-Rendering to ../q/index.html
-Page refreshed
-Rendering to ../q/m/index.html
-Page refreshed
 Loading URL: http://www.konachan.net/post.json?limit=100&tags=onineko
 Success, decoding JSON
 update cache file  ../c/artist/onineko/cache.json
@@ -528,4 +484,49 @@ Page refreshed
 Rendering to ../c/hot/e/index.html
 Page refreshed
 Rendering to ../c/hot/e/m/index.html
+Page refreshed
+ c/hot/e/index.html   |  92 ++++----
+ c/hot/e/m/index.html |  68 +++---
+ c/hot/e/post.json    | 456 +++++++++++++++++++-------------------
+ c/hot/index.html     | 144 ++++++------
+ c/hot/m/index.html   |  84 +++----
+ c/hot/post.json      | 610 +++++++++++++++++++++++++--------------------------
+ c/hot/q/index.html   | 104 ++++-----
+ c/hot/q/m/index.html |  68 +++---
+ c/hot/q/post.json    | 460 +++++++++++++++++++-------------------
+ log.txt              |  58 +++--
+ 10 files changed, 1078 insertions(+), 1066 deletions(-)
+[master 179cf46d] update content
+ 10 files changed, 1078 insertions(+), 1066 deletions(-)
+
+
+================================================================================
+2020-03-03 08:04:57
+Already up to date.
+Already up to date.
+build targets:  ['s', 'q', 'e']
+Build count:  379
+Current build: Home[1], Categoary[4]
+Loading URL: http://www.konachan.net/post.json?limit=100&tags=rating:questionable
+Success, decoding JSON
+Rendering to ../q/index.html
+Page refreshed
+Rendering to ../q/m/index.html
+Page refreshed
+Loading URL: http://www.konachan.net/post.json?limit=100&tags=touhou
+Success, decoding JSON
+update cache file  ../c/touhou/cache.json
+new cache size  109
+show posts order by time, reverse
+Rendering to ../c/touhou/index.html
+Page refreshed
+Rendering to ../c/touhou/m/index.html
+Page refreshed
+Rendering to ../c/touhou/q/index.html
+Page refreshed
+Rendering to ../c/touhou/q/m/index.html
+Page refreshed
+Rendering to ../c/touhou/e/index.html
+Page refreshed
+Rendering to ../c/touhou/e/m/index.html
 Page refreshed
