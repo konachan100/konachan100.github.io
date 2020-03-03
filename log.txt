@@ -1,28 +1,3 @@
- log.txt                    | 57 +++++++++++++++++++++++++++++-----------------
- 5 files changed, 42 insertions(+), 27 deletions(-)
-[master 70261b62] update content
- 5 files changed, 42 insertions(+), 27 deletions(-)
-
-
-================================================================================
-2020-03-03 22:44:36
-Already up to date.
-Already up to date.
-build targets:  ['s', 'q', 'e']
-Build count:  508
-Current build: Home[1], Categoary[8]
-Loading URL: http://www.konachan.net/post.json?limit=100&tags=rating:questionable
-Success, decoding JSON
-Rendering to ../q/index.html
-Page refreshed
-Rendering to ../q/m/index.html
-Page refreshed
-Loading URL: http://www.konachan.net/post.json?limit=100&tags=annin_doufu
-Success, decoding JSON
-update cache file  ../c/artist/annin_doufu/cache.json
-new cache size  200
-show posts order by time, reverse
-Rendering to ../c/artist/annin_doufu/index.html
 Page refreshed
 Rendering to ../c/artist/annin_doufu/m/index.html
 Page refreshed
@@ -517,3 +492,28 @@ Loading URL: http://www.konachan.net/post.json?limit=100&tags=rating:questionabl
 Success, decoding JSON
 update cache file  ../c/hot/cache.json
 new cache size  695
+ log.txt        |  50 ++++-----
+ q/index.html   | 350 ++++++++++++++++++++++++++++-----------------------------
+ q/m/index.html |  12 +-
+ 3 files changed, 206 insertions(+), 206 deletions(-)
+[master 94aafda4] update content
+ 3 files changed, 206 insertions(+), 206 deletions(-)
+
+
+================================================================================
+2020-03-04 00:40:47
+Already up to date.
+Already up to date.
+build targets:  ['s', 'q', 'e']
+Build count:  527
+Current build: Home[2], Categoary[2]
+Loading URL: http://www.konachan.net/post.json?limit=100&tags=rating:explicit
+Success, decoding JSON
+Rendering to ../e/index.html
+Page refreshed
+Rendering to ../e/m/index.html
+Page refreshed
+Loading URL: http://www.konachan.net/post.json?limit=100&tags=rating:explicit
+Success, decoding JSON
+update cache file  ../c/hot/cache.json
+new cache size  697
