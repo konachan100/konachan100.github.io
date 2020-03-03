@@ -1,14 +1,3 @@
-Page refreshed
-Rendering to ../c/artist/kino_(kino_konomi)/q/m/index.html
-Page refreshed
-Rendering to ../c/artist/kino_(kino_konomi)/e/index.html
-Page refreshed
-Rendering to ../c/artist/kino_(kino_konomi)/e/m/index.html
-Page refreshed
- c/artist/kino_(kino_konomi)/e/index.html |  1 +
- c/artist/kino_(kino_konomi)/index.html   |  1 +
- c/artist/kino_(kino_konomi)/q/index.html |  1 +
- e/index.html                             |  1 +
  log.txt                                  | 86 ++++++++++++++++----------------
  5 files changed, 47 insertions(+), 43 deletions(-)
 [master b6d7236f] update content
@@ -502,6 +491,17 @@ build targets:  ['s', 'q', 'e']
 
 ================================================================================
 2020-03-03 12:58:37
+Already up to date.
+Already up to date.
+build targets:  ['s', 'q', 'e']
+ log.txt | 22 +++++++++++-----------
+ 1 file changed, 11 insertions(+), 11 deletions(-)
+[master 652b9b42] update content
+ 1 file changed, 11 insertions(+), 11 deletions(-)
+
+
+================================================================================
+2020-03-03 13:03:57
 Already up to date.
 Already up to date.
 build targets:  ['s', 'q', 'e']
