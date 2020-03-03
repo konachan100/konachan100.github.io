@@ -1,20 +1,3 @@
-new cache size  109
-show posts order by time, reverse
-Rendering to ../c/touhou/index.html
-Page refreshed
-Rendering to ../c/touhou/m/index.html
-Page refreshed
-Rendering to ../c/touhou/q/index.html
-Page refreshed
-Rendering to ../c/touhou/q/m/index.html
-Page refreshed
-Rendering to ../c/touhou/e/index.html
-Page refreshed
-Rendering to ../c/touhou/e/m/index.html
-Page refreshed
- c/touhou/e/index.html | 46 +++++++++++++++++++------
- c/touhou/index.html   | 44 ++++++++++++++++++------
- c/touhou/post.json    |  4 +--
  c/touhou/q/index.html | 46 +++++++++++++++++++------
  c/touhou/q/post.json  |  2 +-
  log.txt               | 93 ++++++++++++++++++++++++++-------------------------
@@ -510,4 +493,21 @@ Current build: Home[0], Categoary[18]
 Loading URL: http://www.konachan.net/post.json?limit=100&tags=rating:safe
 Failed, <urlopen error [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。>
 Loading URL: http://www.konachan.net/post.json?limit=100&tags=mivit
+Failed, <urlopen error [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。>
+ log.txt | 34 +++++++++++++++++-----------------
+ 1 file changed, 17 insertions(+), 17 deletions(-)
+[master 12d755f6] update content
+ 1 file changed, 17 insertions(+), 17 deletions(-)
+
+
+================================================================================
+2020-03-04 02:16:36
+Already up to date.
+Already up to date.
+build targets:  ['s', 'q', 'e']
+Build count:  544
+Current build: Home[1], Categoary[19]
+Loading URL: http://www.konachan.net/post.json?limit=100&tags=rating:questionable
+Failed, <urlopen error [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。>
+Loading URL: http://www.konachan.net/post.json?limit=100&tags=hiten_goane_ryu
 Failed, <urlopen error [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。>
