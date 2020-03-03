@@ -1,43 +1,3 @@
-Page refreshed
-Rendering to ../m/index.html
-Page refreshed
-Loading URL: http://www.konachan.net/post.json?limit=100&tags=mivit
-Success, decoding JSON
-update cache file  ../c/artist/mivit/cache.json
-new cache size  90
-show posts order by time, reverse
-Rendering to ../c/artist/mivit/index.html
-Page refreshed
-Rendering to ../c/artist/mivit/m/index.html
-Page refreshed
-Rendering to ../c/artist/mivit/q/index.html
-Page refreshed
-Rendering to ../c/artist/mivit/q/m/index.html
-Page refreshed
-Rendering to ../c/artist/mivit/e/index.html
-Page refreshed
-Rendering to ../c/artist/mivit/e/m/index.html
-Page refreshed
- c/artist/mivit/e/index.html |  6 ++--
- c/artist/mivit/index.html   |  4 +--
- c/artist/mivit/q/index.html |  6 ++--
- log.txt                     | 78 ++++++++++++++++++++++-----------------------
- 4 files changed, 47 insertions(+), 47 deletions(-)
-[master 89c4de7a] update content
- 4 files changed, 47 insertions(+), 47 deletions(-)
-
-
-================================================================================
-2020-03-03 19:05:42
-Already up to date.
-Already up to date.
-build targets:  ['s', 'q', 'e']
-Build count:  469
-Current build: Home[1], Categoary[19]
-Loading URL: http://www.konachan.net/post.json?limit=100&tags=rating:questionable
-Success, decoding JSON
-Rendering to ../q/index.html
-Page refreshed
 Rendering to ../q/m/index.html
 Page refreshed
 Loading URL: http://www.konachan.net/post.json?limit=100&tags=hiten_goane_ryu
@@ -529,4 +489,44 @@ Page refreshed
 Rendering to ../c/artist/annin_doufu/e/index.html
 Page refreshed
 Rendering to ../c/artist/annin_doufu/e/m/index.html
+Page refreshed
+ c/artist/annin_doufu/e/index.html | 44 ++++++++++++++++-----
+ c/artist/annin_doufu/index.html   | 44 ++++++++++++++++-----
+ c/artist/annin_doufu/q/index.html | 44 ++++++++++++++++-----
+ index.html                        | 44 ++++++++++++++++-----
+ log.txt                           | 80 +++++++++++++++++++--------------------
+ 5 files changed, 176 insertions(+), 80 deletions(-)
+[master 45c2d6f4] update content
+ 5 files changed, 176 insertions(+), 80 deletions(-)
+
+
+================================================================================
+2020-03-03 20:29:06
+Already up to date.
+Already up to date.
+build targets:  ['s', 'q', 'e']
+Build count:  484
+Current build: Home[1], Categoary[9]
+Loading URL: http://www.konachan.net/post.json?limit=100&tags=rating:questionable
+Success, decoding JSON
+Rendering to ../q/index.html
+Page refreshed
+Rendering to ../q/m/index.html
+Page refreshed
+Loading URL: http://www.konachan.net/post.json?limit=100&tags=miwabe_sakura
+Success, decoding JSON
+update cache file  ../c/artist/miwabe_sakura/cache.json
+new cache size  22
+show posts order by time, reverse
+Rendering to ../c/artist/miwabe_sakura/index.html
+Page refreshed
+Rendering to ../c/artist/miwabe_sakura/m/index.html
+Page refreshed
+Rendering to ../c/artist/miwabe_sakura/q/index.html
+Page refreshed
+Rendering to ../c/artist/miwabe_sakura/q/m/index.html
+Page refreshed
+Rendering to ../c/artist/miwabe_sakura/e/index.html
+Page refreshed
+Rendering to ../c/artist/miwabe_sakura/e/m/index.html
 Page refreshed
