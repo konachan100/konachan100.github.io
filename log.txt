@@ -1,43 +1,4 @@
 Already up to date.
-build targets:  ['s', 'q', 'e']
-Build count:  514
-Current build: Home[1], Categoary[14]
-Loading URL: http://www.konachan.net/post.json?limit=100&tags=rating:questionable
-Success, decoding JSON
-Rendering to ../q/index.html
-Page refreshed
-Rendering to ../q/m/index.html
-Page refreshed
-Loading URL: http://www.konachan.net/post.json?limit=100&tags=onineko
-Success, decoding JSON
-update cache file  ../c/artist/onineko/cache.json
-new cache size  56
-show posts order by time, reverse
-Rendering to ../c/artist/onineko/index.html
-Page refreshed
-Rendering to ../c/artist/onineko/m/index.html
-Page refreshed
-Rendering to ../c/artist/onineko/q/index.html
-Page refreshed
-Rendering to ../c/artist/onineko/q/m/index.html
-Page refreshed
-Rendering to ../c/artist/onineko/e/index.html
-Page refreshed
-Rendering to ../c/artist/onineko/e/m/index.html
-Page refreshed
- c/artist/onineko/e/index.html |   2 +-
- c/artist/onineko/q/index.html |   2 +-
- log.txt                       |  80 +++++-----
- q/index.html                  | 364 +++++++++++++++++++++---------------------
- q/m/index.html                |  24 +--
- 5 files changed, 236 insertions(+), 236 deletions(-)
-[master 1761dd3d] update content
- 5 files changed, 236 insertions(+), 236 deletions(-)
-
-
-================================================================================
-2020-03-03 23:24:22
-Already up to date.
 Already up to date.
 build targets:  ['s', 'q', 'e']
 Build count:  515
@@ -529,4 +490,43 @@ Page refreshed
 Rendering to ../c/artist/anmi/e/index.html
 Page refreshed
 Rendering to ../c/artist/anmi/e/m/index.html
+Page refreshed
+ c/artist/anmi/post.json |   4 +-
+ log.txt                 |  78 +++++------
+ q/index.html            | 364 ++++++++++++++++++++++++------------------------
+ q/m/index.html          |  24 ++--
+ 4 files changed, 235 insertions(+), 235 deletions(-)
+[master de16b34e] update content
+ 4 files changed, 235 insertions(+), 235 deletions(-)
+
+
+================================================================================
+2020-03-04 01:14:02
+Already up to date.
+Already up to date.
+build targets:  ['s', 'q', 'e']
+Build count:  533
+Current build: Home[2], Categoary[8]
+Loading URL: http://www.konachan.net/post.json?limit=100&tags=rating:explicit
+Success, decoding JSON
+Rendering to ../e/index.html
+Page refreshed
+Rendering to ../e/m/index.html
+Page refreshed
+Loading URL: http://www.konachan.net/post.json?limit=100&tags=annin_doufu
+Success, decoding JSON
+update cache file  ../c/artist/annin_doufu/cache.json
+new cache size  200
+show posts order by time, reverse
+Rendering to ../c/artist/annin_doufu/index.html
+Page refreshed
+Rendering to ../c/artist/annin_doufu/m/index.html
+Page refreshed
+Rendering to ../c/artist/annin_doufu/q/index.html
+Page refreshed
+Rendering to ../c/artist/annin_doufu/q/m/index.html
+Page refreshed
+Rendering to ../c/artist/annin_doufu/e/index.html
+Page refreshed
+Rendering to ../c/artist/annin_doufu/e/m/index.html
 Page refreshed
