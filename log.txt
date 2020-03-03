@@ -1,43 +1,3 @@
- c/scenic/q/index.html |  89 ++++++++---
- log.txt               |  86 +++++-----
- q/index.html          |  88 +++++++---
- 7 files changed, 525 insertions(+), 352 deletions(-)
-[master 50fed956] update content
- 7 files changed, 525 insertions(+), 352 deletions(-)
-
-
-================================================================================
-2020-03-03 15:38:20
-Already up to date.
-Already up to date.
-build targets:  ['s', 'q', 'e']
-Build count:  431
-Current build: Home[2], Categoary[6]
-Loading URL: http://www.konachan.net/post.json?limit=100&tags=rating:explicit
-Failed, timed out
-Loading URL: http://www.konachan.net/post.json?limit=100&tags=natsumoka
-Success, decoding JSON
-update cache file  ../c/artist/natsumoka/cache.json
-new cache size  20
-show posts order by time, reverse
-Rendering to ../c/artist/natsumoka/index.html
-Page refreshed
-Rendering to ../c/artist/natsumoka/m/index.html
-Page refreshed
-Rendering to ../c/artist/natsumoka/q/index.html
-Page refreshed
-Rendering to ../c/artist/natsumoka/q/m/index.html
-Page refreshed
-Rendering to ../c/artist/natsumoka/e/index.html
-Page refreshed
-Rendering to ../c/artist/natsumoka/e/m/index.html
-Page refreshed
- c/artist/natsumoka/e/index.html | 89 +++++++++++++++++++++++++++++++----------
- c/artist/natsumoka/index.html   | 85 ++++++++++++++++++++++++++++-----------
- c/artist/natsumoka/q/index.html | 89 +++++++++++++++++++++++++++++++----------
- log.txt                         | 80 ++++++++++++++++++------------------
- 4 files changed, 234 insertions(+), 109 deletions(-)
-[master 6d3e8746] update content
  4 files changed, 234 insertions(+), 109 deletions(-)
 
 
@@ -529,4 +489,44 @@ Page refreshed
 Rendering to ../c/artist/hiten_goane_ryu/e/index.html
 Page refreshed
 Rendering to ../c/artist/hiten_goane_ryu/e/m/index.html
+Page refreshed
+ c/artist/hiten_goane_ryu/e/index.html | 89 ++++++++++++++++++++++++++---------
+ c/artist/hiten_goane_ryu/index.html   | 83 +++++++++++++++++++++++---------
+ c/artist/hiten_goane_ryu/q/index.html | 89 ++++++++++++++++++++++++++---------
+ index.html                            |  4 +-
+ log.txt                               | 80 +++++++++++++++----------------
+ 5 files changed, 240 insertions(+), 105 deletions(-)
+[master 20ad8ffa] update content
+ 5 files changed, 240 insertions(+), 105 deletions(-)
+
+
+================================================================================
+2020-03-03 16:56:09
+Already up to date.
+Already up to date.
+build targets:  ['s', 'q', 'e']
+Build count:  445
+Current build: Home[1], Categoary[20]
+Loading URL: http://www.konachan.net/post.json?limit=100&tags=rating:questionable
+Success, decoding JSON
+Rendering to ../q/index.html
+Page refreshed
+Rendering to ../q/m/index.html
+Page refreshed
+Loading URL: http://www.konachan.net/post.json?limit=100&tags=fujisaki_hikari
+Success, decoding JSON
+update cache file  ../c/artist/fujisaki_hikari/cache.json
+new cache size  31
+show posts order by time, reverse
+Rendering to ../c/artist/fujisaki_hikari/index.html
+Page refreshed
+Rendering to ../c/artist/fujisaki_hikari/m/index.html
+Page refreshed
+Rendering to ../c/artist/fujisaki_hikari/q/index.html
+Page refreshed
+Rendering to ../c/artist/fujisaki_hikari/q/m/index.html
+Page refreshed
+Rendering to ../c/artist/fujisaki_hikari/e/index.html
+Page refreshed
+Rendering to ../c/artist/fujisaki_hikari/e/m/index.html
 Page refreshed
