@@ -1,14 +1,3 @@
-Rendering to ../c/artist/miyase_mahiro/q/index.html
-Page refreshed
-Rendering to ../c/artist/miyase_mahiro/q/m/index.html
-Page refreshed
-Rendering to ../c/artist/miyase_mahiro/e/index.html
-Page refreshed
-Rendering to ../c/artist/miyase_mahiro/e/m/index.html
-Page refreshed
- c/artist/miyase_mahiro/e/index.html |  1 +
- c/artist/miyase_mahiro/e/post.json  |  6 +--
- c/artist/miyase_mahiro/index.html   |  1 +
  c/artist/miyase_mahiro/post.json    |  2 +-
  c/artist/miyase_mahiro/q/index.html |  1 +
  c/artist/miyase_mahiro/q/post.json  |  8 ++--
@@ -502,6 +491,17 @@ build targets:  ['s', 'q', 'e']
 
 ================================================================================
 2020-03-03 12:37:38
+Already up to date.
+Already up to date.
+build targets:  ['s', 'q', 'e']
+ log.txt | 22 +++++++++++-----------
+ 1 file changed, 11 insertions(+), 11 deletions(-)
+[master a7c98ae3] update content
+ 1 file changed, 11 insertions(+), 11 deletions(-)
+
+
+================================================================================
+2020-03-03 12:42:53
 Already up to date.
 Already up to date.
 build targets:  ['s', 'q', 'e']
