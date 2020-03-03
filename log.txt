@@ -1,40 +1,4 @@
 Page refreshed
-Loading URL: http://www.konachan.net/post.json?limit=100&tags=lium
-Success, decoding JSON
-update cache file  ../c/artist/lium/cache.json
-new cache size  11
-show posts order by time, reverse
-Rendering to ../c/artist/lium/index.html
-Page refreshed
-Rendering to ../c/artist/lium/m/index.html
-Page refreshed
-Rendering to ../c/artist/lium/q/index.html
-Page refreshed
-Rendering to ../c/artist/lium/q/m/index.html
-Page refreshed
-Rendering to ../c/artist/lium/e/index.html
-Page refreshed
-Rendering to ../c/artist/lium/e/m/index.html
-Page refreshed
- log.txt | 72 ++++++++++++++++++++++++++++++++---------------------------------
- 1 file changed, 36 insertions(+), 36 deletions(-)
-[master 55e3f8da] update content
- 1 file changed, 36 insertions(+), 36 deletions(-)
-
-
-================================================================================
-2020-03-03 07:33:15
-Already up to date.
-Already up to date.
-build targets:  ['s', 'q', 'e']
-Build count:  373
-Current build: Home[1], Categoary[23]
-Loading URL: http://www.konachan.net/post.json?limit=100&tags=rating:questionable
-Success, decoding JSON
-Rendering to ../q/index.html
-Page refreshed
-Rendering to ../q/m/index.html
-Page refreshed
 Loading URL: http://www.konachan.net/post.json?limit=100&tags=dead_line
 Success, decoding JSON
 update cache file  ../c/artist/dead_line/cache.json
@@ -529,4 +493,40 @@ Page refreshed
 Rendering to ../c/artist/ke-ta/e/index.html
 Page refreshed
 Rendering to ../c/artist/ke-ta/e/m/index.html
+Page refreshed
+ log.txt | 72 ++++++++++++++++++++++++++++++++---------------------------------
+ 1 file changed, 36 insertions(+), 36 deletions(-)
+[master 3a86b57f] update content
+ 1 file changed, 36 insertions(+), 36 deletions(-)
+
+
+================================================================================
+2020-03-03 08:52:47
+Already up to date.
+Already up to date.
+build targets:  ['s', 'q', 'e']
+Build count:  388
+Current build: Home[1], Categoary[13]
+Loading URL: http://www.konachan.net/post.json?limit=100&tags=rating:questionable
+Success, decoding JSON
+Rendering to ../q/index.html
+Page refreshed
+Rendering to ../q/m/index.html
+Page refreshed
+Loading URL: http://www.konachan.net/post.json?limit=100&tags=mauve
+Success, decoding JSON
+update cache file  ../c/artist/mauve/cache.json
+new cache size  33
+show posts order by time, reverse
+Rendering to ../c/artist/mauve/index.html
+Page refreshed
+Rendering to ../c/artist/mauve/m/index.html
+Page refreshed
+Rendering to ../c/artist/mauve/q/index.html
+Page refreshed
+Rendering to ../c/artist/mauve/q/m/index.html
+Page refreshed
+Rendering to ../c/artist/mauve/e/index.html
+Page refreshed
+Rendering to ../c/artist/mauve/e/m/index.html
 Page refreshed
