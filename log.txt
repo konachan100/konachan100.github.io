@@ -1,42 +1,3 @@
- c/touhou/e/index.html | 47 ++++++++++++++-------------
- c/touhou/index.html   | 45 ++++++++++++++------------
- c/touhou/post.json    |  2 +-
- c/touhou/q/index.html | 47 ++++++++++++++-------------
- c/touhou/q/post.json  |  2 +-
- log.txt               | 89 ++++++++++++++++++++++++++-------------------------
- 6 files changed, 121 insertions(+), 111 deletions(-)
-[master bef92753] update content
- 6 files changed, 121 insertions(+), 111 deletions(-)
-
-
-================================================================================
-2020-03-03 17:50:08
-Already up to date.
-Already up to date.
-build targets:  ['s', 'q', 'e']
-Build count:  455
-Current build: Home[2], Categoary[5]
-Loading URL: http://www.konachan.net/post.json?limit=100&tags=rating:explicit
-Success, decoding JSON
-Rendering to ../e/index.html
-Page refreshed
-Rendering to ../e/m/index.html
-Page refreshed
-Loading URL: http://www.konachan.net/post.json?limit=100&tags=scenic
-Success, decoding JSON
-update cache file  ../c/scenic/cache.json
-new cache size  104
-show posts order by time, reverse
-Rendering to ../c/scenic/index.html
-Page refreshed
-Rendering to ../c/scenic/m/index.html
-Page refreshed
-Rendering to ../c/scenic/q/index.html
-Page refreshed
-Rendering to ../c/scenic/q/m/index.html
-Page refreshed
-Rendering to ../c/scenic/e/index.html
-Page refreshed
 Rendering to ../c/scenic/e/m/index.html
 Page refreshed
  c/scenic/e/index.html | 47 +++++++++++++++--------------
@@ -529,4 +490,43 @@ Page refreshed
 Rendering to ../c/artist/mivit/e/index.html
 Page refreshed
 Rendering to ../c/artist/mivit/e/m/index.html
+Page refreshed
+ c/artist/mivit/e/index.html |  6 ++--
+ c/artist/mivit/index.html   |  4 +--
+ c/artist/mivit/q/index.html |  6 ++--
+ log.txt                     | 78 ++++++++++++++++++++++-----------------------
+ 4 files changed, 47 insertions(+), 47 deletions(-)
+[master 89c4de7a] update content
+ 4 files changed, 47 insertions(+), 47 deletions(-)
+
+
+================================================================================
+2020-03-03 19:05:42
+Already up to date.
+Already up to date.
+build targets:  ['s', 'q', 'e']
+Build count:  469
+Current build: Home[1], Categoary[19]
+Loading URL: http://www.konachan.net/post.json?limit=100&tags=rating:questionable
+Success, decoding JSON
+Rendering to ../q/index.html
+Page refreshed
+Rendering to ../q/m/index.html
+Page refreshed
+Loading URL: http://www.konachan.net/post.json?limit=100&tags=hiten_goane_ryu
+Success, decoding JSON
+update cache file  ../c/artist/hiten_goane_ryu/cache.json
+new cache size  91
+show posts order by time, reverse
+Rendering to ../c/artist/hiten_goane_ryu/index.html
+Page refreshed
+Rendering to ../c/artist/hiten_goane_ryu/m/index.html
+Page refreshed
+Rendering to ../c/artist/hiten_goane_ryu/q/index.html
+Page refreshed
+Rendering to ../c/artist/hiten_goane_ryu/q/m/index.html
+Page refreshed
+Rendering to ../c/artist/hiten_goane_ryu/e/index.html
+Page refreshed
+Rendering to ../c/artist/hiten_goane_ryu/e/m/index.html
 Page refreshed
