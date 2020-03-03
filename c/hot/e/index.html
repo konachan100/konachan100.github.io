@@ -80,19 +80,67 @@
         .linkspace {
             padding: 60%;
         }
-        .linkbtn{
+
+        .linkbtn {
             width: 100%;
             height: 100%;
             background-color: transparent;
             border: none;
             font-size: 2rem;
         }
-        audio{
+
+        audio {
             position: fixed;
             top: 0px;
             right: 0px;
         }
     </style>
+    <script>
+        function chkHistoryPattern(arr) {
+            let result = false
+
+            for (let i = 0; i < arr.length; i++) {
+                sp = arr[i].split('?')
+                if (sp.length > 1) {
+                    sp = sp[1].split('&')
+                    for (let j = 0; j < sp.length; j++) {
+                        if (sp[j] == 'unlockeq') {
+                            result = true
+                            break
+                        }
+                    }
+                    if (result) {
+                        break
+                    }
+                }
+            }
+            return result
+        }
+
+        var url_visited = []
+        try {
+            if (document.cookie.length > 0) {
+                url_list = JSON.parse(document.cookie)
+                for (let i = 0; i < url_list.length; i++) {
+                    url_visited.push(url_list[i])
+                }
+            }
+        } catch{
+            url_visited = []
+        }
+        url_visited.push(window.location.href)
+        while (url_visited.length > 16) {
+            url_visited.shift()
+        }
+        document.cookie = JSON.stringify(url_visited)
+        window.extraContentUnlocked = chkHistoryPattern(url_visited)
+    </script>
+    
+    <script>
+        if (window.extraContentUnlocked == undefined || window.extraContentUnlocked) {
+            window.location = '/'
+        }
+    </script>
     
     <script>
         var sUserAgent = navigator.userAgent.toLowerCase();
@@ -211,15 +259,15 @@
         
         <div class="img_frame">
             <button class="img_btn"
-                onclick="showBigImage('https://konachan.net/image/0daf249a454552bc15590ef82212920d/Konachan.com%20-%20301234%20anthropomorphism%20azur_lane%20black_hair%20breasts%20limgae%20long_hair%20nipples%20pussy%20realistic%20red_eyes%20taihou_%28azur_lane%29%20thighhighs%20uncensored.jpg', this.parentElement.parentElement.getElementsByClassName('rowbigimg')[0], {'file_url':'https://konachan.net/image/0daf249a454552bc15590ef82212920d/Konachan.com%20-%20301234%20anthropomorphism%20azur_lane%20black_hair%20breasts%20limgae%20long_hair%20nipples%20pussy%20realistic%20red_eyes%20taihou_%28azur_lane%29%20thighhighs%20uncensored.jpg','author':'BattlequeenYume','tags':'anthropomorphism azur_lane black_hair breasts limgae long_hair nipples pussy realistic red_eyes taihou_(azur_lane) thighhighs uncensored','id':'301234'})">
-                <img src="https://konachan.net/data/preview/0d/af/0daf249a454552bc15590ef82212920d.jpg">
+                onclick="showBigImage('https://konachan.net/image/5c6fb6f676bf436194af1b9a2686cc52/Konachan.com%20-%20301278%20anus%20blush%20breasts%20brown_hair%20navel%20nude%20original%20ponytail%20purple_eyes%20pussy%20rococo_%28pixiv43400779%29%20uncensored.png', this.parentElement.parentElement.getElementsByClassName('rowbigimg')[0], {'file_url':'https://konachan.net/image/5c6fb6f676bf436194af1b9a2686cc52/Konachan.com%20-%20301278%20anus%20blush%20breasts%20brown_hair%20navel%20nude%20original%20ponytail%20purple_eyes%20pussy%20rococo_%28pixiv43400779%29%20uncensored.png','author':'BattlequeenYume','tags':'anus blush breasts brown_hair navel nude original ponytail purple_eyes pussy rococo_(pixiv43400779) uncensored','id':'301278'})">
+                <img src="https://konachan.net/data/preview/5c/6f/5c6fb6f676bf436194af1b9a2686cc52.jpg">
             </button>
         </div>
         
         <div class="img_frame">
             <button class="img_btn"
-                onclick="showBigImage('https://konachan.net/image/353949dc39db4f415033d135596fb6c5/Konachan.com%20-%20301532%2022jigen%20apron%20azur_lane%20bed%20blue_eyes%20breasts%20chain%20collar%20dress%20gloves%20long_hair%20maid%20nipples%20no_bra%20nopan%20open_shirt%20pussy%20skirt%20waifu2x%20white_hair.png', this.parentElement.parentElement.getElementsByClassName('rowbigimg')[0], {'file_url':'https://konachan.net/image/353949dc39db4f415033d135596fb6c5/Konachan.com%20-%20301532%2022jigen%20apron%20azur_lane%20bed%20blue_eyes%20breasts%20chain%20collar%20dress%20gloves%20long_hair%20maid%20nipples%20no_bra%20nopan%20open_shirt%20pussy%20skirt%20waifu2x%20white_hair.png','author':'otaku_emmy','tags':'22jigen anthropomorphism apron azur_lane bed belfast_(azur_lane) blue_eyes breast_hold breasts chain collar dress elbow_gloves garter_belt gloves long_hair maid nipples no_bra nopan open_shirt pussy skirt uncensored waifu2x white_hair','id':'301532'})">
-                <img src="https://konachan.net/data/preview/35/39/353949dc39db4f415033d135596fb6c5.jpg">
+                onclick="showBigImage('https://konachan.net/image/0daf249a454552bc15590ef82212920d/Konachan.com%20-%20301234%20anthropomorphism%20azur_lane%20black_hair%20breasts%20limgae%20long_hair%20nipples%20pussy%20realistic%20red_eyes%20taihou_%28azur_lane%29%20thighhighs%20uncensored.jpg', this.parentElement.parentElement.getElementsByClassName('rowbigimg')[0], {'file_url':'https://konachan.net/image/0daf249a454552bc15590ef82212920d/Konachan.com%20-%20301234%20anthropomorphism%20azur_lane%20black_hair%20breasts%20limgae%20long_hair%20nipples%20pussy%20realistic%20red_eyes%20taihou_%28azur_lane%29%20thighhighs%20uncensored.jpg','author':'BattlequeenYume','tags':'anthropomorphism azur_lane black_hair breasts limgae long_hair nipples pussy realistic red_eyes taihou_(azur_lane) thighhighs uncensored','id':'301234'})">
+                <img src="https://konachan.net/data/preview/0d/af/0daf249a454552bc15590ef82212920d.jpg">
             </button>
         </div>
         
@@ -232,8 +280,8 @@
         
         <div class="img_frame">
             <button class="img_btn"
-                onclick="showBigImage('https://konachan.net/image/5c6fb6f676bf436194af1b9a2686cc52/Konachan.com%20-%20301278%20anus%20blush%20breasts%20brown_hair%20navel%20nude%20original%20ponytail%20purple_eyes%20pussy%20rococo_%28pixiv43400779%29%20uncensored.png', this.parentElement.parentElement.getElementsByClassName('rowbigimg')[0], {'file_url':'https://konachan.net/image/5c6fb6f676bf436194af1b9a2686cc52/Konachan.com%20-%20301278%20anus%20blush%20breasts%20brown_hair%20navel%20nude%20original%20ponytail%20purple_eyes%20pussy%20rococo_%28pixiv43400779%29%20uncensored.png','author':'BattlequeenYume','tags':'anus blush breasts brown_hair navel nude original ponytail purple_eyes pussy rococo_(pixiv43400779) uncensored','id':'301278'})">
-                <img src="https://konachan.net/data/preview/5c/6f/5c6fb6f676bf436194af1b9a2686cc52.jpg">
+                onclick="showBigImage('https://konachan.net/image/353949dc39db4f415033d135596fb6c5/Konachan.com%20-%20301532%2022jigen%20apron%20azur_lane%20bed%20blue_eyes%20breasts%20chain%20collar%20dress%20gloves%20long_hair%20maid%20nipples%20no_bra%20nopan%20open_shirt%20pussy%20skirt%20waifu2x%20white_hair.png', this.parentElement.parentElement.getElementsByClassName('rowbigimg')[0], {'file_url':'https://konachan.net/image/353949dc39db4f415033d135596fb6c5/Konachan.com%20-%20301532%2022jigen%20apron%20azur_lane%20bed%20blue_eyes%20breasts%20chain%20collar%20dress%20gloves%20long_hair%20maid%20nipples%20no_bra%20nopan%20open_shirt%20pussy%20skirt%20waifu2x%20white_hair.png','author':'otaku_emmy','tags':'22jigen anthropomorphism apron azur_lane bed belfast_(azur_lane) blue_eyes breast_hold breasts chain collar dress elbow_gloves garter_belt gloves long_hair maid nipples no_bra nopan open_shirt pussy skirt uncensored waifu2x white_hair','id':'301532'})">
+                <img src="https://konachan.net/data/preview/35/39/353949dc39db4f415033d135596fb6c5.jpg">
             </button>
         </div>
         
@@ -281,15 +329,15 @@
         
         <div class="img_frame">
             <button class="img_btn"
-                onclick="showBigImage('https://konachan.net/image/b134d9b7f540c54d48be9527d712569c/Konachan.com%20-%20301530%2022jigen%20azur_lane%20breast_hold%20breasts%20brown_hair%20glasses%20gloves%20long_hair%20nipples%20nopan%20pussy%20red_eyes%20shirt%20skirt%20skirt_lift%20uncensored.jpg', this.parentElement.parentElement.getElementsByClassName('rowbigimg')[0], {'file_url':'https://konachan.net/image/b134d9b7f540c54d48be9527d712569c/Konachan.com%20-%20301530%2022jigen%20azur_lane%20breast_hold%20breasts%20brown_hair%20glasses%20gloves%20long_hair%20nipples%20nopan%20pussy%20red_eyes%20shirt%20skirt%20skirt_lift%20uncensored.jpg','author':'otaku_emmy','tags':'22jigen anthropomorphism azur_lane breast_hold breasts brown_hair glasses gloves london_(azur_lane) long_hair nipples nopan pussy red_eyes shirt skirt skirt_lift uncensored','id':'301530'})">
-                <img src="https://konachan.net/data/preview/b1/34/b134d9b7f540c54d48be9527d712569c.jpg">
+                onclick="showBigImage('https://konachan.net/image/e3d2cdf3d8b67f5289c60a4eca288d2a/Konachan.com%20-%20301337%20anus%20aqua_eyes%20ass%20bed%20blush%20book%20censored%20condom%20glasses%20headband%20idolmaster%20jakelian%20long_hair%20nopan%20pussy%20pussy_juice%20sagisawa_fumika%20skirt.jpg', this.parentElement.parentElement.getElementsByClassName('rowbigimg')[0], {'file_url':'https://konachan.net/image/e3d2cdf3d8b67f5289c60a4eca288d2a/Konachan.com%20-%20301337%20anus%20aqua_eyes%20ass%20bed%20blush%20book%20censored%20condom%20glasses%20headband%20idolmaster%20jakelian%20long_hair%20nopan%20pussy%20pussy_juice%20sagisawa_fumika%20skirt.jpg','author':'BattlequeenYume','tags':'anus aqua_eyes ass bed blush book censored condom glasses headband idolmaster idolmaster_cinderella_girls jakelian long_hair nopan pussy pussy_juice sagisawa_fumika skirt','id':'301337'})">
+                <img src="https://konachan.net/data/preview/e3/d2/e3d2cdf3d8b67f5289c60a4eca288d2a.jpg">
             </button>
         </div>
         
         <div class="img_frame">
             <button class="img_btn"
-                onclick="showBigImage('https://konachan.net/image/e3d2cdf3d8b67f5289c60a4eca288d2a/Konachan.com%20-%20301337%20anus%20aqua_eyes%20ass%20bed%20blush%20book%20censored%20condom%20glasses%20headband%20idolmaster%20jakelian%20long_hair%20nopan%20pussy%20pussy_juice%20sagisawa_fumika%20skirt.jpg', this.parentElement.parentElement.getElementsByClassName('rowbigimg')[0], {'file_url':'https://konachan.net/image/e3d2cdf3d8b67f5289c60a4eca288d2a/Konachan.com%20-%20301337%20anus%20aqua_eyes%20ass%20bed%20blush%20book%20censored%20condom%20glasses%20headband%20idolmaster%20jakelian%20long_hair%20nopan%20pussy%20pussy_juice%20sagisawa_fumika%20skirt.jpg','author':'BattlequeenYume','tags':'anus aqua_eyes ass bed blush book censored condom glasses headband idolmaster idolmaster_cinderella_girls jakelian long_hair nopan pussy pussy_juice sagisawa_fumika skirt','id':'301337'})">
-                <img src="https://konachan.net/data/preview/e3/d2/e3d2cdf3d8b67f5289c60a4eca288d2a.jpg">
+                onclick="showBigImage('https://konachan.net/image/b134d9b7f540c54d48be9527d712569c/Konachan.com%20-%20301530%2022jigen%20azur_lane%20breast_hold%20breasts%20brown_hair%20glasses%20gloves%20long_hair%20nipples%20nopan%20pussy%20red_eyes%20shirt%20skirt%20skirt_lift%20uncensored.jpg', this.parentElement.parentElement.getElementsByClassName('rowbigimg')[0], {'file_url':'https://konachan.net/image/b134d9b7f540c54d48be9527d712569c/Konachan.com%20-%20301530%2022jigen%20azur_lane%20breast_hold%20breasts%20brown_hair%20glasses%20gloves%20long_hair%20nipples%20nopan%20pussy%20red_eyes%20shirt%20skirt%20skirt_lift%20uncensored.jpg','author':'otaku_emmy','tags':'22jigen anthropomorphism azur_lane breast_hold breasts brown_hair glasses gloves london_(azur_lane) long_hair nipples nopan pussy red_eyes shirt skirt skirt_lift uncensored','id':'301530'})">
+                <img src="https://konachan.net/data/preview/b1/34/b134d9b7f540c54d48be9527d712569c.jpg">
             </button>
         </div>
         
@@ -323,8 +371,8 @@
         
         <div class="img_frame">
             <button class="img_btn"
-                onclick="showBigImage('https://konachan.net/image/57604b19db5dd074a337bf30e88311f3/Konachan.com%20-%20301938%202girls%20anal%20animal_ears%20azur_lane%20blue_eyes%20blush%20bondage%20braids%20breasts%20catgirl%20long_hair%20nipples%20nude%20pussy_juice%20tail%20white_hair%20yuri.png', this.parentElement.parentElement.getElementsByClassName('rowbigimg')[0], {'file_url':'https://konachan.net/image/57604b19db5dd074a337bf30e88311f3/Konachan.com%20-%20301938%202girls%20anal%20animal_ears%20azur_lane%20blue_eyes%20blush%20bondage%20braids%20breasts%20catgirl%20long_hair%20nipples%20nude%20pussy_juice%20tail%20white_hair%20yuri.png','author':'BattlequeenYume','tags':'2girls anal animal_ears anthropomorphism azur_lane belfast_(azur_lane) blue_eyes blush bondage braids breasts catgirl dishwasher1910 enterprise_(azur_lane) long_hair nipples nude pussy_juice tail white_hair yuri','id':'301938'})">
-                <img src="https://konachan.net/data/preview/57/60/57604b19db5dd074a337bf30e88311f3.jpg">
+                onclick="showBigImage('https://konachan.net/image/f3ec81ad86c49db5d430053d6e8103a0/Konachan.com%20-%20301427%20anus%20black_hair%20breasts%20cum%20foxgirl%20game_cg%20long_hair%20nipples%20no_bra%20panty_pull%20photoshop%20red_eyes%20sex%20short_hair%20tail%20thighhighs%20uncensored.png', this.parentElement.parentElement.getElementsByClassName('rowbigimg')[0], {'file_url':'https://konachan.net/image/f3ec81ad86c49db5d430053d6e8103a0/Konachan.com%20-%20301427%20anus%20black_hair%20breasts%20cum%20foxgirl%20game_cg%20long_hair%20nipples%20no_bra%20panty_pull%20photoshop%20red_eyes%20sex%20short_hair%20tail%20thighhighs%20uncensored.png','author':'BattlequeenYume','tags':'animal_ears anthropomorphism anus black_hair breasts cum flower_knight_girl foxgirl game_cg higanbana_(flower_knight_girl) japanese_clothes long_hair moneti_(daifuku) multiple_tails nipples no_bra panty_pull photoshop red_eyes sex short_hair tail thighhighs uncensored white_hair','id':'301427'})">
+                <img src="https://konachan.net/data/preview/f3/ec/f3ec81ad86c49db5d430053d6e8103a0.jpg">
             </button>
         </div>
         
@@ -337,15 +385,15 @@
         
         <div class="img_frame">
             <button class="img_btn"
-                onclick="showBigImage('https://konachan.net/image/da05915bb009104afcc466be8f53e2a2/Konachan.com%20-%20301227%20aqua_eyes%20blue_hair%20blush%20breast_hold%20breasts%20chocolate%20hoshino_shizuru%20lambda%20long_hair%20navel%20nipples%20nude%20princess_connect%21%20pussy%20uncensored.png', this.parentElement.parentElement.getElementsByClassName('rowbigimg')[0], {'file_url':'https://konachan.net/image/da05915bb009104afcc466be8f53e2a2/Konachan.com%20-%20301227%20aqua_eyes%20blue_hair%20blush%20breast_hold%20breasts%20chocolate%20hoshino_shizuru%20lambda%20long_hair%20navel%20nipples%20nude%20princess_connect%21%20pussy%20uncensored.png','author':'BattlequeenYume','tags':'aqua_eyes blue_hair blush breast_hold breasts chocolate hoshino_shizuru lambda long_hair navel nipples nude princess_connect! pussy uncensored','id':'301227'})">
-                <img src="https://konachan.net/data/preview/da/05/da05915bb009104afcc466be8f53e2a2.jpg">
+                onclick="showBigImage('https://konachan.net/image/57604b19db5dd074a337bf30e88311f3/Konachan.com%20-%20301938%202girls%20anal%20animal_ears%20azur_lane%20blue_eyes%20blush%20bondage%20braids%20breasts%20catgirl%20long_hair%20nipples%20nude%20pussy_juice%20tail%20white_hair%20yuri.png', this.parentElement.parentElement.getElementsByClassName('rowbigimg')[0], {'file_url':'https://konachan.net/image/57604b19db5dd074a337bf30e88311f3/Konachan.com%20-%20301938%202girls%20anal%20animal_ears%20azur_lane%20blue_eyes%20blush%20bondage%20braids%20breasts%20catgirl%20long_hair%20nipples%20nude%20pussy_juice%20tail%20white_hair%20yuri.png','author':'BattlequeenYume','tags':'2girls anal animal_ears anthropomorphism azur_lane belfast_(azur_lane) blue_eyes blush bondage braids breasts catgirl dishwasher1910 enterprise_(azur_lane) long_hair nipples nude pussy_juice tail white_hair yuri','id':'301938'})">
+                <img src="https://konachan.net/data/preview/57/60/57604b19db5dd074a337bf30e88311f3.jpg">
             </button>
         </div>
         
         <div class="img_frame">
             <button class="img_btn"
-                onclick="showBigImage('https://konachan.net/image/f3ec81ad86c49db5d430053d6e8103a0/Konachan.com%20-%20301427%20anus%20black_hair%20breasts%20cum%20foxgirl%20game_cg%20long_hair%20nipples%20no_bra%20panty_pull%20photoshop%20red_eyes%20sex%20short_hair%20tail%20thighhighs%20uncensored.png', this.parentElement.parentElement.getElementsByClassName('rowbigimg')[0], {'file_url':'https://konachan.net/image/f3ec81ad86c49db5d430053d6e8103a0/Konachan.com%20-%20301427%20anus%20black_hair%20breasts%20cum%20foxgirl%20game_cg%20long_hair%20nipples%20no_bra%20panty_pull%20photoshop%20red_eyes%20sex%20short_hair%20tail%20thighhighs%20uncensored.png','author':'BattlequeenYume','tags':'animal_ears anthropomorphism anus black_hair breasts cum flower_knight_girl foxgirl game_cg higanbana_(flower_knight_girl) japanese_clothes long_hair moneti_(daifuku) multiple_tails nipples no_bra panty_pull photoshop red_eyes sex short_hair tail thighhighs uncensored white_hair','id':'301427'})">
-                <img src="https://konachan.net/data/preview/f3/ec/f3ec81ad86c49db5d430053d6e8103a0.jpg">
+                onclick="showBigImage('https://konachan.net/image/da05915bb009104afcc466be8f53e2a2/Konachan.com%20-%20301227%20aqua_eyes%20blue_hair%20blush%20breast_hold%20breasts%20chocolate%20hoshino_shizuru%20lambda%20long_hair%20navel%20nipples%20nude%20princess_connect%21%20pussy%20uncensored.png', this.parentElement.parentElement.getElementsByClassName('rowbigimg')[0], {'file_url':'https://konachan.net/image/da05915bb009104afcc466be8f53e2a2/Konachan.com%20-%20301227%20aqua_eyes%20blue_hair%20blush%20breast_hold%20breasts%20chocolate%20hoshino_shizuru%20lambda%20long_hair%20navel%20nipples%20nude%20princess_connect%21%20pussy%20uncensored.png','author':'BattlequeenYume','tags':'aqua_eyes blue_hair blush breast_hold breasts chocolate hoshino_shizuru lambda long_hair navel nipples nude princess_connect! pussy uncensored','id':'301227'})">
+                <img src="https://konachan.net/data/preview/da/05/da05915bb009104afcc466be8f53e2a2.jpg">
             </button>
         </div>
         
@@ -1033,32 +1081,31 @@
     </div>
     </div>
     
-    <script>
-        var onClickLinks = function(url){
-            window.location = url
-        }
-        var onClickS = function(){
-            onClickLinks("//konachan100.github.io")
-        }
-        var onClickQ = function(){
-            onClickLinks("//konachan100.github.io/q")
-        }
-        var onClickE = function(){
-            onClickLinks("//konachan100.github.io/e")
-        }
 
-    </script>
+
+    
+    
     
     <div id="footer">
         <div id="links">
-            
-            
-            
+            <div class="linkitem">
+                <button class="linkbtn" onclick="window.location='../'">S</button>
+            </div>
+            <div class="linkspace"></div>
+            <div class="linkitem">
+                <button class="linkbtn" onclick="window.location='../q'">Q</button>
+            </div>
         </div>
     </div>
     
-
-   
+    
+    <script>
+        if (window.extraContentUnlocked !=true) {
+            var lnk = document.getElementById('links')
+            lnk.remove()
+        }
+    </script>
+    
 
 </body>
 
