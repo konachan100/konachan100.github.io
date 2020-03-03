@@ -1,40 +1,4 @@
 Page refreshed
-Loading URL: http://www.konachan.net/post.json?limit=100&tags=mivit
-Success, decoding JSON
-update cache file  ../c/artist/mivit/cache.json
-new cache size  90
-show posts order by time, reverse
-Rendering to ../c/artist/mivit/index.html
-Page refreshed
-Rendering to ../c/artist/mivit/m/index.html
-Page refreshed
-Rendering to ../c/artist/mivit/q/index.html
-Page refreshed
-Rendering to ../c/artist/mivit/q/m/index.html
-Page refreshed
-Rendering to ../c/artist/mivit/e/index.html
-Page refreshed
-Rendering to ../c/artist/mivit/e/m/index.html
-Page refreshed
- log.txt | 72 ++++++++++++++++++++++++++++++++---------------------------------
- 1 file changed, 36 insertions(+), 36 deletions(-)
-[master a9343120] update content
- 1 file changed, 36 insertions(+), 36 deletions(-)
-
-
-================================================================================
-2020-03-03 09:24:53
-Already up to date.
-Already up to date.
-build targets:  ['s', 'q', 'e']
-Build count:  394
-Current build: Home[1], Categoary[19]
-Loading URL: http://www.konachan.net/post.json?limit=100&tags=rating:questionable
-Success, decoding JSON
-Rendering to ../q/index.html
-Page refreshed
-Rendering to ../q/m/index.html
-Page refreshed
 Loading URL: http://www.konachan.net/post.json?limit=100&tags=hiten_goane_ryu
 Success, decoding JSON
 update cache file  ../c/artist/hiten_goane_ryu/cache.json
@@ -529,4 +493,40 @@ Page refreshed
 Rendering to ../c/artist/annin_doufu/e/index.html
 Page refreshed
 Rendering to ../c/artist/annin_doufu/e/m/index.html
+Page refreshed
+ log.txt | 74 ++++++++++++++++++++++++++++++++---------------------------------
+ 1 file changed, 37 insertions(+), 37 deletions(-)
+[master 98998721] update content
+ 1 file changed, 37 insertions(+), 37 deletions(-)
+
+
+================================================================================
+2020-03-03 10:45:08
+Already up to date.
+Already up to date.
+build targets:  ['s', 'q', 'e']
+Build count:  409
+Current build: Home[1], Categoary[9]
+Loading URL: http://www.konachan.net/post.json?limit=100&tags=rating:questionable
+Success, decoding JSON
+Rendering to ../q/index.html
+Page refreshed
+Rendering to ../q/m/index.html
+Page refreshed
+Loading URL: http://www.konachan.net/post.json?limit=100&tags=miwabe_sakura
+Success, decoding JSON
+update cache file  ../c/artist/miwabe_sakura/cache.json
+new cache size  22
+show posts order by time, reverse
+Rendering to ../c/artist/miwabe_sakura/index.html
+Page refreshed
+Rendering to ../c/artist/miwabe_sakura/m/index.html
+Page refreshed
+Rendering to ../c/artist/miwabe_sakura/q/index.html
+Page refreshed
+Rendering to ../c/artist/miwabe_sakura/q/m/index.html
+Page refreshed
+Rendering to ../c/artist/miwabe_sakura/e/index.html
+Page refreshed
+Rendering to ../c/artist/miwabe_sakura/e/m/index.html
 Page refreshed
