@@ -1,14 +1,3 @@
-Rendering to ../c/artist/hiten_goane_ryu/e/index.html
-Page refreshed
-Rendering to ../c/artist/hiten_goane_ryu/e/m/index.html
-Page refreshed
- c/artist/hiten_goane_ryu/e/index.html |  1 +
- c/artist/hiten_goane_ryu/index.html   |  1 +
- c/artist/hiten_goane_ryu/q/index.html |  1 +
- log.txt                               | 78 +++++++++++++++++------------------
- 4 files changed, 42 insertions(+), 39 deletions(-)
-[master 096f97b3] update content
- 4 files changed, 42 insertions(+), 39 deletions(-)
 
 
 ================================================================================
@@ -502,6 +491,17 @@ build targets:  ['s', 'q', 'e']
 
 ================================================================================
 2020-03-03 13:56:39
+Already up to date.
+Already up to date.
+build targets:  ['s', 'q', 'e']
+ log.txt | 22 +++++++++++-----------
+ 1 file changed, 11 insertions(+), 11 deletions(-)
+[master fcb91889] update content
+ 1 file changed, 11 insertions(+), 11 deletions(-)
+
+
+================================================================================
+2020-03-03 14:01:55
 Already up to date.
 Already up to date.
 build targets:  ['s', 'q', 'e']
