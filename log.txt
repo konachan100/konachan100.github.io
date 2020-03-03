@@ -1,44 +1,3 @@
- c/artist/onineko/q/index.html | 89 +++++++++++++++++++++++++++++++++----------
- log.txt                       | 80 +++++++++++++++++++-------------------
- q/index.html                  | 27 +++++++------
- 6 files changed, 254 insertions(+), 116 deletions(-)
-[master da6aeb03] update content
- 6 files changed, 254 insertions(+), 116 deletions(-)
-
-
-================================================================================
-2020-03-03 16:28:17
-Already up to date.
-Already up to date.
-build targets:  ['s', 'q', 'e']
-Build count:  440
-Current build: Home[2], Categoary[15]
-Loading URL: http://www.konachan.net/post.json?limit=100&tags=rating:explicit
-Success, decoding JSON
-Rendering to ../e/index.html
-Page refreshed
-Rendering to ../e/m/index.html
-Page refreshed
-Loading URL: http://www.konachan.net/post.json?limit=100&tags=miyase_mahiro
-Failed, timed out
- e/index.html |  2 +-
- log.txt      | 67 +++++++++++++++++++++++-------------------------------------
- 2 files changed, 27 insertions(+), 42 deletions(-)
-[master 23c7be3c] update content
- 2 files changed, 27 insertions(+), 42 deletions(-)
-
-
-================================================================================
-2020-03-03 16:34:22
-Already up to date.
-Already up to date.
-build targets:  ['s', 'q', 'e']
-Build count:  441
-Current build: Home[0], Categoary[16]
-Loading URL: http://www.konachan.net/post.json?limit=100&tags=rating:safe
-Success, decoding JSON
-Rendering to ../index.html
-Page refreshed
 Rendering to ../m/index.html
 Page refreshed
 Loading URL: http://www.konachan.net/post.json?limit=100&tags=kino_(kino_konomi)
@@ -529,4 +488,45 @@ Page refreshed
 Rendering to ../c/touhou/e/index.html
 Page refreshed
 Rendering to ../c/touhou/e/m/index.html
+Page refreshed
+ c/touhou/e/index.html | 47 ++++++++++++++-------------
+ c/touhou/index.html   | 45 ++++++++++++++------------
+ c/touhou/post.json    |  2 +-
+ c/touhou/q/index.html | 47 ++++++++++++++-------------
+ c/touhou/q/post.json  |  2 +-
+ log.txt               | 89 ++++++++++++++++++++++++++-------------------------
+ 6 files changed, 121 insertions(+), 111 deletions(-)
+[master bef92753] update content
+ 6 files changed, 121 insertions(+), 111 deletions(-)
+
+
+================================================================================
+2020-03-03 17:50:08
+Already up to date.
+Already up to date.
+build targets:  ['s', 'q', 'e']
+Build count:  455
+Current build: Home[2], Categoary[5]
+Loading URL: http://www.konachan.net/post.json?limit=100&tags=rating:explicit
+Success, decoding JSON
+Rendering to ../e/index.html
+Page refreshed
+Rendering to ../e/m/index.html
+Page refreshed
+Loading URL: http://www.konachan.net/post.json?limit=100&tags=scenic
+Success, decoding JSON
+update cache file  ../c/scenic/cache.json
+new cache size  104
+show posts order by time, reverse
+Rendering to ../c/scenic/index.html
+Page refreshed
+Rendering to ../c/scenic/m/index.html
+Page refreshed
+Rendering to ../c/scenic/q/index.html
+Page refreshed
+Rendering to ../c/scenic/q/m/index.html
+Page refreshed
+Rendering to ../c/scenic/e/index.html
+Page refreshed
+Rendering to ../c/scenic/e/m/index.html
 Page refreshed
