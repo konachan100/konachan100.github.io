@@ -1,14 +1,3 @@
-new cache size  55
-show posts order by time, reverse
-Rendering to ../c/artist/ryo/index.html
-Page refreshed
-Rendering to ../c/artist/ryo/m/index.html
-Page refreshed
-Rendering to ../c/artist/ryo/q/index.html
-Page refreshed
-Rendering to ../c/artist/ryo/q/m/index.html
-Page refreshed
-Rendering to ../c/artist/ryo/e/index.html
 Page refreshed
 Rendering to ../c/artist/ryo/e/m/index.html
 Page refreshed
@@ -502,6 +491,17 @@ build targets:  ['s', 'q', 'e']
 
 ================================================================================
 2020-03-03 13:14:27
+Already up to date.
+Already up to date.
+build targets:  ['s', 'q', 'e']
+ log.txt | 22 +++++++++++-----------
+ 1 file changed, 11 insertions(+), 11 deletions(-)
+[master f2d452eb] update content
+ 1 file changed, 11 insertions(+), 11 deletions(-)
+
+
+================================================================================
+2020-03-03 13:19:42
 Already up to date.
 Already up to date.
 build targets:  ['s', 'q', 'e']
