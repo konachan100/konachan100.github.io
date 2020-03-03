@@ -100,41 +100,44 @@
             let result = false
 
             for (let i = 0; i < arr.length; i++) {
-                sp = arr[i].split('&')
-                for (let j = 0; j < sp.length; j++) {
-                    if (sp[j] == 'unlockeq') {
-                        result = true
+                sp = arr[i].split('?')
+                if (sp.length > 1) {
+                    sp = sp[1].split('&')
+                    for (let j = 0; j < sp.length; j++) {
+                        if (sp[j] == 'unlockeq') {
+                            result = true
+                            break
+                        }
+                    }
+                    if (result) {
                         break
                     }
-                }
-                if (result) {
-                    break
                 }
             }
             return result
         }
 
-        var history = []
+        var url_visited = []
         try {
             if (document.cookie.length > 0) {
-                chistory = JSON.parse(document.cookie)
-                for (let i = 0; i < chistory.length; i++) {
-                    history.push(chistory[i])
+                url_list = JSON.parse(document.cookie)
+                for (let i = 0; i < url_list.length; i++) {
+                    url_visited.push(url_list[i])
                 }
             }
         } catch{
-            history = []
+            url_visited = []
         }
-        history.push(window.location)
-        while (history.length > 16) {
-            history.shift()
+        url_visited.push(window.location.href)
+        while (url_visited.length > 16) {
+            url_visited.shift()
         }
-        document.cookie = JSON.stringify(history)
-        window.extraContentLocked = chkHistoryPattern(history)
+        document.cookie = JSON.stringify(url_visited)
+        window.extraContentUnlocked = chkHistoryPattern(url_visited)
     </script>
     
     <script>
-        if (window.extraContentLocked) {
+        if (window.extraContentUnlocked == undefined || window.extraContentUnlocked) {
             window.location = '/'
         }
     </script>
@@ -441,12 +444,12 @@
     </div>
     </div>
     
-    
+
 
     
-        
+    
     <div id="footer">
-        <div id="links">           
+        <div id="links">
             <div class="linkitem">
                 <button class="linkbtn" onclick="window.location='../'">S</button>
             </div>
@@ -460,7 +463,7 @@
     
     
     <script>
-        if(windows.extraContentLocked){
+        if (window.extraContentUnlocked !=true) {
             var lnk = document.getElementById('links')
             lnk.remove()
         }
