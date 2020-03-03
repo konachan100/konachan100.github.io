@@ -1,20 +1,3 @@
- log.txt | 40 +++++++++++++++++++++++-----------------
- 1 file changed, 23 insertions(+), 17 deletions(-)
-[master 0ddc21d4] update content
- 1 file changed, 23 insertions(+), 17 deletions(-)
-
-
-================================================================================
-2020-03-03 22:15:55
-Already up to date.
-Already up to date.
-build targets:  ['s', 'q', 'e']
-Build count:  503
-Current build: Home[2], Categoary[3]
-Loading URL: http://www.konachan.net/post.json?limit=100&tags=rating:explicit
-Success, decoding JSON
-Rendering to ../e/index.html
-Page refreshed
 Rendering to ../e/m/index.html
 Page refreshed
 Skip Loading for build path  ../c/hot/
@@ -510,4 +493,21 @@ Current build: Home[1], Categoary[20]
 Loading URL: http://www.konachan.net/post.json?limit=100&tags=rating:questionable
 Failed, timed out
 Loading URL: http://www.konachan.net/post.json?limit=100&tags=fujisaki_hikari
+Failed, <urlopen error [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。>
+ log.txt | 34 +++++++++++++++++-----------------
+ 1 file changed, 17 insertions(+), 17 deletions(-)
+[master 233fc8b3] update content
+ 1 file changed, 17 insertions(+), 17 deletions(-)
+
+
+================================================================================
+2020-03-04 00:05:38
+Already up to date.
+Already up to date.
+build targets:  ['s', 'q', 'e']
+Build count:  521
+Current build: Home[2], Categoary[21]
+Loading URL: http://www.konachan.net/post.json?limit=100&tags=rating:explicit
+Failed, timed out
+Loading URL: http://www.konachan.net/post.json?limit=100&tags=higandgk
 Failed, <urlopen error [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。>
