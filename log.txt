@@ -1,14 +1,3 @@
-Rendering to ../c/artist/dead_line/q/m/index.html
-Page refreshed
-Rendering to ../c/artist/dead_line/e/index.html
-Page refreshed
-Rendering to ../c/artist/dead_line/e/m/index.html
-Page refreshed
- c/artist/dead_line/e/index.html |  1 +
- c/artist/dead_line/index.html   |  1 +
- c/artist/dead_line/q/index.html |  1 +
- log.txt                         | 78 ++++++++++++++++++++---------------------
- 4 files changed, 42 insertions(+), 39 deletions(-)
 [master 061cf3a6] update content
  4 files changed, 42 insertions(+), 39 deletions(-)
 
@@ -502,6 +491,17 @@ build targets:  ['s', 'q', 'e']
 
 ================================================================================
 2020-03-03 15:11:05
+Already up to date.
+Already up to date.
+build targets:  ['s', 'q', 'e']
+ log.txt | 22 +++++++++++-----------
+ 1 file changed, 11 insertions(+), 11 deletions(-)
+[master f5702e05] update content
+ 1 file changed, 11 insertions(+), 11 deletions(-)
+
+
+================================================================================
+2020-03-03 15:16:37
 Already up to date.
 Already up to date.
 build targets:  ['s', 'q', 'e']
