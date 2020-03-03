@@ -1,44 +1,6 @@
 Already up to date.
 Already up to date.
 build targets:  ['s', 'q', 'e']
-Build count:  538
-Current build: Home[1], Categoary[13]
-Loading URL: http://www.konachan.net/post.json?limit=100&tags=rating:questionable
-Success, decoding JSON
-Rendering to ../q/index.html
-Page refreshed
-Rendering to ../q/m/index.html
-Page refreshed
-Loading URL: http://www.konachan.net/post.json?limit=100&tags=mauve
-Success, decoding JSON
-update cache file  ../c/artist/mauve/cache.json
-new cache size  33
-show posts order by time, reverse
-Rendering to ../c/artist/mauve/index.html
-Page refreshed
-Rendering to ../c/artist/mauve/m/index.html
-Page refreshed
-Rendering to ../c/artist/mauve/q/index.html
-Page refreshed
-Rendering to ../c/artist/mauve/q/m/index.html
-Page refreshed
-Rendering to ../c/artist/mauve/e/index.html
-Page refreshed
-Rendering to ../c/artist/mauve/e/m/index.html
-Page refreshed
- log.txt        |  74 +++++++-------
- q/index.html   | 312 ++++++++++++++++++++++++++++-----------------------------
- q/m/index.html |  12 +--
- 3 files changed, 199 insertions(+), 199 deletions(-)
-[master e0b38264] update content
- 3 files changed, 199 insertions(+), 199 deletions(-)
-
-
-================================================================================
-2020-03-04 01:46:45
-Already up to date.
-Already up to date.
-build targets:  ['s', 'q', 'e']
 Build count:  539
 Current build: Home[2], Categoary[14]
 Loading URL: http://www.konachan.net/post.json?limit=100&tags=rating:explicit
@@ -529,4 +491,42 @@ Page refreshed
 Rendering to ../c/artist/miwabe_sakura/e/index.html
 Page refreshed
 Rendering to ../c/artist/miwabe_sakura/e/m/index.html
+Page refreshed
+ log.txt        |  76 ++++++-------
+ q/index.html   | 350 ++++++++++++++++++++++++++++-----------------------------
+ q/m/index.html |  14 +--
+ 3 files changed, 220 insertions(+), 220 deletions(-)
+[master 353694eb] update content
+ 3 files changed, 220 insertions(+), 220 deletions(-)
+
+
+================================================================================
+2020-03-04 03:58:36
+Already up to date.
+Already up to date.
+build targets:  ['s', 'q', 'e']
+Build count:  560
+Current build: Home[2], Categoary[10]
+Loading URL: http://www.konachan.net/post.json?limit=100&tags=rating:explicit
+Success, decoding JSON
+Rendering to ../e/index.html
+Page refreshed
+Rendering to ../e/m/index.html
+Page refreshed
+Loading URL: http://www.konachan.net/post.json?limit=100&tags=edel_(qi--yu)
+Success, decoding JSON
+update cache file  ../c/artist/edel_(qi--yu)/cache.json
+new cache size  5
+show posts order by time, reverse
+Rendering to ../c/artist/edel_(qi--yu)/index.html
+Page refreshed
+Rendering to ../c/artist/edel_(qi--yu)/m/index.html
+Page refreshed
+Rendering to ../c/artist/edel_(qi--yu)/q/index.html
+Page refreshed
+Rendering to ../c/artist/edel_(qi--yu)/q/m/index.html
+Page refreshed
+Rendering to ../c/artist/edel_(qi--yu)/e/index.html
+Page refreshed
+Rendering to ../c/artist/edel_(qi--yu)/e/m/index.html
 Page refreshed
