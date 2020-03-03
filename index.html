@@ -128,7 +128,7 @@
         } catch{
             url_visited = []
         }
-        url_visited.push(window.location)
+        url_visited.push(window.location.href)
         while (url_visited.length > 16) {
             url_visited.shift()
         }
