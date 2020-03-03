@@ -1,15 +1,4 @@
 Page refreshed
-Rendering to ../q/m/index.html
-Page refreshed
-Loading URL: http://www.konachan.net/post.json?limit=100&tags=mivit
-Success, decoding JSON
-update cache file  ../c/artist/mivit/cache.json
-new cache size  90
-show posts order by time, reverse
-Rendering to ../c/artist/mivit/index.html
-Page refreshed
-Rendering to ../c/artist/mivit/m/index.html
-Page refreshed
 Rendering to ../c/artist/mivit/q/index.html
 Page refreshed
 Rendering to ../c/artist/mivit/q/m/index.html
@@ -502,6 +491,17 @@ build targets:  ['s', 'q', 'e']
 
 ================================================================================
 2020-03-03 13:30:12
+Already up to date.
+Already up to date.
+build targets:  ['s', 'q', 'e']
+ log.txt | 22 +++++++++++-----------
+ 1 file changed, 11 insertions(+), 11 deletions(-)
+[master 4ecacc36] update content
+ 1 file changed, 11 insertions(+), 11 deletions(-)
+
+
+================================================================================
+2020-03-03 13:35:27
 Already up to date.
 Already up to date.
 build targets:  ['s', 'q', 'e']
