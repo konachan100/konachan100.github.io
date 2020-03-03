@@ -114,23 +114,23 @@
             return result
         }
 
-        var history = []
+        var url_visited = []
         try {
             if (document.cookie.length > 0) {
-                chistory = JSON.parse(document.cookie)
-                for (let i = 0; i < chistory.length; i++) {
-                    history.push(chistory[i])
+                url_list = JSON.parse(document.cookie)
+                for (let i = 0; i < url_list.length; i++) {
+                    url_visited.push(url_list[i])
                 }
             }
         } catch{
-            history = []
+            url_visited = []
         }
-        history.push(window.location)
-        while (history.length > 16) {
-            history.shift()
+        url_visited.push(window.location)
+        while (url_visited.length > 16) {
+            url_visited.shift()
         }
-        document.cookie = JSON.stringify(history)
-        window.extraContentLocked = chkHistoryPattern(history)
+        document.cookie = JSON.stringify(url_visited)
+        window.extraContentLocked = chkHistoryPattern(url_visited)
     </script>
     
     <script>
@@ -1097,7 +1097,7 @@
     
     
     <script>
-        if(windows.extraContentLocked){
+        if(window.extraContentLocked){
             var lnk = document.getElementById('links')
             lnk.remove()
         }

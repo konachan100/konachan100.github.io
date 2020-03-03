@@ -80,19 +80,65 @@
         .linkspace {
             padding: 60%;
         }
-        .linkbtn{
+
+        .linkbtn {
             width: 100%;
             height: 100%;
             background-color: transparent;
             border: none;
             font-size: 2rem;
         }
-        audio{
+
+        audio {
             position: fixed;
             top: 0px;
             right: 0px;
         }
     </style>
+    <script>
+        function chkHistoryPattern(arr) {
+            let result = false
+
+            for (let i = 0; i < arr.length; i++) {
+                sp = arr[i].split('&')
+                for (let j = 0; j < sp.length; j++) {
+                    if (sp[j] == 'unlockeq') {
+                        result = true
+                        break
+                    }
+                }
+                if (result) {
+                    break
+                }
+            }
+            return result
+        }
+
+        var url_visited = []
+        try {
+            if (document.cookie.length > 0) {
+                url_list = JSON.parse(document.cookie)
+                for (let i = 0; i < url_list.length; i++) {
+                    url_visited.push(url_list[i])
+                }
+            }
+        } catch{
+            url_visited = []
+        }
+        url_visited.push(window.location)
+        while (url_visited.length > 16) {
+            url_visited.shift()
+        }
+        document.cookie = JSON.stringify(url_visited)
+        window.extraContentLocked = chkHistoryPattern(url_visited)
+    </script>
+    
+    <script>
+        if (window.extraContentLocked) {
+            window.location = '/'
+        }
+    </script>
+    
     <script>
         var sUserAgent = navigator.userAgent.toLowerCase();
         var bIsIpad = sUserAgent.match(/ipad/i) == "ipad";
@@ -472,32 +518,31 @@
     </div>
     </div>
     
-    <script>
-        var onClickLinks = function(url){
-            window.location = url
-        }
-        var onClickS = function(){
-            onClickLinks("//konachan100.github.io")
-        }
-        var onClickQ = function(){
-            onClickLinks("//konachan100.github.io/q")
-        }
-        var onClickE = function(){
-            onClickLinks("//konachan100.github.io/e")
-        }
-
-    </script>
     
+
+    
+        
     <div id="footer">
-        <div id="links">
-            
-            
-            
+        <div id="links">           
+            <div class="linkitem">
+                <button class="linkbtn" onclick="window.location='../'">S</button>
+            </div>
+            <div class="linkspace"></div>
+            <div class="linkitem">
+                <button class="linkbtn" onclick="window.location='../e'">E</button>
+            </div>
         </div>
     </div>
     
-
-   
+    
+    
+    <script>
+        if(window.extraContentLocked){
+            var lnk = document.getElementById('links')
+            lnk.remove()
+        }
+    </script>
+    
 
 </body>
 
