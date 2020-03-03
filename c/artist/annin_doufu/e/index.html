@@ -117,22 +117,46 @@
             return result
         }
 
-        var url_visited = []
-        try {
-            if (document.cookie.length > 0) {
-                url_list = JSON.parse(document.cookie)
-                for (let i = 0; i < url_list.length; i++) {
-                    url_visited.push(url_list[i])
+        function readCookieCfg() {
+            var sp = document.cookie.split(';')
+            for (let i = 0; i < sp.length; i++) {
+                var sp2 = sp[i].trim().split('=')
+                if (sp2.length > 1) {
+                    if (sp2[0] == 'url_visited') {
+                        try {
+                            ret = JSON.parse(sp2[1])
+                            return ret
+                        }
+                        catch{
+                            return []
+                        }
+                    }
                 }
             }
-        } catch{
-            url_visited = []
+            return []
         }
+
+        function writeCookieCfg(cfg) {
+            document.cookie = "url_visited="+JSON.stringify(cfg)
+        }
+
+
+        var url_visited = readCookieCfg()
+        // try {
+        //     if (document.cookie.length > 0) {
+        //         url_list = JSON.parse(document.cookie)
+        //         for (let i = 0; i < url_list.length; i++) {
+        //             url_visited.push(url_list[i])
+        //         }
+        //     }
+        // } catch{
+        //     url_visited = []
+        // }
         url_visited.push(window.location.href)
         while (url_visited.length > 16) {
             url_visited.shift()
         }
-        document.cookie = JSON.stringify(url_visited)
+        writeCookieCfg(url_visited)
         window.extraContentUnlocked = chkHistoryPattern(url_visited)
     </script>
     
@@ -246,7 +270,7 @@
     
     
     <script>
-        if (window.extraContentUnlocked !=true) {
+        if (window.extraContentUnlocked != true) {
             var lnk = document.getElementById('links')
             lnk.remove()
         }
