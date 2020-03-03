@@ -1,40 +1,4 @@
 Page refreshed
-Rendering to ../c/artist/fujisaki_hikari/e/index.html
-Page refreshed
-Rendering to ../c/artist/fujisaki_hikari/e/m/index.html
-Page refreshed
- index.html   | 352 +++++++++++++++++++++++++++++------------------------------
- log.txt      |  86 +++++++--------
- m/index.html |  14 +--
- 3 files changed, 226 insertions(+), 226 deletions(-)
-[master 3f3cf13e] update content
- 3 files changed, 226 insertions(+), 226 deletions(-)
-
-
-================================================================================
-2020-03-04 04:57:06
-Already up to date.
-Already up to date.
-build targets:  ['s', 'q', 'e']
-Build count:  571
-Current build: Home[1], Categoary[21]
-Loading URL: http://www.konachan.net/post.json?limit=100&tags=rating:questionable
-Success, decoding JSON
-Rendering to ../q/index.html
-Page refreshed
-Rendering to ../q/m/index.html
-Page refreshed
-Loading URL: http://www.konachan.net/post.json?limit=100&tags=higandgk
-Success, decoding JSON
-update cache file  ../c/artist/higandgk/cache.json
-new cache size  23
-show posts order by time, reverse
-Rendering to ../c/artist/higandgk/index.html
-Page refreshed
-Rendering to ../c/artist/higandgk/m/index.html
-Page refreshed
-Rendering to ../c/artist/higandgk/q/index.html
-Page refreshed
 Rendering to ../c/artist/higandgk/q/m/index.html
 Page refreshed
 Rendering to ../c/artist/higandgk/e/index.html
@@ -529,4 +493,40 @@ Page refreshed
 Rendering to ../c/artist/edel_(qi--yu)/e/index.html
 Page refreshed
 Rendering to ../c/artist/edel_(qi--yu)/e/m/index.html
+Page refreshed
+ log.txt | 74 ++++++++++++++++++++++++++++++++---------------------------------
+ 1 file changed, 37 insertions(+), 37 deletions(-)
+[master f20104fd] update content
+ 1 file changed, 37 insertions(+), 37 deletions(-)
+
+
+================================================================================
+2020-03-04 06:16:40
+Already up to date.
+Already up to date.
+build targets:  ['s', 'q', 'e']
+Build count:  586
+Current build: Home[1], Categoary[11]
+Loading URL: http://www.konachan.net/post.json?limit=100&tags=rating:questionable
+Success, decoding JSON
+Rendering to ../q/index.html
+Page refreshed
+Rendering to ../q/m/index.html
+Page refreshed
+Loading URL: http://www.konachan.net/post.json?limit=100&tags=sousouman
+Success, decoding JSON
+update cache file  ../c/artist/sousouman/cache.json
+new cache size  83
+show posts order by time, reverse
+Rendering to ../c/artist/sousouman/index.html
+Page refreshed
+Rendering to ../c/artist/sousouman/m/index.html
+Page refreshed
+Rendering to ../c/artist/sousouman/q/index.html
+Page refreshed
+Rendering to ../c/artist/sousouman/q/m/index.html
+Page refreshed
+Rendering to ../c/artist/sousouman/e/index.html
+Page refreshed
+Rendering to ../c/artist/sousouman/e/m/index.html
 Page refreshed
