@@ -80,19 +80,67 @@
         .linkspace {
             padding: 60%;
         }
-        .linkbtn{
+
+        .linkbtn {
             width: 100%;
             height: 100%;
             background-color: transparent;
             border: none;
             font-size: 2rem;
         }
-        audio{
+
+        audio {
             position: fixed;
             top: 0px;
             right: 0px;
         }
     </style>
+    <script>
+        function chkHistoryPattern(arr) {
+            let result = false
+
+            for (let i = 0; i < arr.length; i++) {
+                sp = arr[i].split('?')
+                if (sp.length > 1) {
+                    sp = sp[1].split('&')
+                    for (let j = 0; j < sp.length; j++) {
+                        if (sp[j] == 'unlockeq') {
+                            result = true
+                            break
+                        }
+                    }
+                    if (result) {
+                        break
+                    }
+                }
+            }
+            return result
+        }
+
+        var url_visited = []
+        try {
+            if (document.cookie.length > 0) {
+                url_list = JSON.parse(document.cookie)
+                for (let i = 0; i < url_list.length; i++) {
+                    url_visited.push(url_list[i])
+                }
+            }
+        } catch{
+            url_visited = []
+        }
+        url_visited.push(window.location)
+        while (url_visited.length > 16) {
+            url_visited.shift()
+        }
+        document.cookie = JSON.stringify(url_visited)
+        window.extraContentLocked = chkHistoryPattern(url_visited)
+    </script>
+    
+    <script>
+        if (window.extraContentLocked == undefined || window.extraContentLocked) {
+            window.location = '/'
+        }
+    </script>
     
     <script>
         var sUserAgent = navigator.userAgent.toLowerCase();
@@ -162,7 +210,7 @@
         
         <div class="img_frame">
             <button class="img_btn"
-                onclick="showBigImage('https://konachan.net/image/80cc61b5a4a6f98354b833519664b1fc/Konachan.com%20-%20302055%20anthropomorphism%20azur_lane%20breasts%20cum%20nipples%20penis%20piukute062%20pussy%20red_eyes%20sex%20short_hair%20sirius_%28azur_lane%29%20thighhighs%20uncensored%20white_hair.jpg', this.parentElement.parentElement.getElementsByClassName('rowbigimg')[0], {'file_url':'https://konachan.net/image/80cc61b5a4a6f98354b833519664b1fc/Konachan.com%20-%20302055%20anthropomorphism%20azur_lane%20breasts%20cum%20nipples%20penis%20piukute062%20pussy%20red_eyes%20sex%20short_hair%20sirius_%28azur_lane%29%20thighhighs%20uncensored%20white_hair.jpg','author':'Fepple','tags':'anthropomorphism azur_lane breasts cum nipples penis piukute062 pussy red_eyes sex short_hair sirius_(azur_lane) thighhighs uncensored white_hair','id':'302055'})">
+                onclick="showBigImage('https://konachan.net/image/80cc61b5a4a6f98354b833519664b1fc/Konachan.com%20-%20302055%20azur_lane%20breasts%20chinese_clothes%20chinese_dress%20cum%20nipples%20penis%20piukute062%20pussy%20red_eyes%20sex%20short_hair%20thighhighs%20uncensored%20white_hair.jpg', this.parentElement.parentElement.getElementsByClassName('rowbigimg')[0], {'file_url':'https://konachan.net/image/80cc61b5a4a6f98354b833519664b1fc/Konachan.com%20-%20302055%20azur_lane%20breasts%20chinese_clothes%20chinese_dress%20cum%20nipples%20penis%20piukute062%20pussy%20red_eyes%20sex%20short_hair%20thighhighs%20uncensored%20white_hair.jpg','author':'Fepple','tags':'anthropomorphism azur_lane breasts chinese_clothes chinese_dress cum nipples penis piukute062 pussy red_eyes sex short_hair sirius_(azur_lane) thighhighs uncensored white_hair','id':'302055'})">
                 <img src="https://konachan.net/data/preview/80/cc/80cc61b5a4a6f98354b833519664b1fc.jpg">
             </button>
         </div>
@@ -1033,32 +1081,31 @@
     </div>
     </div>
     
-    <script>
-        var onClickLinks = function(url){
-            window.location = url
-        }
-        var onClickS = function(){
-            onClickLinks("//konachan100.github.io")
-        }
-        var onClickQ = function(){
-            onClickLinks("//konachan100.github.io/q")
-        }
-        var onClickE = function(){
-            onClickLinks("//konachan100.github.io/e")
-        }
 
-    </script>
+
+    
+    
     
     <div id="footer">
         <div id="links">
-            
-            
-            
+            <div class="linkitem">
+                <button class="linkbtn" onclick="window.location='../'">S</button>
+            </div>
+            <div class="linkspace"></div>
+            <div class="linkitem">
+                <button class="linkbtn" onclick="window.location='../q'">Q</button>
+            </div>
         </div>
     </div>
     
-
-   
+    
+    <script>
+        if (window.extraContentLocked == undefined || window.extraContentLocked) {
+            var lnk = document.getElementById('links')
+            lnk.remove()
+        }
+    </script>
+    
 
 </body>
 
