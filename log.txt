@@ -1,39 +1,3 @@
-Loading URL: http://www.konachan.net/post.json?limit=100&tags=natsumoka
-Success, decoding JSON
-update cache file  ../c/artist/natsumoka/cache.json
-new cache size  20
-show posts order by time, reverse
-Rendering to ../c/artist/natsumoka/index.html
-Page refreshed
-Rendering to ../c/artist/natsumoka/m/index.html
-Page refreshed
-Rendering to ../c/artist/natsumoka/q/index.html
-Page refreshed
-Rendering to ../c/artist/natsumoka/q/m/index.html
-Page refreshed
-Rendering to ../c/artist/natsumoka/e/index.html
-Page refreshed
-Rendering to ../c/artist/natsumoka/e/m/index.html
-Page refreshed
- log.txt | 72 ++++++++++++++++++++++++++++++++---------------------------------
- 1 file changed, 36 insertions(+), 36 deletions(-)
-[master 0b8fd4da] update content
- 1 file changed, 36 insertions(+), 36 deletions(-)
-
-
-================================================================================
-2020-03-04 05:55:27
-Already up to date.
-Already up to date.
-build targets:  ['s', 'q', 'e']
-Build count:  582
-Current build: Home[0], Categoary[7]
-Loading URL: http://www.konachan.net/post.json?limit=100&tags=rating:safe
-Success, decoding JSON
-Rendering to ../index.html
-Page refreshed
-Rendering to ../m/index.html
-Page refreshed
 Loading URL: http://www.konachan.net/post.json?limit=100&tags=anmi
 Success, decoding JSON
 update cache file  ../c/artist/anmi/cache.json
@@ -529,4 +493,40 @@ Page refreshed
 Rendering to ../c/artist/fujisaki_hikari/e/index.html
 Page refreshed
 Rendering to ../c/artist/fujisaki_hikari/e/m/index.html
+Page refreshed
+ log.txt | 72 ++++++++++++++++++++++++++++++++---------------------------------
+ 1 file changed, 36 insertions(+), 36 deletions(-)
+[master caa7e710] update content
+ 1 file changed, 36 insertions(+), 36 deletions(-)
+
+
+================================================================================
+2020-03-04 07:09:46
+Already up to date.
+Already up to date.
+build targets:  ['s', 'q', 'e']
+Build count:  596
+Current build: Home[2], Categoary[21]
+Loading URL: http://www.konachan.net/post.json?limit=100&tags=rating:explicit
+Success, decoding JSON
+Rendering to ../e/index.html
+Page refreshed
+Rendering to ../e/m/index.html
+Page refreshed
+Loading URL: http://www.konachan.net/post.json?limit=100&tags=higandgk
+Success, decoding JSON
+update cache file  ../c/artist/higandgk/cache.json
+new cache size  23
+show posts order by time, reverse
+Rendering to ../c/artist/higandgk/index.html
+Page refreshed
+Rendering to ../c/artist/higandgk/m/index.html
+Page refreshed
+Rendering to ../c/artist/higandgk/q/index.html
+Page refreshed
+Rendering to ../c/artist/higandgk/q/m/index.html
+Page refreshed
+Rendering to ../c/artist/higandgk/e/index.html
+Page refreshed
+Rendering to ../c/artist/higandgk/e/m/index.html
 Page refreshed
