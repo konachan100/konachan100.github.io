@@ -80,19 +80,59 @@
         .linkspace {
             padding: 60%;
         }
-        .linkbtn{
+
+        .linkbtn {
             width: 100%;
             height: 100%;
             background-color: transparent;
             border: none;
             font-size: 2rem;
         }
-        audio{
+
+        audio {
             position: fixed;
             top: 0px;
             right: 0px;
         }
     </style>
+    <script>
+        function chkHistoryPattern(arr) {
+            let result = false
+
+            for (let i = 0; i < arr.length; i++) {
+                sp = arr[i].split('&')
+                for (let j = 0; j < sp.length; j++) {
+                    if (sp[j] == 'unlockeq') {
+                        result = true
+                        break
+                    }
+                }
+                if (result) {
+                    break
+                }
+            }
+            return result
+        }
+
+        var history = []
+        try {
+            if (document.cookie.length > 0) {
+                chistory = JSON.parse(document.cookie)
+                for (let i = 0; i < chistory.length; i++) {
+                    history.push(chistory[i])
+                }
+            }
+        } catch{
+            history = []
+        }
+        history.push(window.location)
+        while (history.length > 16) {
+            history.shift()
+        }
+        document.cookie = JSON.stringify(history)
+        window.extraContentLocked = chkHistoryPattern(history)
+    </script>
+    
     <script>
         var sUserAgent = navigator.userAgent.toLowerCase();
         var bIsIpad = sUserAgent.match(/ipad/i) == "ipad";
@@ -332,32 +372,31 @@
     </div>
     </div>
     
-    <script>
-        var onClickLinks = function(url){
-            window.location = url
-        }
-        var onClickS = function(){
-            onClickLinks("//konachan100.github.io")
-        }
-        var onClickQ = function(){
-            onClickLinks("//konachan100.github.io/q")
-        }
-        var onClickE = function(){
-            onClickLinks("//konachan100.github.io/e")
-        }
-
-    </script>
     
+
+        
     <div id="footer">
-        <div id="links">
-            
-            
-            
+        <div id="links">           
+            <div class="linkitem">
+                <button class="linkbtn" onclick="window.location='./q'">Q</button>
+            </div>
+            <div class="linkspace"></div>
+            <div class="linkitem">
+                <button class="linkbtn" onclick="window.location='./e'">E</button>
+            </div>
         </div>
     </div>
     
-
-   
+    
+    
+    
+    <script>
+        if(windows.extraContentLocked){
+            var lnk = document.getElementById('links')
+            lnk.remove()
+        }
+    </script>
+    
 
 </body>
 
