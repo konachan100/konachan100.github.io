@@ -1,39 +1,4 @@
  1 file changed, 11 insertions(+), 11 deletions(-)
-[master 652b9b42] update content
- 1 file changed, 11 insertions(+), 11 deletions(-)
-
-
-================================================================================
-2020-03-03 13:03:57
-Already up to date.
-Already up to date.
-build targets:  ['s', 'q', 'e']
- log.txt | 22 +++++++++++-----------
- 1 file changed, 11 insertions(+), 11 deletions(-)
-[master 33a983e7] update content
- 1 file changed, 11 insertions(+), 11 deletions(-)
-
-
-================================================================================
-2020-03-03 13:09:13
-Already up to date.
-Already up to date.
-build targets:  ['s', 'q', 'e']
- log.txt | 22 +++++++++++-----------
- 1 file changed, 11 insertions(+), 11 deletions(-)
-[master 19fdb068] update content
- 1 file changed, 11 insertions(+), 11 deletions(-)
-
-
-================================================================================
-2020-03-03 13:14:27
-Already up to date.
-Already up to date.
-build targets:  ['s', 'q', 'e']
- log.txt | 22 +++++++++++-----------
- 1 file changed, 11 insertions(+), 11 deletions(-)
-[master f2d452eb] update content
- 1 file changed, 11 insertions(+), 11 deletions(-)
 
 
 ================================================================================
@@ -525,4 +490,43 @@ Page refreshed
 Rendering to ../c/artist/miwabe_sakura/e/index.html
 Page refreshed
 Rendering to ../c/artist/miwabe_sakura/e/m/index.html
+Page refreshed
+ c/artist/miwabe_sakura/e/index.html | 89 ++++++++++++++++++++++++++++---------
+ c/artist/miwabe_sakura/index.html   | 85 +++++++++++++++++++++++++----------
+ c/artist/miwabe_sakura/q/index.html | 89 ++++++++++++++++++++++++++++---------
+ log.txt                             | 76 +++++++++++++++----------------
+ 4 files changed, 232 insertions(+), 107 deletions(-)
+[master ee1a6f79] update content
+ 4 files changed, 232 insertions(+), 107 deletions(-)
+
+
+================================================================================
+2020-03-03 16:01:01
+Already up to date.
+Already up to date.
+build targets:  ['s', 'q', 'e']
+Build count:  435
+Current build: Home[0], Categoary[10]
+Loading URL: http://www.konachan.net/post.json?limit=100&tags=rating:safe
+Success, decoding JSON
+Rendering to ../index.html
+Page refreshed
+Rendering to ../m/index.html
+Page refreshed
+Loading URL: http://www.konachan.net/post.json?limit=100&tags=edel_(qi--yu)
+Success, decoding JSON
+update cache file  ../c/artist/edel_(qi--yu)/cache.json
+new cache size  5
+show posts order by time, reverse
+Rendering to ../c/artist/edel_(qi--yu)/index.html
+Page refreshed
+Rendering to ../c/artist/edel_(qi--yu)/m/index.html
+Page refreshed
+Rendering to ../c/artist/edel_(qi--yu)/q/index.html
+Page refreshed
+Rendering to ../c/artist/edel_(qi--yu)/q/m/index.html
+Page refreshed
+Rendering to ../c/artist/edel_(qi--yu)/e/index.html
+Page refreshed
+Rendering to ../c/artist/edel_(qi--yu)/e/m/index.html
 Page refreshed
