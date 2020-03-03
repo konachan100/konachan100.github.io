@@ -1,20 +1,3 @@
-Rendering to ../c/scenic/e/index.html
-Page refreshed
-Rendering to ../c/scenic/e/m/index.html
-Page refreshed
- c/scenic/post.json |  2 +-
- e/index.html       |  2 +-
- e/m/index.html     |  2 +-
- log.txt            | 82 +++++++++++++++++++++++++++---------------------------
- 4 files changed, 44 insertions(+), 44 deletions(-)
-[master 58c2b0e3] update content
- 4 files changed, 44 insertions(+), 44 deletions(-)
-
-
-================================================================================
-2020-03-04 01:02:48
-Already up to date.
-Already up to date.
 build targets:  ['s', 'q', 'e']
 Build count:  531
 Current build: Home[0], Categoary[6]
@@ -510,4 +493,21 @@ Current build: Home[0], Categoary[21]
 Loading URL: http://www.konachan.net/post.json?limit=100&tags=rating:safe
 Failed, <urlopen error [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。>
 Loading URL: http://www.konachan.net/post.json?limit=100&tags=higandgk
+Failed, <urlopen error [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。>
+ log.txt | 34 +++++++++++++++++-----------------
+ 1 file changed, 17 insertions(+), 17 deletions(-)
+[master b95b6cd6] update content
+ 1 file changed, 17 insertions(+), 17 deletions(-)
+
+
+================================================================================
+2020-03-04 02:36:38
+Already up to date.
+Already up to date.
+build targets:  ['s', 'q', 'e']
+Build count:  547
+Current build: Home[1], Categoary[22]
+Loading URL: http://www.konachan.net/post.json?limit=100&tags=rating:questionable
+Failed, <urlopen error [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。>
+Loading URL: http://www.konachan.net/post.json?limit=100&tags=lium
 Failed, <urlopen error [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。>
