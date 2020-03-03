@@ -1,20 +1,3 @@
-Rendering to ../c/artist/miwabe_sakura/e/m/index.html
-Page refreshed
- c/artist/miwabe_sakura/e/index.html |   2 +-
- c/artist/miwabe_sakura/post.json    |   2 +-
- c/artist/miwabe_sakura/q/index.html |   2 +-
- index.html                          | 350 ++++++++++++++++++------------------
- log.txt                             |  72 ++++----
- m/index.html                        |  12 +-
- 6 files changed, 220 insertions(+), 220 deletions(-)
-[master 5e882d76] update content
- 6 files changed, 220 insertions(+), 220 deletions(-)
-
-
-================================================================================
-2020-03-04 01:24:57
-Already up to date.
-Already up to date.
 build targets:  ['s', 'q', 'e']
 Build count:  535
 Current build: Home[1], Categoary[10]
@@ -510,4 +493,21 @@ Current build: Home[2], Categoary[4]
 Loading URL: http://www.konachan.net/post.json?limit=100&tags=rating:explicit
 Failed, timed out
 Loading URL: http://www.konachan.net/post.json?limit=100&tags=touhou
+Failed, timed out
+ log.txt | 54 ++++++++++++++++++++----------------------------------
+ 1 file changed, 20 insertions(+), 34 deletions(-)
+[master 2574a40f] update content
+ 1 file changed, 20 insertions(+), 34 deletions(-)
+
+
+================================================================================
+2020-03-04 03:29:31
+Already up to date.
+Already up to date.
+build targets:  ['s', 'q', 'e']
+Build count:  555
+Current build: Home[0], Categoary[5]
+Loading URL: http://www.konachan.net/post.json?limit=100&tags=rating:safe
+Failed, timed out
+Loading URL: http://www.konachan.net/post.json?limit=100&tags=scenic
 Failed, timed out
