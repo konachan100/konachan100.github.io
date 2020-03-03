@@ -1,27 +1,4 @@
 Page refreshed
-Rendering to ../e/m/index.html
-Page refreshed
-Loading URL: http://www.konachan.net/post.json?limit=100&tags=sousouman
-Failed, timed out
- log.txt | 63 ++++++++++++++++++++++++---------------------------------------
- 1 file changed, 24 insertions(+), 39 deletions(-)
-[master 7e567e73] update content
- 1 file changed, 24 insertions(+), 39 deletions(-)
-
-
-================================================================================
-2020-03-03 18:28:06
-Already up to date.
-Already up to date.
-build targets:  ['s', 'q', 'e']
-Build count:  462
-Current build: Home[0], Categoary[12]
-Loading URL: http://www.konachan.net/post.json?limit=100&tags=rating:safe
-Success, decoding JSON
-Rendering to ../index.html
-Page refreshed
-Rendering to ../m/index.html
-Page refreshed
 Loading URL: http://www.konachan.net/post.json?limit=100&tags=ke-ta
 Success, decoding JSON
 update cache file  ../c/artist/ke-ta/cache.json
@@ -514,6 +491,25 @@ Page refreshed
 Rendering to ../q/m/index.html
 Page refreshed
 Loading URL: http://www.konachan.net/post.json?limit=100&tags=rating:safe
+Success, decoding JSON
+update cache file  ../c/hot/cache.json
+new cache size  675
+ log.txt | 59 +++++++++++++++++++++++------------------------------------
+ 1 file changed, 23 insertions(+), 36 deletions(-)
+[master 0b9a7b4a] update content
+ 1 file changed, 23 insertions(+), 36 deletions(-)
+
+
+================================================================================
+2020-03-03 19:44:28
+Already up to date.
+Already up to date.
+build targets:  ['s', 'q', 'e']
+Build count:  476
+Current build: Home[2], Categoary[1]
+Loading URL: http://www.konachan.net/post.json?limit=100&tags=rating:explicit
+Failed, timed out
+Loading URL: http://www.konachan.net/post.json?limit=100&tags=rating:questionable
 Success, decoding JSON
 update cache file  ../c/hot/cache.json
 new cache size  675
