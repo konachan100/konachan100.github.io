@@ -1,40 +1,4 @@
 Page refreshed
-Rendering to ../c/artist/annin_doufu/e/m/index.html
-Page refreshed
- log.txt | 53 ++++++++++++++++++++++++++++++++++++-----------------
- 1 file changed, 36 insertions(+), 17 deletions(-)
-[master e084a0ed] update content
- 1 file changed, 36 insertions(+), 17 deletions(-)
-
-
-================================================================================
-2020-03-04 15:12:22
-Already up to date.
-Already up to date.
-build targets:  ['s', 'q', 'e']
-Build count:  684
-Current build: Home[0], Categoary[9]
-Loading URL: http://www.konachan.net/post.json?limit=100&tags=rating:safe
-Success, decoding JSON
-Rendering to ../index.html
-Page refreshed
-Rendering to ../m/index.html
-Page refreshed
-Loading URL: http://www.konachan.net/post.json?limit=100&tags=miwabe_sakura
-Success, decoding JSON
-update cache file  ../c/artist/miwabe_sakura/cache.json
-new cache size  22
-show posts order by time, reverse
-Rendering to ../c/artist/miwabe_sakura/index.html
-Page refreshed
-Rendering to ../c/artist/miwabe_sakura/m/index.html
-Page refreshed
-Rendering to ../c/artist/miwabe_sakura/q/index.html
-Page refreshed
-Rendering to ../c/artist/miwabe_sakura/q/m/index.html
-Page refreshed
-Rendering to ../c/artist/miwabe_sakura/e/index.html
-Page refreshed
 Rendering to ../c/artist/miwabe_sakura/e/m/index.html
 Page refreshed
  c/artist/miwabe_sakura/e/m/index.html | 19 +++++++++
@@ -530,3 +494,26 @@ Rendering to ../c/artist/mayogii/e/index.html
 Page refreshed
 Rendering to ../c/artist/mayogii/e/m/index.html
 Page refreshed
+ log.txt | 57 ++++++++++++++++++++++++++++++++++++---------------------
+ 1 file changed, 36 insertions(+), 21 deletions(-)
+[master f766f7d0] update content
+ 1 file changed, 36 insertions(+), 21 deletions(-)
+
+
+================================================================================
+2020-03-04 16:41:53
+Already up to date.
+Already up to date.
+build targets:  ['s', 'q', 'e']
+Build count:  700
+Current build: Home[1], Categoary[0]
+Loading URL: http://www.konachan.net/post.json?limit=100&tags=rating:questionable
+Success, decoding JSON
+Rendering to ../q/index.html
+Page refreshed
+Rendering to ../q/m/index.html
+Page refreshed
+Loading URL: http://www.konachan.net/post.json?limit=100&tags=rating:safe
+Success, decoding JSON
+update cache file  ../c/hot/cache.json
+new cache size  714
