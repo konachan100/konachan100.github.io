@@ -1,40 +1,3 @@
-[master b5f46901] update content
- 7 files changed, 243 insertions(+), 138 deletions(-)
-
-
-================================================================================
-2020-03-04 11:09:56
-Already up to date.
-Already up to date.
-build targets:  ['s', 'q', 'e']
-Build count:  640
-Current build: Home[1], Categoary[15]
-Loading URL: http://www.konachan.net/post.json?limit=100&tags=rating:questionable
-Success, decoding JSON
-Rendering to ../q/index.html
-Page refreshed
-Rendering to ../q/m/index.html
-Page refreshed
-Loading URL: http://www.konachan.net/post.json?limit=100&tags=miyase_mahiro
-Success, decoding JSON
-update cache file  ../c/artist/miyase_mahiro/cache.json
-new cache size  43
-show posts order by time, reverse
-Rendering to ../c/artist/miyase_mahiro/index.html
-Page refreshed
-Rendering to ../c/artist/miyase_mahiro/m/index.html
-Page refreshed
-Rendering to ../c/artist/miyase_mahiro/q/index.html
-Page refreshed
-Rendering to ../c/artist/miyase_mahiro/q/m/index.html
-Page refreshed
-Rendering to ../c/artist/miyase_mahiro/e/index.html
-Page refreshed
-Rendering to ../c/artist/miyase_mahiro/e/m/index.html
-Page refreshed
- c/artist/miyase_mahiro/e/m/index.html | 88 ++++++++++++++++++++++++++---------
- c/artist/miyase_mahiro/e/post.json    |  2 +-
- c/artist/miyase_mahiro/m/index.html   | 88 ++++++++++++++++++++++++++---------
  c/artist/miyase_mahiro/post.json      |  2 +-
  c/artist/miyase_mahiro/q/m/index.html | 88 ++++++++++++++++++++++++++---------
  c/artist/miyase_mahiro/q/post.json    |  2 +-
@@ -529,4 +492,41 @@ Page refreshed
 Rendering to ../c/scenic/e/index.html
 Page refreshed
 Rendering to ../c/scenic/e/m/index.html
+Page refreshed
+ c/scenic/post.json |  2 +-
+ log.txt            | 57 ++++++++++++++++++++++++++++++++++--------------------
+ 2 files changed, 37 insertions(+), 22 deletions(-)
+[master 1c5dabbd] update content
+ 2 files changed, 37 insertions(+), 22 deletions(-)
+
+
+================================================================================
+2020-03-04 12:36:56
+Already up to date.
+Already up to date.
+build targets:  ['s', 'q', 'e']
+Build count:  656
+Current build: Home[2], Categoary[6]
+Loading URL: http://www.konachan.net/post.json?limit=100&tags=rating:explicit
+Success, decoding JSON
+Rendering to ../e/index.html
+Page refreshed
+Rendering to ../e/m/index.html
+Page refreshed
+Loading URL: http://www.konachan.net/post.json?limit=100&tags=natsumoka
+Success, decoding JSON
+update cache file  ../c/artist/natsumoka/cache.json
+new cache size  20
+show posts order by time, reverse
+Rendering to ../c/artist/natsumoka/index.html
+Page refreshed
+Rendering to ../c/artist/natsumoka/m/index.html
+Page refreshed
+Rendering to ../c/artist/natsumoka/q/index.html
+Page refreshed
+Rendering to ../c/artist/natsumoka/q/m/index.html
+Page refreshed
+Rendering to ../c/artist/natsumoka/e/index.html
+Page refreshed
+Rendering to ../c/artist/natsumoka/e/m/index.html
 Page refreshed
