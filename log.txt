@@ -1,44 +1,3 @@
- c/artist/kino_(kino_konomi)/q/m/index.html | 33 +++---------
- log.txt                                    | 84 +++++++++++++++---------------
- 4 files changed, 63 insertions(+), 120 deletions(-)
-[master b8c634f0] update content
- 4 files changed, 63 insertions(+), 120 deletions(-)
-
-
-================================================================================
-2020-03-04 11:20:43
-Already up to date.
-Already up to date.
-build targets:  ['s', 'q', 'e']
-Build count:  642
-Current build: Home[0], Categoary[17]
-Loading URL: http://www.konachan.net/post.json?limit=100&tags=rating:safe
-Success, decoding JSON
-Rendering to ../index.html
-Page refreshed
-Rendering to ../m/index.html
-Page refreshed
-Loading URL: http://www.konachan.net/post.json?limit=100&tags=ryo
-Success, decoding JSON
-update cache file  ../c/artist/ryo/cache.json
-new cache size  55
-show posts order by time, reverse
-Rendering to ../c/artist/ryo/index.html
-Page refreshed
-Rendering to ../c/artist/ryo/m/index.html
-Page refreshed
-Rendering to ../c/artist/ryo/q/index.html
-Page refreshed
-Rendering to ../c/artist/ryo/q/m/index.html
-Page refreshed
-Rendering to ../c/artist/ryo/e/index.html
-Page refreshed
-Rendering to ../c/artist/ryo/e/m/index.html
-Page refreshed
- log.txt | 78 ++++++++++++++++++++++++++++++++---------------------------------
- 1 file changed, 39 insertions(+), 39 deletions(-)
-[master 834d8fbd] update content
- 1 file changed, 39 insertions(+), 39 deletions(-)
 
 
 ================================================================================
@@ -529,4 +488,45 @@ Page refreshed
 Rendering to ../c/artist/anmi/e/index.html
 Page refreshed
 Rendering to ../c/artist/anmi/e/m/index.html
+Page refreshed
+ c/artist/anmi/e/m/index.html | 19 ++++++++++
+ c/artist/anmi/m/index.html   | 25 ++++++++++----
+ c/artist/anmi/post.json      |  6 ++--
+ c/artist/anmi/q/m/index.html | 19 ++++++++++
+ log.txt                      | 82 ++++++++++++++++++++++----------------------
+ m/index.html                 | 25 ++++++++++----
+ 6 files changed, 120 insertions(+), 56 deletions(-)
+[master 1805e409] update content
+ 6 files changed, 120 insertions(+), 56 deletions(-)
+
+
+================================================================================
+2020-03-04 12:47:46
+Already up to date.
+Already up to date.
+build targets:  ['s', 'q', 'e']
+Build count:  658
+Current build: Home[1], Categoary[8]
+Loading URL: http://www.konachan.net/post.json?limit=100&tags=rating:questionable
+Success, decoding JSON
+Rendering to ../q/index.html
+Page refreshed
+Rendering to ../q/m/index.html
+Page refreshed
+Loading URL: http://www.konachan.net/post.json?limit=100&tags=annin_doufu
+Success, decoding JSON
+update cache file  ../c/artist/annin_doufu/cache.json
+new cache size  200
+show posts order by time, reverse
+Rendering to ../c/artist/annin_doufu/index.html
+Page refreshed
+Rendering to ../c/artist/annin_doufu/m/index.html
+Page refreshed
+Rendering to ../c/artist/annin_doufu/q/index.html
+Page refreshed
+Rendering to ../c/artist/annin_doufu/q/m/index.html
+Page refreshed
+Rendering to ../c/artist/annin_doufu/e/index.html
+Page refreshed
+Rendering to ../c/artist/annin_doufu/e/m/index.html
 Page refreshed
