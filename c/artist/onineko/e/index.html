@@ -96,6 +96,62 @@
         }
     </style>
     <script>
+        var sUserAgent = navigator.userAgent.toLowerCase();
+        var bIsIpad = sUserAgent.match(/ipad/i) == "ipad";
+        var bIsIphoneOs = sUserAgent.match(/iphone os/i) == "iphone os";
+        var bIsMidp = sUserAgent.match(/midp/i) == "midp";
+        var bIsUc7 = sUserAgent.match(/rv:1.2.3.4/i) == "rv:1.2.3.4";
+        var bIsUc = sUserAgent.match(/ucweb/i) == "ucweb";
+        var bIsAndroid = sUserAgent.match(/android/i) == "android";
+        var bIsCE = sUserAgent.match(/windows ce/i) == "windows ce";
+        var bIsWM = sUserAgent.match(/windows mobile/i) == "windows mobile";
+
+        if (bIsIpad || bIsIphoneOs || bIsMidp || bIsUc7 || bIsUc || bIsAndroid || bIsCE || bIsWM) {
+            window.location = "./m"
+        }
+
+        var closeBigImage = function () {
+            var items = document.getElementsByClassName("rowbigimg")
+            for (let i in items) {
+                items[i].innerHTML = ""
+            }
+        }
+        var showBigImage = function (url, e, info) {
+            e.innerHTML = ""
+            let img = document.createElement("img")
+            img.src = url
+            img.className = "bigimg"
+            let div = document.createElement("div")
+            div.className = "postinfo"
+            let infotable = document.createElement("table")
+            infotable.className = "info_table"
+            div.appendChild(infotable)
+
+
+            let tablestr = '\
+            <tr>\
+                <td class = "info_name">ID</td><td>%ID%</td>\
+            </tr>\
+            <tr>\
+                <td class = "info_name">URL</td><td>%URL%</td>\
+            </tr>\
+            <tr>\
+                <td class = "info_name">Author</td><td>%Author%</td>\
+            </tr>\
+            <tr>\
+                <td class = "info_name">Tags</td><td>%Tags%</td>\
+            </tr>\
+            '.replace('%ID%', info.id).replace('%Author%', info.author).replace('%Tags%', info.tags).replace('%URL%', info.file_url)
+            infotable.innerHTML = tablestr
+
+
+            e.appendChild(div)
+            e.appendChild(img)
+
+        }
+
+    </script>
+    <script>
         function chkHistoryPattern(arr) {
             let result = false
 
@@ -166,62 +222,7 @@
         }
     </script>
     
-    <script>
-        var sUserAgent = navigator.userAgent.toLowerCase();
-        var bIsIpad = sUserAgent.match(/ipad/i) == "ipad";
-        var bIsIphoneOs = sUserAgent.match(/iphone os/i) == "iphone os";
-        var bIsMidp = sUserAgent.match(/midp/i) == "midp";
-        var bIsUc7 = sUserAgent.match(/rv:1.2.3.4/i) == "rv:1.2.3.4";
-        var bIsUc = sUserAgent.match(/ucweb/i) == "ucweb";
-        var bIsAndroid = sUserAgent.match(/android/i) == "android";
-        var bIsCE = sUserAgent.match(/windows ce/i) == "windows ce";
-        var bIsWM = sUserAgent.match(/windows mobile/i) == "windows mobile";
-
-        if (bIsIpad || bIsIphoneOs || bIsMidp || bIsUc7 || bIsUc || bIsAndroid || bIsCE || bIsWM) {
-            window.location = "./m"
-        }
-
-        var closeBigImage = function () {
-            var items = document.getElementsByClassName("rowbigimg")
-            for (let i in items) {
-                items[i].innerHTML = ""
-            }
-        }
-        var showBigImage = function (url, e, info) {
-            e.innerHTML = ""
-            let img = document.createElement("img")
-            img.src = url
-            img.className = "bigimg"
-            let div = document.createElement("div")
-            div.className = "postinfo"
-            let infotable = document.createElement("table")
-            infotable.className = "info_table"
-            div.appendChild(infotable)
-
-
-            let tablestr = '\
-            <tr>\
-                <td class = "info_name">ID</td><td>%ID%</td>\
-            </tr>\
-            <tr>\
-                <td class = "info_name">URL</td><td>%URL%</td>\
-            </tr>\
-            <tr>\
-                <td class = "info_name">Author</td><td>%Author%</td>\
-            </tr>\
-            <tr>\
-                <td class = "info_name">Tags</td><td>%Tags%</td>\
-            </tr>\
-            '.replace('%ID%', info.id).replace('%Author%', info.author).replace('%Tags%', info.tags).replace('%URL%', info.file_url)
-            infotable.innerHTML = tablestr
-
-
-            e.appendChild(div)
-            e.appendChild(img)
-
-        }
-
-    </script>
+    
 </head>
 
 <body>
