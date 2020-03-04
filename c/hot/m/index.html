@@ -71,6 +71,69 @@
             font-size: 4rem;
         }
     </style>
+    <script>
+        function chkHistoryPattern(arr) {
+            let result = false
+
+            for (let i = 0; i < arr.length; i++) {
+                sp = arr[i].split('?')
+                if (sp.length > 1) {
+                    sp = sp[1].split('&')
+                    for (let j = 0; j < sp.length; j++) {
+                        if (sp[j] == 'unlockeq') {
+                            result = true
+                            break
+                        }
+                    }
+                    if (result) {
+                        break
+                    }
+                }
+            }
+            return result
+        }
+
+        function readCookieCfg() {
+            var sp = document.cookie.split(';')
+            for (let i = 0; i < sp.length; i++) {
+                var sp2 = sp[i].trim().split('=')
+                if (sp2.length > 1) {
+                    if (sp2[0] == 'url_visited') {
+                        try {
+                            ret = JSON.parse(sp2[1])
+                            return ret
+                        }
+                        catch{
+                            return []
+                        }
+                    }
+                }
+            }
+            return []
+        }
+
+        function writeCookieCfg(cfg) {
+            document.cookie = "url_visited=" + JSON.stringify(cfg)
+        }
+
+
+        var url_visited = readCookieCfg()
+
+        url_visited.push(window.location.href)
+        while (url_visited.length > 16) {
+            url_visited.shift()
+        }
+        writeCookieCfg(url_visited)
+        window.extraContentUnlocked = chkHistoryPattern(url_visited)
+    </script>
+    
+    <script>
+        if (window.extraContentUnlocked != true) {
+            window.location = '/'
+        }
+    </script>
+    
+
 </head>
 
 <body>
@@ -143,6 +206,12 @@
     </div>
     
     <div class="img_frame">
+        <a href="https://konachan.net/image/390cdf3159ef712e820d2b2f9d3295ea/Konachan.com%20-%20302040%20bed%20bra%20flowers%20gloves%20miyase_mahiro%20panties%20remilia_scarlet%20rose%20short_hair%20touhou%20underwear%20vampire%20waifu2x%20wings.png" target="_blank">
+            <img class="post_img" src="https://konachan.net/data/preview/39/0c/390cdf3159ef712e820d2b2f9d3295ea.jpg">
+        </a>
+    </div>
+    
+    <div class="img_frame">
         <a href="https://konachan.net/image/179b49271073ddad00bc1e0828c64559/Konachan.com%20-%20301959%20animal_ears%20ass%20bell%20breasts%20brown_eyes%20brown_hair%20catgirl%20cleavage%20fang%20heart%20karory%20long_hair%20original%20ribbons%20scan%20tail%20thighhighs.png" target="_blank">
             <img class="post_img" src="https://konachan.net/data/preview/17/9b/179b49271073ddad00bc1e0828c64559.jpg">
         </a>
@@ -157,12 +226,6 @@
     <div class="img_frame">
         <a href="https://konachan.net/image/45701522f2f67b8bd61c980085774965/Konachan.com%20-%20301597%20ass%20bed%20blush%20bow%20braids%20flowers%20long_hair%20original%20pantyhose%20purple_hair%20scan%20sousouman%20yellow_eyes.png" target="_blank">
             <img class="post_img" src="https://konachan.net/data/preview/45/70/45701522f2f67b8bd61c980085774965.jpg">
-        </a>
-    </div>
-    
-    <div class="img_frame">
-        <a href="https://konachan.net/image/390cdf3159ef712e820d2b2f9d3295ea/Konachan.com%20-%20302040%20bed%20bra%20flowers%20gloves%20miyase_mahiro%20panties%20remilia_scarlet%20rose%20short_hair%20touhou%20underwear%20vampire%20waifu2x%20wings.png" target="_blank">
-            <img class="post_img" src="https://konachan.net/data/preview/39/0c/390cdf3159ef712e820d2b2f9d3295ea.jpg">
         </a>
     </div>
     
@@ -317,6 +380,12 @@
     </div>
     
     <div class="img_frame">
+        <a href="https://konachan.net/image/cae2aee31683f54ef232e276604c8fa3/Konachan.com%20-%20302037%20blush%20breast_hold%20brown_hair%20long_hair%20nedia_r%20original%20pink_eyes%20ponytail%20white.png" target="_blank">
+            <img class="post_img" src="https://konachan.net/data/preview/ca/e2/cae2aee31683f54ef232e276604c8fa3.jpg">
+        </a>
+    </div>
+    
+    <div class="img_frame">
         <a href="https://konachan.net/image/1bce02e03a0fd7f69cb27b52162a5ccb/Konachan.com%20-%20301971%20blush%20bra%20close%20honyang%20long_hair%20original%20pink_hair%20purple_eyes%20underwear.png" target="_blank">
             <img class="post_img" src="https://konachan.net/data/preview/1b/ce/1bce02e03a0fd7f69cb27b52162a5ccb.jpg">
         </a>
@@ -371,12 +440,6 @@
     </div>
     
     <div class="img_frame">
-        <a href="https://konachan.net/image/cae2aee31683f54ef232e276604c8fa3/Konachan.com%20-%20302037%20blush%20breast_hold%20brown_hair%20long_hair%20nedia_r%20original%20pink_eyes%20ponytail%20white.png" target="_blank">
-            <img class="post_img" src="https://konachan.net/data/preview/ca/e2/cae2aee31683f54ef232e276604c8fa3.jpg">
-        </a>
-    </div>
-    
-    <div class="img_frame">
         <a href="https://konachan.net/image/cb2ffdffefc6f006f0d4b0dae0f0b13b/Konachan.com%20-%20301739%20100wang%20breasts%20cleavage%20erect_nipples%20long_hair%20original%20purple_eyes%20purple_hair.png" target="_blank">
             <img class="post_img" src="https://konachan.net/data/preview/cb/2f/cb2ffdffefc6f006f0d4b0dae0f0b13b.jpg">
         </a>
@@ -385,6 +448,12 @@
     <div class="img_frame">
         <a href="https://konachan.net/image/cd5fd8a0d002bbc99310a33e04331369/Konachan.com%20-%20301798%20animal%20ass%20barefoot%20blush%20braids%20cat%20catgirl%20chibi%20cosplay%20couch%20hat%20long_hair%20mirror%20mwwhxl%20original%20ponytail%20shorts%20stairs%20tail%20waifu2x%20watermark.png" target="_blank">
             <img class="post_img" src="https://konachan.net/data/preview/cd/5f/cd5fd8a0d002bbc99310a33e04331369.jpg">
+        </a>
+    </div>
+    
+    <div class="img_frame">
+        <a href="https://konachan.net/image/125af06a1b0cef56218bc94343cf1d30/Konachan.com%20-%20302036%20aqua_eyes%20aqua_hair%20breasts%20cleavage%20long_hair%20maid%20rem_%28re%3Azero%29%20re%3Azero_kara_hajimeru_isekai_seikatsu%20r_o_ha%20water.png" target="_blank">
+            <img class="post_img" src="https://konachan.net/data/preview/12/5a/125af06a1b0cef56218bc94343cf1d30.jpg">
         </a>
     </div>
     
@@ -407,6 +476,12 @@
     </div>
     
     <div class="img_frame">
+        <a href="https://konachan.net/image/2fa18348739047b8c6a6142cf5b6a2fe/Konachan.com%20-%20302047%202girls%20animal%20anmi%20ass%20bird%20bra%20cropped%20drink%20long_hair%20original%20scan%20see_through%20skirt%20underwear%20white.png" target="_blank">
+            <img class="post_img" src="https://konachan.net/data/preview/2f/a1/2fa18348739047b8c6a6142cf5b6a2fe.jpg">
+        </a>
+    </div>
+    
+    <div class="img_frame">
         <a href="https://konachan.net/image/33ca56bec71d991f609cb98507b51ab4/Konachan.com%20-%20302018%20acidear%20black_hair%20bow%20bubbles%20cross%20goth-loli%20headdress%20lolita_fashion%20long_hair%20navel%20original%20red_eyes%20twintails.png" target="_blank">
             <img class="post_img" src="https://konachan.net/data/preview/33/ca/33ca56bec71d991f609cb98507b51ab4.jpg">
         </a>
@@ -425,12 +500,6 @@
     </div>
     
     <div class="img_frame">
-        <a href="https://konachan.net/image/125af06a1b0cef56218bc94343cf1d30/Konachan.com%20-%20302036%20aqua_eyes%20aqua_hair%20breasts%20cleavage%20long_hair%20maid%20rem_%28re%3Azero%29%20re%3Azero_kara_hajimeru_isekai_seikatsu%20r_o_ha%20water.png" target="_blank">
-            <img class="post_img" src="https://konachan.net/data/preview/12/5a/125af06a1b0cef56218bc94343cf1d30.jpg">
-        </a>
-    </div>
-    
-    <div class="img_frame">
         <a href="https://konachan.net/image/db17ac25b32cd643836fe4b1e72c89f3/Konachan.com%20-%20301913%20animal_ears%20arknights%20brown_hair%20dai_nikucho%20eyjafjalla_%28arknights%29%20horns%20long_hair%20purple_eyes%20spear%20weapon.png" target="_blank">
             <img class="post_img" src="https://konachan.net/data/preview/db/17/db17ac25b32cd643836fe4b1e72c89f3.jpg">
         </a>
@@ -439,12 +508,6 @@
     <div class="img_frame">
         <a href="https://konachan.net/image/5a3818f9a7b216bea7dc96ad2c720e1c/Konachan.com%20-%20301652%20amashiro_natsuki%20animal_ears%20aqua_eyes%20catgirl%20food%20gray_hair%20heart%20hoodie%20nacho_neko%20original%20sketch%20skirt%20socks%20tail%20white.png" target="_blank">
             <img class="post_img" src="https://konachan.net/data/preview/5a/38/5a3818f9a7b216bea7dc96ad2c720e1c.jpg">
-        </a>
-    </div>
-    
-    <div class="img_frame">
-        <a href="https://konachan.net/image/2fa18348739047b8c6a6142cf5b6a2fe/Konachan.com%20-%20302047%202girls%20animal%20anmi%20ass%20bird%20bra%20cropped%20drink%20long_hair%20original%20scan%20see_through%20skirt%20underwear%20white.png" target="_blank">
-            <img class="post_img" src="https://konachan.net/data/preview/2f/a1/2fa18348739047b8c6a6142cf5b6a2fe.jpg">
         </a>
     </div>
     
@@ -653,6 +716,12 @@
     </div>
     
     <div class="img_frame">
+        <a href="https://konachan.net/image/d6c72c9c9e8cb0305ffbd5b3ba63d428/Konachan.com%20-%20302063%20aliasing%20animal%20blue_eyes%20blue_hair%20blush%20breasts%20cameltoe%20cat%20cleavage%20gray_hair%20headband%20jurrig%20leotard%20long_hair%20navel%20pink_hair%20puck%20white.jpg" target="_blank">
+            <img class="post_img" src="https://konachan.net/data/preview/d6/c7/d6c72c9c9e8cb0305ffbd5b3ba63d428.jpg">
+        </a>
+    </div>
+    
+    <div class="img_frame">
         <a href="https://konachan.net/image/89b9bea476a7b0acb25f8da06a965b27/Konachan.com%20-%20301874%20arknights%20blush%20breasts%20brown_eyes%20cleavage%20gray_hair%20horns%20liskam_%28arknights%29%20long_hair%20panties%20tagme_%28artist%29%20thighhighs%20underwear.png" target="_blank">
             <img class="post_img" src="https://konachan.net/data/preview/89/b9/89b9bea476a7b0acb25f8da06a965b27.jpg">
         </a>
@@ -670,37 +739,12 @@
         </a>
     </div>
     
-    <div class="img_frame">
-        <a href="https://konachan.net/image/003039dc96972d9ab8b3c975a5c8ede2/Konachan.com%20-%20301960%20blue_eyes%20breast_hold%20breasts%20brown_hair%20cleavage%20close%20go-toubun_no_hanayome%20headdress%20headphones%20karory%20long_hair%20nakano_miku%20scan%20wedding_attire.png" target="_blank">
-            <img class="post_img" src="https://konachan.net/data/preview/00/30/003039dc96972d9ab8b3c975a5c8ede2.jpg">
-        </a>
-    </div>
-    
 
-    <script>
-        var onClickLinks = function (url) {
-            window.location = url
-        }
-        var onClickS = function () {
-            onClickLinks("//konachan100.github.io")
-        }
-        var onClickQ = function () {
-            onClickLinks("//konachan100.github.io/q")
-        }
-        var onClickE = function () {
-            onClickLinks("//konachan100.github.io/e")
-        }
-
-    </script>
+   
 
     
-    <div id="footer">
-        <div id="links">
-            
-            
-            
-        </div>
-    </div>
+    
+    
     
 </body>
 
