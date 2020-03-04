@@ -1,42 +1,6 @@
 
 
 ================================================================================
-2020-03-04 18:38:51
-Already up to date.
-Already up to date.
-build targets:  ['s', 'q', 'e']
-Build count:  721
-Current build: Home[1], Categoary[21]
-Loading URL: http://www.konachan.net/post.json?limit=100&tags=rating:questionable
-Success, decoding JSON
-Rendering to ../q/index.html
-Page refreshed
-Rendering to ../q/m/index.html
-Page refreshed
-Loading URL: http://www.konachan.net/post.json?limit=100&tags=higandgk
-Success, decoding JSON
-update cache file  ../c/artist/higandgk/cache.json
-new cache size  23
-show posts order by time, reverse
-Rendering to ../c/artist/higandgk/index.html
-Page refreshed
-Rendering to ../c/artist/higandgk/m/index.html
-Page refreshed
-Rendering to ../c/artist/higandgk/q/index.html
-Page refreshed
-Rendering to ../c/artist/higandgk/q/m/index.html
-Page refreshed
-Rendering to ../c/artist/higandgk/e/index.html
-Page refreshed
-Rendering to ../c/artist/higandgk/e/m/index.html
-Page refreshed
- log.txt | 72 ++++++++++++++++++++++++++++++++---------------------------------
- 1 file changed, 36 insertions(+), 36 deletions(-)
-[master ac16e32e] update content
- 1 file changed, 36 insertions(+), 36 deletions(-)
-
-
-================================================================================
 2020-03-04 18:44:15
 Already up to date.
 Already up to date.
@@ -529,4 +493,40 @@ Page refreshed
 Rendering to ../c/artist/sousouman/e/index.html
 Page refreshed
 Rendering to ../c/artist/sousouman/e/m/index.html
+Page refreshed
+ log.txt | 72 ++++++++++++++++++++++++++++++++---------------------------------
+ 1 file changed, 36 insertions(+), 36 deletions(-)
+[master b9dba55d] update content
+ 1 file changed, 36 insertions(+), 36 deletions(-)
+
+
+================================================================================
+2020-03-04 20:10:20
+Already up to date.
+Already up to date.
+build targets:  ['s', 'q', 'e']
+Build count:  737
+Current build: Home[2], Categoary[12]
+Loading URL: http://www.konachan.net/post.json?limit=100&tags=rating:explicit
+Success, decoding JSON
+Rendering to ../e/index.html
+Page refreshed
+Rendering to ../e/m/index.html
+Page refreshed
+Loading URL: http://www.konachan.net/post.json?limit=100&tags=ke-ta
+Success, decoding JSON
+update cache file  ../c/artist/ke-ta/cache.json
+new cache size  198
+show posts order by time, reverse
+Rendering to ../c/artist/ke-ta/index.html
+Page refreshed
+Rendering to ../c/artist/ke-ta/m/index.html
+Page refreshed
+Rendering to ../c/artist/ke-ta/q/index.html
+Page refreshed
+Rendering to ../c/artist/ke-ta/q/m/index.html
+Page refreshed
+Rendering to ../c/artist/ke-ta/e/index.html
+Page refreshed
+Rendering to ../c/artist/ke-ta/e/m/index.html
 Page refreshed
