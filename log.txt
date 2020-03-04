@@ -1,40 +1,4 @@
 Page refreshed
-Rendering to ../c/hot/m/index.html
-Page refreshed
-Rendering to ../c/hot/q/index.html
-Page refreshed
-Rendering to ../c/hot/q/m/index.html
-Page refreshed
-Rendering to ../c/hot/e/index.html
-Page refreshed
-Rendering to ../c/hot/e/m/index.html
-Page refreshed
- c/hot/e/index.html   | 190 +++++-----
- c/hot/e/m/index.html | 143 ++++----
- c/hot/e/post.json    | 962 +++++++++++++++++++++++++--------------------------
- c/hot/index.html     | 198 +++++------
- c/hot/m/index.html   |  97 +++---
- c/hot/post.json      | 506 +++++++++++++--------------
- c/hot/q/index.html   | 142 ++++----
- c/hot/q/m/index.html | 119 ++++---
- c/hot/q/post.json    | 696 ++++++++++++++++++-------------------
- log.txt              |  54 ++-
- 10 files changed, 1587 insertions(+), 1520 deletions(-)
-[master 233edff4] update content
- 10 files changed, 1587 insertions(+), 1520 deletions(-)
-
-
-================================================================================
-2020-03-04 14:43:26
-Already up to date.
-Already up to date.
-build targets:  ['s', 'q', 'e']
-Build count:  679
-Current build: Home[1], Categoary[4]
-Loading URL: http://www.konachan.net/post.json?limit=100&tags=rating:questionable
-Success, decoding JSON
-Rendering to ../q/index.html
-Page refreshed
 Rendering to ../q/m/index.html
 Page refreshed
 Loading URL: http://www.konachan.net/post.json?limit=100&tags=touhou
@@ -529,4 +493,40 @@ Page refreshed
 Rendering to ../c/artist/hiten_goane_ryu/e/index.html
 Page refreshed
 Rendering to ../c/artist/hiten_goane_ryu/e/m/index.html
+Page refreshed
+ log.txt | 72 ++++++++++++++++++++++++++++++++---------------------------------
+ 1 file changed, 36 insertions(+), 36 deletions(-)
+[master e5288009] update content
+ 1 file changed, 36 insertions(+), 36 deletions(-)
+
+
+================================================================================
+2020-03-04 16:14:30
+Already up to date.
+Already up to date.
+build targets:  ['s', 'q', 'e']
+Build count:  695
+Current build: Home[2], Categoary[20]
+Loading URL: http://www.konachan.net/post.json?limit=100&tags=rating:explicit
+Success, decoding JSON
+Rendering to ../e/index.html
+Page refreshed
+Rendering to ../e/m/index.html
+Page refreshed
+Loading URL: http://www.konachan.net/post.json?limit=100&tags=fujisaki_hikari
+Success, decoding JSON
+update cache file  ../c/artist/fujisaki_hikari/cache.json
+new cache size  31
+show posts order by time, reverse
+Rendering to ../c/artist/fujisaki_hikari/index.html
+Page refreshed
+Rendering to ../c/artist/fujisaki_hikari/m/index.html
+Page refreshed
+Rendering to ../c/artist/fujisaki_hikari/q/index.html
+Page refreshed
+Rendering to ../c/artist/fujisaki_hikari/q/m/index.html
+Page refreshed
+Rendering to ../c/artist/fujisaki_hikari/e/index.html
+Page refreshed
+Rendering to ../c/artist/fujisaki_hikari/e/m/index.html
 Page refreshed
