@@ -1,44 +1,3 @@
-Page refreshed
-Rendering to ../c/touhou/q/index.html
-Page refreshed
-Rendering to ../c/touhou/q/m/index.html
-Page refreshed
-Rendering to ../c/touhou/e/index.html
-Page refreshed
-Rendering to ../c/touhou/e/m/index.html
-Page refreshed
- log.txt | 83 +++++++++++++++++++++++++++++++++--------------------------------
- 1 file changed, 42 insertions(+), 41 deletions(-)
-[master 432ea16c] update content
- 1 file changed, 42 insertions(+), 41 deletions(-)
-
-
-================================================================================
-2020-03-04 19:31:51
-Already up to date.
-Already up to date.
-build targets:  ['s', 'q', 'e']
-Build count:  730
-Current build: Home[1], Categoary[5]
-Loading URL: http://www.konachan.net/post.json?limit=100&tags=rating:questionable
-Success, decoding JSON
-Rendering to ../q/index.html
-Page refreshed
-Rendering to ../q/m/index.html
-Page refreshed
-Loading URL: http://www.konachan.net/post.json?limit=100&tags=scenic
-Success, decoding JSON
-update cache file  ../c/scenic/cache.json
-new cache size  104
-show posts order by time, reverse
-Rendering to ../c/scenic/index.html
-Page refreshed
-Rendering to ../c/scenic/m/index.html
-Page refreshed
-Rendering to ../c/scenic/q/index.html
-Page refreshed
-Rendering to ../c/scenic/q/m/index.html
-Page refreshed
 Rendering to ../c/scenic/e/index.html
 Page refreshed
 Rendering to ../c/scenic/e/m/index.html
@@ -530,3 +489,25 @@ Rendering to ../c/artist/fujisaki_hikari/e/index.html
 Page refreshed
 Rendering to ../c/artist/fujisaki_hikari/e/m/index.html
 Page refreshed
+ c/artist/fujisaki_hikari/e/index.html |  23 +--
+ c/artist/fujisaki_hikari/index.html   |  23 +--
+ c/artist/fujisaki_hikari/q/index.html |  23 +--
+ log.txt                               |  80 ++++----
+ q/index.html                          | 373 ++++++++++++++++------------------
+ q/m/index.html                        |  12 +-
+ 6 files changed, 241 insertions(+), 293 deletions(-)
+[master d225827c] update content
+ 6 files changed, 241 insertions(+), 293 deletions(-)
+
+
+================================================================================
+2020-03-04 21:02:33
+Already up to date.
+Already up to date.
+build targets:  ['s', 'q', 'e']
+Build count:  746
+Current build: Home[2], Categoary[21]
+Loading URL: http://www.konachan.net/post.json?limit=100&tags=rating:explicit
+Failed, timed out
+Loading URL: http://www.konachan.net/post.json?limit=100&tags=higandgk
+Failed, timed out
