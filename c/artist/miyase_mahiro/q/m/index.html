@@ -95,35 +95,22 @@
 
         function readCookieCfg() {
             var sp = document.cookie.split(';')
+            var result = []
             for (let i = 0; i < sp.length; i++) {
                 var sp2 = sp[i].trim().split('=')
                 if (sp2.length > 1) {
-                    if (sp2[0] == 'url_visited') {
-                        try {
-                            ret = JSON.parse(sp2[1])
-                            return ret
-                        }
-                        catch{
-                            return []
-                        }
+                    if (sp2[1] == 'k100_visited') {
+                        result.push(sp2[0])
                     }
                 }
             }
-            return []
+            return result
         }
 
-        function writeCookieCfg(cfg) {
-            document.cookie = "url_visited=" + JSON.stringify(cfg)
-        }
-
+        document.cookie = window.location.href+'=k100_visited'
 
         var url_visited = readCookieCfg()
-
-        url_visited.push(window.location.href)
-        while (url_visited.length > 16) {
-            url_visited.shift()
-        }
-        writeCookieCfg(url_visited)
+        
         window.extraContentUnlocked = chkHistoryPattern(url_visited)
     </script>
     
