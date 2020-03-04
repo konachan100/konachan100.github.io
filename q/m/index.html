@@ -113,12 +113,12 @@
         }
 
         function writeCookieCfg(cfg) {
-            document.cookie = "url_visited="+JSON.stringify(cfg)
+            document.cookie = "url_visited=" + JSON.stringify(cfg)
         }
 
 
         var url_visited = readCookieCfg()
-        
+
         url_visited.push(window.location.href)
         while (url_visited.length > 16) {
             url_visited.shift()
@@ -128,12 +128,12 @@
     </script>
     
     <script>
-        if (window.extraContentUnlocked!=true) {
+        if (window.extraContentUnlocked != true) {
             window.location = '/'
         }
     </script>
     
-  
+
 </head>
 
 <body>
@@ -740,30 +740,11 @@
     </div>
     
 
-    <script>
-        var onClickLinks = function (url) {
-            window.location = url
-        }
-        var onClickS = function () {
-            onClickLinks("//konachan100.github.io")
-        }
-        var onClickQ = function () {
-            onClickLinks("//konachan100.github.io/q")
-        }
-        var onClickE = function () {
-            onClickLinks("//konachan100.github.io/e")
-        }
-
-    </script>
+   
 
     
-    <div id="footer">
-        <div id="links">
-            
-            
-            
-        </div>
-    </div>
+    
+    
     
 </body>
 
