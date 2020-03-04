@@ -1,40 +1,4 @@
 Page refreshed
-Rendering to ../c/artist/annin_doufu/q/index.html
-Page refreshed
-Rendering to ../c/artist/annin_doufu/q/m/index.html
-Page refreshed
-Rendering to ../c/artist/annin_doufu/e/index.html
-Page refreshed
-Rendering to ../c/artist/annin_doufu/e/m/index.html
-Page refreshed
- log.txt | 57 ++++++++++++++++++++++++++++++++++++---------------------
- 1 file changed, 36 insertions(+), 21 deletions(-)
-[master 19aad0a5] update content
- 1 file changed, 36 insertions(+), 21 deletions(-)
-
-
-================================================================================
-2020-03-04 17:31:32
-Already up to date.
-Already up to date.
-build targets:  ['s', 'q', 'e']
-Build count:  709
-Current build: Home[1], Categoary[9]
-Loading URL: http://www.konachan.net/post.json?limit=100&tags=rating:questionable
-Success, decoding JSON
-Rendering to ../q/index.html
-Page refreshed
-Rendering to ../q/m/index.html
-Page refreshed
-Loading URL: http://www.konachan.net/post.json?limit=100&tags=miwabe_sakura
-Success, decoding JSON
-update cache file  ../c/artist/miwabe_sakura/cache.json
-new cache size  22
-show posts order by time, reverse
-Rendering to ../c/artist/miwabe_sakura/index.html
-Page refreshed
-Rendering to ../c/artist/miwabe_sakura/m/index.html
-Page refreshed
 Rendering to ../c/artist/miwabe_sakura/q/index.html
 Page refreshed
 Rendering to ../c/artist/miwabe_sakura/q/m/index.html
@@ -529,4 +493,40 @@ Page refreshed
 Rendering to ../c/artist/dead_line/e/index.html
 Page refreshed
 Rendering to ../c/artist/dead_line/e/m/index.html
+Page refreshed
+ log.txt | 72 ++++++++++++++++++++++++++++++++---------------------------------
+ 1 file changed, 36 insertions(+), 36 deletions(-)
+[master 0f64ed20] update content
+ 1 file changed, 36 insertions(+), 36 deletions(-)
+
+
+================================================================================
+2020-03-04 18:55:20
+Already up to date.
+Already up to date.
+build targets:  ['s', 'q', 'e']
+Build count:  724
+Current build: Home[1], Categoary[24]
+Loading URL: http://www.konachan.net/post.json?limit=100&tags=rating:questionable
+Success, decoding JSON
+Rendering to ../q/index.html
+Page refreshed
+Rendering to ../q/m/index.html
+Page refreshed
+Loading URL: http://www.konachan.net/post.json?limit=100&tags=mayogii
+Success, decoding JSON
+update cache file  ../c/artist/mayogii/cache.json
+new cache size  9
+show posts order by time, reverse
+Rendering to ../c/artist/mayogii/index.html
+Page refreshed
+Rendering to ../c/artist/mayogii/m/index.html
+Page refreshed
+Rendering to ../c/artist/mayogii/q/index.html
+Page refreshed
+Rendering to ../c/artist/mayogii/q/m/index.html
+Page refreshed
+Rendering to ../c/artist/mayogii/e/index.html
+Page refreshed
+Rendering to ../c/artist/mayogii/e/m/index.html
 Page refreshed
