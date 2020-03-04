@@ -98,6 +98,8 @@
         }
     </style>
     <script>
+        document.cookie = window.location.href+'=k100_visited'
+
         var sUserAgent = navigator.userAgent.toLowerCase();
         var bIsIpad = sUserAgent.match(/ipad/i) == "ipad";
         var bIsIphoneOs = sUserAgent.match(/iphone os/i) == "iphone os";
@@ -189,7 +191,7 @@
             return result
         }
 
-        document.cookie = window.location.href+'=k100_visited'
+        
 
         var url_visited = readCookieCfg()
         
