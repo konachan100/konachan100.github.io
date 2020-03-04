@@ -1,46 +1,3 @@
- c/scenic/post.json |  4 +--
- log.txt            | 76 +++++++++++++++++++++++++++---------------------------
- 2 files changed, 40 insertions(+), 40 deletions(-)
-[master 8a9cbc54] update content
- 2 files changed, 40 insertions(+), 40 deletions(-)
-
-
-================================================================================
-2020-03-04 08:04:15
-Already up to date.
-Already up to date.
-build targets:  ['s', 'q', 'e']
-Build count:  606
-Current build: Home[0], Categoary[6]
-Loading URL: http://www.konachan.net/post.json?limit=100&tags=rating:safe
-Success, decoding JSON
-Rendering to ../index.html
-Page refreshed
-Rendering to ../m/index.html
-Page refreshed
-Loading URL: http://www.konachan.net/post.json?limit=100&tags=natsumoka
-Success, decoding JSON
-update cache file  ../c/artist/natsumoka/cache.json
-new cache size  20
-show posts order by time, reverse
-Rendering to ../c/artist/natsumoka/index.html
-Page refreshed
-Rendering to ../c/artist/natsumoka/m/index.html
-Page refreshed
-Rendering to ../c/artist/natsumoka/q/index.html
-Page refreshed
-Rendering to ../c/artist/natsumoka/q/m/index.html
-Page refreshed
-Rendering to ../c/artist/natsumoka/e/index.html
-Page refreshed
-Rendering to ../c/artist/natsumoka/e/m/index.html
-Page refreshed
- log.txt | 74 ++++++++++++++++++++++++++++++++---------------------------------
- 1 file changed, 37 insertions(+), 37 deletions(-)
-[master efe20826] update content
- 1 file changed, 37 insertions(+), 37 deletions(-)
-
-
 ================================================================================
 2020-03-04 08:09:36
 Already up to date.
@@ -529,4 +486,47 @@ Page refreshed
 Rendering to ../c/artist/hiten_goane_ryu/e/index.html
 Page refreshed
 Rendering to ../c/artist/hiten_goane_ryu/e/m/index.html
+Page refreshed
+ c/artist/hiten_goane_ryu/e/index.html   | 124 +++++++++++++++-----------------
+ c/artist/hiten_goane_ryu/e/m/index.html |  88 +++++++++++++++++------
+ c/artist/hiten_goane_ryu/index.html     | 122 +++++++++++++++----------------
+ c/artist/hiten_goane_ryu/m/index.html   |  88 +++++++++++++++++------
+ c/artist/hiten_goane_ryu/q/index.html   | 124 +++++++++++++++-----------------
+ c/artist/hiten_goane_ryu/q/m/index.html |  88 +++++++++++++++++------
+ log.txt                                 |  86 +++++++++++-----------
+ q/m/index.html                          |  33 ++-------
+ 8 files changed, 421 insertions(+), 332 deletions(-)
+[master b76d16cd] update content
+ 8 files changed, 421 insertions(+), 332 deletions(-)
+
+
+================================================================================
+2020-03-04 09:19:48
+Already up to date.
+Already up to date.
+build targets:  ['s', 'q', 'e']
+Build count:  620
+Current build: Home[2], Categoary[20]
+Loading URL: http://www.konachan.net/post.json?limit=100&tags=rating:explicit
+Success, decoding JSON
+Rendering to ../e/index.html
+Page refreshed
+Rendering to ../e/m/index.html
+Page refreshed
+Loading URL: http://www.konachan.net/post.json?limit=100&tags=fujisaki_hikari
+Success, decoding JSON
+update cache file  ../c/artist/fujisaki_hikari/cache.json
+new cache size  31
+show posts order by time, reverse
+Rendering to ../c/artist/fujisaki_hikari/index.html
+Page refreshed
+Rendering to ../c/artist/fujisaki_hikari/m/index.html
+Page refreshed
+Rendering to ../c/artist/fujisaki_hikari/q/index.html
+Page refreshed
+Rendering to ../c/artist/fujisaki_hikari/q/m/index.html
+Page refreshed
+Rendering to ../c/artist/fujisaki_hikari/e/index.html
+Page refreshed
+Rendering to ../c/artist/fujisaki_hikari/e/m/index.html
 Page refreshed
