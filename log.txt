@@ -1,44 +1,4 @@
 Page refreshed
-Rendering to ../c/hot/q/m/index.html
-Page refreshed
-Rendering to ../c/hot/e/index.html
-Page refreshed
-Rendering to ../c/hot/e/m/index.html
-Page refreshed
- c/hot/e/index.html   |  64 ++++-----
- c/hot/e/m/index.html |  44 +++---
- c/hot/e/post.json    | 308 ++++++++++++++++++++---------------------
- c/hot/index.html     |  76 +++++------
- c/hot/m/index.html   |  56 ++++----
- c/hot/post.json      | 380 +++++++++++++++++++++++++--------------------------
- log.txt              |  58 ++++----
- 7 files changed, 499 insertions(+), 487 deletions(-)
-[master 5644123c] update content
- 7 files changed, 499 insertions(+), 487 deletions(-)
-
-
-================================================================================
-2020-03-04 19:26:28
-Already up to date.
-Already up to date.
-build targets:  ['s', 'q', 'e']
-Build count:  729
-Current build: Home[0], Categoary[4]
-Loading URL: http://www.konachan.net/post.json?limit=100&tags=rating:safe
-Success, decoding JSON
-Rendering to ../index.html
-Page refreshed
-Rendering to ../m/index.html
-Page refreshed
-Loading URL: http://www.konachan.net/post.json?limit=100&tags=touhou
-Success, decoding JSON
-update cache file  ../c/touhou/cache.json
-new cache size  110
-show posts order by time, reverse
-Rendering to ../c/touhou/index.html
-Page refreshed
-Rendering to ../c/touhou/m/index.html
-Page refreshed
 Rendering to ../c/touhou/q/index.html
 Page refreshed
 Rendering to ../c/touhou/q/m/index.html
@@ -529,4 +489,44 @@ Page refreshed
 Rendering to ../c/artist/hiten_goane_ryu/e/index.html
 Page refreshed
 Rendering to ../c/artist/hiten_goane_ryu/e/m/index.html
+Page refreshed
+ c/artist/hiten_goane_ryu/e/index.html | 23 +++--------
+ c/artist/hiten_goane_ryu/index.html   | 23 +++--------
+ c/artist/hiten_goane_ryu/q/index.html | 23 +++--------
+ index.html                            |  2 +-
+ log.txt                               | 78 +++++++++++++++++------------------
+ 5 files changed, 55 insertions(+), 94 deletions(-)
+[master 02c52e67] update content
+ 5 files changed, 55 insertions(+), 94 deletions(-)
+
+
+================================================================================
+2020-03-04 20:56:58
+Already up to date.
+Already up to date.
+build targets:  ['s', 'q', 'e']
+Build count:  745
+Current build: Home[1], Categoary[20]
+Loading URL: http://www.konachan.net/post.json?limit=100&tags=rating:questionable
+Success, decoding JSON
+Rendering to ../q/index.html
+Page refreshed
+Rendering to ../q/m/index.html
+Page refreshed
+Loading URL: http://www.konachan.net/post.json?limit=100&tags=fujisaki_hikari
+Success, decoding JSON
+update cache file  ../c/artist/fujisaki_hikari/cache.json
+new cache size  31
+show posts order by time, reverse
+Rendering to ../c/artist/fujisaki_hikari/index.html
+Page refreshed
+Rendering to ../c/artist/fujisaki_hikari/m/index.html
+Page refreshed
+Rendering to ../c/artist/fujisaki_hikari/q/index.html
+Page refreshed
+Rendering to ../c/artist/fujisaki_hikari/q/m/index.html
+Page refreshed
+Rendering to ../c/artist/fujisaki_hikari/e/index.html
+Page refreshed
+Rendering to ../c/artist/fujisaki_hikari/e/m/index.html
 Page refreshed
