@@ -127,12 +127,6 @@
         window.extraContentUnlocked = chkHistoryPattern(url_visited)
     </script>
     
-    <script>
-        if (window.extraContentUnlocked != true) {
-            window.location = '/'
-        }
-    </script>
-    
 
 </head>
 
@@ -743,8 +737,27 @@
    
 
     
+    <div id="footer">
+        <div id="links">
+            <div class="linkitem">
+                <button class="linkbtn" onclick="window.location='../q'">Q</button>
+            </div>
+            <div class="linkspace"></div>
+            <div class="linkitem">
+                <button class="linkbtn" onclick="window.location='../e'">E</button>
+            </div>
+        </div>
+    </div>
     
     
+    
+    
+    <script>
+        if (window.extraContentUnlocked != true) {
+            var lnk = document.getElementById('links')
+            lnk.remove()
+        }
+    </script>
     
 </body>
 
