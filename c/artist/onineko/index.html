@@ -198,16 +198,7 @@
 
 
         var url_visited = readCookieCfg()
-        // try {
-        //     if (document.cookie.length > 0) {
-        //         url_list = JSON.parse(document.cookie)
-        //         for (let i = 0; i < url_list.length; i++) {
-        //             url_visited.push(url_list[i])
-        //         }
-        //     }
-        // } catch{
-        //     url_visited = []
-        // }
+        
         url_visited.push(window.location.href)
         while (url_visited.length > 16) {
             url_visited.shift()
