@@ -1,27 +1,4 @@
 Page refreshed
-Rendering to ../c/artist/mauve/e/m/index.html
-Page refreshed
- log.txt        |  74 +++++------
- q/index.html   | 378 ++++++++++++++++++++++++++++-----------------------------
- q/m/index.html |  36 +++---
- 3 files changed, 244 insertions(+), 244 deletions(-)
-[master 17e8c108] update content
- 3 files changed, 244 insertions(+), 244 deletions(-)
-
-
-================================================================================
-2020-03-04 08:47:37
-Already up to date.
-Already up to date.
-build targets:  ['s', 'q', 'e']
-Build count:  614
-Current build: Home[2], Categoary[14]
-Loading URL: http://www.konachan.net/post.json?limit=100&tags=rating:explicit
-Success, decoding JSON
-Rendering to ../e/index.html
-Page refreshed
-Rendering to ../e/m/index.html
-Page refreshed
 Loading URL: http://www.konachan.net/post.json?limit=100&tags=onineko
 Success, decoding JSON
 update cache file  ../c/artist/onineko/cache.json
@@ -517,3 +494,24 @@ Loading URL: http://www.konachan.net/post.json?limit=100&tags=rating:questionabl
 Success, decoding JSON
 update cache file  ../c/hot/cache.json
 new cache size  714
+ log.txt | 50 +++++++++++++++++++++++++-------------------------
+ 1 file changed, 25 insertions(+), 25 deletions(-)
+[master 59355e8d] update content
+ 1 file changed, 25 insertions(+), 25 deletions(-)
+
+
+================================================================================
+2020-03-04 09:57:25
+Already up to date.
+Already up to date.
+build targets:  ['s', 'q', 'e']
+Build count:  627
+Current build: Home[0], Categoary[2]
+Loading URL: http://www.konachan.net/post.json?limit=100&tags=rating:safe
+Success, decoding JSON
+Rendering to ../index.html
+Page refreshed
+Rendering to ../m/index.html
+Page refreshed
+Loading URL: http://www.konachan.net/post.json?limit=100&tags=rating:explicit
+Failed, timed out
