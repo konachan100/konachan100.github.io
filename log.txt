@@ -1,48 +1,4 @@
 Page refreshed
-Rendering to ../c/hot/q/m/index.html
-Page refreshed
-Rendering to ../c/hot/e/index.html
-Page refreshed
-Rendering to ../c/hot/e/m/index.html
-Page refreshed
- c/hot/index.html     | 198 +++++++--------
- c/hot/m/index.html   |  60 ++---
- c/hot/post.json      | 426 +++++++++++++++----------------
- c/hot/q/index.html   | 172 ++++++-------
- c/hot/q/m/index.html | 100 ++++----
- c/hot/q/post.json    | 698 +++++++++++++++++++++++++--------------------------
- log.txt              |  52 ++--
- 7 files changed, 862 insertions(+), 844 deletions(-)
-[master d8c808b8] update content
- 7 files changed, 862 insertions(+), 844 deletions(-)
-
-
-================================================================================
-2020-03-04 07:53:31
-Already up to date.
-Already up to date.
-build targets:  ['s', 'q', 'e']
-Build count:  604
-Current build: Home[1], Categoary[4]
-Loading URL: http://www.konachan.net/post.json?limit=100&tags=rating:questionable
-Success, decoding JSON
-Rendering to ../q/index.html
-Page refreshed
-Rendering to ../q/m/index.html
-Page refreshed
-Loading URL: http://www.konachan.net/post.json?limit=100&tags=touhou
-Success, decoding JSON
-update cache file  ../c/touhou/cache.json
-new cache size  110
-show posts order by time, reverse
-Rendering to ../c/touhou/index.html
-Page refreshed
-Rendering to ../c/touhou/m/index.html
-Page refreshed
-Rendering to ../c/touhou/q/index.html
-Page refreshed
-Rendering to ../c/touhou/q/m/index.html
-Page refreshed
 Rendering to ../c/touhou/e/index.html
 Page refreshed
 Rendering to ../c/touhou/e/m/index.html
@@ -529,4 +485,48 @@ Page refreshed
 Rendering to ../c/artist/ryo/e/index.html
 Page refreshed
 Rendering to ../c/artist/ryo/e/m/index.html
+Page refreshed
+ c/artist/ryo/e/index.html   | 124 +++++++++++++++++++++-----------------------
+ c/artist/ryo/e/m/index.html |  88 +++++++++++++++++++++++--------
+ c/artist/ryo/index.html     | 122 ++++++++++++++++++++-----------------------
+ c/artist/ryo/m/index.html   |  88 +++++++++++++++++++++++--------
+ c/artist/ryo/q/index.html   | 124 +++++++++++++++++++++-----------------------
+ c/artist/ryo/q/m/index.html |  88 +++++++++++++++++++++++--------
+ e/index.html                |  11 +---
+ e/m/index.html              |  88 +++++++++++++++++++++++--------
+ log.txt                     |  88 +++++++++++++++----------------
+ 9 files changed, 482 insertions(+), 339 deletions(-)
+[master e72bdf8b] update content
+ 9 files changed, 482 insertions(+), 339 deletions(-)
+
+
+================================================================================
+2020-03-04 09:09:07
+Already up to date.
+Already up to date.
+build targets:  ['s', 'q', 'e']
+Build count:  618
+Current build: Home[0], Categoary[18]
+Loading URL: http://www.konachan.net/post.json?limit=100&tags=rating:safe
+Success, decoding JSON
+Rendering to ../index.html
+Page refreshed
+Rendering to ../m/index.html
+Page refreshed
+Loading URL: http://www.konachan.net/post.json?limit=100&tags=mivit
+Success, decoding JSON
+update cache file  ../c/artist/mivit/cache.json
+new cache size  90
+show posts order by time, reverse
+Rendering to ../c/artist/mivit/index.html
+Page refreshed
+Rendering to ../c/artist/mivit/m/index.html
+Page refreshed
+Rendering to ../c/artist/mivit/q/index.html
+Page refreshed
+Rendering to ../c/artist/mivit/q/m/index.html
+Page refreshed
+Rendering to ../c/artist/mivit/e/index.html
+Page refreshed
+Rendering to ../c/artist/mivit/e/m/index.html
 Page refreshed
