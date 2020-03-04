@@ -178,7 +178,7 @@
             for (let i = 0; i < sp.length; i++) {
                 var sp2 = sp[i].trim().split('=')
                 if (sp2.length > 1) {
-                    if (sp2[0] == 'url_visited') {
+                    if (sp2[1] == '1') {
                         try {
                             ret = JSON.parse(sp2[1])
                             return ret

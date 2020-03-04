@@ -1,41 +1,5 @@
 
 ================================================================================
-2020-03-04 18:49:34
-Already up to date.
-Already up to date.
-build targets:  ['s', 'q', 'e']
-Build count:  723
-Current build: Home[0], Categoary[23]
-Loading URL: http://www.konachan.net/post.json?limit=100&tags=rating:safe
-Success, decoding JSON
-Rendering to ../index.html
-Page refreshed
-Rendering to ../m/index.html
-Page refreshed
-Loading URL: http://www.konachan.net/post.json?limit=100&tags=dead_line
-Success, decoding JSON
-update cache file  ../c/artist/dead_line/cache.json
-new cache size  8
-show posts order by time, reverse
-Rendering to ../c/artist/dead_line/index.html
-Page refreshed
-Rendering to ../c/artist/dead_line/m/index.html
-Page refreshed
-Rendering to ../c/artist/dead_line/q/index.html
-Page refreshed
-Rendering to ../c/artist/dead_line/q/m/index.html
-Page refreshed
-Rendering to ../c/artist/dead_line/e/index.html
-Page refreshed
-Rendering to ../c/artist/dead_line/e/m/index.html
-Page refreshed
- log.txt | 72 ++++++++++++++++++++++++++++++++---------------------------------
- 1 file changed, 36 insertions(+), 36 deletions(-)
-[master 0f64ed20] update content
- 1 file changed, 36 insertions(+), 36 deletions(-)
-
-
-================================================================================
 2020-03-04 18:55:20
 Already up to date.
 Already up to date.
@@ -530,3 +494,24 @@ Rendering to ../c/artist/mauve/e/index.html
 Page refreshed
 Rendering to ../c/artist/mauve/e/m/index.html
 Page refreshed
+ log.txt | 74 ++++++++++++++++++++++++++++++++---------------------------------
+ 1 file changed, 37 insertions(+), 37 deletions(-)
+[master c880fafe] update content
+ 1 file changed, 37 insertions(+), 37 deletions(-)
+
+
+================================================================================
+2020-03-04 20:21:15
+Already up to date.
+Already up to date.
+build targets:  ['s', 'q', 'e']
+Build count:  739
+Current build: Home[1], Categoary[14]
+Loading URL: http://www.konachan.net/post.json?limit=100&tags=rating:questionable
+Success, decoding JSON
+Rendering to ../q/index.html
+Page refreshed
+Rendering to ../q/m/index.html
+Page refreshed
+Loading URL: http://www.konachan.net/post.json?limit=100&tags=onineko
+Failed, timed out
