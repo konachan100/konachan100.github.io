@@ -1,40 +1,4 @@
 Page refreshed
-Rendering to ../c/artist/mauve/m/index.html
-Page refreshed
-Rendering to ../c/artist/mauve/q/index.html
-Page refreshed
-Rendering to ../c/artist/mauve/q/m/index.html
-Page refreshed
-Rendering to ../c/artist/mauve/e/index.html
-Page refreshed
-Rendering to ../c/artist/mauve/e/m/index.html
-Page refreshed
- log.txt | 74 ++++++++++++++++++++++++++++++++---------------------------------
- 1 file changed, 37 insertions(+), 37 deletions(-)
-[master eca4b36c] update content
- 1 file changed, 37 insertions(+), 37 deletions(-)
-
-
-================================================================================
-2020-03-04 17:59:03
-Already up to date.
-Already up to date.
-build targets:  ['s', 'q', 'e']
-Build count:  714
-Current build: Home[0], Categoary[14]
-Loading URL: http://www.konachan.net/post.json?limit=100&tags=rating:safe
-Success, decoding JSON
-Rendering to ../index.html
-Page refreshed
-Rendering to ../m/index.html
-Page refreshed
-Loading URL: http://www.konachan.net/post.json?limit=100&tags=onineko
-Success, decoding JSON
-update cache file  ../c/artist/onineko/cache.json
-new cache size  56
-show posts order by time, reverse
-Rendering to ../c/artist/onineko/index.html
-Page refreshed
 Rendering to ../c/artist/onineko/m/index.html
 Page refreshed
 Rendering to ../c/artist/onineko/q/index.html
@@ -529,4 +493,40 @@ Page refreshed
 Rendering to ../c/touhou/e/index.html
 Page refreshed
 Rendering to ../c/touhou/e/m/index.html
+Page refreshed
+ log.txt | 83 +++++++++++++++++++++++++++++++++--------------------------------
+ 1 file changed, 42 insertions(+), 41 deletions(-)
+[master 432ea16c] update content
+ 1 file changed, 42 insertions(+), 41 deletions(-)
+
+
+================================================================================
+2020-03-04 19:31:51
+Already up to date.
+Already up to date.
+build targets:  ['s', 'q', 'e']
+Build count:  730
+Current build: Home[1], Categoary[5]
+Loading URL: http://www.konachan.net/post.json?limit=100&tags=rating:questionable
+Success, decoding JSON
+Rendering to ../q/index.html
+Page refreshed
+Rendering to ../q/m/index.html
+Page refreshed
+Loading URL: http://www.konachan.net/post.json?limit=100&tags=scenic
+Success, decoding JSON
+update cache file  ../c/scenic/cache.json
+new cache size  104
+show posts order by time, reverse
+Rendering to ../c/scenic/index.html
+Page refreshed
+Rendering to ../c/scenic/m/index.html
+Page refreshed
+Rendering to ../c/scenic/q/index.html
+Page refreshed
+Rendering to ../c/scenic/q/m/index.html
+Page refreshed
+Rendering to ../c/scenic/e/index.html
+Page refreshed
+Rendering to ../c/scenic/e/m/index.html
 Page refreshed
