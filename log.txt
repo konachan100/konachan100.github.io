@@ -1,40 +1,4 @@
 Page refreshed
-Rendering to ../q/m/index.html
-Page refreshed
-Loading URL: http://www.konachan.net/post.json?limit=100&tags=touhou
-Failed, timed out
- log.txt | 74 ++++++++++++++++++++++++++---------------------------------------
- 1 file changed, 30 insertions(+), 44 deletions(-)
-[master 22cc4bc9] update content
- 1 file changed, 30 insertions(+), 44 deletions(-)
-
-
-================================================================================
-2020-03-04 14:49:21
-Already up to date.
-Already up to date.
-build targets:  ['s', 'q', 'e']
-Build count:  680
-Current build: Home[2], Categoary[5]
-Loading URL: http://www.konachan.net/post.json?limit=100&tags=rating:explicit
-Success, decoding JSON
-Rendering to ../e/index.html
-Page refreshed
-Rendering to ../e/m/index.html
-Page refreshed
-Loading URL: http://www.konachan.net/post.json?limit=100&tags=scenic
-Success, decoding JSON
-update cache file  ../c/scenic/cache.json
-new cache size  104
-show posts order by time, reverse
-Rendering to ../c/scenic/index.html
-Page refreshed
-Rendering to ../c/scenic/m/index.html
-Page refreshed
-Rendering to ../c/scenic/q/index.html
-Page refreshed
-Rendering to ../c/scenic/q/m/index.html
-Page refreshed
 Rendering to ../c/scenic/e/index.html
 Page refreshed
 Rendering to ../c/scenic/e/m/index.html
@@ -529,4 +493,40 @@ Page refreshed
 Rendering to ../c/artist/fujisaki_hikari/e/index.html
 Page refreshed
 Rendering to ../c/artist/fujisaki_hikari/e/m/index.html
+Page refreshed
+ log.txt | 72 ++++++++++++++++++++++++++++++++---------------------------------
+ 1 file changed, 36 insertions(+), 36 deletions(-)
+[master 1e362fe3] update content
+ 1 file changed, 36 insertions(+), 36 deletions(-)
+
+
+================================================================================
+2020-03-04 16:19:53
+Already up to date.
+Already up to date.
+build targets:  ['s', 'q', 'e']
+Build count:  696
+Current build: Home[0], Categoary[21]
+Loading URL: http://www.konachan.net/post.json?limit=100&tags=rating:safe
+Success, decoding JSON
+Rendering to ../index.html
+Page refreshed
+Rendering to ../m/index.html
+Page refreshed
+Loading URL: http://www.konachan.net/post.json?limit=100&tags=higandgk
+Success, decoding JSON
+update cache file  ../c/artist/higandgk/cache.json
+new cache size  23
+show posts order by time, reverse
+Rendering to ../c/artist/higandgk/index.html
+Page refreshed
+Rendering to ../c/artist/higandgk/m/index.html
+Page refreshed
+Rendering to ../c/artist/higandgk/q/index.html
+Page refreshed
+Rendering to ../c/artist/higandgk/q/m/index.html
+Page refreshed
+Rendering to ../c/artist/higandgk/e/index.html
+Page refreshed
+Rendering to ../c/artist/higandgk/e/m/index.html
 Page refreshed
