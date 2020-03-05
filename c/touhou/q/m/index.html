@@ -126,6 +126,37 @@
     <img src="https://konachan.net/images/konachan_net_sm_std.png" style="width: 100%; margin-left: -10%">
 
     
+    <div>
+        <div id="aplayer"></div>
+        <script type="text/javascript"
+            src="https://cdnjs.cloudflare.com/ajax/libs/aplayer/1.10.1/APlayer.min.js"></script>
+        <script>
+            const ap = new APlayer({
+                container: document.getElementById('aplayer'),
+                fixed: true,
+                audio: [
+                
+                {
+                    name: "Gensokyo Radio",
+                    artist: "Gensokyo Radio",
+                    loop: "one",
+                    url: "http://118.24.151.185:8000/1/",
+                    cover: "https://gensokyoradio.net/images/assets/gr-logo.png"
+                },
+                
+                {
+                    name: "Gensokyo Radio Backup Link",
+                    artist: "Gensokyo Radio",
+                    loop: "one",
+                    url: "http://118.24.151.185:8001/1/",
+                    cover: "https://gensokyoradio.net/images/assets/gr-logo.png"
+                },
+                           
+            ]
+        });
+        </script>
+    </div>
+    
 
     
     <div class="img_frame">
