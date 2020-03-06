@@ -9,8 +9,11 @@ View most recent 100 posts from Konachan.net:    https://konachan100.github.io/
 ## How does it work
 Page updating is done by a cloud server that can access Konachan web API, and post content updates once per 5 min, see shell script for detail. during each update, the program fetches post.json and generate static web pages, then git-push to this repo.
 
-**Warning:** Do not try to build a konachan mirror site on your cloud server, 
-your server instance will be blocked for political-right reason.
+Since the static pages update much more frequently than the page generation program source code, I split gh-pages and building program into 2 repos, the other one is *konachan100-src*.
+
+## Post ratings
+By default, the questionable and explicit rating is locked by JS. If an user agent tries to access them, it will be set-window-location to root.
+When unlocked, "Q", "E" buttons will appear at right bottom corner of the window.
 
 ## Dev Requirement
 - Python 3.x
