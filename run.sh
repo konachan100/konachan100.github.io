@@ -1,8 +1,9 @@
 #!/bin/bash
 while true
 do
-    bash update.sh >> log.txt
-    python trimlog.py
+    echo "rebuild site"
+    bash update.sh
+    echo "sleep"
     sleep 300s
 done
 
