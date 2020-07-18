@@ -78,6 +78,14 @@
             ],
             "build_path": "../c/scenic/",
             "disard": "old"
+        },
+        {
+            "name": "Arknights",
+            "tags": [
+                "arknights"
+            ],
+            "build_path": "../c/arknights",
+            "discard": "old"
         }
     ],
     "artists": [
