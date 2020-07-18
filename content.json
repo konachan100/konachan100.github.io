@@ -84,7 +84,7 @@
             "tags": [
                 "arknights"
             ],
-            "build_path": "../c/arknights",
+            "build_path": "../c/arknights/",
             "discard": "old"
         }
     ],
