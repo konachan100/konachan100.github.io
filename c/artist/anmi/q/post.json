@@ -924,7 +924,7 @@
         "frames_pending": [],
         "frames_pending_string": "",
         "frames_string": "",
-        "has_children": true,
+        "has_children": false,
         "height": 3903,
         "id": 234558,
         "is_held": false,
