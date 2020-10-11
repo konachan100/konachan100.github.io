@@ -40,11 +40,29 @@
             "build_path": "../c/hot/"
         },
         {
+            "tags": ["rating:safe", "order:score"],
+            "build_path": "../c/top/"
+        },
+        {
+            "tags": ["rating:questionable", "order:score"],
+            "build_path": "../c/top/"
+        },
+        {
+            "tags": ["rating:explicit", "order:score"],
+            "build_path": "../c/top/"
+        },
+        {
             "name": "Hot",
             "build_path": "../c/hot/",
             "view": "hscore",
             "disard": "old"
         },
+        {
+            "name": "Top",
+            "build_path": "../c/top/",
+            "view": "hscore",
+            "discard": "lowscore"
+        },        
         {
             "name": "Touhou",
             "tags": ["touhou"],
