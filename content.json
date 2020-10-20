@@ -104,6 +104,22 @@
             ],
             "build_path": "../c/arknights/",
             "discard": "old"
+        },
+        {
+            "name": "Granblue Fantasy",
+            "tags": [
+                "granblue_fantasy"
+            ],
+            "build_path": "../c/granblue_fantasy/",
+            "discard": "old"
+        },
+        {
+            "name": "Mahou shoujo madoka magica",
+            "tags": [
+                "mahou_shoujo_madoka_magica"
+            ],
+            "build_path": "../c/mahou_shoujo_madoka_magica/",
+            "discard": "old"
         }
     ],
     "artists": [
