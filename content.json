@@ -128,6 +128,14 @@
             ],
             "build_path": "../c/rokudenashi_majutsu_koushi_to_akashic_record/",
             "discard": "old"
+        },
+        {
+            "name": "Gochuumon Wa Usagi Desu Ka?",
+            "tags": [
+                "gochuumon_wa_usagi_desu_ka?"
+            ],
+            "build_path": "../c/gochuumon_wa_usagi_desu_ka/",
+            "discard": "old"
         }
     ],
     "artists": [
