@@ -13,6 +13,6 @@ echo "gen pages"
 bash gen.sh
 cd ..
 echo "publish to gh"
-git add .
+git add --all .
 git commit -m "update content"
 git push
