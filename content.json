@@ -1,11 +1,7 @@
 {
     "host": "http://www.konachan.net",
     "logo":"https://konachan.net/images/konachan_net_sm_std.png",
-    "allow_ratings": [
-        "s",
-        "q",
-        "e"
-    ],
+    "allow_ratings": [        "s",        "q",        "e"    ],
     "home": [
         {
             "rating": "s",
@@ -138,51 +134,18 @@
             "discard": "old"
         }
     ],
+    "copyright":[
+        { "tag":"gochuumon_wa_usagi_desu_ka?",                  "title":"Gochuumon Wa Usagi Desu Ka?" },
+        { "tag":"rokudenashi_majutsu_koushi_to_akashic_record", "title":"Rokudenashi Majutsu Koushi To Akashic Record" },
+        { "tag":"mahou_shoujo_madoka_magica",                   "title":"Mahou shoujo madoka magica" },
+        { "tag":"granblue_fantasy",                             "title":"Granblue Fantasy" },
+    ],
     "artists": [
-        "natsumoka",
-        "anmi",
-        "annin_doufu",
-        "miwabe_sakura",
-        "edel_(qi--yu)",
-        "sousouman",
-        "ke-ta",
-        "mauve",
-        "onineko",
-        "miyase_mahiro",
-        "kino_(kino_konomi)",
-        "ryo",
-        "mivit",
-        "hiten_goane_ryu",
-        "fujisaki_hikari",
-        "higandgk",
-        "lium",
-        "dead_line",
-        "mayogii",
-        "dekitani",
-        "ogata_tei",
-        "kedama_milk",
-        "ayakura_juu",
-        "refeia",
-        "swordsouls",
-        "yoruneko",
-        "ru_zhai",
-        "criin_(659503)",
-        "wlop",
-        "cangkong",
-        "fufumi",
-        "inhoya2000",
-        "kuria_(clear_trip_second)",
-        "hanamiya_rarana",
-        "hoshi_(snacherubi)",
-        "ukai_saki",
-        "hanako151",
-        "anthropomorphism",
-        "kyod+",
-        "amagai_tarou",
-        "sankuro",
-        "shiratama",
-        "tiv",
-        "chaesu"
+        "natsumoka","anmi","annin_doufu","miwabe_sakura","edel_(qi--yu)","sousouman","ke-ta","mauve","onineko","miyase_mahiro",
+        "kino_(kino_konomi)","ryo","mivit","hiten_goane_ryu","fujisaki_hikari","higandgk","lium","dead_line","mayogii",
+        "dekitani","ogata_tei","kedama_milk","ayakura_juu","refeia","swordsouls","yoruneko","ru_zhai","criin_(659503)","wlop", 
+        "cangkong","fufumi","inhoya2000","kuria_(clear_trip_second)","hanamiya_rarana","hoshi_(snacherubi)","ukai_saki",
+        "hanako151","anthropomorphism","kyod+","amagai_tarou","sankuro","shiratama","tiv","chaesu"
     ],
     "loadonce": [
         {
