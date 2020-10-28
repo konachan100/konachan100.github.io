@@ -120,6 +120,14 @@
             ],
             "build_path": "../c/mahou_shoujo_madoka_magica/",
             "discard": "old"
+        },
+        {
+            "name": "Rokudenashi Majutsu Koushi To Akashic Record",
+            "tags": [
+                "rokudenashi_majutsu_koushi_to_akashic_record"
+            ],
+            "build_path": "../c/rokudenashi_majutsu_koushi_to_akashic_record/",
+            "discard": "old"
         }
     ],
     "artists": [
