@@ -78,67 +78,21 @@
             ]
         },
         {
-            "name": "S.A.O.",
-            "tags": [
-                "sword_art_online"
-            ],
-            "build_path": "../c/sao/",
-            "discard": "old"
-        },
-        {
             "name": "Scenic",
             "tags": [
                 "scenic"
             ],
             "build_path": "../c/scenic/",
             "disard": "old"
-        },
-        {
-            "name": "Arknights",
-            "tags": [
-                "arknights"
-            ],
-            "build_path": "../c/arknights/",
-            "discard": "old"
-        },
-        {
-            "name": "Granblue Fantasy",
-            "tags": [
-                "granblue_fantasy"
-            ],
-            "build_path": "../c/granblue_fantasy/",
-            "discard": "old"
-        },
-        {
-            "name": "Mahou shoujo madoka magica",
-            "tags": [
-                "mahou_shoujo_madoka_magica"
-            ],
-            "build_path": "../c/mahou_shoujo_madoka_magica/",
-            "discard": "old"
-        },
-        {
-            "name": "Rokudenashi Majutsu Koushi To Akashic Record",
-            "tags": [
-                "rokudenashi_majutsu_koushi_to_akashic_record"
-            ],
-            "build_path": "../c/rokudenashi_majutsu_koushi_to_akashic_record/",
-            "discard": "old"
-        },
-        {
-            "name": "Gochuumon Wa Usagi Desu Ka?",
-            "tags": [
-                "gochuumon_wa_usagi_desu_ka?"
-            ],
-            "build_path": "../c/gochuumon_wa_usagi_desu_ka/",
-            "discard": "old"
         }
     ],
     "copyright":[
         { "tag":"gochuumon_wa_usagi_desu_ka?",                  "title":"Gochuumon Wa Usagi Desu Ka?" },
         { "tag":"rokudenashi_majutsu_koushi_to_akashic_record", "title":"Rokudenashi Majutsu Koushi To Akashic Record" },
         { "tag":"mahou_shoujo_madoka_magica",                   "title":"Mahou shoujo madoka magica" },
-        { "tag":"granblue_fantasy",                             "title":"Granblue Fantasy" }
+        { "tag":"granblue_fantasy",                             "title":"Granblue Fantasy" },
+        { "tag":"arknights",                                    "title":"Arknights"},
+        { "tag":"sword_art_online",                             "title":"S.A.O."}
     ],
     "artists": [
         "natsumoka","anmi","annin_doufu","miwabe_sakura","edel_(qi--yu)","sousouman","ke-ta","mauve","onineko","miyase_mahiro",
