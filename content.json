@@ -94,7 +94,9 @@
         { "tag":"arknights",                                    "title":"Arknights" },
         { "tag":"sword_art_online",                             "title":"S.A.O." },
         { "tag":"girls_frontline",                              "title":"Girls Frontline" },
-        { "tag":"azur_lane",                                    "title":"Azur Lane " }
+        { "tag":"azur_lane",                                    "title":"Azur Lane" },
+        { "tag":"princess_connect!",                            "title":"Princess Connect!" },
+        { "tag":"hyouka!",                            "title":"Hyouka!" }
     ],
     "artists": [
         "natsumoka","anmi","annin_doufu","miwabe_sakura","edel_(qi--yu)","sousouman","ke-ta","mauve","onineko","miyase_mahiro",
@@ -102,7 +104,8 @@
         "dekitani","ogata_tei","kedama_milk","ayakura_juu","refeia","swordsouls","yoruneko","ru_zhai","criin_(659503)","wlop", 
         "cangkong","fufumi","inhoya2000","kuria_(clear_trip_second)","hanamiya_rarana","hoshi_(snacherubi)","ukai_saki",
         "hanako151","anthropomorphism","kyod+","amagai_tarou","sankuro","shiratama","tiv","chaesu","mery_(apfl0515)","kaede_(sayappa)",
-        "cut_(bu-kunn)","infukun","p-a-cheng"
+        "cut_(bu-kunn)","infukun","p-a-cheng", "nemuri_nemu", "emia", "mocha_(cotton)", "xue_lu", "iizuki_tasuku", "amashiro_natsuki",
+        "haruki_5050", "apple228", "sayori", "saihate", "shironora", "maosame", "maeshimashi", "22jigen", "daefny"
     ],
     "loadonce": [
         {
