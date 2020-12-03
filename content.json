@@ -93,7 +93,8 @@
         { "tag":"granblue_fantasy",                             "title":"Granblue Fantasy" },
         { "tag":"arknights",                                    "title":"Arknights" },
         { "tag":"sword_art_online",                             "title":"S.A.O." },
-        { "tag":"girls_frontline",                              "title":"Girls Frontline" }
+        { "tag":"girls_frontline",                              "title":"Girls Frontline" },
+        { "tag":"azur_lane",                                    "title":"Azur Lane " }
     ],
     "artists": [
         "natsumoka","anmi","annin_doufu","miwabe_sakura","edel_(qi--yu)","sousouman","ke-ta","mauve","onineko","miyase_mahiro",
