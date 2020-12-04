@@ -96,7 +96,7 @@
         { "tag":"girls_frontline",                              "title":"Girls Frontline" },
         { "tag":"azur_lane",                                    "title":"Azur Lane" },
         { "tag":"princess_connect!",                            "title":"Princess Connect!" },
-        { "tag":"hyouka!",                            "title":"Hyouka!" }
+        { "tag":"hyouka",                                       "title":"Hyouka" }
     ],
     "artists": [
         "natsumoka","anmi","annin_doufu","miwabe_sakura","edel_(qi--yu)","sousouman","ke-ta","mauve","onineko","miyase_mahiro",
