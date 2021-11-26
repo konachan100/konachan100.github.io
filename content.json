@@ -1,7 +1,7 @@
 {
     "host": "http://www.konachan.net",
     "logo":"https://konachan.net/images/konachan_net_sm_std.png",
-    "allow_ratings": [        "s",        "q",        "e"    ],
+    "allow_ratings": [ "s", "q", "e" ],
     "home": [
         {
             "rating": "s",
@@ -109,7 +109,7 @@
         "haruki_5050", "apple228", "sayori", "saihate", "shironora", "maosame", "maeshimashi", "22jigen", "daefny", "dsmile",
         "tokisaki_mio", "karutamo", "sasorigatame", "koma_momozu", "haishiki", "chokuro", "nyanya", "kyariko", "miko_92", "kuroduki",
         "kutsunohito", "mikaku", "mafuyu_(chibi21)", "akamoku", "jiang_xin", "fou_(ssqseeker)", "azusa0v0", "tutsucha_illust",
-        "ett01024", "n.g."
+        "ett01024", "n.g.", "genjung"
     ],
     "loadonce": [
         {
