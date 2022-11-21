@@ -7,8 +7,15 @@ jobs:
   update_site:
     runs-on: ubuntu-latest
     steps:
-      - name: clone
-        run: git clone git@github.com:konachan100/konachan100.github.io.git
+      - name: Clone Github Repo Action
+        uses: konachan100/konachan100.github.io@v1
+        with:
+          # Repository Owner
+          owner: konachan100
+          # Repository name
+          repository: konachan100.github.io
+          # PAT with repository scope (https://github.com/settings/tokens)
+          access-token: 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
       - name: cd
         run: cd konachan100.github.io
       - name: show contents
