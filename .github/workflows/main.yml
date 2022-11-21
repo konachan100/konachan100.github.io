@@ -30,7 +30,7 @@ jobs:
         run: pwd
         
       - name: create count file
-        run: echo $GITHUB_RUN_NUMBER > buildcount.txt
+        run: echo $GITHUB_RUN_NUMBER > src/buildcount.txt
       - name: show contents
         run: tree .
       - name: update site
