@@ -8,7 +8,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Clone Github Repo Action
-        uses: konachan100/konachan100.github.io@HEAD
+        uses: GuillaumeFalourd/clone-github-repo-action@v2
         with:
           # Repository Owner
           owner: konachan100
