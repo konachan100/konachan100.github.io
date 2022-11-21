@@ -8,14 +8,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Clone Github Repo Action
-        uses: GuillaumeFalourd/clone-github-repo-action@v2
-        with:
-          # Repository Owner
-          owner: konachan100
-          # Repository name
-          repository: konachan100.github.io
-          # PAT with repository scope (https://github.com/settings/tokens)
-          access-token: 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
+        uses: sudosubin/git-clone-action@v1.0.1
       - name: pwd
         run: pwd
       - name: show contents
