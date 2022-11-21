@@ -18,9 +18,9 @@ jobs:
           access-token: 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
       - name: show contents
         run: tree .
-      - name: ll
-        run: ls -l
       - name: cd
         run: cd konachan100.github.io
+      - name: pwd
+        run: pwd
       - name: update site
         run: bash update.sh
