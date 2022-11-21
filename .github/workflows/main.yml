@@ -13,11 +13,5 @@ jobs:
         run: pwd
       - name: show contents
         run: tree .
-      - name: cd
-        run: cd konachan100.github.io
-      - name: pwd
-        run: pwd
-      - name: show contents
-        run: tree .
       - name: update site
         run: bash update.sh
