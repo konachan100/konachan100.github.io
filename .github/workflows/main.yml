@@ -8,7 +8,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: clone
-        run: git clone git@github.com/konachan100.github.io
+        run: git clone git@github.com:konachan100/konachan100.github.io.git
       - name: cd
         run: cd konachan100.github.io
       - name: show contents
