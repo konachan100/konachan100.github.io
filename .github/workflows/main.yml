@@ -21,6 +21,6 @@ jobs:
       - name: show contents
         run: tree .
       - name: ll
-        run: ll
+        run: ls -l
       - name: update site
         run: bash update.sh
