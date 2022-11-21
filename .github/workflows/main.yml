@@ -7,9 +7,9 @@ jobs:
   update_site:
     runs-on: ubuntu-latest
     steps:
-      - name: Clone Github Repo Action
+      - name: Clone konachan100.github.io
         uses: sudosubin/git-clone-action@v1.0.1
-      - name: Git Clone Action
+      - name: Clone konachan100-src
         # You may pin to the exact commit or the version.
         # uses: sudosubin/git-clone-action@8a93ce24d47782e30077508cccacf8a05a891bae
         uses: sudosubin/git-clone-action@v1.0.1
