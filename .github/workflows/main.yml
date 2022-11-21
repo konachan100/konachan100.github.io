@@ -28,6 +28,9 @@ jobs:
           path: src # optional
       - name: pwd
         run: pwd
+        
+      - name: create count file
+        run: echo $GITHUB_RUN_NUMBER > buildcount.txt
       - name: show contents
         run: tree .
       - name: update site
