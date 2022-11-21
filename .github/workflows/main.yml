@@ -20,5 +20,7 @@ jobs:
         run: cd konachan100.github.io
       - name: show contents
         run: tree .
+      - name: ll
+        run: ll
       - name: update site
         run: bash update.sh
