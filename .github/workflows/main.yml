@@ -16,11 +16,11 @@ jobs:
           repository: konachan100.github.io
           # PAT with repository scope (https://github.com/settings/tokens)
           access-token: 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
-      - name: cd
-        run: cd konachan100.github.io
       - name: show contents
         run: tree .
       - name: ll
         run: ls -l
+      - name: cd
+        run: cd konachan100.github.io
       - name: update site
         run: bash update.sh
