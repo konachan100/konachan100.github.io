@@ -7,6 +7,10 @@ jobs:
   update_site:
     runs-on: ubuntu-latest
     steps:
+      - name: config email
+        run: git config --global user.email "isn_cg@163.com"
+      - name: config name
+        run: git config --global user.name "isncg"
       - name: Clone konachan100.github.io
         uses: sudosubin/git-clone-action@v1.0.1
       - name: Clone konachan100-src
