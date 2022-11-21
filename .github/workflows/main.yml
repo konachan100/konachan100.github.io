@@ -1,0 +1,11 @@
+on:
+  schedule:
+    - cron: "0,5,10,15,20,25,30,35,40,45,50,55 * * * *"
+jobs:
+  update_site:
+    runs-on: ubuntu-latest
+    steps:
+      - name: show contents
+        run: tree .
+      - name: update site
+        run: bash update.sh
