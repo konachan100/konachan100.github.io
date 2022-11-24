@@ -11,26 +11,30 @@ jobs:
         run: |
           git config --global user.email "isn_cg@163.com"
           git config --global user.name "isncg"
+
       - name: Clone konachan100.github.io
         uses: sudosubin/git-clone-action@v1.0.1
+
       - name: Clone konachan100-src
         uses: sudosubin/git-clone-action@v1.0.1
         with:
           repository: konachan100/konachan100-src
           path: src
+
       - name: Setup build env
         run: echo $GITHUB_RUN_NUMBER > src/buildcount.txt
-      #- name: update site
-      #  run: bash update_ci.sh
+
       - name: Build
         run: |
           cd src
           bash gen.sh
           cd ..
+
       - name: Commit git change
         run: |
           git add --all .
           git commit -m "Github CI update"
+
       - name: GitHub Push
         uses: ad-m/github-push-action@v0.6.0
         with:
