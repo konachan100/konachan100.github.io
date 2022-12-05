@@ -10,7 +10,7 @@ jobs:
       - name: Setup git
         run: |
           git config --global user.email "isn_cg@163.com"
-          git config --global user.name "isncg"
+          git config --global user.name "isncg_ci"
 
       - name: Clone konachan100.github.io
         uses: sudosubin/git-clone-action@v1.0.1
