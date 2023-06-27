@@ -97,7 +97,8 @@
         { "tag":"azur_lane",                                    "title":"Azur Lane" },
         { "tag":"princess_connect!",                            "title":"Princess Connect!" },
         { "tag":"hyouka",                                       "title":"Hyouka" },
-        { "tag":"ookami_to_koushinryou",                        "title":"Ookami to Koushinryou (Spice and Wolf)" }
+        { "tag":"ookami_to_koushinryou",                        "title":"Ookami to Koushinryou (Spice and Wolf)" },
+        { "tag":"blue_archive",                                 "title":"Blue Archive" }
     ],
     "artists": [
         "natsumoka","anmi","annin_doufu","miwabe_sakura","edel_(qi--yu)","sousouman","ke-ta","mauve","onineko","miyase_mahiro",
