@@ -31,7 +31,7 @@
         "status": "active",
         "width": 2900,
         "height": 2062,
-        "is_held": true,
+        "is_held": false,
         "frames_pending_string": "",
         "frames_pending": [],
         "frames_string": "",
