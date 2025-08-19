@@ -50,7 +50,7 @@
         "frames_pending": [],
         "frames_pending_string": "",
         "frames_string": "",
-        "has_children": false,
+        "has_children": true,
         "height": 1494,
         "id": 381249,
         "is_held": false,
